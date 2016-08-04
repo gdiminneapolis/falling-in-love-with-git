@@ -211,6 +211,11 @@
     color:#b3e3f1;
 }
 
+#gdi pre .terminal_prompt {
+  color:#00ffc8;
+}
+
+
 #gdi .extra_small_meta {
     font-size:15.5pt;
     margin:0.25em;

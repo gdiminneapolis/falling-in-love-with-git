@@ -1,1193 +1,1142 @@
+---
+---
 <!DOCTYPE html>
-
 <html lang="en">
 
-    <head>
-        <title>Inro to Git</title>
+  <head>
+    <title>Inro to Git</title>
 
-        <link rel="stylesheet" type="text/css" href="reveal.css">
-        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="reveal.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
-        <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="reveal.js"></script>
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="reveal.js"></script>
 
-        <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
 
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="reveal" id="gdi">
 
-<body>
-
-
-<div class="reveal" id="gdi">
-
-    <div class="slides">
+      <div class="slides">
 
         <section>
 
-            <h3 class="uppercase">Intro to Git</h3>
-            <div class="meta uppercase big_meta">02.06.16 &#8729; GDI MPLS &#8729; Amy Gebhardt</div>
-            <img src="gdi_logo_badge.png" class="top_margin" style="width:35%">
+          <h3 class="uppercase">Intro to Git</h3>
+          <div class="meta uppercase big_meta">02.06.16 &#8729; GDI MPLS &#8729; Amy Gebhardt</div>
+          <img src="gdi_logo_badge.png" class="top_margin" style="width:35%">
 
         </section>
 
         <section>
-            <h3 class="uppercase">welcome!</h3>
+          <h3 class="uppercase">welcome!</h3>
         </section>
 
         <!-- Example of nested vertical slides -->
         <section>
 
-            <section>
-                <h3 class="uppercase">our goals</h3>
-            </section>
-            <section>
-                <div class="meta big_meta">What is version control and<br />why should we even care?</div>
-            </section>
-            <section>
-                <div class="meta big_meta">Get you and your computer set up.</div>
-            </section>
-            <section>
-                <div class="meta big_meta">Basics of git -- the essential commands</div>
-            </section>
-            <section>
-                <div class="meta big_meta">"Gitting" social with GitHub</div>
-            </section>
+          <section>
+            <h3 class="uppercase">our goals</h3>
+          </section>
+          <section>
+            <div class="meta big_meta">What is version control and<br />why should we even care?</div>
+          </section>
+          <section>
+            <div class="meta big_meta">Get you and your computer set up.</div>
+          </section>
+          <section>
+            <div class="meta big_meta">Basics of git -- the essential commands</div>
+          </section>
+          <section>
+            <div class="meta big_meta">"Gitting" social with GitHub</div>
+          </section>
 
         </section>
 
         <section>
-            <h3 class="uppercase">what is version control?</h3>
+          <h3 class="uppercase">what is version control?</h3>
         </section>
 
-<!--        <section>-->
-<!--            <h3 class="uppercase">the problem:</h3>-->
-<!---->
-<!--            <div class="shopping_list_wrapper">-->
-<!---->
-<!--                <div class="shopping_list">-->
-<!--                    Milk-->
-<!--                </div>-->
-<!---->
-<!--                <div class="shopping_list">-->
-<!--                    Wine<br />-->
-<!--                    Milk<br />-->
-<!--                    <span class="strikethrough">Oreos</span><br />-->
-<!--                    Cheese-->
-<!--                </div>-->
-<!---->
-<!--                <div class="shopping_list">-->
-<!--                    Milk<br/>-->
-<!--                    Oreos-->
-<!--                </div>-->
-<!---->
-<!--                <div class="shopping_list">-->
-<!--                    Penne Pasta<br />-->
-<!--                    Cheetos<br />-->
-<!--                    Milk<br />-->
-<!--                    Oreos<br />-->
-<!--                </div>-->
-<!---->
-<!---->
-<!--            </div>-->
-<!---->
-<!---->
-<!---->
-<!--        </section>-->
-
-
         <section>
-            <div class="meta big_meta">
-                Version control allows you and your team to do two powerful things:<br /><br />
+          <div class="meta big_meta">
+            Version control allows you and your team to do two powerful things:<br /><br />
 
-                <div class="fragment">
+            <div class="fragment">
 
-                    <h4>COLLABORATE</h4>
-                    <div class="small_meta">
-                        Create <i>anything</i> with other people - from academic papers to a collection of
-                        graphic design work to entire websites and applications.
-                    </div>
-
-                </div>
-
-                <div class="fragment">
-
-                    <h4>TRACK & REVERT CHANGES</h4>
-                    <div class="small_meta">
-                        Gives you the ability to go "back in time" - see who wrote what, when, and maybe even help
-                        track down some bugs.
-                    </div>
-
-                </div>
-
+              <h4>COLLABORATE</h4>
+              <div class="small_meta">
+                Create <i>anything</i> with other people - from academic papers to a collection of
+                graphic design work to entire websites and applications.
+              </div>
 
             </div>
-        </section>
 
-        <section>
-            <div class="meta big_meta">
+            <div class="fragment">
 
-                <h3 class="uppercase">Convinced?</h3><br />
-
-                <div class="fragment">
-
-                    <div class="meta big_meta">Employers want this.</div>
-                    <div class="small_meta">
-                        Will almost always be under the list of required skills in a job description. Plus, having a bunch
-                        of work on GitHub will be a great way to start a portfolio.
-                    </div>
-
-                </div>
+              <h4>TRACK &amp; REVERT CHANGES</h4>
+              <div class="small_meta">
+                Gives you the ability to go "back in time" - see who wrote what, when, and maybe even help
+                track down some bugs.
+              </div>
 
             </div>
+
+
+          </div>
         </section>
 
         <section>
-            <div class="meta big_meta">
+          <div class="meta big_meta">
 
-                <h3 class="uppercase blue">Version Control Types</h3><br />
+            <h3 class="uppercase">Convinced?</h3><br />
 
-                <div class="fragment">
+            <div class="fragment">
 
-                    <div class="meta big_meta white">Centralized Version Control Systems</div>
-                    <div class="small_meta">
-                        Collaborators "check out" files from a central server. Once their work is done, they "check in" again.<br />
-                        CVS, Subversion, Perforce
-                    </div>
-
-                </div><br />
-
-                <div class="fragment">
-
-                    <div class="meta big_meta white">Distributed Version Control Systems</div>
-                    <div class="small_meta">
-                        Collaborators mirror (or clone) a complete repository.<br />
-                        Git, Mercurial
-                    </div>
-
-                </div>
+              <div class="meta big_meta">Employers want this.</div>
+              <div class="small_meta">
+                Will almost always be under the list of required skills in a job description. Plus, having a bunch
+                of work on GitHub will be a great way to start a portfolio.
+              </div>
 
             </div>
+
+          </div>
         </section>
 
         <section>
+          <div class="meta big_meta">
 
-            <div class="spacer"></div>
-            <div class="spacer"></div>
+            <h3 class="uppercase blue">Version Control Types</h3><br />
 
-            <h3 class="uppercase blue">Version Control Vocabulary</h3>
+            <div class="fragment">
 
-            <section></section>
+              <div class="meta big_meta white">Centralized Version Control Systems</div>
+              <div class="small_meta">
+                Collaborators "check out" files from a central server. Once their work is done, they "check in" again.<br />
+                CVS, Subversion, Perforce
+              </div>
 
-                <section>
+            </div><br />
 
-                    <div class="spacer big_spacer"></div>
+            <div class="fragment">
 
-                    <div class="meta big_meta gold">REPOSITORY</div>
-                    <div class="small_meta white">
-                        Contains all of the project files and stores a revision history. Think of them as project folders.
-                    </div>
-
-                    <div class="spacer"></div>
-
-                    <div class="meta big_meta gold">CLONE</div>
-                    <div class="small_meta white">
-                        A copy of a repository that lives on your computer. This copy will keep track of your changes and allow you to "push" those to the remote repository.
-                    </div><br />
-
-                </section>
-
-                <section>
-                    <div class="spacer big_spacer"></div>
-
-                    <div class="meta big_meta gold">COMMIT</div>
-                    <div class="small_meta white">
-                        A change to a file or set of files. Think of this as "saving" a file. Usually has a message that goes along with it.
-                    </div>
-
-                    <div class="spacer"></div>
-
-                    <div class="meta big_meta gold">GIT</div>
-                    <div class="small_meta white">
-                        A program for tacking changes in files.
-                    </div><br />
-
-                </section>
-
-
-
-        </section>
-
-
-        <section>
-            <div class="meta big_meta">
-
-                <h3 class="uppercase blue">Intro to Git</h3><br />
-
-                <div class="fragment">
-
-                    <div class="meta big_meta gold">Fast & Easy Setup</div>
-                    <div class="small_meta white">
-                        Get a whole team and project up and running quickly.
-                    </div>
-
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta big_meta gold">Distributed</div>
-                    <div class="small_meta white">
-                        Collaborators mirror (or clone) a complete repository, so everyone has a local copy of the history.
-                    </div>
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta big_meta gold">Hashed Commits</div>
-                    <div class="small_meta white">
-                        Commits have unique IDs to keep track of<br />when changes were made and by who.
-                    </div>
-                </div>
+              <div class="meta big_meta white">Distributed Version Control Systems</div>
+              <div class="small_meta">
+                Collaborators mirror (or clone) a complete repository.<br />
+                Git, Mercurial
+              </div>
 
             </div>
+
+          </div>
         </section>
 
         <section>
 
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+
+          <h3 class="uppercase blue">Version Control Vocabulary</h3>
+
+          <section></section>
+
+          <section>
+
+            <div class="spacer big_spacer"></div>
+
+            <div class="meta big_meta gold">REPOSITORY</div>
+            <div class="small_meta white">
+              Contains all of the project files and stores a revision history. Think of them as project folders.
+            </div>
+
             <div class="spacer"></div>
+
+            <div class="meta big_meta gold">CLONE</div>
+            <div class="small_meta white">
+              A copy of a repository that lives on your computer. This copy will keep track of your changes and allow you to "push" those to the remote repository.
+            </div><br />
+
+          </section>
+
+          <section>
+            <div class="spacer big_spacer"></div>
+
+            <div class="meta big_meta gold">COMMIT</div>
+            <div class="small_meta white">
+              A change to a file or set of files. Think of this as "saving" a file. Usually has a message that goes along with it.
+            </div>
+
             <div class="spacer"></div>
 
-            <h3 class="uppercase blue">Install & Setup Git</h3><br />
+            <div class="meta big_meta gold">GIT</div>
+            <div class="small_meta white">
+              A program for tacking changes in files.
+            </div><br />
 
-            <section>
-                <a href="http://git-scm.com/downloads" alt="Download latest version of Git" target="_blank">
-                    <img src="install-git.png" alt="Download latest version of Git" style="max-width:70%;border:2px solid #fff;border-radius:10px;">
-                </a>
-            </section>
-
-            <section class="">
-
-                <div class="spacer big_spacer"></div>
-                <div class="meta big_meta gold">Get started with the command line.</div>
-                <div class="spacer"></div>
-
-                <h5 class="white">On a Mac:</h5>
-                <p class="meta big_meta white">Open "Terminal"</p>
-                <p class="meta big_meta white">Type "git" and hit enter.</p>
-
-                <div class="spacer"></div>
-
-                <h5 class="white">On Windows:</h5>
-                <p class="meta big_meta white">Open "Git Bash"</p>
-                <p class="meta big_meta white">Type "git" and hit enter.</p>
-
-            </section>
-
-                <section>
-                    <div class="meta big_meta gold">SSH KEYS</div>
-                    <div class="small_meta white">
-                        A way to identify and trust your computer<br />without having to type in a password.
-                    </div>
-                </section>
+          </section>
 
 
 
-            <section>
-                <div class="meta big_meta white">Check for SSH keys on your computer:</div>
-                <div class="meta extra_small_meta gold">This directory might not even exist just yet.</div>
-                <pre>/ls -al ~/.ssh</pre>
-            </section>
-
-            <section>
-                <div class="spacer big_spacer"></div>
-
-                <div class="fragment">
+        </section>
 
 
-                    <div class="meta big_meta white">Generate a new SSH key:</div>
-                    <pre class="wide_pre">ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span>
+        <section>
+          <div class="meta big_meta">
 
+            <h3 class="uppercase blue">Intro to Git</h3><br />
+
+            <div class="fragment">
+
+              <div class="meta big_meta gold">Fast &amp; Easy Setup</div>
+              <div class="small_meta white">
+                Get a whole team and project up and running quickly.
+              </div>
+
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="fragment">
+              <div class="meta big_meta gold">Distributed</div>
+              <div class="small_meta white">
+                Collaborators mirror (or clone) a complete repository, so everyone has a local copy of the history.
+              </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="fragment">
+              <div class="meta big_meta gold">Hashed Commits</div>
+              <div class="small_meta white">
+                Commits have unique IDs to keep track of<br />when changes were made and by who.
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+
+          <h3 class="uppercase blue">Install &amp; Setup Git</h3><br />
+
+          <section>
+            <a href="http://git-scm.com/downloads" alt="Download latest version of Git" target="_blank">
+              <img src="install-git.png" alt="Download latest version of Git" style="max-width:70%;border:2px solid #fff;border-radius:10px;">
+            </a>
+          </section>
+
+          <section class="">
+
+            <div class="spacer big_spacer"></div>
+            <div class="meta big_meta gold">Get started with the command line.</div>
+            <div class="spacer"></div>
+
+            <h5 class="white">On a Mac:</h5>
+            <p class="meta big_meta white">Open "Terminal"</p>
+            <p class="meta big_meta white">Type "git" and hit enter.</p>
+
+            <div class="spacer"></div>
+
+            <h5 class="white">On Windows:</h5>
+            <p class="meta big_meta white">Open "Git Bash"</p>
+            <p class="meta big_meta white">Type "git" and hit enter.</p>
+
+          </section>
+
+          <section>
+            <div class="meta big_meta gold">SSH KEYS</div>
+            <div class="small_meta white">
+              A way to identify and trust your computer<br />without having to type in a password.
+            </div>
+          </section>
+
+
+
+          <section>
+            <div class="meta big_meta white">Check for SSH keys on your computer:</div>
+            <div class="meta extra_small_meta gold">This directory might not even exist just yet.</div>
+            <pre><span class="terminal_prompt">$ </span>/ls -al ~/.ssh</pre>
+          </section>
+
+          <section>
+            <div class="spacer big_spacer"></div>
+
+            <div class="fragment">
+
+              <div class="meta big_meta white">Generate a new SSH key:</div>
+              <pre class=""><span class="terminal_prompt">$</span> ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span>
 <span class="comment"># Creates a new ssh key, using the provided email as a label</span>
 <span class="terminal_output">Generating public/private rsa key pair.</span>
 <span class="terminal_output">Enter file in which to save the key (/Users/you/.ssh/id_rsa):</span> <span class="terminal_action">[Press enter]</span></pre>
-                </div>
+<!-- {% highlight bash %} -->
+<!-- ssh-keygen -t rsa -C "your_email@example.com" -->
+<!-- # Creates a new ssh key, using the provided email as a label -->
+<!-- Generating public/private rsa key pair. -->
+<!-- Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter] -->
+<!-- {% endhighlight %} -->
+            </div>
 
-                <div class="fragment">
+            <div class="fragment">
 
-                    <div class="meta big_meta white">Enter passphrase:</div>
-                    <div class="meta extra_small_meta gold">Provides an extra layer of security to your SSH key.</div>
-                    <pre class="wide_pre"><span class="terminal_output">Enter passphrase (empty for no passphrase):</span><span class="terminal_action">[Type a passphrase]</span>
+              <div class="meta big_meta white">Enter passphrase:</div>
+              <div class="meta extra_small_meta gold">Provides an extra layer of security to your SSH key.</div>
+              <pre class=""><span class="terminal_output">Enter passphrase (empty for no passphrase):</span><span class="terminal_action">[Type a passphrase]</span>
 <span class="terminal_output">Enter same passphrase again:</span> <span class="terminal_action">[Type passphrase again]</span></pre>
-                </div>
-            </section>
+            </div>
+          </section>
 
-            <section>
+          <section>
 
-                <div class="meta big_meta white">So far so good?</div>
-                <pre class=""><span class="terminal_output">Your identification has been saved in /Users/you/.ssh/id_rsa.</span>
+            <div class="meta big_meta white">So far so good?</div>
+            <pre class=""><span class="terminal_output">Your identification has been saved in /Users/you/.ssh/id_rsa.</span>
 <span class="terminal_output">Your public key has been saved in /Users/you/.ssh/id_rsa.pub.</span>
 <span class="terminal_output">The key fingerprint is:</span>
 <span class="terminal_action">01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span></pre>
 
-            </section>
+          </section>
 
 
-            <section>
-                <div class="spacer big_spacer"></div>
+          <section>
+            <div class="spacer big_spacer"></div>
 
-                <div class="meta big_meta white">Add your SSH key to your account:</div>
-                <div class="spacer small_spacer"></div>
+            <div class="meta big_meta white">Add your SSH key to your account:</div>
+            <div class="spacer small_spacer"></div>
 
-                <div class="col quarter_col">
-                    <div class="meta extra_small_meta gold">First, copy the contents<br />of your key to your clipboard:</div>
-                    <pre class="centered_pre"><span class="comment"># on mac/linux:</span>
- pbcopy < ~/.ssh/id_rsa.pub
+            <div class="col quarter_col">
+              <div class="meta extra_small_meta gold">First, copy the contents<br />of your key to your clipboard:</div>
+              <pre class="centered_pre"><span class="comment"># on mac/linux:</span>
+<span class="terminal_prompt">$ </span>pbcopy < ~/.ssh/id_rsa.pub
 
 <span class="comment"># on windows:</span>
- clip < ~/.ssh/id_rsa.pub
-                    </pre>
+<span class="terminal_prompt">$ </span>clip < ~/.ssh/id_rsa.pub
+</pre>
 
-                </div>
+            </div>
 
-                <div class="col three_quarters_col">
-                    <div class="meta extra_small_meta gold">Second, add it to GitHub:</div><br />
-                    <img src="ssh_key_to_github.png" style="max-width:100%;">
-                </div>
+            <div class="col three_quarters_col">
+              <div class="meta extra_small_meta gold">Second, add it to GitHub:</div><br />
+              <img src="ssh_key_to_github.png" style="max-width:100%;">
+            </div>
 
-                <div style="clear:both;"></div>
-            </section>
+            <div style="clear:both;"></div>
+          </section>
 
-            <section>
-                <div class="meta big_meta white">ALMOST THERE...</div>
-            </section>
-
-
-            <section>
-                <div class="spacer big_spacer"></div>
-
-                <div class="meta big_meta gold">Setup gitconfig:</div>
-                <div class="spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta extra_small_meta white">Sets the default name for Git to use when you commit changes.</div>
-                    <pre class="">git config --global user.name <span class="string">"your name"</span></pre>
-                </div>
-
-                <div class="spacer small_spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta extra_small_meta white">Sets the default email for Git to use when you commit changes.</div>
-                    <pre class="">git config --global user.email <span class="string">"your_email@example.com"</span></pre>
-                </div>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">Make sure everything looks right!</div>
-                <pre>git config --list</pre>
-            </section>
-
-        </section>
+          <section>
+            <div class="meta big_meta white">ALMOST THERE...</div>
+          </section>
 
 
+          <section>
+            <div class="spacer big_spacer"></div>
 
-        <section>
-
-            <h3 class="uppercase blue">Create your first repository</h3><br />
-
-        </section>
-
-        <section>
-
-            <section>
-
-                <div class="meta big_meta white">Go to your home directory:</div>
-                <pre>cd ~/</pre>
-
-                <div class="fragment">
-                    <div class="meta big_meta white">Create a working directory:</div>
-                    <pre>mkdir my_first_repo
-cd my_first_repo</pre>
-                </div>
-
-                <div class="fragment">
-                    <div class="meta big_meta white">Initialize with Git:</div>
-                    <pre>git init
-git status</pre>
-                </div>
-
-            </section>
-        </section>
-
-        <section>
-
-            <div class="meta big_meta blue">Create a new hello_world.txt file in your<br />new my_first_repo directory.</div>
+            <div class="meta big_meta gold">Setup gitconfig:</div>
             <div class="spacer"></div>
 
             <div class="fragment">
-                <div class="meta big_meta white">Check the repo status:</div>
-                <pre>git status</pre>
+              <div class="meta extra_small_meta white">Sets the default name for Git to use when you commit changes.</div>
+              <pre class=""><span class="terminal_prompt">$ </span>git config --global user.name <span class="string">"your name"</span></pre>
             </div>
 
-            <div class="fragment">
-                <div class="meta big_meta white">Tell Git to track this new file:</div>
-                <pre>git add hello_world.txt</pre>
-            </div>
+            <div class="spacer small_spacer"></div>
 
             <div class="fragment">
-                <div class="meta big_meta white">Check the repo status:</div>
-                <pre>git status</pre>
+              <div class="meta extra_small_meta white">Sets the default email for Git to use when you commit changes.</div>
+              <pre class=""><span class="terminal_prompt">$ </span>git config --global user.email <span class="string">"your_email@example.com"</span></pre>
             </div>
+          </section>
+
+          <section>
+            <div class="meta big_meta white">Make sure everything looks right!</div>
+            <pre><span class="terminal_prompt">$ </span>git config --list</pre>
+          </section>
+
+        </section>
+
+
+
+        <section>
+
+          <h3 class="uppercase blue">Create your first repository</h3><br />
 
         </section>
 
         <section>
 
-            <h3 class="uppercase blue">Victory?</h3><br />
+          <section>
 
-        </section>
-
-        <section>
-            <h3 class="uppercase blue">Time to make some changes.</h3><br />
-        </section>
-
-        <section>
-
-            <div class="meta big_meta blue">Open the hello_world.txt file and add some text.</div>
-            <div class="spacer"></div>
+            <div class="meta big_meta white">Go to your home directory:</div>
+            <pre><span class="terminal_prompt">$ </span>cd ~/</pre>
 
             <div class="fragment">
-                <div class="meta big_meta white">Check the repo status:</div>
-                <pre>git status</pre>
+              <div class="meta big_meta white">Create a working directory:</div>
+              <pre><span class="terminal_prompt">$ </span>mkdir my_first_repo
+<span class="terminal_prompt">$ </span>cd my_first_repo</pre>
             </div>
 
             <div class="fragment">
-                <div class="meta big_meta white">Stage and commit the change:</div>
-                <pre>git add hello_world.txt</pre>
-                <pre>git commit -m "My first commit! Added hello_world to my repo."</pre>
+              <div class="meta big_meta white">Initialize with Git:</div>
+              <pre><span class="terminal_prompt">$ </span>git init
+<span class="terminal_prompt">$ </span>git status</pre>
             </div>
 
-            <div class="fragment">
-                <div class="meta big_meta white">Check the repo status:</div>
-                <pre>git status</pre>
-            </div>
-
-        </section>
-
-        <section>
-            <h3 class="uppercase blue">Wait... so what did we just do?</h3><br />
+          </section>
         </section>
 
         <section>
 
-            <div class="fragment">
-                <div class="meta big_meta white">When we <span class="gold">add</span> a new file, we tell Git to add
-                the file to the repository to be tracked.</div>
-            </div>
+          <div class="meta big_meta blue">Create a new hello_world.txt file in your<br />new my_first_repo directory.</div>
+          <div class="spacer"></div>
 
-            <div class="spacer"></div>
+          <div class="fragment">
+            <div class="meta big_meta white">Check the repo status:</div>
+            <pre><span class="terminal_prompt">$ </span>git status</pre>
+          </div>
 
-            <div class="fragment">
-                <div class="meta big_meta white">When we <span class="gold">stage</span> an existing file (also using 'add'), we tell Git to track
-                the current state of our file.</div>
-            </div>
+          <div class="fragment">
+            <div class="meta big_meta white">Tell Git to track this new file:</div>
+            <pre><span class="terminal_prompt">$ </span>git add hello_world.txt</pre>
+          </div>
 
-            <div class="spacer"></div>
-
-            <div class="fragment">
-                <div class="meta big_meta white">A <span class="gold">commit</span> saves the <i>changes</i> made to a file - not
-                the file as a whole. The commit will have a "hash" so we can track which changes were committed when and by whom.</div>
-            </div>
+          <div class="fragment">
+            <div class="meta big_meta white">Check the repo status:</div>
+            <pre><span class="terminal_prompt">$ </span>git status</pre>
+          </div>
 
         </section>
 
         <section>
 
-            <h3 class="uppercase blue">Our Progress:</h3><br />
-            <pre>git log</pre>
-            <pre><span class="terminal_output">commit</span> <span class="terminal_action">[HASH]</span>
+          <h3 class="uppercase blue">Victory?</h3><br />
+
+        </section>
+
+        <section>
+          <h3 class="uppercase blue">Time to make some changes.</h3><br />
+        </section>
+
+        <section>
+
+          <div class="meta big_meta blue">Open the hello_world.txt file and add some text.</div>
+          <div class="spacer"></div>
+
+          <div class="fragment">
+            <div class="meta big_meta white">Check the repo status:</div>
+            <pre><span class="terminal_prompt">$ </span>git status</pre>
+          </div>
+
+          <div class="fragment">
+            <div class="meta big_meta white">Stage and commit the change:</div>
+            <pre><span class="terminal_prompt">$ </span>git add hello_world.txt</pre>
+            <pre><span class="terminal_prompt">$ </span>git commit -m "My first commit! Added hello_world to my repo."</pre>
+          </div>
+
+          <div class="fragment">
+            <div class="meta big_meta white">Check the repo status:</div>
+            <pre><span class="terminal_prompt">$ </span>git status</pre>
+          </div>
+
+        </section>
+
+        <section>
+          <h3 class="uppercase blue">Wait... so what did we just do?</h3><br />
+        </section>
+
+        <section>
+
+          <div class="fragment">
+            <div class="meta big_meta white">When we <span class="gold">add</span> a new file, we tell Git to add
+              the file to the repository to be tracked.</div>
+          </div>
+
+          <div class="spacer"></div>
+
+          <div class="fragment">
+            <div class="meta big_meta white">When we <span class="gold">stage</span> an existing file (also using 'add'), we tell Git to track
+              the current state of our file.</div>
+          </div>
+
+          <div class="spacer"></div>
+
+          <div class="fragment">
+            <div class="meta big_meta white">A <span class="gold">commit</span> saves the <i>changes</i> made to a file - not
+              the file as a whole. The commit will have a "hash" so we can track which changes were committed when and by whom.</div>
+          </div>
+
+        </section>
+
+        <section>
+
+          <h3 class="uppercase blue">Our Progress:</h3><br />
+          <pre><span class="terminal_prompt">$ </span>git log</pre>
+          <pre><span class="terminal_output">commit</span> <span class="terminal_action">[HASH]</span>
 <span class="terminal_output">Author: </span><span class="terminal_action">[your name]</span>
 <span class="terminal_output">Date: </span><span class="terminal_action">[commit date]</span>
 
-    <span class="terminal_action">[ commit message ]</span>
-            </pre>
-
-
-
-        </section>
-
-
-
-        <section>
-
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-
-            <h3 class="uppercase blue">Undo Changes</h3><br />
-
-            <section>
-                <div class="meta big_meta white">Nobody's perfect.</div>
-                <div class="small_meta gold">
-                    Sometimes you'll want to "undo" or<br />"revert" some changes you've made.
-                </div>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">Go make some changes to hello_world.txt.</div>
-                <div class="meta small_meta gold">Add a line of text like "testing out undoing local changes!"</div>
-            </section>
-
-            <section>
-                <div class="">
-                    <div class="meta big_meta white">Check the repo status:</div>
-                    <pre>git status</pre>
-                </div>
-            </section>
-
-            <section>
-                <div class="spacer"></div>
-
-                <div class="">
-                    <div class="meta big_meta white">Tell Git to discard the changes made to hello_world.txt:</div>
-                    <pre>git checkout hello_world.txt</pre>
-                </div>
-                <div class="spacer"></div>
-                <div class="meta big_meta white">What does hello_world.txt look like now?</div>
-                <div class="meta extra_small_meta gold">Your changes should be gone!</div>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">But what if you've already <i>staged</i> these changes?</div>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">Go make some more changes to hello_world.txt.</div>
-                <div class="meta small_meta gold">Add a line of text like<br />"testing out undoing staged changes!"</div>
-            </section>
-
-            <section>
-                <div class="spacer"></div>
-
-                <div class="">
-                    <div class="meta big_meta white">Stage the change:</div>
-                    <pre>git add hello_world.txt</pre>
-                </div>
-                <div class="spacer small_spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta big_meta white">Confirm the repo status:</div>
-                    <pre>git status</pre>
-                </div>
-
-            </section>
-
-            <section>
-                <div class="spacer"></div>
-
-                <div class="">
-                    <div class="meta big_meta white">Tell Git to <i>undo</i> the add and to discard the changes made to hello_world.txt:</div>
-                    <pre>git reset HEAD hello_world.txt
-git checkout hello_world.txt</pre>
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta big_meta white">What does hello_world.txt look like now?</div>
-                    <div class="meta extra_small_meta gold">Your changes should be gone!</div>
-                </div>
-
-            </section>
-
-            <section>
-                <div class="meta big_meta white">But what if you've already <i>staged and committed</i> these changes?</div>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">Go make some more changes to hello_world.txt.</div>
-                <div class="meta small_meta gold">Add a line of text like<br />"testing out undoing committed changes!"</div>
-            </section>
-
-            <section>
-                <div class="spacer"></div>
-
-                <div class="">
-                    <div class="meta big_meta white">Stage & commit the change:</div>
-                    <pre>git add hello_world.txt
-git commit -m "Committing some stuff."</pre>
-                </div>
-                <div class="spacer small_spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta big_meta white">Print out the repo log:</div>
-                    <div class="meta extra_small_meta gold">You'll want to copy the commit HASH on this step.</div>
-                    <pre>git log</pre>
-                </div>
-
-            </section>
-
-            <section>
-                <div class="spacer"></div>
-
-                <div class="">
-                    <div class="meta big_meta white">Tell Git to <i>revert</i> the commit:</div>
-                    <pre>git revert <span class="terminal_action">[HASH]</span></pre>
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta big_meta white">What does hello_world.txt look like now?</div>
-                    <div class="meta extra_small_meta gold">Your changes should be gone!</div>
-                </div>
-
-            </section>
-
-        </section>
-
-
-        <section>
-
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-
-            <h3 class="uppercase blue">Branching</h3><br />
-
-            <section>
-                <div class="meta big_meta gold">Same repo, different branch:</div>
-                <div class="extra_small_meta white">
-                    Develop different code from the same base.
-                </div>
-                <div class="spacer small_spacer"></div>
-
-                <div class="meta big_meta gold">The master branch is left alone:</div>
-                <div class="extra_small_meta white">
-                    Conduct exploratory work without affecting the work on "master" branch.
-                </div>
-
-                <div class="spacer small_spacer"></div>
-
-                <div class="meta big_meta gold">Use the branch when you're ready:</div>
-                <div class="extra_small_meta white">
-                    Incorporate changes to your master branch only when you are ready.
-                </div>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">Branch:</div>
-                <div class="meta extra_small_meta gold">A parallel version of a repo.</div>
-                <div class="spacer small_spacer"></div>
-                <div class="meta big_meta white">The "master" branch:</div>
-                <div class="meta extra_small_meta gold">This is Git's default branch for all repositories.</div>
-            </section>
-
-            <section>
-
-                <div class="spacer"></div>
-                <div class="spacer"></div>
-
-                <img src="branching.png">
-
-            </section>
-
-            <section>
-                <div class="meta big_meta white">Create a new branch:</div>
-                <div class="meta extra_small_meta gold">Call it "version2"</div>
-                <pre>git checkout -b version2</pre>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">Go make some changes to hello_world.txt.</div>
-                <div class="meta extra_small_meta gold">Add a line of text like "testing out these really cool branches!"</div>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">Stage and commit the change:</div>
-                <pre>git add hello_world.txt</pre>
-                <pre>git commit -m "Adding changes to version 2."</pre>
-            </section>
-
-            <section>
-                <div class="meta big_meta gold">SWITCHING BRANCHES</div>
-                <div class="meta extra_small_meta white">You may need to bounce around from branch to branch.</div>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">See all branches for the current repository.</div>
-                <div class="meta extra_small_meta gold">The branch with the * is the active branch.</div>
-                <pre>git branch</pre>
-            </section>
-
-            <section>
-                <div class="meta big_meta white">Switch back to master.</div>
-                <div class="meta extra_small_meta gold">What does hello_world.txt look like?</div>
-                <pre>git checkout master</pre>
-            </section>
-
-
-            <section>
-                <div class="meta big_meta white">Switch back to version2.</div>
-                <div class="meta extra_small_meta gold">What does hello_world.txt look like now?</div>
-                <pre>git checkout version2</pre>
-            </section>
-
-            <section>
-                <h3 class="white">Pretty neat, right?</h3><br />
-                <div class="meta big_meta blue">But how do you <i>combine</i> the branches?</div>
-            </section>
+<span class="terminal_action">[ commit message ]</span>
+          </pre>
 
         </section>
 
         <section>
 
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+
+          <h3 class="uppercase blue">Undo Changes</h3><br />
+
+          <section>
+            <div class="meta big_meta white">Nobody's perfect.</div>
+            <div class="small_meta gold">
+              Sometimes you'll want to "undo" or<br />"revert" some changes you've made.
+            </div>
+          </section>
+
+          <section>
+            <div class="meta big_meta white">Go make some changes to hello_world.txt.</div>
+            <div class="meta small_meta gold">Add a line of text like "testing out undoing local changes!"</div>
+          </section>
+
+          <section>
+            <div class="">
+              <div class="meta big_meta white">Check the repo status:</div>
+              <pre><span class="terminal_prompt">$ </span>git status</pre>
+            </div>
+          </section>
+
+          <section>
             <div class="spacer"></div>
+
+            <div class="">
+              <div class="meta big_meta white">Tell Git to discard the changes made to hello_world.txt:</div>
+              <pre><span class="terminal_prompt">$ </span>git checkout hello_world.txt</pre>
+            </div>
+            <div class="spacer"></div>
+            <div class="meta big_meta white">What does hello_world.txt look like now?</div>
+            <div class="meta extra_small_meta gold">Your changes should be gone!</div>
+          </section>
+
+          <section>
+            <div class="meta big_meta white">But what if you've already <i>staged</i> these changes?</div>
+          </section>
+
+          <section>
+            <div class="meta big_meta white">Go make some more changes to hello_world.txt.</div>
+            <div class="meta small_meta gold">Add a line of text like<br />"testing out undoing staged changes!"</div>
+          </section>
+
+          <section>
             <div class="spacer"></div>
 
-            <h3 class="uppercase blue">Merging</h3><br />
-
-            <section>
-                <div class="meta big_meta white"><i>Merge</i> to get changes from one branch to another:</div>
-                <div class="small_meta gold">
-                    Collaboration at its best!
-                </div>
-            </section>
-
-            <section>
-
-                <div class="spacer"></div>
-
-                <div class="meta big_meta white">Switch to master:</div>
-                <pre>git checkout master</pre>
-
-                <div class="fragment">
-
-                    <div class="meta big_meta white">Merge with version2:</div>
-                    <pre>git merge version2</pre>
-
-                    <div class="meta extra_small_meta gold">
-                        "rebase" is another option, but for the sake of time, it won't be covered in this workshop.
-                    </div>
-                </div>
-
-            </section>
-
-            <section>
-
-                <div class="meta big_meta white">There will be conflicts.</div>
-                <div class="meta big_meta gold">Git is pretty smart, but sometimes it won't know exactly how to merge your branches.</div>
-
-            </section>
-
-            <section>
-                <div class="spacer"></div><br />
-
-                <div class="meta big_meta white">For example...</div>
-
-                <div class="spacer small_spacer"></div>
-
-                <div class="col with_border">
-                    <div class="meta extra_small_meta gold">(version-2-branch) history.txt:</div>
-                    <div class="spacer small_spacer"></div>
-
-                    <div class="meta extra_small_meta white monaco_font">
-                        1. GDI was founded in <span class="pink">2010</span>.<br />
-                        2. GDI is in 45 US cities.
-                    </div>
-                    <div class="spacer small_spacer"></div>
-
-                </div>
-
-                <div class="col with_border">
-                    <div class="meta extra_small_meta gold">(version-3-branch) history.txt:</div>
-                    <div class="spacer small_spacer"></div>
-
-                    <div class="meta extra_small_meta white monaco_font">
-                        1. GDI was founded in <span class="pink">2008</span>.<br />
-                        2. GDI is in 45 US cities.
-                    </div>
-                    <div class="spacer small_spacer"></div>
-
-                </div>
-
-                <div style="clear:both;"></div>
-
-                <div class="spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta big_meta white">Git will make you <i class="blue">resolve</i> this conflict before the merge can happen.</div>
-                </div>
-
-            </section>
-
-            <section>
-
-                <div class="spacer big_spacer"></div>
-
-                <div class="meta big_meta white">Make sure you're in master:</div>
-                <pre>git checkout master</pre>
-
-                <div class="spacer small_spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta big_meta white">Change the first line of hello_world.txt.</div>
-                    <div class="meta extra_small_meta gold">We're going to create a conflict with this line.</div>
-                </div>
-
-                <div class="spacer small_spacer"></div>
-
-
-                <div class="fragment">
-                    <div class="meta big_meta white">Stage and commit this change:</div>
-                    <pre>git add hello_world.txt
-git commit -m "Changing the first line of hello_world.txt in master."</pre>
-                </div>
-
-            </section>
-
-            <section>
-
-                <div class="spacer big_spacer"></div>
-
-
-                <div class="meta big_meta white">Switch to version2:</div>
-                    <pre>git checkout version2</pre>
-
-                    <div class="spacer small_spacer"></div>
-
-                    <div class="fragment">
-                        <div class="meta big_meta white">Change the first line of hello_world.txt.</div>
-                        <div class="meta extra_small_meta gold">Make it something different than in the previous step.</div>
-                    </div>
-
-                    <div class="spacer small_spacer"></div>
-
-                    <div class="fragment">
-
-                        <div class="meta big_meta white">Stage and commit this change:</div>
-                    <pre>git add hello_world.txt
-git commit -m "Changing the first line of hello_world.txt in version2."</pre>
-
-                    </div>
-
-
-
-            </section>
-
-            <section>
-
-                <div class="spacer small_spacer"></div>
-
-                <div class="meta big_meta white">Merge from master into version2:</div>
-                <pre>git merge master</pre>
-
-                <div class="spacer small_spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta big_meta white">You should see something like:</div>
-                    <pre><span class="terminal_output">CONFLICT (content): Merge conflict in hello_world.txt</span></pre>
-                </div>
-
-            </section>
-
-            <section>
-                <div class="spacer big_spacer"></div>
-
-                <div class="meta big_meta gold">Solving conflicts:</div>
-                <div class="spacer small_spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta small_meta blue">Where are the conflicts?</div>
-                    <div class="meta extra_small_meta white">
-                        When you open hello_world.txt, you'll see both changes. Git adds <i class="pink">conflict markers</i> to the areas it couldn't resolve.
-                    </div>
-                </div>
-
-
-                <div class="spacer small_spacer"></div>
-
-                <div class="fragment">
-                    <div class="meta small_meta blue">How do you fix them?</div>
-                    <div class="meta extra_small_meta white">
-                        Delete Git's <i class="pink">conflict markers</i> and make the appropriate change. You decided which line is correct, or you can even add a whole new line. Make this file look
-                        exactly like you want it.
-                    </div>
-                </div>
-
-                <div class="spacer small_spacer"></div>
-
-                <div class="fragment">
-
-                    <div class="meta small_meta blue">Be on your way:</div>
-                    <pre>git add hello_world.txt
-git commit -m "Fixing the first line of hello_world.txt in master."</pre>
-
-                </div>
-
-
-
-
-
-            </section>
-
-
-        </section>
-
-
-        <section>
-            <h3 class="uppercase blue">Let's get Social.</h3>
-        </section>
-
-        <section>
-            <h3 class="uppercase blue">GitHub</h3>
+            <div class="">
+              <div class="meta big_meta white">Stage the change:</div>
+              <pre><span class="terminal_prompt">$ </span>git add hello_world.txt</pre>
+            </div>
             <div class="spacer small_spacer"></div>
-            <div id="github_bg"><img src="github.png"></div>
+
+            <div class="fragment">
+              <div class="meta big_meta white">Confirm the repo status:</div>
+              <pre><span class="terminal_prompt">$ </span>git status</pre>
+            </div>
+
+          </section>
+
+          <section>
+            <div class="spacer"></div>
+
+            <div class="">
+              <div class="meta big_meta white">Tell Git to <i>undo</i> the add and to discard the changes made to hello_world.txt:</div>
+              <pre><span class="terminal_prompt">$ </span>git reset HEAD hello_world.txt
+<span class="terminal_prompt">$ </span>git checkout hello_world.txt</pre>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="fragment">
+              <div class="meta big_meta white">What does hello_world.txt look like now?</div>
+              <div class="meta extra_small_meta gold">Your changes should be gone!</div>
+            </div>
+
+          </section>
+
+          <section>
+            <div class="meta big_meta white">But what if you've already <i>staged and committed</i> these changes?</div>
+          </section>
+
+          <section>
+            <div class="meta big_meta white">Go make some more changes to hello_world.txt.</div>
+            <div class="meta small_meta gold">Add a line of text like<br />"testing out undoing committed changes!"</div>
+          </section>
+
+          <section>
+            <div class="spacer"></div>
+
+            <div class="">
+              <div class="meta big_meta white">Stage &amp; commit the change:</div>
+              <pre><span class="terminal_prompt">$ </span>git add hello_world.txt
+<span class="terminal_prompt">$ </span>git commit -m "Committing some stuff."</pre>
+            </div>
             <div class="spacer small_spacer"></div>
-            <div class="fragment meta small_meta white">Launched in <span class="pink">2008</span>.</div>
-            <div class="fragment meta small_meta white">Leader in <span class="pink">social coding</span>.</div>
-            <div class="fragment meta small_meta white">GitHub is a commercial site that allows users to host Git repositories publicly and privately.</div>
-            <div class="fragment meta small_meta white"><span class="pink">Open source projects</span> host or mirror their repos on GitHub.</div>
-            <div class="fragment meta small_meta white">Post your own code for others to use or contribute to.</div>
-        </section>
 
-        <section>
+            <div class="fragment">
+              <div class="meta big_meta white">Print out the repo log:</div>
+              <div class="meta extra_small_meta gold">You'll want to copy the commit HASH on this step.</div>
+              <pre><span class="terminal_prompt">$ </span>git log</pre>
+            </div>
 
-            <div class="spacer"></div>
-            <h3 class="uppercase blue">Your first GitHub Repo</h3>
+          </section>
 
-            <section>
-                <div class="spacer small_spacer"></div>
-                <img src="new_github_repo.png">
-            </section>
-
-            <section>
-                <div class="spacer"></div>
-                <img src="new_repo_form.png" style="width:85%;margin-top:3.5em;">
-            </section>
-
-            <section>
-                <div class="meta big_meta pink">README</div><br />
-                <div class="meta small_meta white">
-                    "While a README isn't a required part of a GitHub repository, it is a very good idea to have one.<br />
-                    READMEs are a great place to describe your project or <br />add some documentation such as how to install<br />
-                    or use your project. You might want to include contact information - if your project becomes
-                    popular <br />people will want to help you out."
-                </div>
-            </section>
-        </section>
-
-        <section>
-
-            <div class="spacer"></div>
+          <section>
             <div class="spacer"></div>
 
-            <h3 class="uppercase blue">More Version Control Vocabulary</h3>
+            <div class="">
+              <div class="meta big_meta white">Tell Git to <i>revert</i> the commit:</div>
+              <pre><span class="terminal_prompt">$ </span>git revert <span class="terminal_action">[HASH]</span></pre>
+            </div>
 
-            <section></section>
-
-            <section>
-
-                <div class="spacer big_spacer"></div>
-
-                <div class="meta big_meta gold">REMOTE</div>
-                <div class="small_meta white">
-                    This is the version of a repository that is hosted on a server, like GitHub.
-                </div>
-
-
-            </section>
-
-            <section>
-                <div class="spacer big_spacer"></div>
-
-                <div class="meta big_meta gold">FETCH</div>
-                <div class="small_meta white">
-                    This is when you get the latest changes from an online repository <i>without</i> merging them in.
-                </div>
-
-                <div class="spacer"></div>
-
-                <div class="meta big_meta gold">PULL</div>
-                <div class="small_meta white">
-                    This step combines <i class="pink">fetching</i> and <i class="pink">merging</i> changes from a remote repository.
-                </div><br />
-
-            </section>
-
-            <section>
-                <div class="spacer big_spacer"></div>
-
-                <div class="meta big_meta gold">PUSH</div>
-                <div class="small_meta white">
-                    Sends your committed changes to a remote repository.
-                </div>
-            </section>
-
-
-        </section>
-
-        <section>
             <div class="spacer"></div>
-            <h3 class="uppercase blue">Your first GitHub Repo</h3>
 
-            <section>
-                <div class="meta big_meta white">Because Git is <i class="pink">distributed</i>, you'll want to get a local copy of your GitHub repository. </div><br />
+            <div class="fragment">
+              <div class="meta big_meta white">What does hello_world.txt look like now?</div>
+              <div class="meta extra_small_meta gold">Your changes should be gone!</div>
+            </div>
 
-                <div class="spacer"></div>
-
-                <div class="fragment">
-
-                    <div class="meta small_meta gold">Go back to your root directory and make a new directory:</div>
-                        <pre>cd ../
-mkdir hello_github
-cd hello_github</pre>
-                </div>
-
-
-            </section>
-
-            <section>
-
-                <div class="spacer small_spacer"></div>
-
-                <div class="">
-                    <div class="meta small_meta white">Initialize with Git & add a <i class="pink">remote:</i></div>
-                    <pre>git init
-git remote add origin git@<span class="terminal_action">github.com:username/NAME-OF-REPO</span></pre>
-                </div>
-
-                <div class="spacer small_spacer"></div>
-
-
-                <div class="fragment">
-                    <div class="meta small_meta white"><i class="pink">Pull</i> changes from the origin remote, master branch and merge them to your local branch:</div>
-                    <pre>git pull origin master</pre>
-                </div>
-
-            </section>
-
-            <section>
-
-                <div class="">
-                    <div class="meta big_meta white">Open and edit the README file.</div>
-                    <div class="meta extra_small_meta gold">We're going to do this locally, then <i>push</i> the changes to our remote repo.</div>
-                </div>
-
-                <div class="spacer"></div>
-
-
-                <div class="fragment">
-                    <div class="meta small_meta white">Stage, commit & push:</i></div>
-                    <pre>git add README
-git commit -m "Updating readme file"
-git push origin master</pre>
-                </div>
-
-                <div class="spacer"></div>
-
-
-                <div class="fragment">
-                    <div class="meta big_meta white">What does your README look like on GitHub?</div>
-                </div>
-
-            </section>
+          </section>
 
         </section>
 
 
         <section>
 
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+
+          <h3 class="uppercase blue">Branching</h3><br />
+
+          <section>
+            <div class="meta big_meta gold">Same repo, different branch:</div>
+            <div class="extra_small_meta white">
+              Develop different code from the same base.
+            </div>
+            <div class="spacer small_spacer"></div>
+
+            <div class="meta big_meta gold">The master branch is left alone:</div>
+            <div class="extra_small_meta white">
+              Conduct exploratory work without affecting the work on "master" branch.
+            </div>
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="meta big_meta gold">Use the branch when you're ready:</div>
+            <div class="extra_small_meta white">
+              Incorporate changes to your master branch only when you are ready.
+            </div>
+          </section>
+
+          <section>
+            <div class="meta big_meta white">Branch:</div>
+            <div class="meta extra_small_meta gold">A parallel version of a repo.</div>
+            <div class="spacer small_spacer"></div>
+            <div class="meta big_meta white">The "master" branch:</div>
+            <div class="meta extra_small_meta gold">This is Git's default branch for all repositories.</div>
+          </section>
+
+          <section>
+
             <div class="spacer"></div>
-            <h3 class="uppercase blue">Forking</h3>
+            <div class="spacer"></div>
 
-            <section>
+            <img src="branching.png">
 
-                <div class="meta big_meta white">There are millions of public repos on GitHub.</div>
-                <div class="spacer"></div>
+          </section>
 
-                <div class="meta big_meta white">If you want to <i class="pink">use</i> or <i class="pink">contribute</i> to <br />a repository, you can <i class="gold">fork</i> it.</div>
+          <section>
+            <div class="meta big_meta white">Create a new branch:</div>
+            <div class="meta extra_small_meta gold">Call it "version2"</div>
+            <pre><span class="terminal_prompt">$ </span>git checkout -b version2</pre>
+          </section>
 
-            </section>
+          <section>
+            <div class="meta big_meta white">Go make some changes to hello_world.txt.</div>
+            <div class="meta extra_small_meta gold">Add a line of text like "testing out these really cool branches!"</div>
+          </section>
 
-            <section>
+          <section>
+            <div class="meta big_meta white">Stage and commit the change:</div>
+            <pre><span class="terminal_prompt">$ </span>git add hello_world.txt</pre>
+            <pre><span class="terminal_prompt">$ </span>git commit -m "Adding changes to version 2."</pre>
+          </section>
 
-                <div class="meta big_meta white">
-                    This will make a personal copy of another user's repository that will live on your account. While you can work with it and make changes without affecting the original repository, it is still
-                    attached, making it easy for you to <i class="pink">contribute</i> back to the original when you're ready.
-                </div>
+          <section>
+            <div class="meta big_meta gold">SWITCHING BRANCHES</div>
+            <div class="meta extra_small_meta white">You may need to bounce around from branch to branch.</div>
+          </section>
 
-                <div class="spacer"></div>
+          <section>
+            <div class="meta big_meta white">See all branches for the current repository.</div>
+            <div class="meta extra_small_meta gold">The branch with the * is the active branch.</div>
+            <pre><span class="terminal_prompt">$ </span>git branch</pre>
+          </section>
 
-                <img src="fork.png">
+          <section>
+            <div class="meta big_meta white">Switch back to master.</div>
+            <div class="meta extra_small_meta gold">What does hello_world.txt look like?</div>
+            <pre><span class="terminal_prompt">$ </span>git checkout master</pre>
+          </section>
 
 
+          <section>
+            <div class="meta big_meta white">Switch back to version2.</div>
+            <div class="meta extra_small_meta gold">What does hello_world.txt look like now?</div>
+            <pre><span class="terminal_prompt">$ </span>git checkout version2</pre>
+          </section>
 
-            </section>
-
+          <section>
+            <h3 class="white">Pretty neat, right?</h3><br />
+            <div class="meta big_meta blue">But how do you <i>combine</i> the branches?</div>
+          </section>
 
         </section>
 
         <section>
 
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+
+          <h3 class="uppercase blue">Merging</h3><br />
+
+          <section>
+            <div class="meta big_meta white"><i>Merge</i> to get changes from one branch to another:</div>
+            <div class="small_meta gold">
+              Collaboration at its best!
+            </div>
+          </section>
+
+          <section>
+
             <div class="spacer"></div>
-            <h3 class="uppercase blue">Pull Requests</h3>
 
-            <section>
+            <div class="meta big_meta white">Switch to master:</div>
+            <pre><span class="terminal_prompt">$ </span>git checkout master</pre>
 
-                <div class="meta big_meta white">After you fork and clone a repo, all pushed changes will go to <i>your</i> fork.</div>
-                <div class="spacer"></div>
-                <div class="meta small_meta gold">These changes will not affect the original repo.</div>
+            <div class="fragment">
 
-            </section>
+              <div class="meta big_meta white">Merge with version2:</div>
+              <pre><span class="terminal_prompt">$ </span>git merge version2</pre>
 
-            <section>
+              <div class="meta extra_small_meta gold">
+                "rebase" is another option, but for the sake of time, it won't be covered in this workshop.
+              </div>
+            </div>
 
-                <div class="meta big_meta white">
-                    If you want to get your changes to be incorporated in the original repo, you <br />can submit a <span class="gold">pull request.</span>
-                </div>
+          </section>
 
-                <div class="spacer"></div>
+          <section>
 
-                <img src="pull_request.png">
+            <div class="meta big_meta white">There will be conflicts.</div>
+            <div class="meta big_meta gold">Git is pretty smart, but sometimes it won't know exactly how to merge your branches.</div>
 
-            </section>
+          </section>
 
+          <section>
+            <div class="spacer"></div><br />
+
+            <div class="meta big_meta white">For example...</div>
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="col with_border">
+              <div class="meta extra_small_meta gold">(version-2-branch) history.txt:</div>
+              <div class="spacer small_spacer"></div>
+
+              <div class="meta extra_small_meta white monaco_font">
+                1. GDI was founded in <span class="pink">2010</span>.<br />
+                2. GDI is in 45 US cities.
+              </div>
+              <div class="spacer small_spacer"></div>
+
+            </div>
+
+            <div class="col with_border">
+              <div class="meta extra_small_meta gold">(version-3-branch) history.txt:</div>
+              <div class="spacer small_spacer"></div>
+
+              <div class="meta extra_small_meta white monaco_font">
+                1. GDI was founded in <span class="pink">2008</span>.<br />
+                2. GDI is in 45 US cities.
+              </div>
+              <div class="spacer small_spacer"></div>
+
+            </div>
+
+            <div style="clear:both;"></div>
+
+            <div class="spacer"></div>
+
+            <div class="fragment">
+              <div class="meta big_meta white">Git will make you <i class="blue">resolve</i> this conflict before the merge can happen.</div>
+            </div>
+
+          </section>
+
+          <section>
+
+            <div class="spacer big_spacer"></div>
+
+            <div class="meta big_meta white">Make sure you're in master:</div>
+            <pre><span class="terminal_prompt">$ </span>git checkout master</pre>
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="fragment">
+              <div class="meta big_meta white">Change the first line of hello_world.txt.</div>
+              <div class="meta extra_small_meta gold">We're going to create a conflict with this line.</div>
+            </div>
+
+            <div class="spacer small_spacer"></div>
+
+
+            <div class="fragment">
+              <div class="meta big_meta white">Stage and commit this change:</div>
+              <pre><span class="terminal_prompt">$ </span>git add hello_world.txt</pre>
+	      <pre><span class="terminal_prompt">$ </span>git commit -m "Changing the first line of hello_world.txt in master."</pre>
+            </div>
+
+          </section>
+
+          <section>
+
+            <div class="spacer big_spacer"></div>
+
+
+            <div class="meta big_meta white">Switch to version2:</div>
+            <pre><span class="terminal_prompt">$ </span>git checkout version2</pre>
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="fragment">
+              <div class="meta big_meta white">Change the first line of hello_world.txt.</div>
+              <div class="meta extra_small_meta gold">Make it something different than in the previous step.</div>
+            </div>
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="fragment">
+
+              <div class="meta big_meta white">Stage and commit this change:</div>
+              <pre><span class="terminal_prompt">$ </span>git add hello_world.txt
+<span class="terminal_prompt">$ </span>git commit -m "Changing the first line of hello_world.txt in version2."</pre>
+
+            </div>
+
+
+
+          </section>
+
+          <section>
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="meta big_meta white">Merge from master into version2:</div>
+            <pre><span class="terminal_prompt">$ </span>git merge master</pre>
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="fragment">
+              <div class="meta big_meta white">You should see something like:</div>
+              <pre><span class="terminal_output">CONFLICT (content): Merge conflict in hello_world.txt</span></pre>
+            </div>
+
+          </section>
+
+          <section>
+            <div class="spacer big_spacer"></div>
+
+            <div class="meta big_meta gold">Solving conflicts:</div>
+            <div class="spacer small_spacer"></div>
+
+            <div class="fragment">
+              <div class="meta small_meta blue">Where are the conflicts?</div>
+              <div class="meta extra_small_meta white">
+                When you open hello_world.txt, you'll see both changes. Git adds <i class="pink">conflict markers</i> to the areas it couldn't resolve.
+              </div>
+            </div>
+
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="fragment">
+              <div class="meta small_meta blue">How do you fix them?</div>
+              <div class="meta extra_small_meta white">
+                Delete Git's <i class="pink">conflict markers</i> and make the appropriate change. You decided which line is correct, or you can even add a whole new line. Make this file look
+                exactly like you want it.
+              </div>
+            </div>
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="fragment">
+
+              <div class="meta small_meta blue">Be on your way:</div>
+              <pre><span class="terminal_prompt">$ </span>git add hello_world.txt
+<span class="terminal_prompt">$ </span>git commit -m "Fixing the first line of hello_world.txt in master."</pre>
+
+            </div>
+
+          </section>
 
         </section>
 
         <section>
+          <h3 class="uppercase blue">Let's get Social.</h3>
+        </section>
 
-            <h1 class="blue">Thanks for coming!</h1>
+        <section>
+          <h3 class="uppercase blue">GitHub</h3>
+          <div class="spacer small_spacer"></div>
+          <div id="github_bg"><img src="github.png"></div>
+          <div class="spacer small_spacer"></div>
+          <div class="fragment meta small_meta white">Launched in <span class="pink">2008</span>.</div>
+          <div class="fragment meta small_meta white">Leader in <span class="pink">social coding</span>.</div>
+          <div class="fragment meta small_meta white">GitHub is a commercial site that allows users to host Git repositories publicly and privately.</div>
+          <div class="fragment meta small_meta white"><span class="pink">Open source projects</span> host or mirror their repos on GitHub.</div>
+          <div class="fragment meta small_meta white">Post your own code for others to use or contribute to.</div>
+        </section>
 
-            <h4 class="white">We want your feedback:</h4>
-            <h5 class="gold">tinyurl.com/gdiMpls</h5>
+        <section>
+
+          <div class="spacer"></div>
+          <h3 class="uppercase blue">Your first GitHub Repo</h3>
+
+          <section>
+            <div class="spacer small_spacer"></div>
+            <img src="new_github_repo.png">
+          </section>
+
+          <section>
+            <div class="spacer"></div>
+            <img src="new_repo_form.png" style="width:85%;margin-top:3.5em;">
+          </section>
+
+          <section>
+            <div class="meta big_meta pink">README</div><br />
+            <div class="meta small_meta white">
+              "While a README isn't a required part of a GitHub repository, it is a very good idea to have one.<br />
+              READMEs are a great place to describe your project or <br />add some documentation such as how to install<br />
+              or use your project. You might want to include contact information - if your project becomes
+              popular <br />people will want to help you out."
+            </div>
+          </section>
+        </section>
+
+        <section>
+
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+
+          <h3 class="uppercase blue">More Version Control Vocabulary</h3>
+
+          <section></section>
+
+          <section>
+
+            <div class="spacer big_spacer"></div>
+
+            <div class="meta big_meta gold">REMOTE</div>
+            <div class="small_meta white">
+              This is the version of a repository that is hosted on a server, like GitHub.
+            </div>
+
+          </section>
+
+          <section>
+            <div class="spacer big_spacer"></div>
+
+            <div class="meta big_meta gold">FETCH</div>
+            <div class="small_meta white">
+              This is when you get the latest changes from an online repository <i>without</i> merging them in.
+            </div>
 
             <div class="spacer"></div>
 
-            <h4 class="white">Upcoming Classes:</h4>
-            <h5 class="gold">10/10 & 10/11 : Advanced HTML/CSS</h5>
-            <h5 class="gold">10/24 & 10/25 : Intro to JavaScript</h5>
+            <div class="meta big_meta gold">PULL</div>
+            <div class="small_meta white">
+              This step combines <i class="pink">fetching</i> and <i class="pink">merging</i> changes from a remote repository.
+            </div><br />
+
+          </section>
+
+          <section>
+            <div class="spacer big_spacer"></div>
+
+            <div class="meta big_meta gold">PUSH</div>
+            <div class="small_meta white">
+              Sends your committed changes to a remote repository.
+            </div>
+          </section>
 
         </section>
 
-    </div>
+        <section>
+          <div class="spacer"></div>
+          <h3 class="uppercase blue">Your first GitHub Repo</h3>
 
-    <footer>
-        <div id="wifi_logistics">
-            <span class="label">Network:</span> <span class="value">TBD</span><br />
-            <span class="label">Password:</span> <span class="value">TBD</span>
-        </div>
-        <div id="twitter">
-            <i class="fa fa-twitter"></i>
-            @GDImpls &#8729; @amlyhamm &#8729; #learnGit &#8729; #gdi
-        </div>
-    </footer>
+          <section>
+            <div class="meta big_meta white">Because Git is <i class="pink">distributed</i>, you'll want to get a local copy of your GitHub repository. </div><br />
 
-</div>
+            <div class="spacer"></div>
+
+            <div class="fragment">
+
+              <div class="meta small_meta gold">Go back to your root directory and make a new directory:</div>
+              <pre><span class="terminal_prompt">$ </span>cd ../
+<span class="terminal_prompt">$ </span>mkdir hello_github
+<span class="terminal_prompt">$ </span>cd hello_github</pre>
+            </div>
+
+          </section>
+
+          <section>
+
+            <div class="spacer small_spacer"></div>
+
+            <div class="">
+              <div class="meta small_meta white">Initialize with Git &amp; add a <i class="pink">remote:</i></div>
+              <pre><span class="terminal_prompt">$ </span>git init
+<span class="terminal_prompt">$ </span>git remote add origin git@<span class="terminal_action">github.com:username/NAME-OF-REPO</span></pre>
+            </div>
+
+            <div class="spacer small_spacer"></div>
+
+
+            <div class="fragment">
+              <div class="meta small_meta white"><i class="pink">Pull</i> changes from the origin remote, master branch and merge them to your local branch:</div>
+              <pre><span class="terminal_prompt">$ </span>git pull origin master</pre>
+            </div>
+
+          </section>
+
+          <section>
+
+            <div class="">
+              <div class="meta big_meta white">Open and edit the README file.</div>
+              <div class="meta extra_small_meta gold">We're going to do this locally, then <i>push</i> the changes to our remote repo.</div>
+            </div>
+
+            <div class="spacer"></div>
+
+
+            <div class="fragment">
+              <div class="meta small_meta white">Stage, Commit &amp; push:</div>
+	      <pre><span class="terminal_prompt">$ </span>git add README
+<span class="terminal_prompt">$ </span>git commit -m "Updating readme file"
+<span class="terminal_prompt">$ </span>git push origin master</pre>
+	    </div>
+
+	    <div class="spacer"></div>
+
+
+	    <div class="fragment">
+	      <div class="meta big_meta white">What does your README look like on GitHub?</div>
+	    </div>
+
+	  </section>
+
+	</section>
+
+
+	<section>
+
+	  <div class="spacer"></div>
+	  <h3 class="uppercase blue">Forking</h3>
+
+	  <section>
+
+	    <div class="meta big_meta white">There are millions of public repos on GitHub.</div>
+	    <div class="spacer"></div>
+
+	    <div class="meta big_meta white">If you want to <i class="pink">use</i> or <i class="pink">contribute</i> to <br />a repository, you can <i class="gold">fork</i> it.</div>
+
+	  </section>
+
+	  <section>
+
+	    <div class="meta big_meta white">
+	      This will make a personal copy of another user's repository that will live on your account. While you can work with it and make changes without affecting the original repository, it is still
+	      attached, making it easy for you to <i class="pink">contribute</i> back to the original when you're ready.
+	    </div>
+
+	    <div class="spacer"></div>
+
+	    <img src="fork.png">
 
 
 
+	  </section>
 
-</body>
+
+	</section>
+
+	<section>
+
+	  <div class="spacer"></div>
+	  <h3 class="uppercase blue">Pull Requests</h3>
+
+	  <section>
+
+	    <div class="meta big_meta white">After you fork and clone a repo, all pushed changes will go to <i>your</i> fork.</div>
+	    <div class="spacer"></div>
+	    <div class="meta small_meta gold">These changes will not affect the original repo.</div>
+
+	  </section>
+
+	  <section>
+
+	    <div class="meta big_meta white">
+	      If you want to get your changes to be incorporated in the original repo, you <br />can submit a <span class="gold">pull request.</span>
+	    </div>
+
+	    <div class="spacer"></div>
+
+	    <img src="pull_request.png">
+
+	  </section>
+
+	</section>
+
+	<section>
+
+	  <h1 class="blue">Thanks for coming!</h1>
+
+	  <h4 class="white">We want your feedback:</h4>
+	  <h5 class="gold">tinyurl.com/gdiMpls</h5>
+
+	  <div class="spacer"></div>
+
+	  <h4 class="white">Upcoming Classes:</h4>
+	  <h5 class="gold">10/10 &amp; 10/11 : Advanced HTML/CSS</h5>
+	  <h5 class="gold">10/24 &amp; 10/25 : Intro to JavaScript</h5>
+
+	</section>
+
+      </div> <!-- .slides -->
+
+      <footer>
+	<div id="wifi_logistics">
+	  <span class="label">Network:</span> <span class="value">TBD</span><br />
+	  <span class="label">Password:</span> <span class="value">TBD</span>
+	</div>
+	<div id="twitter">
+	  <i class="fa fa-twitter"></i>
+	  @GDImpls &#8729; @amlyhamm &#8729; #learnGit &#8729; #gdi
+	</div>
+      </footer>
+
+    </div> <!-- .reveal #gdi -->
+
+  </body>
 </html>
