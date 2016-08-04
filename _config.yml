@@ -1,0 +1,15 @@
+# Configuration options
+#
+# These are the default configuration options
+
+# This is where jekyll will find the files to work on
+source: source
+
+# This is the default location when running `jekyll serve`
+destination: _site
+
+# These are used to create working links in the files.
+# For running `jekyll serve` they're empty so viewing the slides
+# during development is easy, and still be able to test links.
+baseurl: ""
+url: ""

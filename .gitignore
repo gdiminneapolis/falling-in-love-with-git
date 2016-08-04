@@ -2,3 +2,4 @@ _gh-pages/
 .DS_Store
 tmp/
 publish/
+_site/
