@@ -1,0 +1,36 @@
+{
+  "date": "2016-10-08",
+  "instructor": {
+    "name": "Tamara Temple",
+    "twitter": "tamouse",
+    "github": "tamouse",
+    "email": "tamouse@gmail.com",
+    "link": "http://www.tamouse.org"
+  },
+  "network": {
+    "ssid": "TBD",
+    "password": "TBD"
+  },
+  "upcoming_classes": [
+    {
+      "link": "http://www.meetup.com/Girl-Develop-It-Minneapolis/events/233796179/",
+      "title": "Intro to HTML and CSS",
+      "date": "October 15th"
+    },
+    {
+      "link": "http://www.meetup.com/Girl-Develop-It-Minneapolis/events/234125660/",
+      "title": "Advanced HTML and CSS",
+      "date": "October 22nd"
+    },
+    {
+      "link": "http://www.meetup.com/Girl-Develop-It-Minneapolis/events/234149873/",
+      "title": "Intro to App Building with Salesforce",
+      "date": "October 29th"
+    },
+    {
+      "link": "http://www.meetup.com/Girl-Develop-It-Minneapolis/events/233914687/",
+      "title": "Intro to JavaScript: The Programming Language of the Web",
+      "date": "November 5th & 6th"
+    }
+  ]
+}

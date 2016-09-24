@@ -4,7 +4,7 @@
 <html lang="en">
 
   <head>
-    <title>Inro to Git</title>
+    <title>Intro to Git</title>
 
     <link rel="stylesheet" type="text/css" href="reveal.css">
     <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
@@ -25,7 +25,13 @@
         <section>
 
           <h3 class="uppercase">Intro to Git</h3>
-          <div class="meta uppercase big_meta">02.06.16 &#8729; GDI MPLS &#8729; Amy Gebhardt</div>
+          <div class="meta uppercase big_meta">
+	    {{site.data.local.date}}
+	    &#8729;
+	    GDI MPLS
+	    &#8729;
+	    {{site.data.local.instructor.name}}
+	  </div>
           <img src="gdi_logo_badge.png" class="top_margin" style="width:35%">
 
         </section>
@@ -34,24 +40,13 @@
           <h3 class="uppercase">welcome!</h3>
         </section>
 
-        <!-- Example of nested vertical slides -->
         <section>
 
-          <section>
-            <h3 class="uppercase">our goals</h3>
-          </section>
-          <section>
-            <div class="meta big_meta">What is version control and<br />why should we even care?</div>
-          </section>
-          <section>
-            <div class="meta big_meta">Get you and your computer set up.</div>
-          </section>
-          <section>
-            <div class="meta big_meta">Basics of git -- the essential commands</div>
-          </section>
-          <section>
-            <div class="meta big_meta">"Gitting" social with GitHub</div>
-          </section>
+            <h3 class="uppercase">our goals:</h3>
+            <div class="fragment meta big_meta">What is version control and<br />why should we even care?</div>
+            <div class="fragment meta big_meta pink">Get you and your computer set up.</div>
+            <div class="fragment meta big_meta">Basics of git -- the essential commands</div>
+            <div class="fragment meta big_meta pink">"Gitting" social with GitHub</div>
 
         </section>
 
@@ -273,12 +268,6 @@
 <span class="comment"># Creates a new ssh key, using the provided email as a label</span>
 <span class="terminal_output">Generating public/private rsa key pair.</span>
 <span class="terminal_output">Enter file in which to save the key (/Users/you/.ssh/id_rsa):</span> <span class="terminal_action">[Press enter]</span></pre>
-<!-- {% highlight bash %} -->
-<!-- ssh-keygen -t rsa -C "your_email@example.com" -->
-<!-- # Creates a new ssh key, using the provided email as a label -->
-<!-- Generating public/private rsa key pair. -->
-<!-- Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter] -->
-<!-- {% endhighlight %} -->
             </div>
 
             <div class="fragment">
@@ -1113,13 +1102,18 @@
 	  <h1 class="blue">Thanks for coming!</h1>
 
 	  <h4 class="white">We want your feedback:</h4>
-	  <h5 class="gold">tinyurl.com/gdiMpls</h5>
+	  <h5 class="gold"><a href="https://tinyurl.com/gdiMpls">tinyurl.com/gdiMpls</a></h5>
 
 	  <div class="spacer"></div>
 
 	  <h4 class="white">Upcoming Classes:</h4>
-	  <h5 class="gold">10/10 &amp; 10/11 : Advanced HTML/CSS</h5>
-	  <h5 class="gold">10/24 &amp; 10/25 : Intro to JavaScript</h5>
+	  {% for class in site.data.local.upcoming_classes %}
+	  <h5>
+	    <span class="white">{{class.date}}</span> :
+	    <span><a class="gold" href="{{class.link}}">{{class.title}}</a></span>
+	  </h5>
+	  {% endfor %}
+
 
 	</section>
 
@@ -1127,12 +1121,12 @@
 
       <footer>
 	<div id="wifi_logistics">
-	  <span class="label">Network:</span> <span class="value">TBD</span><br />
-	  <span class="label">Password:</span> <span class="value">TBD</span>
+	  <span class="label">Network:</span> <span class="value">{{site.data.local.network.ssid}}</span><br />
+	  <span class="label">Password:</span> <span class="value">{{site.data.local.network.password}}</span>
 	</div>
 	<div id="twitter">
 	  <i class="fa fa-twitter"></i>
-	  @GDImpls &#8729; @amlyhamm &#8729; #learnGit &#8729; #gdi
+	  @GDImpls &#8729; @{{site.data.local.instructor.twitter}} &#8729; #learnGit &#8729; #gdi
 	</div>
       </footer>
 

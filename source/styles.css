@@ -57,6 +57,16 @@
     margin-bottom:-0.25em;
 }
 
+.reveal a,
+.reveal a:link,
+.reveal a:visited,
+.reveal a:active {
+  text-decoration: none;
+}
+.reveal a:hover {
+  text-decoration: underline;
+}
+
 .reveal footer {
     position: fixed;
     height: 40px;
