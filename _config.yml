@@ -8,6 +8,9 @@ source: source
 # This is the default location when running `jekyll serve`
 destination: _site
 
+collections:
+  - slides
+
 # These are used to create working links in the files.
 # For running `jekyll serve` they're empty so viewing the slides
 # during development is easy, and still be able to test links.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intro to Git</title>
+
+    <link rel="stylesheet" type="text/css" href="reveal.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="reveal.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="reveal" id="gdi">
+    <div class="slides">
+        {{ content }}
+    </div>
+
+    <footer>
+        <div id="wifi_logistics">
+            <span class="label">Network:</span> <span class="value">{{site.data.local.network.ssid}}</span><br/>
+            <span class="label">Password:</span> <span class="value">{{site.data.local.network.password}}</span>
+        </div>
+        <div id="twitter">
+            <i class="fa fa-twitter"></i>
+            @GDImpls &#8729; @{{site.data.local.instructor.twitter}} &#8729; #learnGit &#8729; #gdi
+        </div>
+    </footer>
+
+</div> <!-- .reveal #gdi -->
+</body>
+</html>

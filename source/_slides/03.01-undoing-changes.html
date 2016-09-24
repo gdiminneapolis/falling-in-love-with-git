@@ -1,0 +1,195 @@
+---
+---
+
+<section>
+
+    <div class="spacer"></div>
+    <h3 class="uppercase blue">Undo Changes</h3><br />
+    <div class="spacer"></div>
+
+    <section>
+        <div class="meta big_meta white">Nobody's perfect.</div>
+        <div class="small_meta gold">
+            Sometimes you'll want to "undo" or "revert" some changes you've made.
+        </div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Go make some changes to hello_world.txt.</div>
+        <div class="spacer small_spacer"></div>
+        <div class="meta small_meta gold">Add a line of text like "testing out undoing local changes!"</div>
+        <div class="spacer small_spacer"></div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> echo 'testing undo of local changes' >> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$</span> cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016
+testing undo of local changes</span>
+        </pre>
+    </section>
+
+    <section>
+        <div class="">
+            <div class="meta big_meta white">Check the repo status:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git status
+<span class="terminal_output">On branch master
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+	<span class="red">modified:   hello_world.txt</span>
+
+no changes added to commit (use "git add" and/or "git commit -a")</span>
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="">
+            <div class="meta big_meta white">Tell Git to discard the changes made to hello_world.txt:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git checkout hello_world.txt</pre>
+        </div>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">What does hello_world.txt look like now?</div>
+    </section>
+
+    <section>
+        <div class="meta extra_small_meta gold">Your changes should be gone, and status should be clean.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016</span>
+        </pre>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git status
+<span class="terminal_output">On branch master
+nothing to commit, working tree clean</span>
+        </pre>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">But what if you've already <i>staged</i> these changes?</div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Go make some more changes to hello_world.txt.</div>
+        <div class="meta small_meta gold">Add a line of text like<br />"testing out undoing staged changes!"</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> echo 'undoing staged changes' >> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span> cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016
+undoing staged changes
+</span>
+        </pre>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="">
+            <div class="meta big_meta white">Stage the change:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git add -v hello_world.txt
+<span class="terminal_output">add 'hello_world.txt'</span></pre>
+        </div>
+        <div class="spacer small_spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Confirm the repo status:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch master
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+        <span class="green">modified:   hello_world.txt</span></span></pre>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="">
+            <div class="meta big_meta white">Tell Git to <i>undo</i> the add and to discard the changes made to hello_world.txt:</div>
+              <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git reset HEAD hello_world.txt
+<span class="terminal_output">Unstaged changes after reset:
+M	hello_world.txt</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout hello_world.txt</pre>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="meta big_meta white">What does hello_world.txt look like now?</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016</span></pre>
+        <div class="meta extra_small_meta gold">Your changes should be gone!</div>
+
+    </section>
+
+    <section>
+        <div class="meta big_meta white">But what if you've already <i>staged and committed</i> these changes?</div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Go make some more changes to hello_world.txt.</div>
+        <div class="meta small_meta gold">Add a line of text like<br />"testing out undoing committed changes!"</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>echo 'undoing staged and committed changes' >> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016
+undoing staged and committed changes</span></pre>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="">
+            <div class="meta big_meta white">Stage &amp; commit the change:</div>
+              <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add -v hello_world.txt
+<span class="terminal_output">add 'hello_world.txt'</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m 'commit some stuff.'
+<span class="terminal_output">[master d123cdb] commit some stuff
+ 1 file changed, 1 insertion(+)</span></pre>
+        </div>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">Print out the repo log:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git log
+<span class="terminal_output"><span class="gold">commit d123cdb0ee38dd70c3455651e54689658f65a4b1</span>
+Author: Susan Student <student@example.com>
+Date:   Sat Sep 24 15:59:22 2016 -0700
+
+    commit some stuff
+
+<span class="gold">commit e921ba989bfcfcf9f646615663bf60b4b75c0c63</span>
+Author: Susan Student <student@example.com>
+Date:   Sat Sep 24 15:12:00 2016 -0700
+
+    Initial commit.
+
+    Added `hello_world.txt` to repo.</span></pre>
+        <div class="meta extra_small_meta gold">You'll want to copy the <i>first</i> commit HASH from the log above:</div>
+        <div class="meta small_meta blue">d123cdb0ee38dd70c3455651e54689658f65a4b1</div>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="">
+            <div class="meta big_meta white">Tell Git to <i>revert</i> the commit using the hash from above:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git revert <span class="terminal_action">d123cdb0ee38dd70c3455651e54689658f65a4b1</span></pre>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">What does hello_world.txt look like now?</div>
+            <div class="meta extra_small_meta gold">Your changes should be gone!</div>
+        </div>
+
+    </section>
+
+</section>
+
+
