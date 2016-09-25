@@ -1,24 +1,24 @@
 @font-face {
     font-family: "Gotham";
-    src: local("Gotham"), url("fonts/Gotham/Gotham-Medium.otf") format("opentype");
+    src: local("Gotham"), url("../fonts/Gotham/Gotham-Medium.otf") format("opentype");
     font-weight: normal;
     font-style: normal; }
 
 @font-face {
     font-family: "Gotham-Book";
-    src: local("Gotham-Book"), url("fonts/Gotham/Gotham-Book.otf") format("opentype");
+    src: local("Gotham-Book"), url("../fonts/Gotham/Gotham-Book.otf") format("opentype");
     font-weight: normal;
     font-style: normal; }
 
 @font-face {
     font-family: "Gotham-Italic";
-    src: local("Gotham-Italic"), url("fonts/Gotham/Gotham-MediumItalic.otf") format("opentype");
+    src: local("Gotham-Italic"), url("../fonts/Gotham/Gotham-MediumItalic.otf") format("opentype");
     font-weight: normal;
     font-style: italic; }
 
 @font-face {
     font-family: "Gotham-Bold";
-    src: local("Gotham-Bold"), url("fonts/Gotham/Gotham-Bold.otf") format("opentype");
+    src: local("Gotham-Bold"), url("../fonts/Gotham/Gotham-Bold.otf") format("opentype");
     font-weight: bold;
     font-style: bold; }
 
@@ -78,7 +78,7 @@
     z-index: 10;
     font-size: 35%;
     text-align:right;
-    background:#eee url(img/pink-logo.png) no-repeat;
+    background:#eee url(../img/pink-logo.png) no-repeat;
     padding:12px;
     background-size: auto 60%;
     background-position-y:center;
