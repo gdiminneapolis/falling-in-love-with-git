@@ -54,7 +54,7 @@ no changes added to commit (use "git add" and/or "git commit -a")</span>
     </section>
 
     <section>
-        <div class="meta extra_small_meta gold">Your changes should be gone, and status should be clean.</div>
+        <div class="meta small_meta gold">Your changes should be gone, and status should be clean.</div>
         <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> cat hello_world.txt
 <span class="terminal_output">Hello, World!
 Sat Sep 24 15:11:22 PDT 2016</span>
@@ -121,7 +121,7 @@ M	hello_world.txt</span>
         <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
 <span class="terminal_output">Hello, World!
 Sat Sep 24 15:11:22 PDT 2016</span></pre>
-        <div class="meta extra_small_meta gold">Your changes should be gone!</div>
+        <div class="meta small_meta gold">Your changes should be gone!</div>
 
     </section>
 
@@ -170,7 +170,7 @@ Date:   Sat Sep 24 15:12:00 2016 -0700
 
     Added `hello_world.txt` to repo.</span></pre>
         <div class="meta extra_small_meta gold">You'll want to copy the <i>first</i> commit HASH from the log above:</div>
-        <div class="meta small_meta blue">d123cdb0ee38dd70c3455651e54689658f65a4b1</div>
+        <div class="meta small_meta pink">d123cdb0ee38dd70c3455651e54689658f65a4b1</div>
     </section>
 
     <section>
@@ -178,14 +178,18 @@ Date:   Sat Sep 24 15:12:00 2016 -0700
 
         <div class="">
             <div class="meta big_meta white">Tell Git to <i>revert</i> the commit using the hash from above:</div>
-            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git revert <span class="terminal_action">d123cdb0ee38dd70c3455651e54689658f65a4b1</span></pre>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git revert --no-edit <span class="terminal_action">d123cdb0ee38dd70c3455651e54689658f65a4b1</span></pre>
         </div>
+    </section>
 
+    <section>
         <div class="spacer"></div>
-
-        <div class="fragment">
+        <div>
             <div class="meta big_meta white">What does hello_world.txt look like now?</div>
-            <div class="meta extra_small_meta gold">Your changes should be gone!</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016</span></pre>
+            <div class="meta small_meta gold">Your changes should be gone!</div>
         </div>
 
     </section>
