@@ -1,0 +1,26 @@
+---
+---
+<section>
+
+    <h1 class="blue">Thanks for coming!</h1>
+
+    <h4 class="white">We want your feedback:</h4>
+    <h5 class="gold">
+        <a href="https://tinyurl.com/gdiMpls"
+           class="gold">
+            tinyurl.com/gdiMpls
+        </a>
+    </h5>
+
+    <div class="spacer"></div>
+
+    <h4 class="white">Upcoming Classes:</h4>
+    {% for class in site.data.local.upcoming_classes %}
+    <h5>
+        <span class="white">{{class.date}}</span> :
+        <span><a class="gold" href="{{class.link}}">{{class.title}}</a></span>
+    </h5>
+    {% endfor %}
+
+
+</section>

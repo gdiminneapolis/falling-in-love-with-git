@@ -1,0 +1,17 @@
+---
+---
+<section>
+    <div class="meta big_meta white">Check for SSH keys on your computer:</div>
+    <div class="spacer"></div>
+    <div class="meta extra_small_meta gold">SSH information is stored in the <code class="pink">.ssh</code> directory in your <code class="pink">HOME</code> directory.</div>
+    <pre><span class="terminal_prompt">pontiki2:~ student$ </span>ls -Al ~/.ssh</pre>
+    <div class="meta extra_small_meta gold">This directory might not even exist just yet:</div>
+    <pre><span class="terminal_output">ls: /Users/student/.ssh: No such file or directory</span></pre>
+    <div class="meta extra_small_meta gold">Or it may already have something in it:</div>
+    <pre>
+<span class="terminal_prompt">pontiki2:~ student$ </span>ls -Al ~/.ssh
+<span class="terminal_output">total 8
+-rw-r--r--  1 student  staff  171 Sep 24 12:33 known_hosts</span>
+    </pre>
+</section>
+

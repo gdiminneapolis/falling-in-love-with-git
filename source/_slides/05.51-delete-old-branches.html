@@ -1,0 +1,47 @@
+---
+---
+<section>
+    <div class="spacer"></div>
+    <h3 class="uppercase blue">Deleting Old Branches</h3>
+    <section>
+        <div class="meta big_meta white">
+            When you've finished a branch, and merged it back into master,
+            <br>
+            you might want to delete that branch.
+            <br><br>
+            This is useful for long-running projects to keep from building up a lot of branches in the repo.
+        </div>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Make sure you are <i class="gold">not</i> on the branch you want to delete.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout master
+<span class="terminal_output">Switched to branch 'master'</span></pre>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">If the branch you want to delete has not been fully merged, git will tell you and stop the delete operation.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git branch -d version2
+<span class="terminal_output">error: The branch 'version2' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D version2'.</span></pre>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Let's go ahead and fully merge version2 into master.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git merge version2
+<span class="terminal_output">Updating 323461d..c35f894
+Fast-forward
+ .gitignore      | 1 +
+ hello_world.txt | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore</span></pre>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Now we can delete the branch:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git branch -d version2
+<span class="terminal_output">Deleted branch version2 (was c35f894).</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git branch
+<span class="terminal_output"><span class="green">* master</span></span></pre>
+    </section>
+</section>

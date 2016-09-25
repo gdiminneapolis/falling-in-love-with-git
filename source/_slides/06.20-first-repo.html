@@ -1,0 +1,93 @@
+---
+---
+<section>
+
+    <div class="spacer"></div>
+    <h3 class="uppercase blue">Your first GitHub Repo</h3>
+
+    <section>
+        <div class="spacer small_spacer"></div>
+        <div class="meta small_meta gold">Click on the "New" menu in the top right:</div>
+        <div class="spacer"></div>
+        <img src="{{site.url}}{{site.baseurl}}/img/github-new-menu.jpg" alt="Github New Menu">
+    </section>
+
+    <section>
+        <div class="spacer small_spacer"></div>
+        <div class="meta small_meta gold">Click on "New Repository"</div>
+        <img src="{{site.url}}{{site.baseurl}}/img/github_new_repository_menu_item.jpg" alt="Github New Repository Menu Item">
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <img src="{{site.url}}{{site.baseurl}}/img/new_repo_form.png" style="width:85%;margin-top:3.5em;">
+    </section>
+
+    <section>
+        <div class="meta big_meta pink">README</div><br />
+        <div class="meta small_meta white">
+            "While a README isn't a required part of a GitHub repository, it is a very good idea to have one.<br />
+            READMEs are a great place to describe your project or <br />add some documentation such as how to install<br />
+            or use your project. You might want to include contact information - if your project becomes
+            popular <br />people will want to help you out."
+        </div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">
+            Fill in the repo name.
+        </div>
+        <div class="fragment meta small_meta white">
+            A common practice is to name the repo the same as your project working directory.
+        </div>
+        <div class="fragment meta extra_small_meta white">It isn't a rule so much as a practice, and you can name the repo almost anything you want.</div>
+    </section>
+    
+    <section>
+        <img src="{{site.url}}{{site.baseurl}}/img/github_my_first_repo_form.jpg" alt="Github Filled out new repository form with my_first_repo">
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Click/press the "Create repositor" button</div>
+    </section>
+    
+    <section>
+        <img src="{{site.url}}{{site.baseurl}}/img/github_new_repo_created.jpg" alt="Github Newly created repository">
+    </section>
+
+    <section>
+        <div class="meta small_meta white">We will use the third option: "existing repository from command line"</div>
+        <img src="{{site.url}}{{site.baseurl}}/img/github_push_from_existing_repo.jpg" alt="Github Push from existing repository from command line">
+    </section>
+
+    <section>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git remote add origin git@github.com:tamouse/my_first_repo.git
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git push -u origin master</pre>
+        <div class="meta extra_small_meta gold">You might not see the following; after you answer "yes" you should not see it again.</div>
+<pre><span class="terminal_output">The authenticity of host 'github.com (192.30.253.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? </span><span class="terminal_action">yes</span></pre>
+        <div class="meta extra_small_meta gold">You should see something similar whenever you push:</div>
+        <pre><span class="terminal_output">Delta compression using up to 4 threads.
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (26/26), 2.53 KiB | 0 bytes/s, done.
+Total 26 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To git@github.com:tamouse/my_first_repo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.</span></pre>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta white">Going back over to your repository on GitHub,
+            <br>
+            refresh the page.</div>
+        <div class="spacer"></div>
+        <div class="meta small_meta gold">What do you see?</div>
+    </section>
+
+    <section>
+        <h3 class="uppercase blue">Victory!</h3>
+    </section>
+</section>
