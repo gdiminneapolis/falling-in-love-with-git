@@ -57,8 +57,6 @@
   },
   {
     "term": "pull request",
-    "definition": ""
+    "definition": "Create a request for an upstream repository to accept your changes."
   }
-
-
 ]
