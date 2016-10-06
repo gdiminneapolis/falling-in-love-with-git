@@ -4,15 +4,6 @@
 * Git Documentation: [https://git-scm.com/docs](https://git-scm.com/docs)
 * GitHub Help: [https://help.github.com/](https://help.github.com/)
 
-## Class of October 8th, 2016
-
-* Meetup entry: [http://www.meetup.com/Girl-Develop-It-Minneapolis/events/233968145/](http://www.meetup.com/Girl-Develop-It-Minneapolis/events/233968145/)
-* Venue: [WBS & Associates](http://www.wsbeng.com/) [map](https://www.google.com/maps/place/701+Xenia+Ave+S+%23200,+Minneapolis,+MN+55416/@44.9734811,-93.3532764,17z/data=!3m1!4b1!4m5!3m4!1s0x52b33499f031ef49:0x3b2d996da6fba050!8m2!3d44.9734811!4d-93.3510824?hl=en)
-* Date: October 8th, 2016
-* Time: 10:00 AM to 4:30 PM
-* Instructor: [Tamara Temple](http://www.tamouse.org)
-* Coordinator: [Karly Anderson]()
-
 ## Contributing
 
 We are always looking for help in improving our training materials. We'd like your participation as well!
@@ -21,10 +12,9 @@ First, read the [Contributor Covenant](CONTRIBUTOR_COVENANT.md).
 
 Next, you can contribute in the following ways:
 
-* Submit an issue or question via [Issues](../issues)
-* Write or update a page explaining something on the project [Wiki](../wiki)
-
-
+* Submit an problem, suggestion, or question via [Issues](https://github.com/gdiminneapolis/falling-in-love-with-git/issues)
+* Write or update a page explaining something on the project [Wiki](https://github.com/gdiminneapolis/falling-in-love-with-git/wiki)
+* Fork and clone the repo, cut a branch, make your changes, and submit a [Pull Request](https://github.com/gdiminneapolis/falling-in-love-with-git/pulls)
 
 ### Prerequisites
 
