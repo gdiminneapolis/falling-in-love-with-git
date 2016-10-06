@@ -30,3 +30,7 @@ This Code of Conduct is adapted from the
 [Contributor Covenant](http://contributor-covenant.org), version
 1.0.0, available at
 [http://contributor-covenant.org/version/1/0/0/](http://contributor-covenant.org/version/1/0/0/)
+
+[Girl Develop It](http://girldevelopit.com) also has a
+[Code of Conduct](https://www.girldevelopit.com/code-of-conduct) which
+also holds over this project.
