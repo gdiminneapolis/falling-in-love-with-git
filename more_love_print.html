@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to Git</title>
+</head>
+<body>
+
+<section>
+  <h3 class="uppercase blue">More Love with Git</h3>
+</section>
+
+
+<section>
+  <h2 class="meta big_meta white">What we'll be covering</h2>
+  <div class="spacer"></div>
+  <div class="meta small_meta blue">Speed Ups</div>
+  <div class="spacer small_spacer"></div>
+  <div class="meta small_meta pink">GUI Tools</div>
+  <div class="spacer small_spacer"></div>
+  <div class="meta small_meta blue">Using Git on Solo Projects</div>
+  <div class="spacer small_spacer"></div>
+  <div class="meta small_meta pink">Practice Working in Teams</div>
+</section>
+
+
+<section>
+  <div class="spacer"></div>
+  <h3 class="uppercase blue">speed ups</h3>
+
+  <section>
+    <div class="meta big_meta white">Git Aliases</div>
+  </section>
+
+  <section>
+    <div class="spacer"></div>
+    <div class="meta small_meta white">
+      Instead of typing out the full <i class="gold">git</i> commmands all the time, you can abbreviate them in the global configuration.
+    </div>
+    <div class="spacer"></div>
+    <div class="fragment meta extra_small_meta white">Recall the <i class="gold">git config --global</i> command that sets the global configuration for your computer.</div>
+    <div class="fragment meta extra_small_meta gold">Let's make the status command shorter:</div>
+    <pre class="fragment"><span class="terminal_prompt">pontiki2:~ student$ </span>git config --global alias.s status
+      <span class="terminal_prompt">pontiki2:~ student$ </span>cd my_first_repo/
+      <span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git s
+      <span class="terminal_output">On branch master
+	Your branch is up-to-date with 'origin/master'.
+	nothing to commit, working tree clean</span></pre>
+  </section>
+
+  <section>
+    <div class="spacer"></div>
+    <div class="meta small_meta white">
+      You can also specify some options for the command
+    </div>
+    <pre class="fragment" style="width:100%"><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git config --global alias.unstage 'reset HEAD --'</pre>
+    <div class="spacer small_spacer"></div>
+    <div class="fragment meta extra_small_meta gold">Note the aliased part is enclosed in <i class="bold">single quotes</i></div>
+    <div class="spacer small_spacer"></div>
+    <div class="fragment meta extra_small_meta white">Now <i class="gold">git unstage hello_world.txt</i> works the same as <i class="gold">git reset HEAD -- hello_world.txt</i></div>
+  </section>
+
+  <section>
+    <div class="spacer"></div>
+    <div class="meta small_meta white">This is especially useful for setting default parameters:</div>
+    <div class="spacer small_spacer"></div>
+    <pre class="fragment"><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git config --global alias.A 'add --verbose'
+      <span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git s
+      <span class="terminal_output">On branch master
+	Your branch is up-to-date with 'origin/master'.
+	Changes not staged for commit:
+	(use "git add &lt;file&gt;..." to update what will be committed)
+	(use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">modified:   hello_world.txt</span>
+
+no changes added to commit (use "git add" and/or "git commit -a")</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git A hello_world.txt
+<span class="terminal_output">add 'hello_world.txt'</span></pre>
+
+  </section>
+
+  <section>
+    <div class="spacer"></div>
+    <div class="meta small_meta white">They can be rather complex:</div>
+    <pre>git config --global alias.lo 'log --graph \
+      --pretty=format":%C(yellow)%h%Cblue%d%Creset %s %C(white) %an,%ar%Creset" \
+      --abbrev-commit --decorate'</pre>
+    <div class="spacer small_spacer"></div>
+    <pre style="width:100%;margin-left:-15px"><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git lo
+      <span class="terminal_output">* <span class="gold">c35f894</span> <span class="blue">(HEAD -> master, origin/master)</span> Add .gitignore  Susan Student,11 days ago
+	*   <span class="gold">5547b70</span> Fixing hello_world.txt  Susan Student,11 days ago
+	|\
+	| * <span class="gold">323461d</span> Modified hello_world.txt  Susan Student,11 days ago
+	* | <span class="gold">98b3b40</span> Modify hello_world.txt * Changing the first line of hello_world.txt in version 2  Susan Student,11 days ago
+	|/
+	* <span class="gold">6a69379</span> Adding changes to version 2.  Susan Student,11 days ago</span></pre>
+  </section>
+
+  <section>
+    <div class="spacer"></div>
+    <div class="meta small_meta white">More helpful git aliases</div>
+    <div class="spacer"></div>
+    <pre>git config --global alias.last 'log -1 HEAD'
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+</pre>
+  </section>
+
+  <!-- ------------------------------------------------------------ -->
+
+  <section>
+    <div class="meta big_meta white">Bash Aliases</div>
+  </section>
+
+  <section>
+    <div class="meta big_meta white">Bash or command-line aliases can be used as an alternative to Git aliases</div>
+  </section>
+
+  <section>
+    <div class="meta big_meta white">Setting up your environment to use Bash aliases</div>
+    <div class="spacer"></div>
+    <pre class="fragment"><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>touch ~/.bash_profile</pre>
+    <div class="spacer"></div>
+    <div class="fragment meta small_meta gold">Open the <i class="white">.bash_profile</i> file in your editor of choice</div>
+  </section>
+
+  <section>
+    <div class="meta extra_small_meta gold">Add the following aliases to your <i class="white">.bash_profile</i> file in your editor:</div>
+    <pre>alias gs='git status'
+alias gaa='git add --all --verbose'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gci='git commit'
+alias gcm='git commit -m'
+
+# the one command to do them all!
+# Usage: gacp 'commit message to use'
+gacp () {
+&nbsp;&nbsp;git add -Av && git commit -m "$1" && git push -u origin HEAD
+}</pre>
+  </section>
+
+  <section>
+    <div class="meta small_meta gold">Using aliases</div>
+    <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>gacp 'checking the gacp bash function'
+      <span class="terminal_output">add 'hello_world.txt'
+	[master 164b524] checking the gacp bash function
+	&nbsp;1 file changed, 2 insertions(+), 1 deletion(-)
+	Counting objects: 3, done.
+	Delta compression using up to 4 threads.
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (3/3), 347 bytes | 0 bytes/s, done.
+	Total 3 (delta 1), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+	To git@github.com:tamouse/my_first_repo.git
+	&nbsp;&nbsp;&nbsp;9a22ba3..164b524  HEAD -> master
+	Branch master set up to track remote branch master from origin.</span></pre>
+  </section>
+
+  <section>
+    <div class="meta small_meta white">The "Git Dance" now shortens to:</div>
+    <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>gs
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>gacp 'commit message'</pre>
+  </section>
+
+
+  <section>
+    <div class="meta extra_small_meta white">For the bold and daring:</div>
+    <pre style="width:100%;margin-left:-20px;">
+alias gyolo='git add -A && git commit -m YOLO!! && git push -fu origin HEAD'
+    </pre>
+  </section>
+
+  <section>
+    <div class="meta big_meta white">You can use Git aliases and Bash aliases together.</div>
+    <div class="spacer"></div>
+    <div class="meta small_meta white">The purpose of both is a reduce the amount <br />of repetitive typing you have to do.</div>
+  </section>
+
+  <section>
+    <div class="meta small_meta white">Add the following Git aliases:</div>
+    <pre>git config --global alias.AA 'add --all --verbose'
+      git config --global alias.yolo 'commit --message YOLO!!'
+      git config --global alias.pufuoh 'push -fu origin HEAD'</pre>
+    <div class="meta small_meta white">Then change the Bash alias:</div>
+    <pre>alias gyolo='git AA && git yolo && git pufuoh'</pre>
+  </section>
+
+</section>
+
+
+<section>
+  <h3 class="uppercase blue">GUI Tools</h3>
+  <div class="spacer"></div>
+  <section>
+    <div class="meta big_meta white">Alternative to using the Command line</div>
+  </section>
+  <section>
+    <div class="meta big_meta white">
+      There are several described on the Git site: <br /><br />
+      <a href="https://git-scm.com/downloads/guis"
+	 class="gold" target="_blank"
+	 title="GUI Clients for using Git">
+	GUI Clients
+      </a>
+    </div>
+  </section>
+  <section>
+    <div class="meta big_meta blue">
+      <a href="https://desktop.github.com/"
+	 class="blue"
+	 target="_blank"
+	 title="Find out about Github's Desktop client"
+	 >
+	GitHub Desktop
+      </a> -- GitHub's own desktop client
+    </div>
+    <div class="spacer"></div>
+    <div class="meta big_meta pink">
+      <a href="https://www.sourcetreeapp.com/"
+	 class="pink"
+	 target="_blank"
+	 title="A universal agnostic git desktop client from Atlassian"
+	 >
+	SourceTree
+      </a> -- A universal agnostic git desktop client from Atlassian
+    </div>
+    <div class="spacer"></div>
+  </section>
+  <section>
+    <div class="meta big_meta white">
+      Your editor may also have GUI integration with Git and remote repository sites.
+    </div>
+    <div class="spacer"></div>
+    <div class="fragment meta small_meta white">
+      For example,
+      <a href="https://www.jetbrains.com/webstorm/"
+	 class="gold"
+	 target="_blank"
+	 title="The smartest JavaScript IDE"
+	 >
+	WebStorm
+      </a>
+      and other JetBrains IDEs
+      have impeccable git and remote git integration.
+    </div>
+    <div class="spacer"></div>
+    <div class="fragment meta small_meta white">
+      Another impeccable example is <i class="gold">Emacs'</i>
+      <i class="blue">magit</i> package.
+    </div>
+    <div class="fragment meta extra_small_meta blue">
+      Magit has the best interface for interactively squashing commits.
+    </div>
+  </section>
+
+</section>
+
+
+
+</body>
+</html>
