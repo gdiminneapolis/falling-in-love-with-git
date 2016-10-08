@@ -1,290 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
     <title>Intro to Git</title>
-
-    <link rel="stylesheet" type="text/css" href="https://gdiminneapolis.github.io/falling-in-love-with-git/css/reveal.css">
-    <link rel="stylesheet" type="text/css" href="https://gdiminneapolis.github.io/falling-in-love-with-git/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://gdiminneapolis.github.io/falling-in-love-with-git/css/styles.css">
-
-    <script type="text/javascript" src="https://gdiminneapolis.github.io/falling-in-love-with-git/js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="https://gdiminneapolis.github.io/falling-in-love-with-git/js/reveal.js"></script>
-    <script type="text/javascript" src="https://gdiminneapolis.github.io/falling-in-love-with-git/js/scripts.js"></script>
-
-    <link rel="icon" type="image/x-icon" href="https://gdiminneapolis.github.io/falling-in-love-with-git/favicon.ico">
+    <link rel="stylesheet" href="/falling-in-love-with-git/css/print-styles.css" media="screen" />
 </head>
 <body>
-<div class="reveal" id="gdi">
-    <div class="slides">
-        
-  <section>
-  <h3 class="uppercase blue">More Love with Git</h3>
-</section>
+<h1 id="more-love-with-git">More Love With Git</h1>
 
+<p>Additional Material for “More Love With Git” – beyond Falling in Love</p>
 
-  <section>
-  <h2 class="meta big_meta white">What we'll be covering</h2>
-  <div class="spacer"></div>
-  <div class="meta small_meta blue">Speed Ups</div>
-  <div class="spacer small_spacer"></div>
-  <div class="meta small_meta pink">GUI Tools</div>
-  <div class="spacer small_spacer"></div>
-  <div class="meta small_meta blue">Using Git on Solo Projects</div>
-  <div class="spacer small_spacer"></div>
-  <div class="meta small_meta pink">Practice Working in Teams</div>
-</section>
+<ul id="markdown-toc">
+  <li><a href="#more-love-with-git" id="markdown-toc-more-love-with-git">More Love With Git</a>    <ul>
+      <li><a href="#speedups" id="markdown-toc-speedups">Speedups</a>        <ul>
+          <li><a href="#git-aliases" id="markdown-toc-git-aliases">Git Aliases</a></li>
+          <li><a href="#bash-aliases" id="markdown-toc-bash-aliases">Bash Aliases</a>            <ul>
+              <li><a href="#setting-up-your-environment-to-use-bash-aliases" id="markdown-toc-setting-up-your-environment-to-use-bash-aliases">Setting up your environment to use Bash aliases</a></li>
+              <li><a href="#using-aliases" id="markdown-toc-using-aliases">Using aliases</a></li>
+            </ul>
+          </li>
+          <li><a href="#git-and-bash-aliases-together" id="markdown-toc-git-and-bash-aliases-together">Git and Bash Aliases Together</a></li>
+          <li><a href="#hub" id="markdown-toc-hub">Hub</a>            <ul>
+              <li><a href="#initializing-a-new-project" id="markdown-toc-initializing-a-new-project">Initializing a new project</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#gui-tools" id="markdown-toc-gui-tools">GUI Tools</a></li>
+      <li><a href="#other-git-sites" id="markdown-toc-other-git-sites">Other Git sites</a>        <ul>
+          <li><a href="#gitlab" id="markdown-toc-gitlab">Gitlab</a></li>
+          <li><a href="#bitbucket" id="markdown-toc-bitbucket">BitBucket</a></li>
+          <li><a href="#private-your-own" id="markdown-toc-private-your-own">Private (your own)</a></li>
+        </ul>
+      </li>
+      <li><a href="#more-love" id="markdown-toc-more-love">More Love</a></li>
+      <li><a href="#practice" id="markdown-toc-practice">Practice</a></li>
+    </ul>
+  </li>
+</ul>
 
+<h2 id="speedups">Speedups</h2>
 
-  <section>
-  <div class="spacer"></div>
-  <h3 class="uppercase blue">speed ups</h3>
+<h3 id="git-aliases">Git Aliases</h3>
 
-  <section>
-    <div class="meta big_meta white">Git Aliases</div>
-  </section>
+<p>Instead of typing out the full <i class="gold">git</i> commmands all the time, you can abbreviate them in the global configuration.</p>
 
-  <section>
-    <div class="spacer"></div>
-    <div class="meta small_meta white">
-      Instead of typing out the full <i class="gold">git</i> commmands all the time, you can abbreviate them in the global configuration.
-    </div>
-    <div class="spacer"></div>
-    <div class="fragment meta extra_small_meta white">Recall the <i class="gold">git config --global</i> command that sets the global configuration for your computer.</div>
-    <div class="fragment meta extra_small_meta gold">Let's make the status command shorter:</div>
-    <pre class="fragment"><span class="terminal_prompt">pontiki2:~ student$ </span>git config --global alias.s status
-      <span class="terminal_prompt">pontiki2:~ student$ </span>cd my_first_repo/
-      <span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git s
-      <span class="terminal_output">On branch master
-	Your branch is up-to-date with 'origin/master'.
-	nothing to commit, working tree clean</span></pre>
-  </section>
+<p>Recall the <code class="highlighter-rouge">git config --global</code> command that sets
+the global configuration for your computer.</p>
 
-  <section>
-    <div class="spacer"></div>
-    <div class="meta small_meta white">
-      You can also specify some options for the command
-    </div>
-    <pre class="fragment" style="width:100%"><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git config --global alias.unstage 'reset HEAD --'</pre>
-    <div class="spacer small_spacer"></div>
-    <div class="fragment meta extra_small_meta gold">Note the aliased part is enclosed in <i class="bold">single quotes</i></div>
-    <div class="spacer small_spacer"></div>
-    <div class="fragment meta extra_small_meta white">Now <i class="gold">git unstage hello_world.txt</i> works the same as <i class="gold">git reset HEAD -- hello_world.txt</i></div>
-  </section>
+<p>Let’s make the status command shorter:</p>
 
-  <section>
-    <div class="spacer"></div>
-    <div class="meta small_meta white">This is especially useful for setting default parameters:</div>
-    <div class="spacer small_spacer"></div>
-    <pre class="fragment"><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git config --global alias.A 'add --verbose'
-      <span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git s
-      <span class="terminal_output">On branch master
-	Your branch is up-to-date with 'origin/master'.
-	Changes not staged for commit:
-	(use "git add &lt;file&gt;..." to update what will be committed)
-	(use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git config --global alias.s status
+</code></pre>
+</div>
 
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">modified:   hello_world.txt</span>
+<p>Let’s try it out:</p>
 
-no changes added to commit (use "git add" and/or "git commit -a")</span>
-<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git A hello_world.txt
-<span class="terminal_output">add 'hello_world.txt'</span></pre>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">cd </span>my_first_repo/
+<span class="gp">$ </span>git s
+On branch master
+Your branch is up-to-date with <span class="s1">'origin/master'</span>.
+nothing to commit, working tree clean
+</code></pre>
+</div>
 
-  </section>
+<p>Cool, huh?</p>
 
-  <section>
-    <div class="spacer"></div>
-    <div class="meta small_meta white">They can be rather complex:</div>
-    <pre>git config --global alias.lo 'log --graph \
-      --pretty=format":%C(yellow)%h%Cblue%d%Creset %s %C(white) %an,%ar%Creset" \
-      --abbrev-commit --decorate'</pre>
-    <div class="spacer small_spacer"></div>
-    <pre style="width:100%;margin-left:-15px"><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git lo
-      <span class="terminal_output">* <span class="gold">c35f894</span> <span class="blue">(HEAD -> master, origin/master)</span> Add .gitignore  Susan Student,11 days ago
-	*   <span class="gold">5547b70</span> Fixing hello_world.txt  Susan Student,11 days ago
-	|\
-	| * <span class="gold">323461d</span> Modified hello_world.txt  Susan Student,11 days ago
-	* | <span class="gold">98b3b40</span> Modify hello_world.txt * Changing the first line of hello_world.txt in version 2  Susan Student,11 days ago
-	|/
-	* <span class="gold">6a69379</span> Adding changes to version 2.  Susan Student,11 days ago</span></pre>
-  </section>
+<p>You can also specify some options for the command</p>
 
-  <section>
-    <div class="spacer"></div>
-    <div class="meta small_meta white">More helpful git aliases</div>
-    <div class="spacer"></div>
-    <pre>git config --global alias.last 'log -1 HEAD'
+<div class="highlighter-rouge"><pre class="highlight"><code>$ git config --global alias.unstage 'reset HEAD --'
+</code></pre>
+</div>
+
+<p>Note the aliased part is enclosed in <em>single quotes</em> to make a single
+argument.</p>
+
+<p>Now <code class="highlighter-rouge">git unstage hello_world.txt</code> works the same as <code class="highlighter-rouge">git reset HEAD --
+hello_world.txt</code>.</p>
+
+<p>This is especially useful for setting default parameters:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git config --global alias.A <span class="s1">'add --verbose'</span>
+<span class="gp">$ </span><span class="nb">echo</span> <span class="s1">'yet another line'</span> &gt;&gt; hello_world.txt
+<span class="gp">$ </span>git s
+On branch master
+Your branch is up-to-date with <span class="s1">'origin/master'</span>.
+Changes not staged <span class="k">for </span>commit:
+    <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to update what will be committed<span class="o">)</span>
+    <span class="o">(</span>use <span class="s2">"git checkout -- &lt;file&gt;..."</span> to discard changes <span class="k">in </span>working directory<span class="o">)</span>
+
+    modified:   hello_world.txt
+
+no changes added to commit <span class="o">(</span>use <span class="s2">"git add"</span> and/or <span class="s2">"git commit -a"</span><span class="o">)</span>
+<span class="gp">$ </span>git A hello_world.txt
+add <span class="s1">'hello_world.txt'</span>
+</code></pre>
+</div>
+
+<p>Now you’ll get visual (verbose) confirmation of what git is adding
+every time you run the command. That’s pretty sweet.</p>
+
+<p>They can be rather complex:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git config --global alias.lo <span class="s1">'log --graph \
+  --pretty=format":%C(yellow)%h%Cblue%d%Creset %s %C(white) %an,%ar%Creset" \
+  --abbrev-commit --decorate'</span>
+</code></pre>
+</div>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git lo
+<span class="k">*</span> c35f894 <span class="o">(</span>HEAD -&gt; master, origin/master<span class="o">)</span> Add .gitignore  Susan Student,11 days ago
+<span class="k">*</span>   5547b70 Fixing hello_world.txt  Susan Student,11 days ago
+|<span class="se">\</span>
+| <span class="k">*</span> 323461d Modified hello_world.txt  Susan Student,11 days ago
+<span class="k">*</span> | 98b3b40 Modify hello_world.txt <span class="k">*</span> Changing the first line of hello_world.txt <span class="k">in </span>version 2  Susan Student,11 days ago
+|/
+<span class="k">*</span> 6a69379 Adding changes to version 2.  Susan Student,11 days ago
+</code></pre>
+</div>
+
+<p>More helpful git aliases</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git config --global alias.last <span class="s1">'log -1 HEAD'</span>
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
-</pre>
-  </section>
+</code></pre>
+</div>
 
-  <!-- ------------------------------------------------------------ -->
+<h3 id="bash-aliases">Bash Aliases</h3>
 
-  <section>
-    <div class="meta big_meta white">Bash Aliases</div>
-  </section>
+<p>Bash or command-line aliases can be used as an alternative to Git
+aliases.</p>
 
-  <section>
-    <div class="meta big_meta white">Bash or command-line aliases can be used as an alternative to Git aliases</div>
-  </section>
+<h4 id="setting-up-your-environment-to-use-bash-aliases">Setting up your environment to use Bash aliases</h4>
 
-  <section>
-    <div class="meta big_meta white">Setting up your environment to use Bash aliases</div>
-    <div class="spacer"></div>
-    <pre class="fragment"><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>touch ~/.bash_profile</pre>
-    <div class="spacer"></div>
-    <div class="fragment meta small_meta gold">Open the <i class="white">.bash_profile</i> file in your editor of choice</div>
-  </section>
+<p>Enter the following command:</p>
 
-  <section>
-    <div class="meta extra_small_meta gold">Add the following aliases to your <i class="white">.bash_profile</i> file in your editor:</div>
-    <pre>alias gs='git status'
-alias gaa='git add --all --verbose'
-alias gco='git checkout'
-alias gcob='git checkout -b'
-alias gci='git commit'
-alias gcm='git commit -m'
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>touch ~/.bash_profile
+</code></pre>
+</div>
 
-# the one command to do them all!
-# Usage: gacp 'commit message to use'
-gacp () {
-&nbsp;&nbsp;git add -Av && git commit -m "$1" && git push -u origin HEAD
-}</pre>
-  </section>
+<p>Open the <code class="highlighter-rouge">.bash_profile</code> file in your editor of choice.
+Add the following aliases to your <code class="highlighter-rouge">.bash_profile</code> file in your editor:</p>
 
-  <section>
-    <div class="meta small_meta gold">Using aliases</div>
-    <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>gacp 'checking the gacp bash function'
-      <span class="terminal_output">add 'hello_world.txt'
-	[master 164b524] checking the gacp bash function
-	&nbsp;1 file changed, 2 insertions(+), 1 deletion(-)
-	Counting objects: 3, done.
-	Delta compression using up to 4 threads.
-	Compressing objects: 100% (3/3), done.
-	Writing objects: 100% (3/3), 347 bytes | 0 bytes/s, done.
-	Total 3 (delta 1), reused 0 (delta 0)
-	remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
-	To git@github.com:tamouse/my_first_repo.git
-	&nbsp;&nbsp;&nbsp;9a22ba3..164b524  HEAD -> master
-	Branch master set up to track remote branch master from origin.</span></pre>
-  </section>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">gs</span><span class="o">=</span><span class="s1">'git status'</span>
+<span class="nb">alias </span><span class="nv">gaa</span><span class="o">=</span><span class="s1">'git add --all --verbose'</span>
+<span class="nb">alias </span><span class="nv">gco</span><span class="o">=</span><span class="s1">'git checkout'</span>
+<span class="nb">alias </span><span class="nv">gcob</span><span class="o">=</span><span class="s1">'git checkout -b'</span>
+<span class="nb">alias </span><span class="nv">gci</span><span class="o">=</span><span class="s1">'git commit'</span>
+<span class="nb">alias </span><span class="nv">gcm</span><span class="o">=</span><span class="s1">'git commit -m'</span>
 
-  <section>
-    <div class="meta small_meta white">The "Git Dance" now shortens to:</div>
-    <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>gs
-<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>gacp 'commit message'</pre>
-  </section>
+<span class="c"># the one command to do them all!</span>
+<span class="c"># Usage: gacp 'commit message to use'</span>
+gacp <span class="o">()</span> <span class="o">{</span>
+  git add -Av <span class="o">&amp;&amp;</span> git commit -m <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> git push -u origin HEAD
+<span class="o">}</span>
+</code></pre>
+</div>
 
+<h4 id="using-aliases">Using aliases</h4>
 
-  <section>
-    <div class="meta extra_small_meta white">For the bold and daring:</div>
-    <pre style="width:100%;margin-left:-20px;">
-alias gyolo='git add -A && git commit -m YOLO!! && git push -fu origin HEAD'
-    </pre>
-  </section>
+<p>Once you’ve created a set of Bash aliases, you need to reload them
+into your shell environment. Normally, whenever you start up your
+terminal or command prompt, they should be read in.</p>
 
-  <section>
-    <div class="meta big_meta white">You can use Git aliases and Bash aliases together.</div>
-    <div class="spacer"></div>
-    <div class="meta small_meta white">The purpose of both is a reduce the amount <br />of repetitive typing you have to do.</div>
-  </section>
+<p>You can check to see now what aliases have already been defined (if
+any) by entering:</p>
 
-  <section>
-    <div class="meta small_meta white">Add the following Git aliases:</div>
-    <pre>git config --global alias.AA 'add --all --verbose'
-      git config --global alias.yolo 'commit --message YOLO!!'
-      git config --global alias.pufuoh 'push -fu origin HEAD'</pre>
-    <div class="meta small_meta white">Then change the Bash alias:</div>
-    <pre>alias gyolo='git AA && git yolo && git pufuoh'</pre>
-  </section>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">alias</span>
+</code></pre>
+</div>
 
-</section>
+<p>For the very first time, it will probably not print anything, because
+you haven’t sourced the <code class="highlighter-rouge">.bash_profile</code> file yet. Let’s do that now.</p>
 
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>. .bash_profile
+<span class="gp">$ </span><span class="nb">alias
+alias </span><span class="nv">gaa</span><span class="o">=</span><span class="s1">'git add --all --verbose'</span>
+<span class="nb">alias </span><span class="nv">gci</span><span class="o">=</span><span class="s1">'git commit'</span>
+<span class="nb">alias </span><span class="nv">gcim</span><span class="o">=</span><span class="s1">'git comment -m'</span>
+<span class="nb">alias </span><span class="nv">gco</span><span class="o">=</span><span class="s1">'git checkout'</span>
+<span class="nb">alias </span><span class="nv">gcob</span><span class="o">=</span><span class="s1">'git checkout -b'</span>
+<span class="nb">alias </span><span class="nv">gs</span><span class="o">=</span><span class="s1">'git status'</span>
+</code></pre>
+</div>
 
-  <section>
-  <h3 class="uppercase blue">GUI Tools</h3>
-  <div class="spacer"></div>
-  <section>
-    <div class="meta big_meta white">Alternative to using the Command line</div>
-  </section>
-  <section>
-    <div class="meta big_meta white">
-      There are several described on the Git site: <br /><br />
-      <a href="https://git-scm.com/downloads/guis"
-	 class="gold" target="_blank"
-	 title="GUI Clients for using Git">
-	GUI Clients
-      </a>
-    </div>
-  </section>
-  <section>
-    <div class="meta big_meta blue">
-      <a href="https://desktop.github.com/"
-	 class="blue"
-	 target="_blank"
-	 title="Find out about Github's Desktop client"
-	 >
-	GitHub Desktop
-      </a> -- GitHub's own desktop client
-    </div>
-    <div class="spacer"></div>
-    <div class="meta big_meta pink">
-      <a href="https://www.sourcetreeapp.com/"
-	 class="pink"
-	 target="_blank"
-	 title="A universal agnostic git desktop client from Atlassian"
-	 >
-	SourceTree
-      </a> -- A universal agnostic git desktop client from Atlassian
-    </div>
-    <div class="spacer"></div>
-  </section>
-  <section>
-    <div class="meta big_meta white">
-      Your editor may also have GUI integration with Git and remote repository sites.
-    </div>
-    <div class="spacer"></div>
-    <div class="fragment meta small_meta white">
-      For example,
-      <a href="https://www.jetbrains.com/webstorm/"
-	 class="gold"
-	 target="_blank"
-	 title="The smartest JavaScript IDE"
-	 >
-	WebStorm
-      </a>
-      and other JetBrains IDEs
-      have impeccable git and remote git integration.
-    </div>
-    <div class="spacer"></div>
-    <div class="fragment meta small_meta white">
-      Another impeccable example is <i class="gold">Emacs'</i>
-      <i class="blue">magit</i> package.
-    </div>
-    <div class="fragment meta extra_small_meta blue">
-      Magit has the best interface for interactively squashing commits.
-    </div>
-  </section>
+<p>Let’s try them out.</p>
 
-</section>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span><span class="nb">echo</span> &gt;&gt; hello_world.txt
+<span class="gp">$ </span><span class="nb">echo</span> <span class="s1">'another line for testing gacp function'</span> &gt;&gt; hello_world.txt
+<span class="gp">$ </span>gacp <span class="s1">'i added another line to hello_world'</span>
+add <span class="s1">'hello_world.txt'</span>
+<span class="o">[</span>master fca7b80] i added another line to hello_world
+ 1 file changed, 2 insertions<span class="o">(</span>+<span class="o">)</span>
+Counting objects: 3, <span class="k">done</span>.
+Delta compression using up to 4 threads.
+Compressing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, <span class="k">done</span>.
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 365 bytes | 0 bytes/s, <span class="k">done</span>.
+Total 3 <span class="o">(</span>delta 1<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+remote: Resolving deltas: 100% <span class="o">(</span>1/1<span class="o">)</span>, completed with 1 <span class="nb">local </span>objects.
+To git@github.com:tamouse/my_first_repo.git
+   bcb5f73..fca7b80  HEAD -&gt; master
+Branch master <span class="nb">set </span>up to track remote branch master from origin.
+</code></pre>
+</div>
 
+<p>The “Git Dance” now shortens to:</p>
 
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>gs <span class="c"># to check your status</span>
+<span class="gp">$ </span>gacp <span class="s1">'commit message'</span> <span class="c"># adds everything, commits, and then pushes to the remote origin</span>
+</code></pre>
+</div>
 
-    </div>
+<p>For the bold and daring:</p>
 
-    <footer>
-        <div id="wifi_logistics">
-            <span class="label">Network:</span> <span class="value">TBD</span><br/>
-            <span class="label">Password:</span> <span class="value">TBD</span>
-        </div>
-        <div id="twitter">
-            <i class="fa fa-twitter"></i>
-            @GDImpls &#8729; @tamouse &#8729; #learnGit &#8729; #gdi
-        </div>
-    </footer>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">gyolo</span><span class="o">=</span><span class="s1">'git add -A &amp;&amp; git commit -m YOLO!! &amp;&amp; git push -fu origin HEAD'</span>
+</code></pre>
+</div>
 
-</div> <!-- .reveal #gdi -->
+<p><strong>NOTE:</strong> I do <em>NOT</em> recommend this alias! It leaves absolutely no
+information about the commit in the repository. Use it as an example
+of something you could do if you wanted.</p>
+
+<h3 id="git-and-bash-aliases-together">Git and Bash Aliases Together</h3>
+
+<p>You can use Git aliases and Bash aliases together.
+The purpose of both is a reduce the amount of repetitive typing you have to do.</p>
+
+<p>Add the following Git aliases:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git config --global alias.AA <span class="s1">'add --all --verbose'</span>
+<span class="gp">$ </span>git config --global alias.yolo <span class="s1">'commit --message YOLO!!'</span>
+<span class="gp">$ </span>git config --global alias.pufuoh <span class="s1">'push -fu origin HEAD'</span>
+</code></pre>
+</div>
+
+<p>Then change the Bash alias in <code class="highlighter-rouge">$HOME/.bash_profile</code>:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">alias </span><span class="nv">gyolo</span><span class="o">=</span><span class="s1">'git AA &amp;&amp; git yolo &amp;&amp; git pufuoh'</span>
+</code></pre>
+</div>
+
+<h3 id="hub">Hub</h3>
+
+<p>Hub is a tool that adds greatly to command line productivity,
+<em>provided</em> you are working with GitHub as the back end.</p>
+
+<p>Hub can be found at <a href="https://hub.github.com/">https://hub.github.com/</a>
+where it discusses how to install and use hub. They recommend aliasing
+the <code class="highlighter-rouge">git</code> command itself to <code class="highlighter-rouge">hub</code>.</p>
+
+<p>Hub provides extra functionality for creating new <em>remote</em>
+repositories  on GitHub, opening up a browser at the current branch or
+commit of the working repo, and (for my money, the coolest feature)
+creating a pull request on GitHub for the current branch to the
+default branch (usually <code class="highlighter-rouge">master</code>).</p>
+
+<h4 id="initializing-a-new-project">Initializing a new project</h4>
+
+<p>Assume you’ve aliased <code class="highlighter-rouge">git</code> to execute <code class="highlighter-rouge">hub</code> (i.e. <code class="highlighter-rouge">alias git=hub</code> in <code class="highlighter-rouge">$HOME/.bash_profile</code>):</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git init new_project
+Initialized empty Git repository <span class="k">in</span> /Users/student/new_project/.git/
+<span class="gp">$ </span><span class="nb">cd </span>new_project/
+<span class="gp">$ </span><span class="nb">echo</span> <span class="s1">'new project'</span> &gt; README.md
+<span class="gp">$ </span>git create -d <span class="s2">"</span><span class="k">$(</span>cat README.md<span class="k">)</span><span class="s2">"</span>
+Updating origin
+created repository: tamouse/new_project
+<span class="gp">$ </span>gacp <span class="s1">'initial commit'</span>
+add <span class="s1">'README.md'</span>
+<span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> 88547eb] initial commit
+ 1 file changed, 1 insertion<span class="o">(</span>+<span class="o">)</span>
+ create mode 100644 README.md
+Counting objects: 3, <span class="k">done</span>.
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 225 bytes | 0 bytes/s, <span class="k">done</span>.
+Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To git@github.com:tamouse/new_project.git
+ <span class="k">*</span> <span class="o">[</span>new branch]      HEAD -&gt; master
+Branch master <span class="nb">set </span>up to track remote branch master from origin.
+</code></pre>
+</div>
+
+<p>Just to repeat, the commands to initiate a new project are:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git init &lt;NEW_PROJECT_DIR&gt;
+<span class="gp">$ </span><span class="nb">cd</span> &lt;NEW_PROJECT_DIR&gt;
+<span class="gp">$ </span><span class="nb">echo</span> <span class="s1">'&lt;DESCRIPTION&gt;'</span> &gt;&gt; README.md
+<span class="gp">$ </span>git create -d <span class="s2">"</span><span class="k">$(</span>cat README.md<span class="k">)</span><span class="s2">"</span>
+<span class="gp">$ </span>gacp <span class="s1">'&lt;FIRST COMMMIT MSG&gt;'</span>
+</code></pre>
+</div>
+
+<p>If you wanted to, you can put that into your <code class="highlighter-rouge">.bash_profile</code> as a Bash
+function, too:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>new_proj<span class="o">()</span> <span class="o">{</span>
+    git init <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+	<span class="nb">cd</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+	<span class="nb">echo</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> &gt; README.md <span class="o">&amp;&amp;</span> <span class="se">\</span>
+	git create -d <span class="s2">"</span><span class="k">$(</span>cat README.md<span class="k">)</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+	git add -Av <span class="o">&amp;&amp;</span> <span class="se">\</span>
+	git commit -m <span class="s2">"</span><span class="nv">$3</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+	git push -u origin HEAD
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<p>Refresh your aliases with <code class="highlighter-rouge">. ~/.bash_profile</code>, then start a new
+project:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd
+</span>new_proj another_new_project <span class="s1">'Another new project for me!'</span> <span class="s1">'initial commit'</span>
+</code></pre>
+</div>
+
+<h2 id="gui-tools">GUI Tools</h2>
+
+<p>Alternative to using the Command line.</p>
+
+<p>There are several described on the Git site:
+<a href="https://git-scm.com/downloads/guis" title="GUI Clients for
+using Git">GUI Clients</a>.</p>
+
+<ul>
+  <li>
+    <p><a href="https://desktop.github.com/" title="Find out about
+Github's Desktop client">GitHub Desktop</a> – GitHub’s own desktop client</p>
+  </li>
+  <li>
+    <p><a href="https://www.sourcetreeapp.com/" title="A universal agnostic
+git desktop client from Atlassian">SourceTree</a> – A universal agnostic git
+desktop client from Atlassian</p>
+  </li>
+</ul>
+
+<p>Your editor may also have GUI integration with Git and remote repository
+sites.</p>
+
+<p>For example, <a href="https://www.jetbrains.com/webstorm/" title="The
+smartest JavaScript IDE">WebStorm</a> and other JetBrains IDEs have impeccable git
+and remote git integration.</p>
+
+<p>Another impeccable example is <em>Emacs’</em> <em>magit</em> package.  Magit has the
+best interface for interactively squashing commits, but I don’t expect
+anyone to learn Emacs just to get this.</p>
+
+<h2 id="other-git-sites">Other Git sites</h2>
+
+<h3 id="gitlab">Gitlab</h3>
+
+<p><a href="http://gitlab.com">Gitlab</a> is an alternative to GitHub that provides
+a very complete solution for teams from conception, through
+development and testing, through delivery, and in maintenance.</p>
+
+<h3 id="bitbucket">BitBucket</h3>
+
+<p><a href="http://bitbucket.com">BitBucket</a> is an alternative from the
+<a href="http://www.atlassian.com/">Atlassian</a> company that provides a full
+suite of tools for managing, working, and deploying projects.</p>
+
+<p>BitBucket integrates with all the other Atlassian tools easily, which
+some see as an advantage if using other Atlassian tools, such as Jira
+for managing work tasks.</p>
+
+<h3 id="private-your-own">Private (your own)</h3>
+
+<p>You can even roll your own remote repositories, although you won’t get
+the features offered by the other sites such as visual pull requests,
+notifications, and so on.</p>
+
+<p>However, it’s easy, it’s pretty cheap, and you are in total control.</p>
+
+<p>Also, the remote doesn’t have to be physically remote; it can reside
+in another directory, or even another hard drive attached to your
+machine. You could even keep them on a thumb drive, but those aren’t
+very reliable or secure.</p>
+
+<h2 id="more-love">More Love</h2>
+
+<ul>
+  <li>working in teams</li>
+  <li>forking, branching, and creating a pull request</li>
+  <li>reviewing changes</li>
+  <li>arbitrating and accepting pull requests</li>
+  <li>creating issues</li>
+  <li>reviewing issues</li>
+  <li>creating project wikis (project lore)</li>
+</ul>
+
+<h2 id="practice">Practice</h2>
+
+<ul>
+  <li>do the git dance repeatedly</li>
+  <li>writing good commit messages</li>
+  <li>working in teams</li>
+</ul>
+
 </body>
 </html>
