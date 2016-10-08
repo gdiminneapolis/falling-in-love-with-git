@@ -10,6 +10,7 @@ destination: _site
 
 collections:
   - slides
+  - more_love_slides
 
 # These are used to create working links in the files.
 # For running `jekyll serve` they're empty so viewing the slides
