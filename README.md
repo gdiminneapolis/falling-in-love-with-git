@@ -4,6 +4,15 @@
 * Git Documentation: [https://git-scm.com/docs](https://git-scm.com/docs)
 * GitHub Help: [https://help.github.com/](https://help.github.com/)
 
+## Git Cheat Sheets
+
+These can be found all over, we've included three:
+
+* [GitLab Git Cheat Sheet](gitlab-git-cheat-sheet.pdf)
+* [GitHub Git Cheat Sheet](github-git-cheat-sheet.pdf)
+* [Atlassian Git Cheat Sheet](atlassian_git_cheatsheet.pdf)
+
+
 ## Contributing
 
 We are always looking for help in improving our training materials. We'd like your participation as well!

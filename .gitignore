@@ -4,3 +4,5 @@ tmp/
 publish/
 _site/
 source/.jekyll-metadata
+npm-debug.log
+.idea/
