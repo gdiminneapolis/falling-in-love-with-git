@@ -6,7 +6,7 @@
 # run with `jekyll build --config=_config.yml._publish.yml
 
 # This is where the published output goes
-destination: publish
+destination: docs
 
 # These are necessary to make links work properly with gh-pages
 baseurl: "/falling-in-love-with-git"

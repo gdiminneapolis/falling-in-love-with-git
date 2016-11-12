@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intro to Git</title>
+
+    <link rel="stylesheet" type="text/css" href="https://gdiminneapolis.github.io/falling-in-love-with-git/css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="https://gdiminneapolis.github.io/falling-in-love-with-git/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://gdiminneapolis.github.io/falling-in-love-with-git/css/styles.css">
+
+    <script type="text/javascript" src="https://gdiminneapolis.github.io/falling-in-love-with-git/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="https://gdiminneapolis.github.io/falling-in-love-with-git/js/reveal.js"></script>
+    <script type="text/javascript" src="https://gdiminneapolis.github.io/falling-in-love-with-git/js/scripts.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="https://gdiminneapolis.github.io/falling-in-love-with-git/favicon.ico">
+</head>
+<body>
+<div class="reveal" id="gdi">
+    <div class="slides">
+        
+  <section>
+
+    <h3 class="uppercase">Intro to Git</h3>
+    <div class="meta uppercase big_meta">
+        2016-10-08
+        &#8729;
+        GDI MPLS
+        &#8729;
+        Tamara Temple
+    </div>
+    <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/gdi_logo_badge.png" class="top_margin" style="width:35%">
+
+</section>
+
+  <section>
+
+  <section>
+    <h3 class="uppercase blue">welcome!</h3>
+    <div class="spacer"></div>
+    <div class="meta small_meta white">Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</div>
+    <div class="spacer"></div>
+    <div class="meta big_meta gold">Some Rules:</div>
+    <div class="spacer small_spacer"></div>
+    <div class="meta small_meta pink">We are here for you!</div>
+    <div class="meta small_meta blue">Every question is important</div>
+    <div class="meta small_meta pink">Help each other</div>
+    <div class="meta small_meta blue">Have fun</div>
+  </section>
+
+  <section>
+    <h3 class="uppercase blue">introductions</h3>
+    <div class="spacer"></div>
+    <div class="meta small_meta white">Who are you?</div>
+    <div class="meta small_meta pink">What do you do?</div>
+    <div class="meta small_meta white">How and when did you hear about GDI?</div>
+    <div class="meta small_meta pink">How many GDI classes have you taken?</div>
+    <div class="meta small_meta white">What is your familiarity with Git and GitHub?</div>
+    <div class="meta small_meta pink">What do you want to get out of today's class?</div>
+  </section>
+
+
+</section>
+
+
+  <section>
+
+    <h3 class="uppercase">our goals:</h3>
+    <div class="fragment meta big_meta">What is version control and<br />why should we even care?</div>
+    <div class="fragment meta big_meta pink">Get you and your computer set up.</div>
+    <div class="fragment meta big_meta">Basics of git -- the essential commands</div>
+    <div class="fragment meta big_meta pink">"Gitting" social with GitHub</div>
+
+</section>
+
+
+  <section>
+    <h3 class="uppercase">what is version control?</h3>
+
+    <section>
+        <div class="meta big_meta fragment vspace">
+            Version control allows you and your team to do two powerful things:<br /><br />
+
+            <div class="fragment">
+
+                <h4>COLLABORATE</h4>
+                <div class="small_meta">
+                    Create <i>anything</i> with other people - from academic papers to a collection of
+                    graphic design work to entire websites and applications.
+                </div>
+
+            </div>
+
+            <div class="fragment">
+
+                <h4>TRACK &amp; REVERT CHANGES</h4>
+                <div class="small_meta">
+                    Gives you the ability to go "back in time" - see who wrote what, when, and maybe even help
+                    track down some bugs.
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+</section>
+
+
+  <section>
+    <div class="meta big_meta">
+
+        <h3 class="uppercase">Convinced?</h3><br />
+
+        <div class="fragment">
+
+            <div class="meta big_meta">Employers want this.</div>
+            <div class="small_meta">
+                <ul>
+                    <li class="fragment vspace">It will almost always be under the list <br> of required skills in a job description</li>
+                    <li class="fragment vspace">Plus, having a bunch of work on GitHub <br> will be a great way to start a portfolio.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+  <section>
+    <div class="meta big_meta">
+
+        <h3 class="uppercase blue">Version Control Types</h3><br />
+
+        <div class="fragment">
+
+            <div class="meta big_meta white">Centralized Version Control Systems</div>
+            <div class="small_meta">
+                Collaborators "check out" files from a central server. Once their work is done, they "check in" again.<br />
+                CVS, Subversion, Perforce
+            </div>
+
+        </div><br />
+
+        <div class="fragment">
+
+            <div class="meta big_meta white">Distributed Version Control Systems</div>
+            <div class="small_meta">
+                Collaborators mirror (or clone) a complete repository.<br />
+                Git, Mercurial
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+  <section>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <h3 class="uppercase blue">Version Control Vocabulary</h3>
+
+    <section></section>
+
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            git
+        </div>
+        <div class="small_meta white">
+            A program for tacking changes in files.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            repository
+        </div>
+        <div class="small_meta white">
+            Contains all of the project files and stores a revision history. Think of them as project folders.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            clone
+        </div>
+        <div class="small_meta white">
+            A copy of a repository that lives on your computer. This copy will keep track of your changes and allow you to "push" those to the remote repository.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            commit
+        </div>
+        <div class="small_meta white">
+            A change to a file or set of files. Think of this as "saving" a file. Usually has a message that goes along with it.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            revision
+        </div>
+        <div class="small_meta white">
+            A particular commit level in a repository, referred to by it's hash.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            local
+        </div>
+        <div class="small_meta white">
+            Your local clone or copy of the repository
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            remote
+        </div>
+        <div class="small_meta white">
+            A remote repository that is shared by other project team members
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            stage
+        </div>
+        <div class="small_meta white">
+            To stage a commit means to update the local index for your local clone to tell git what will be placed into the next commit
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            index
+        </div>
+        <div class="small_meta white">
+            The local index keeps track of all the files that are under version control and what state they are in
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            branch
+        </div>
+        <div class="small_meta white">
+            A separate line of revisions in a single repository. As single repository might have many branches.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            master
+        </div>
+        <div class="small_meta white">
+            The master branch of a repository is the default, and is generally treated as the "Source of Truth" for the repository.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            fetch
+        </div>
+        <div class="small_meta white">
+            Get the latest changes from a remote repository without merging them in.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            pull
+        </div>
+        <div class="small_meta white">
+            Fetch then merge the changes from a remote repository.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            push
+        </div>
+        <div class="small_meta white">
+            Send your local changes up to the remote repository.
+        </div>
+    </section>
+    
+    <section>
+        <div class="meta big_meta gold uppercase">
+            pull request
+        </div>
+        <div class="small_meta white">
+            Create a request for an upstream repository to accept your changes.
+        </div>
+    </section>
+    
+
+</section>
+
+
+
+
+  <section>
+    <div class="meta big_meta">
+
+        <h3 class="uppercase blue">Intro to Git</h3><br />
+
+        <div class="fragment">
+
+            <div class="meta big_meta gold">Fast &amp; Easy Setup</div>
+            <div class="small_meta white">
+                Get a whole team and project up and running quickly.
+            </div>
+
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta gold">Distributed</div>
+            <div class="small_meta white">
+                Collaborators mirror (or clone) a complete repository, so everyone has a local copy of the history.
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta gold">Hashed Commits</div>
+            <div class="small_meta white">
+                Commits have unique IDs to keep track of<br />when changes were made and by who.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+  <section>
+
+
+    <h3 class="uppercase blue">Install &amp; Setup Git</h3><br/>
+
+    <div>
+        <a href="http://git-scm.com/downloads" alt="Download latest version of Git" target="_blank">
+            <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/install-git.png" alt="Download latest version of Git" class="rounded">
+        </a>
+    </div>
+    <div class="spacer small_spacer"></div>
+    <div class="meta big_meta">
+        <a href="http://git-scm.com/downloads" alt="Download latest version of Git" target="_blank" class="gold">
+            git-scm.com/downloads
+        </a>
+    </div>
+</section>
+
+
+
+  <section>
+
+    <div class="meta big_meta gold">Get started with the command line.</div>
+    <div class="spacer"></div>
+
+    <h5 class="white">On a Mac:</h5>
+    <p class="meta big_meta white">Open "Terminal"</p>
+    <p class="meta big_meta white">Type "git" and hit enter.</p>
+
+    <div class="spacer"></div>
+
+    <h5 class="white">On Windows:</h5>
+    <p class="meta big_meta white">Open "Git Bash"</p>
+    <p class="meta big_meta white">Type "git" and hit enter.</p>
+
+</section>
+
+
+
+  <section>
+    <div class="meta big_meta gold">SSH KEYS</div>
+    <div class="small_meta white">
+        A way to identify and trust your computer<br />without having to type in a password.
+    </div>
+</section>
+
+
+
+
+
+  <section>
+    <div class="meta big_meta white">Check for SSH keys on your computer:</div>
+    <div class="spacer"></div>
+    <div class="meta extra_small_meta gold">SSH information is stored in the <code class="pink">.ssh</code> directory in your <code class="pink">HOME</code> directory.</div>
+    <pre><span class="terminal_prompt">pontiki2:~ student$ </span>ls -Al ~/.ssh</pre>
+    <div class="meta extra_small_meta gold">This directory might not even exist just yet:</div>
+    <pre><span class="terminal_output">ls: /Users/student/.ssh: No such file or directory</span></pre>
+    <div class="meta extra_small_meta gold">Or it may already have something in it:</div>
+    <pre>
+<span class="terminal_prompt">pontiki2:~ student$ </span>ls -Al ~/.ssh
+<span class="terminal_output">total 8
+-rw-r--r--  1 student  staff  171 Sep 24 12:33 known_hosts</span>
+    </pre>
+</section>
+
+
+
+  <section>
+    <div class="">
+
+        <div class="meta big_meta white">Generate a new SSH key:</div>
+        <pre class=""><span class="terminal_prompt">pontiki2:~ student$ </span> ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span>
+<span class="comment"># Creates a new ssh key, using the provided email as a label</span>
+<span class="terminal_output">Generating public/private rsa key pair.</span>
+<span class="terminal_output">Enter file in which to save the key (/Users/you/.ssh/id_rsa):</span> <span
+                          class="terminal_action">[Press enter]</span></pre>
+    </div>
+
+    <div class="fragment">
+
+        <div class="meta big_meta white">Passphrase:</div>
+        <div class="meta extra_small_meta gold">Provides an extra layer of security to your SSH key but can be empty.</div>
+        <pre><span class="terminal_output">Enter passphrase (empty for no passphrase):</span> <span class="terminal_action">[Type a passphrase or press Enter]</span>
+<span class="terminal_output">Enter same passphrase again:</span> <span class="terminal_action">[Type passphrase again or press Enter]</span></pre>
+    </div>
+
+    <div class="fragment">
+        <div class="meta small_meta gold">
+            Leaving the passphrase empty is very common for privately owned computers. If you are working on a public or shared computer, you want to add extra security, however.
+        </div>
+    </div>
+</section>
+
+
+  <section>
+
+  <div class="meta big_meta white">So far so good?</div>
+  <pre class="fragment"><span class="terminal_output">Your identification has been saved in /Users/you/.ssh/id_rsa.</span>
+    <span class="terminal_output">Your public key has been saved in /Users/you/.ssh/id_rsa.pub.</span>
+    <span class="terminal_output">The key fingerprint is:</span>
+    <span class="terminal_action">01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span></pre>
+  <div class="fragment meta extra_small_meta gold">You'll probably see a little graphic image as well.</div>
+  <pre class="fragment" style="white-space: pre">
+    <span class="terminal_output">The key's randomart image is:
+      +---[RSA 2048]----+
+      |           .BoE  |
+      |           B O.o |
+      |      o . = B *.o|
+      |     o + = X O =+|
+      |      . S X B o +|
+      |         B . = . |
+      |          + + .  |
+      |           o .   |
+      |            .    |
+      +----[SHA256]-----+
+  </span></pre>
+</section>
+
+
+  <section>
+    <div class="meta big_meta white">Add your SSH key to your GitHub account:</div>
+    <div class="spacer small_spacer"></div>
+
+    <section>
+        <div class="meta small_meta gold">First, copy the contents<br/>of your key to your clipboard:</div>
+        <div class="spacer"></div>
+        <div class="meta extra_small_meta">On OSX/Linux:</div>
+        <pre><span class="terminal_prompt">$ </span>pbcopy < ~/.ssh/id_rsa.pub</pre>
+        <div class="meta extra_small_meta">On Windows:</div>
+        <pre><span class="terminal_prompt">$ </span>clip < ~/.ssh/id_rsa.pub</pre>
+
+    </section>
+
+    <section>
+        <div class="meta small_meta ">Log into your Github account in your browser.</div>
+        <div class="spacer "></div>
+        <div class="meta small_meta procedure gold fragment">Click on the User menu in the upper right corner:
+            <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github-user-menu.jpg" alt="Github User menu">
+        </div>
+    </section>
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta procedure gold">Click on the "Setting" item in the dropdown menu:
+            <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github-click-on-settings.jpg" alt="Github click on settings menu item">
+        </div>
+    </section>
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta procedure gold">
+            Click on the "SSH and GPG keys" item on the left side:
+            <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github-ssh-and-gpg-keys.jpg" alt="Github click on SSH and GPG keys menu item">
+        </div>
+    </section>
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta procedure gold">
+            Look to see if you already have added this ssh key. If this section is empty,
+            you haven't added the key yet.
+            <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github-existing-ssh-keys.jpg" alt="Github look for existing keys">
+        </div>
+    </section>
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta procedure gold">
+            If you haven't added the key (or if you want to make sure it's added), click the "New SSH Key" button
+            <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github-new-ssh-key.jpg" alt="Github New SSH Key">
+        </div>
+    </section>
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta procedure gold">
+            Fill in the Title, and then <em>paste</em> in the key you copied to the clipboard way back in step 1. Then click the "Add SSH Key" button to submit the form.
+            <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github-adding-the-new-key-form.jpg" alt="Github enter the key title, paste in the key, and submit the new key">
+        </div>
+    </section>
+    <section>
+        <div class="meta small_meta gold">Enter your Github password when Github asks <br>to confirm the new key addition.</div>
+        <div class="spacer"></div>
+        <div class="meta small_meta white">Your GitHub account now knows about your SSH key!</div>
+        <div class="spacer"></div>
+        <div class="meta extra_small_meta white">This will make it so you can push to and pull from remote Github repositories.</div>
+    </section>
+
+
+</section>
+
+
+
+  <section>
+    <div class="meta big_meta white">ALMOST THERE...</div>
+</section>
+
+
+
+
+  <section>
+
+    <h3 class="uppercase blue">Configuring Git</h3>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta gold">Back on your terminal:</div>
+        <div class="spacer"></div>
+        <div class="fragment">
+            <div class="meta extra_small_meta white">Sets the default name for Git to use when you commit changes.</div>
+            <pre class=""><span class="terminal_prompt">$ </span>git config --global user.name <span class="string">"your name"</span></pre>
+        </div>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="fragment">
+            <div class="meta extra_small_meta white">Sets the default email for Git to use when you commit changes.</div>
+            <pre class=""><span class="terminal_prompt">$ </span>git config --global user.email <span class="string">"your_email@example.com"</span></pre>
+        </div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Make sure everything looks right!</div>
+        <pre><span class="terminal_prompt">$ </span>git config --list
+<span class="terminal_output">user.name=your name</span>
+<span class="terminal_output">user.email=your_email@example.com</span></pre>
+    </section>
+
+</section>
+
+
+
+  <section>
+    <div class="spacer"></div>
+    <h1 class="white">Let's take a break</h1>
+</section>
+
+  <section>
+
+    <h3 class="uppercase blue">Create your first repository</h3>
+
+</section>
+
+
+
+  <section>
+
+    <div class="meta big_meta white">Go to your home directory:</div>
+    <pre><span class="terminal_prompt">pontiki2:~ student$ </span>cd ~/</pre>
+
+    <div class="fragment">
+        <div class="meta big_meta white">Create a working directory:</div>
+        <pre><span class="terminal_prompt">pontiki2:~ student$ </span>mkdir my_first_repo
+<span class="terminal_prompt">pontiki2:~ student$ </span>cd my_first_repo</pre>
+    </div>
+
+    <div class="fragment">
+        <div class="meta big_meta white">Initialize with Git:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git init
+<span class="terminal_output">Initialized empty Git repository in /Users/student/my_first_repo/.git/</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)</span></pre>
+    </div>
+
+</section>
+
+
+  <section>
+    <section>
+
+        <div class="meta big_meta blue">Create a new hello_world.txt file in your<br />new my_first_repo directory.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> echo 'Hello, world!' > hello_world.txt</pre>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Check the repo status:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo</span> student$ git status
+<span class="terminal_output">On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+
+	<span class="red">hello_world.txt</span>
+
+nothing added to commit but untracked files present (use "git add" to track)</span></pre>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="">
+            <div class="meta big_meta white">Tell Git to track this new file:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add --verbose hello_world.txt
+<span class="terminal_output">add 'hello_world.txt'</span>
+</pre>
+        </div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Check the repo status:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached &lt;file&gt;..." to unstage)
+
+	<span class="green">new file:   hello_world.txt</span>
+</span>
+</pre>
+        </div>
+    </section>
+</section>
+
+
+
+  <section>
+    <h3 class="uppercase blue">Victory?</h3>
+    <div class="spacer big_spacer"></div>
+    <div class="fragment meta big_meta white">What Changed?</div>
+    <div class="spacer"></div>
+    <div class="fragment meta big_meta gold">The color of the file in the status.</div>
+</section>
+
+
+
+  <section>
+
+    <section>
+        <h3 class="uppercase blue">Time to make some changes.</h3><br />
+    </section>
+
+    <section>
+        <div class="meta big_meta blue">Open the hello_world.txt file and add some text.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>date >> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, world!
+Sat Sep 24 14:53:04 PDT 2016
+</span></pre>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Check the repo status:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git status
+<span class="terminal_output">On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached &lt;file&gt;..." to unstage)
+
+	<span class="green">new file:   hello_world.txt</span>
+
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+	<span class="red">modified:   hello_world.txt</span>
+</span></pre>
+    </section>
+
+    <section class="">
+        <div class="meta big_meta white">Stage the change:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git add --verbose hello_world.txt
+<span class="terminal_output">add 'hello_world.txt'</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch master
+Initial commit
+
+Changes to be committed:
+(use "git rm --cached &lt;file&gt;..." to unstage)
+
+      <span class="green">new file:   hello_world.txt</span>
+</span>
+        </pre>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Commit the change:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git commit -m 'Initial commit.
+
+Added `hello_world.txt` to my repo.'
+<span class="terminal_output">[master (root-commit) e921ba9] Initial commit.
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt</span></pre>
+    </section>
+
+    <section class="">
+        <div class="meta big_meta white">Check the repo status:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git status
+<span class="terminal_output">On branch master
+nothing to commit, working tree clean</span>
+        </pre>
+    </section>
+
+</section>
+
+
+  <section>
+
+    <section>
+        <h3 class="uppercase blue">Wait... so what did we just do?</h3><br />
+    </section>
+
+    <section>
+
+        <div class="">
+            <div class="meta big_meta white">
+                When we <span class="gold">add</span> a new file, we tell Git to add
+                the file to the repository to be tracked.
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">
+                When we <span class="gold">stage</span> an existing file (also using 'add'), we tell Git to track
+                the current state of our file.
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">
+                A <span class="gold">commit</span> saves the <i>changes</i> made to a file - not
+                the file as a whole. The commit will have a "hash"
+                so we can track which changes were committed when and by whom.
+            </div>
+        </div>
+
+    </section>
+
+
+</section>
+
+  <section>
+
+    <h3 class="uppercase blue">Our Progress:</h3>
+    <div class="spacer"></div>
+
+    <pre>
+<span class="terminal_prompt">pontiki2:my_first_repo student$</span> git log
+<span class="terminal_output"><span class="gold">commit e921ba989bfcfcf9f646615663bf60b4b75c0c63</span>
+Author: Susan Student &lt;student@example.com&gt;
+Date:   Sat Sep 24 15:12:00 2016 -0700
+
+    Initial commit.
+
+    Added `hello_world.txt` to repo.
+</span>
+    </pre>
+
+    <div class="meta big_meta gold">Or a more condensed list</div>
+    <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git log --oneline
+<span class="terminal_output"><span class="gold">e921ba9</span> Initial commit.</span>
+    </pre>
+</section>
+
+
+  <section>
+
+    <div class="spacer"></div>
+    <h3 class="uppercase blue">Undo Changes</h3><br />
+    <div class="spacer"></div>
+
+    <section>
+        <div class="meta big_meta white">Nobody's perfect.</div>
+        <div class="small_meta gold">
+            Sometimes you'll want to "undo" or "revert" some changes you've made.
+        </div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Go make some changes to hello_world.txt.</div>
+        <div class="spacer small_spacer"></div>
+        <div class="meta small_meta gold">Add a line of text like "testing out undoing local changes!"</div>
+        <div class="spacer small_spacer"></div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> echo 'testing undo of local changes' >> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$</span> cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016
+testing undo of local changes</span>
+        </pre>
+    </section>
+
+    <section>
+        <div class="">
+            <div class="meta big_meta white">Check the repo status:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git status
+<span class="terminal_output">On branch master
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+	<span class="red">modified:   hello_world.txt</span>
+
+no changes added to commit (use "git add" and/or "git commit -a")</span>
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="">
+            <div class="meta big_meta white">Tell Git to discard the changes made to hello_world.txt:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git checkout hello_world.txt</pre>
+        </div>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">What does hello_world.txt look like now?</div>
+    </section>
+
+    <section>
+        <div class="meta small_meta gold">Your changes should be gone, and status should be clean.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016</span>
+        </pre>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git status
+<span class="terminal_output">On branch master
+nothing to commit, working tree clean</span>
+        </pre>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">But what if you've already <i>staged</i> these changes?</div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Go make some more changes to hello_world.txt.</div>
+        <div class="meta small_meta gold">Add a line of text like<br />"testing out undoing staged changes!"</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> echo 'undoing staged changes' >> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span> cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016
+undoing staged changes
+</span>
+        </pre>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="">
+            <div class="meta big_meta white">Stage the change:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$</span> git add -v hello_world.txt
+<span class="terminal_output">add 'hello_world.txt'</span></pre>
+        </div>
+        <div class="spacer small_spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Confirm the repo status:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch master
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+        <span class="green">modified:   hello_world.txt</span></span></pre>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="">
+            <div class="meta big_meta white">Tell Git to <i>undo</i> the add and to discard the changes made to hello_world.txt:</div>
+              <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git reset HEAD hello_world.txt
+<span class="terminal_output">Unstaged changes after reset:
+M	hello_world.txt</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout hello_world.txt</pre>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="meta big_meta white">What does hello_world.txt look like now?</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016</span></pre>
+        <div class="meta small_meta gold">Your changes should be gone!</div>
+
+    </section>
+
+    <section>
+        <div class="meta big_meta white">But what if you've already <i>staged and committed</i> these changes?</div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Go make some more changes to hello_world.txt.</div>
+        <div class="meta small_meta gold">Add a line of text like<br />"testing out undoing committed changes!"</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>echo 'undoing staged and committed changes' >> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016
+undoing staged and committed changes</span></pre>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="">
+            <div class="meta big_meta white">Stage &amp; commit the change:</div>
+              <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add -v hello_world.txt
+<span class="terminal_output">add 'hello_world.txt'</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m 'commit some stuff.'
+<span class="terminal_output">[master d123cdb] commit some stuff
+ 1 file changed, 1 insertion(+)</span></pre>
+        </div>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">Print out the repo log:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git log
+<span class="terminal_output"><span class="gold">commit d123cdb0ee38dd70c3455651e54689658f65a4b1</span>
+Author: Susan Student <student@example.com>
+Date:   Sat Sep 24 15:59:22 2016 -0700
+
+    commit some stuff
+
+<span class="gold">commit e921ba989bfcfcf9f646615663bf60b4b75c0c63</span>
+Author: Susan Student <student@example.com>
+Date:   Sat Sep 24 15:12:00 2016 -0700
+
+    Initial commit.
+
+    Added `hello_world.txt` to repo.</span></pre>
+        <div class="meta extra_small_meta gold">You'll want to copy the <i>first</i> commit HASH from the log above:</div>
+        <div class="meta small_meta pink">d123cdb0ee38dd70c3455651e54689658f65a4b1</div>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="">
+            <div class="meta big_meta white">Tell Git to <i>revert</i> the commit using the hash from above:</div>
+            <pre style="width:120%;margin-left:-5rem;white-space:pre;"><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git revert --no-edit <span class="terminal_action">d123cdb0ee38dd70c3455651e54689658f65a4b1</span></pre>
+        </div>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div>
+            <div class="meta big_meta white">What does hello_world.txt look like now?</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016</span></pre>
+            <div class="meta small_meta gold">Your changes should be gone!</div>
+        </div>
+
+    </section>
+
+</section>
+
+
+  <section>
+
+    <div class="spacer"></div>
+
+    <h3 class="uppercase blue">Branching</h3><br />
+
+    <section>
+        <div class="meta big_meta white">Branch:</div>
+        <div class="meta extra_small_meta gold">A parallel version of a repo.</div>
+        <div class="spacer small_spacer"></div>
+        <div class="meta big_meta white">The "master" branch:</div>
+        <div class="meta extra_small_meta gold">This is Git's default branch for all repositories.</div>
+    </section>
+
+    <section>
+        <div class="meta big_meta gold">Same repo, different branch:</div>
+        <div class="extra_small_meta white">
+            Develop different code from the same base.
+        </div>
+        <div class="spacer small_spacer"></div>
+
+        <div class="meta big_meta gold">The master branch is left alone:</div>
+        <div class="extra_small_meta white">
+            Conduct exploratory and development work without affecting the work on "master" branch.
+        </div>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="meta big_meta gold">Combine the changes on the branch back into "master":</div>
+        <div class="extra_small_meta white">
+            Merge changes to your master branch only when you are ready.
+        </div>
+    </section>
+
+    <section>
+
+        <div class="spacer"></div>
+        <div class="meta big_meta white">"Git Flow"</div>
+        <div class="spacer"></div>
+
+        <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/branching.png">
+
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Create a new branch:</div>
+        <div class="meta extra_small_meta gold">Call it "version2"</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout -b version2
+<span class="terminal_output">Switched to a new branch 'version2'</span></pre>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Go make some changes to hello_world.txt.</div>
+        <div class="meta extra_small_meta gold">Add a line of text like "testing out these really cool branches!"</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>echo 'new line for v2' >> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Check the git status:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch version2
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+        <span class="red">modified:   hello_world.txt</span>
+
+no changes added to commit (use "git add" and/or "git commit -a")</span></pre>
+        <div class="meta extra_small_meta gold">
+            Notice that `status` is reporting we are on branch "version 2". <br>
+            Also, "hello_world.txt" is in red because we have not <i>stage</i>d it yet.
+        </div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Stage and commit the change:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m "Adding changes to version 2."
+<span class="terminal_output">[version2 6a69379] Adding changes to version 2.
+ 1 file changed, 1 insertion(+)</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch version2
+nothing to commit, working tree clean</span></pre>
+    </section>
+
+    <section>
+        <div class="meta big_meta gold">SWITCHING BRANCHES</div>
+        <div class="meta extra_small_meta white">You may need to bounce around from branch to branch.</div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">See all branches for the current repository.</div>
+        <div class="meta extra_small_meta gold">The branch with the * is the active branch.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git branch
+<span class="terminal_output">  master
+<span class="green">* version2</span></span></pre>
+        <div class="meta extra_small_meta gold">The output indicates the current branch with "*"</div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Switch back to master.</div>
+        <div class="meta extra_small_meta gold">What does hello_world.txt look like?</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout master
+<span class="terminal_output">Switched to branch 'master'</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git branch
+<span class="terminal_output"><span class="green">* master</span>
+  version2</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016</span></pre>
+    </section>
+
+
+    <section>
+        <div class="meta big_meta white">Switch back to version2.</div>
+        <div class="meta extra_small_meta gold">What does hello_world.txt look like now?</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout version2
+<span class="terminal_output">Switched to branch 'version2'</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, World!
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+    </section>
+
+    <section>
+        <h3 class="white">Pretty neat, right?</h3><br />
+        <div class="meta big_meta blue">But how do you <i>combine</i> the branches?</div>
+    </section>
+
+</section>
+
+
+
+  <section>
+
+    <div class="spacer"></div>
+    <h3 class="uppercase blue">Merging</h3><br />
+
+    <section>
+        <div class="meta big_meta white"><i>Merge</i> to get changes from one branch to another:</div>
+        <div class="small_meta gold">
+            Collaboration at its best!
+        </div>
+    </section>
+
+    <section>
+
+        <div class="spacer"></div>
+
+        <div class="meta big_meta white">Switch to master:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout master</pre>
+
+        <div class="fragment">
+
+            <div class="meta big_meta white">Merge with version2:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git merge version2
+<span class="terminal_output">Updating d4c7213..6a69379
+Fast-forward
+ hello_world.txt | 1 +
+ 1 file changed, 1 insertion(+)</span></pre>
+
+            <div class="meta extra_small_meta gold">
+                "rebase" is another option, but for the sake of time, it won't be covered in this workshop.
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="meta big_meta white">There will be conflicts.</div>
+        <div class="meta big_meta gold">Git is pretty smart, but sometimes it won't know exactly how to merge your branches.</div>
+
+    </section>
+
+    <section>
+        <div class="spacer"></div><br />
+
+        <div class="meta big_meta white">For example...</div>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="col with_border">
+            <div class="meta extra_small_meta gold">(version-2-branch) history.txt:</div>
+            <div class="spacer small_spacer"></div>
+
+            <div class="meta extra_small_meta white monaco_font">
+                1. GDI was founded in <span class="pink">2010</span>.<br />
+                2. GDI is in 45 US cities.
+            </div>
+            <div class="spacer small_spacer"></div>
+
+        </div>
+
+        <div class="col with_border">
+            <div class="meta extra_small_meta gold">(version-3-branch) history.txt:</div>
+            <div class="spacer small_spacer"></div>
+
+            <div class="meta extra_small_meta white monaco_font">
+                1. GDI was founded in <span class="pink">2008</span>.<br />
+                2. GDI is in 45 US cities.
+            </div>
+            <div class="spacer small_spacer"></div>
+
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <div class="spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Git will make you <i class="blue">resolve</i> this conflict before the merge can happen.</div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="spacer big_spacer"></div>
+
+        <div class="meta big_meta white">Make sure you're in master:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout master
+<span class="terminal_output">Already on 'master'</span></pre>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Change the first line of hello_world.txt.</div>
+            <div class="meta extra_small_meta gold">We're going to create a conflict with this line.</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>sed -i~ <span class="string">'s/World/Folks/'</span> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, Folks!
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+        </div>
+    </section>
+    <section>
+        <div class="meta big_meta white">Stage and commit this change:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m <span class="string">'Modified hello_world.txt
+
+* Changed "World" to "Folks"'</span>
+<span class="terminal_output">[master 323461d] Modified hello_world.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)</span></pre>
+
+    </section>
+
+    <section>
+
+        <div class="spacer big_spacer"></div>
+
+
+        <div class="meta big_meta white">Switch to version2:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout version2
+<span class="terminal_output">Switched to branch 'version2'</span></pre>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Change the first line of hello_world.txt.</div>
+            <div class="meta extra_small_meta gold">Make it something different than in the previous step.</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>sed -i~ <span class="string">'s/World/you lot/'</span> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, you lot!
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Stage and commit this change:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m <span class="string">'Modify hello_world.txt
+
+* Changing the first line of hello_world.txt in version2.'</span>
+<span class="terminal_output">[version2 98b3b40] Modify hello_world.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+</span>
+
+        </pre>
+
+    </section>
+
+
+
+    <section>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="meta big_meta white">Merge from master into version2:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git merge master</pre>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">You should see something like:</div>
+            <pre><span class="terminal_output">Auto-merging hello_world.txt
+CONFLICT (content): Merge conflict in hello_world.txt
+Automatic merge failed; fix conflicts and then commit the result.</span></pre>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="meta big_meta gold">Resolving conflicts:</div>
+        <div class="spacer small_spacer"></div>
+
+        <div class="">
+            <div class="meta small_meta blue">Where are the conflicts?</div>
+            <div class="meta extra_small_meta white">
+                When you open hello_world.txt, you'll see both changes. <br>Git adds <i class="pink">conflict markers</i> to the areas it couldn't resolve.
+            </div>
+            <pre><span class="terminal_output"><i class="pink"><<<<<<< HEAD</i>
+Hello, you lot!
+<i class="pink">=======</i>
+Hello, Folks!
+<i class="pink">>>>>>>> master</i>
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="spacer"></div>
+        <div class="meta small_meta blue">How do you fix them?</div>
+        <div class="meta extra_small_meta white">
+            Delete Git's <i class="pink">conflict markers</i> and make the appropriate change.
+            <br>
+            You decided which line is correct, or you can even add a whole new line.
+            <br>
+            Make this file look exactly like you want it.
+        </div>
+        <pre><span class="terminal_output">Well, hello there!
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+    </section>
+
+    <section>
+        <div class="meta small_meta blue">Be on your way:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m "Fixing hello_world.txt"
+<span class="terminal_ouput">[version2 5547b70] Fixing hello_world.txt</span></pre>
+
+    </section>
+
+
+</section>
+
+
+
+  <section>
+    <h3 class="uppercase blue">ignoring files and folders</h3>
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta white">Sometimes you will create files you don't want in your repository.</div>
+        <div class="spacer"></div>
+        <div class="fragment meta small_meta pink">editor cruft</div>
+        <div class="spacer small_spacer"></div>
+        <div class="fragment meta small_meta blue">zip/tar files</div>
+        <div class="spacer small_spacer"></div>
+        <div class="fragment meta small_meta pink">log files</div>
+        <div class="spacer small_spacer"></div>
+        <div class="fragment meta small_meta blue">compiled files</div>
+
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">
+            Introducing the <i class="gold">.gitignore</i> file.
+        </div>
+        <div class="spacer"></div>
+        <div class="meta small_meta white">The <i class="gold">.gitignore</i> file goes into your project's root directory.</div>
+        <div class="spacer"></div>
+        <div class="fragment meta small_meta white">
+            It contains <i class="gold">patterns</i> to match file and folder names to ignore.
+        </div>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">
+            In the last couple of sections, I created an extra file,
+            which was the <i class="pink">backup</i> file for the
+            <i class="gold">sed</i> command used to change
+            the "hello_world.txt" file.
+        </div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch version2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        <span class="red">hello_world.txt~</span>
+
+nothing added to commit but untracked files present (use "git add" to track)</span></pre>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">This is editor cruft, and we don't want such things cluttering up our repository.</div>
+        <div class="spacer"></div>
+        <div class="fragment meta small_meta white">You can simply delete it, but often you may not remember to do so.</div>
+        <div class="spacer small_spacer"></div>
+        <div class="fragment meta small_meta white">If you add a pattern to the <i class="gold">.gitignore</i> file, you can be sure the file will not end up in your repository.</div>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Add <i class="pink">*~</i> on a line by itself in <i class="gold">.gitignore</i></div>
+        <div class="meta extra_small_meta gold">This means "ignore all files ending in ~"</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>echo '*~' >> .gitignore
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch version2
+Untracked files:
+(use "git add &lt;file&gt;..." to include in what will be committed)
+
+      <span class="red">.gitignore</span>
+
+nothing added to commit but untracked files present (use "git add" to track)</span></pre>
+
+    </section>
+
+    <section>
+        <div class="meta extra_small_meta gold">
+            The <span class="red">hello_world.txt~</span> is gone, and the new <span class="red">.gitignore</span> file shows up.
+            <br><br>
+            Stage and commit the file.
+        </div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add .gitignore
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m 'Add .gitignore'
+<span class="terminal_output">[version2 c35f894] Add .gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore</span></pre>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">
+            You can ignore entire directories as well
+        </div>
+        <div class="fragment">
+            <pre><span class="terminal_output">log/</span></pre>
+            <div class="meta extra_small_meta white">Will ignore the content of any directory named "log" anywhere in the repository.</div>
+        </div>
+        <div class="fragment">
+            <div class="spacer"></div>
+            <pre><span class="terminal_output">/log/</span></pre>
+            <div class=" meta extra_small_meta white">Will ignore a "log" directory only at the project root.</div>
+        </div>
+    </section>
+</section>
+
+  <section>
+    <div class="spacer"></div>
+    <h3 class="uppercase blue">Deleting Old Branches</h3>
+    <section>
+        <div class="meta big_meta white">
+            When you've finished a branch, and merged it back into master,
+            <br>
+            you might want to delete that branch.
+            <br><br>
+            This is useful for long-running projects to keep from building up a lot of branches in the repo.
+        </div>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Make sure you are <i class="gold">not</i> on the branch you want to delete.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout master
+<span class="terminal_output">Switched to branch 'master'</span></pre>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">If the branch you want to delete has not been fully merged, git will tell you and stop the delete operation.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git branch -d version2
+<span class="terminal_output">error: The branch 'version2' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D version2'.</span></pre>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Let's go ahead and fully merge version2 into master.</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git merge version2
+<span class="terminal_output">Updating 323461d..c35f894
+Fast-forward
+ .gitignore      | 1 +
+ hello_world.txt | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore</span></pre>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Now we can delete the branch:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git branch -d version2
+<span class="terminal_output">Deleted branch version2 (was c35f894).</span>
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git branch
+<span class="terminal_output"><span class="green">* master</span></span></pre>
+    </section>
+</section>
+
+  <section>
+    <h3 class="uppercase blue">Let's get Social.</h3>
+</section>
+
+
+
+  <section>
+    <h3 class="uppercase blue">GitHub</h3>
+    <div class="spacer small_spacer"></div>
+    <div id="github_bg"><img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github.png"></div>
+    <div class="spacer small_spacer"></div>
+    <div class="fragment meta small_meta white">Launched in <span class="pink">2008</span>.</div>
+    <div class="fragment meta small_meta white">Leader in <span class="pink">social coding</span>.</div>
+    <div class="fragment meta small_meta white">GitHub is a commercial site that allows users to host Git repositories publicly and privately.</div>
+    <div class="fragment meta small_meta white"><span class="pink">Open source projects</span> host or mirror their repos on GitHub.</div>
+    <div class="fragment meta small_meta white">Post your own code for others to use or contribute to.</div>
+</section>
+
+
+
+  <section>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+    <h3 class="uppercase blue">More Version Control Vocabulary</h3>
+
+    <section></section>
+
+    <section>
+
+        <div class="spacer big_spacer"></div>
+
+        <div class="meta big_meta gold">REMOTE</div>
+        <div class="small_meta white">
+            This is the version of a repository that is hosted on a server, like GitHub.
+        </div>
+
+    </section>
+
+    <section>
+        <div class="spacer big_spacer"></div>
+
+        <div class="meta big_meta gold">FETCH</div>
+        <div class="small_meta white">
+            This is when you get the latest changes from an online repository <i>without</i> merging them in.
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="meta big_meta gold">PULL</div>
+        <div class="small_meta white">
+            This step combines <i class="pink">fetching</i> and <i class="pink">merging</i> changes from a remote repository.
+        </div><br />
+
+    </section>
+
+    <section>
+        <div class="spacer big_spacer"></div>
+
+        <div class="meta big_meta gold">PUSH</div>
+        <div class="small_meta white">
+            Sends your committed changes to a remote repository.
+        </div>
+    </section>
+
+</section>
+
+
+
+  <section>
+
+    <div class="spacer"></div>
+    <h3 class="uppercase blue">Your first GitHub Repo</h3>
+
+    <section>
+        <div class="spacer small_spacer"></div>
+        <div class="meta small_meta gold">Click on the "New" menu in the top right:</div>
+        <div class="spacer"></div>
+        <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github-new-menu.jpg" alt="Github New Menu">
+    </section>
+
+    <section>
+        <div class="spacer small_spacer"></div>
+        <div class="meta small_meta gold">Click on "New Repository"</div>
+        <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github_new_repository_menu_item.jpg" alt="Github New Repository Menu Item">
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/new_repo_form.png" style="width:85%;margin-top:3.5em;">
+    </section>
+
+    <section>
+        <div class="meta big_meta pink">README</div><br />
+        <div class="meta small_meta white">
+            "While a README isn't a required part of a GitHub repository, it is a very good idea to have one.<br />
+            READMEs are a great place to describe your project or <br />add some documentation such as how to install<br />
+            or use your project. You might want to include contact information - if your project becomes
+            popular <br />people will want to help you out."
+        </div>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">
+            Fill in the repo name.
+        </div>
+        <div class="fragment meta small_meta white">
+            A common practice is to name the repo the same as your project working directory.
+        </div>
+        <div class="fragment meta extra_small_meta white">It isn't a rule so much as a practice, and you can name the repo almost anything you want.</div>
+    </section>
+    
+    <section>
+        <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github_my_first_repo_form.jpg" alt="Github Filled out new repository form with my_first_repo">
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Click/press the "Create repositor" button</div>
+    </section>
+    
+    <section>
+        <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github_new_repo_created.jpg" alt="Github Newly created repository">
+    </section>
+
+    <section>
+        <div class="meta small_meta white">We will use the third option: "existing repository from command line"</div>
+        <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/github_push_from_existing_repo.jpg" alt="Github Push from existing repository from command line">
+    </section>
+
+    <section>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git remote add origin git@github.com:tamouse/my_first_repo.git
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git push -u origin master</pre>
+        <div class="meta extra_small_meta gold">You might not see the following; after you answer "yes" you should not see it again.</div>
+<pre><span class="terminal_output">The authenticity of host 'github.com (192.30.253.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? </span><span class="terminal_action">yes</span></pre>
+        <div class="meta extra_small_meta gold">You should see something similar whenever you push:</div>
+        <pre><span class="terminal_output">Delta compression using up to 4 threads.
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (26/26), 2.53 KiB | 0 bytes/s, done.
+Total 26 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To git@github.com:tamouse/my_first_repo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.</span></pre>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta white">Going back over to your repository on GitHub,
+            <br>
+            refresh the page.</div>
+        <div class="spacer"></div>
+        <div class="meta small_meta gold">What do you see?</div>
+    </section>
+
+    <section>
+        <h3 class="uppercase blue">Victory!</h3>
+    </section>
+</section>
+
+
+  <section>
+
+    <div class="spacer"></div>
+    <h3 class="uppercase blue">Forking</h3>
+
+    <section>
+
+        <div class="meta big_meta white">There are millions of public repos on GitHub.</div>
+        <div class="spacer"></div>
+
+        <div class="meta big_meta white">If you want to <i class="pink">use</i> or <i class="pink">contribute</i> to <br />a repository, you can <i class="gold">fork</i> it.</div>
+
+    </section>
+
+    <section>
+
+        <div class="meta big_meta white">
+            This will make a personal copy of another user's repository that will live on your account. While you can work with it and make changes without affecting the original repository, it is still
+            attached, making it easy for you to <i class="pink">contribute</i> back to the original when you're ready.
+        </div>
+
+        <div class="spacer"></div>
+
+        <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/fork.png">
+    </section>
+
+    <section>
+        <div class="meta big_meta white">After forking, clone your fork to your local machine:</div>
+        <pre><span class="terminal_prompt">pontiki2:~ student$ </span>git clone git@github.com:tamouse/jekyll.git
+<span class="terminal_output">Cloning into 'jekyll'...
+Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+remote: Counting objects: 30595, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 30595 (delta 0), reused 0 (delta 0), pack-reused 30593
+Receiving objects: 100% (30595/30595), 9.18 MiB | 1.40 MiB/s, done.
+Resolving deltas: 100% (18545/18545), done.
+Checking connectivity... done.</span></pre>
+    </section>
+
+</section>
+
+
+
+  <section>
+
+    <div class="spacer"></div>
+    <h3 class="uppercase blue">Pull Requests</h3>
+
+    <section>
+
+        <div class="meta big_meta white">After you fork and clone a repo, all pushed changes will go to <i>your</i> fork.</div>
+        <div class="spacer"></div>
+        <div class="meta small_meta gold">These changes will not affect the original repo.</div>
+
+    </section>
+
+    <section>
+
+        <div class="meta big_meta white">
+            If you want to get your changes to be incorporated in the original repo, you <br />can submit a <span class="gold">pull request.</span>
+        </div>
+
+        <div class="spacer"></div>
+
+        <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/pull_request.png">
+
+    </section>
+
+    <section>
+
+      <div class="meta small_meta white">
+	This sends a request to the owners for the original <br />
+	(also known as an <i class="gold">"upstream"</i>)<br />
+	repository, showing the changes you wish to make.
+      </div>
+
+      <div class="spacer"></div>
+      <div class="fragment meta small_meta gold">
+	It is the start of a conversation between you and the original repo owners.
+      </div>
+
+      <div class="spacer"></div>
+      <div class="fragment meta big_meta white">
+	This is the process most teams use to
+	<br /> <i>review code submissions</i>
+	from their team members before including the changes
+	in a release.
+      </div>
+    </section>
+
+
+</section>
+
+
+  <section>
+
+    <h1 class="blue">Thanks for coming!</h1>
+
+    <h5>
+      <a href="https://github.com/gdiminneapolis/fall_in_love_with_git"
+	 target="_blank"
+	 class="gold">
+	View the slide repo on Github<br> for more info, links, etc.
+      </a>
+    </h5>
+
+    <div class="spacer"></div>
+
+    <h4 class="white">We want your feedback:</h4>
+    <h5 class="gold">
+        <a href="https://tinyurl.com/gdiMpls"
+           class="gold">
+            tinyurl.com/gdiMpls
+        </a>
+    </h5>
+
+    <div class="spacer"></div>
+
+    <h4 class="white">Upcoming Classes:</h4>
+    
+
+
+</section>
+
+
+
+    </div>
+
+    <footer>
+        <div id="wifi_logistics">
+            <span class="label">Network:</span> <span class="value">TBD</span><br/>
+            <span class="label">Password:</span> <span class="value">TBD</span>
+        </div>
+        <div id="twitter">
+            <i class="fa fa-twitter"></i>
+            @GDImpls &#8729; @tamouse &#8729; #learnGit &#8729; #gdi
+        </div>
+    </footer>
+
+</div> <!-- .reveal #gdi -->
+</body>
+</html>

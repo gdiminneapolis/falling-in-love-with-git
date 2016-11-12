@@ -54,7 +54,8 @@ Launch your browser at that URL and you can refresh the view every time you make
 
     $ make publish
 
-This will create the `publish/` directory and initialize it as a `git` repo pointing at the `gh-pages` branch of the repository, and run Jekyll in build mode. (Apologies, this isn't quite foolproof yet.)
+This will create the `docs/` directory which is where the slides will
+be served from.
 
 The file `_publish.yml` in the root directory can be set to provide overrides and fill-ins needed for publishing on GH pages. Generally speaking, nothing needs to be done with these settings.
 
