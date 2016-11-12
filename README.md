@@ -12,6 +12,14 @@ These can be found all over, we've included three:
 * [GitHub Git Cheat Sheet](github-git-cheat-sheet.pdf)
 * [Atlassian Git Cheat Sheet](atlassian_git_cheatsheet.pdf)
 
+## Resources
+
+Some more resources for learning Git:
+
+* [Learn Git Branching](http://learngitbranching.js.org/)
+* [workspace  Git Cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html#loc=workspace;)
+* [Git commands and shortcuts  ShortcutFoo](https://www.shortcutfoo.com/app/dojos/git)
+
 
 ## Contributing
 
