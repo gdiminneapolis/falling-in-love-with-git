@@ -19,6 +19,7 @@ Some more resources for learning Git:
 * [Learn Git Branching](http://learngitbranching.js.org/)
 * [workspace  Git Cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html#loc=workspace;)
 * [Git commands and shortcuts  ShortcutFoo](https://www.shortcutfoo.com/app/dojos/git)
+* [Git Tips &amp; Tricks - GitLab](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
 
 
 ## Contributing
