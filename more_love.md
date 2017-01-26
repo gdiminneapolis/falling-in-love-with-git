@@ -1,14 +1,6 @@
----
-layout: print
----
-
 # More Love With Git
 
 Additional Material for "More Love With Git" -- beyond Falling in Love
-
-* Contents
-{:toc}
-
 
 ## Speedups
 
@@ -347,8 +339,6 @@ Also, the remote doesn't have to be physically remote; it can reside
 in another directory, or even another hard drive attached to your
 machine. You could even keep them on a thumb drive, but those aren't
 very reliable or secure.
-
-
 
 ## More Love
 
