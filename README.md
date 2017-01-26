@@ -4,22 +4,9 @@
 * Git Documentation: [https://git-scm.com/docs](https://git-scm.com/docs)
 * GitHub Help: [https://help.github.com/](https://help.github.com/)
 
-## Git Cheat Sheets
-
-These can be found all over, we've included three:
-
-* [GitLab Git Cheat Sheet](gitlab-git-cheat-sheet.pdf)
-* [GitHub Git Cheat Sheet](github-git-cheat-sheet.pdf)
-* [Atlassian Git Cheat Sheet](atlassian_git_cheatsheet.pdf)
-
 ## Resources
 
-Some more resources for learning Git:
-
-* [Learn Git Branching](http://learngitbranching.js.org/)
-* [workspace  Git Cheatsheet](http://www.ndpsoftware.com/git-cheatsheet.html#loc=workspace;)
-* [Git commands and shortcuts  ShortcutFoo](https://www.shortcutfoo.com/app/dojos/git)
-
+* [Additional Resources](resources.md)
 
 ## Contributing
 
