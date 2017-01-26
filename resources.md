@@ -72,6 +72,8 @@ git.
 
 ## Other Resources
 
+* [Git Tips &amp; Tricks - GitLab](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
+
 * [The Git Dance](https://github.com/gdiminneapolis/falling-in-love-with-git/wiki/The-%22Git-Dance%22)
 
 * [Git Flow: A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
