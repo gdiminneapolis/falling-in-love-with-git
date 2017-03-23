@@ -87,6 +87,19 @@
     padding-bottom:20px;
 }
 
+.reveal .slide-number {
+  bottom: inherit;
+  top: 25px;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  opacity: 1;
+  padding: 4px;
+  height: 25px;
+  width: 40px;
+  text-align: right;
+}
+
 #gdi .left_align {
     text-align:left;
 }

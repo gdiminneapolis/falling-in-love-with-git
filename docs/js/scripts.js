@@ -5,10 +5,11 @@ $( document ).ready(function() {
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
         controls: true,
+	slideNumber: true,
         progress: true,
         history: true,
         center: true,
-        transition: 'slide' // none/fade/slide/convex/concave/zoom
+        transition: 'none' // none/fade/slide/convex/concave/zoom
 
         // Optional reveal.js plugins
         //dependencies: [
