@@ -52,10 +52,10 @@
             progress: true,
 
             // Display the page number of the current slide
-            slideNumber: false,
+            slideNumber: true,
 
             // Push each slide change to the browser history
-            history: false,
+            history: true,
 
             // Enable keyboard shortcuts for navigation
             keyboard: true,
