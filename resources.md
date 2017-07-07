@@ -72,6 +72,8 @@ git.
 
 ## Other Resources
 
+* [Atlassian Git Tutorials](https://www.atlassian.com/git) (Atlassian are makers of BitBucket, another Git remote hosting service like GitHub and GitLab)
+
 * [Git Tips &amp; Tricks - GitLab](https://about.gitlab.com/2016/12/08/git-tips-and-tricks/)
 
 * [The Git Dance](https://github.com/gdiminneapolis/falling-in-love-with-git/wiki/The-%22Git-Dance%22)
