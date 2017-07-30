@@ -1,6 +1,6 @@
 {
   "name": "fall_in_love_with_git",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "GDI Class slides and materials for the \"Fall In Love With Git\" class",
   "main": "source/index.html",
   "repository": "git@github.com:gdiminneapolis/falling-in-love-with-git.git",
@@ -17,7 +17,7 @@
     "jekyll:watch": "watch \"npm run jekyll:build\" source --wait=1",
     "jekyll:serve": "bundle exec jekyll serve",
     "jekyll:build": "bundle exec jekyll build --config=_config.yml",
-    "jekyll:build:publish": "bundle exec jekyll build --config=_config.yml,_publish.yml",
-    "publish": "npm run jekyll:build:publish && git add --all && git commit -m 'published' && git push origin HEAD"
+    "jekyll:build:github": "bundle exec jekyll build --config=_config.yml,_publish.yml",
+    "checkin": "npm run jekyll:build:github && git add --all && git commit -m 'published' && git push origin HEAD"
   }
 }

@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Intro to Git</title>
+    <title>Falling In Love With Git</title>
     <link rel="stylesheet" href="/falling-in-love-with-git/css/print-styles.css" media="screen" />
 </head>
 <body>
 
 <section>
+  <section>
 
-    <h3 class="uppercase">Intro to Git</h3>
+    <h3 class="uppercase">Falling In Love With Git</h3>
     <div class="meta big_meta">
-        2016-10-08
-        &#8729;
-        GDI MPLS
-        &#8729;
-        Tamara Temple
+      Sat, Oct 7, 2017
+      &bullet;
+      GDI MPLS
+      &bullet;
+      Tamara Temple
     </div>
-    <img src="https://gdiminneapolis.github.io/falling-in-love-with-git/img/gdi_logo_badge.png" class="top_margin" style="width:35%">
+    <img src="/falling-in-love-with-git/img/gdi_logo_badge.png" class="top_margin" style="width:35%">
 
-</section>
-
-
-<section>
+  </section>
 
   <section>
     <h3 class="blue">welcome!</h3>
@@ -38,113 +36,148 @@
   </section>
 
   <section>
+    <aside class="notes">
+      <p>When did you first hear about Girl Develop It?</p>
+      <p>How many GDI class have you taken?</p>
+      <p>Think about your goals for taking this class.</p>
+    </aside>
     <h3 class="blue">introductions</h3>
     <div class="spacer"></div>
-    <div class="meta small_meta white">Who are you?</div>
-    <div class="meta small_meta pink">What do you do?</div>
-    <div class="meta small_meta white">How and when did you hear about GDI?</div>
-    <div class="meta small_meta pink">How many GDI classes have you taken?</div>
-    <div class="meta small_meta white">What is your familiarity with Git and GitHub?</div>
-    <div class="meta small_meta pink">What do you want to get out of today's class?</div>
+    <div class="meta small_meta white">Name</div>
+    <div class="meta small_meta white">History with GDI</div>
+    <div class="meta small_meta pink">Your goals for learning Git</div>
   </section>
 
+  <section>
 
-</section>
-
-
-<section>
-
-    <h3 class="">our goals:</h3>
+    <aside class="notes">
+      <p>What we plan to accomplish today.</p>
+    </aside>
+    <h3 class="">class goals:</h3>
     <div class="fragment meta big_meta">What is version control and<br />why should we even care?</div>
     <div class="fragment meta big_meta pink">Get you and your computer set up.</div>
     <div class="fragment meta big_meta">Basics of git -- the essential commands</div>
     <div class="fragment meta big_meta pink">"Gitting" social with GitHub</div>
 
+  </section>
+
 </section>
 
 
 <section>
+
+  <section>
     <h3 class="">what is version control?</h3>
 
-    <section>
-        <div class="meta big_meta fragment vspace">
-            Version control allows you and your team to do two powerful things:<br /><br />
+    <div>
+      <div class="meta big_meta fragment vspace">
+        <p>Version control allows you and your team to do two powerful things:</p>
+        <div class="fragment">
 
-            <div class="fragment">
-
-                <h4>COLLABORATE</h4>
-                <div class="small_meta">
-                    Create <i>anything</i> with other people - from academic papers to a collection of
-                    graphic design work to entire websites and applications.
-                </div>
-
-            </div>
-
-            <div class="fragment">
-
-                <h4>TRACK &amp; REVERT CHANGES</h4>
-                <div class="small_meta">
-                    Gives you the ability to go "back in time" - see who wrote what, when, and maybe even help
-                    track down some bugs.
-                </div>
-
-            </div>
-
+          <h4>COLLABORATE</h4>
+          <div class="small_meta">
+            Create <em>anything</em> with other people - from academic
+            papers to a collection of graphic design work to entire
+            websites and applications.
+          </div>
 
         </div>
-    </section>
 
+        <div class="fragment">
+
+          <h4>TRACK &amp; REVERT CHANGES</h4>
+          <div class="small_meta">
+            Gives you the ability to go "back in time" - see who wrote
+            what, when, and maybe even help track down some bugs.
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section>
+    <aside class="notes">
+      <p>Git, and other modern version control tools, are very much a
+        standard expectation that employees will use every day.</p>
+      <p>It is a standard expectation for working on both public
+        (i.e. opensource) projects as well.</p>
+      <p>Having a body of work on Github.com, in particular, is an
+        expection from many employers and people looking to work with
+        you. Treat it as a portfolio.</p>
+      <p>It isn't just a good idea to keep track of versions, it can
+        be a life-saver.</p>
+    </aside>
+
+    <div class="meta big_meta">
+      <h3 class="">Not Convinced Yet?</h3><br />
+
+      <div class="fragment">
+        <div class="meta big_meta">Employers want this.</div>
+        <div class="small_meta">
+          <ul>
+            <li class="fragment vspace">
+              Required skill
+            </li>
+            <li class="fragment vspace">
+              Standard expection
+            </li>
+            <li class="fragment vspace">
+              Portfolio of work
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </section>
 
 
 <section>
+
+  <section>
     <div class="meta big_meta">
-
-        <h3 class="">Not Convinced Yet?</h3><br />
-
-        <div class="fragment">
-
-            <div class="meta big_meta">Employers want this.</div>
-            <div class="small_meta">
-                <ul>
-                    <li class="fragment vspace">It will almost always be under the list <br> of required skills in a job description</li>
-                    <li class="fragment vspace">Plus, having a bunch of work on GitHub <br> will be a great way to start a portfolio.</li>
-                </ul>
-            </div>
-
-        </div>
-
+      <h3 class="blue">Version Control Types</h3>
+      <div class="meta fragment vspace">Centralized</div>
+      <div class="meta fragment vspace">Distributed</div>
     </div>
-</section>
 
+  </section>
 
-<section>
+  <section>
     <div class="meta big_meta">
-
-        <h3 class="blue">Version Control Types</h3><br />
-
-        <div class="fragment">
-
-            <div class="meta big_meta white">Centralized Version Control Systems</div>
-            <div class="small_meta">
-                Collaborators "check out" files from a central server. Once their work is done, they "check in" again.<br />
-                CVS, Subversion, Perforce
-            </div>
-
-        </div><br />
-
-        <div class="fragment">
-
-            <div class="meta big_meta white">Distributed Version Control Systems</div>
-            <div class="small_meta">
-                Collaborators mirror (or clone) a complete repository.<br />
-                Git, Mercurial
-            </div>
-
-        </div>
-
+      <h3 class="blue">Centralized Version Control Systems</h3>
+      <ul class="vspace white">
+        <li class="fragment">Central source</li>
+        <li class="fragment">Collaborators "check out" files</li>
+        <li class="fragment">Work is done locally</li>
+        <li class="fragment">Others cannot work on same files</li>
+        <li class="fragment">Collaborators "check in" files</li>
+      </ul>
+      <p class="fragment vspace green">examples: CVS, Subversion, Perforce</p>
     </div>
+  </section>
+
+  <section>
+    <div class="meta big_meta">
+      <h3 class="blue">Distributed Version Control Systems</h3>
+       <ul class="vspace white">
+        <li class="fragment">Local source, shared Depot</li>
+        <li class="fragment">Collaborators clone (fork, mirror) the complete repository</li>
+        <li class="fragment">Work done locally</li>
+        <li class="fragment">Collaborators can work in same files</li>
+        <li class="fragment">Collaborators push changes</li>
+        <li class="fragment">Tools for merging changes</li>
+      </ul>
+      <p class="fragment vspace green">examples: Git, Mercurial (Hg)</p>
+    </div>
+  </section>
+
 </section>
 
 

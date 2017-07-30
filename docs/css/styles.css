@@ -135,6 +135,9 @@
     color:#fff !important;
 }
 
+#gdi .red { color: red; }
+#gdi .green { color: LightGreen; }
+
 #gdi .big_meta {
     font-size:28pt;
 }
@@ -324,6 +327,3 @@
     padding: 2rem;
     float: right;
 }
-
-#gdi span.red { color: red; }
-#gdi span.green { color: green; }
