@@ -5,4 +5,5 @@ publish/
 _site/
 source/.jekyll-metadata
 npm-debug.log
-.idea/
+.idea
+node_modules/

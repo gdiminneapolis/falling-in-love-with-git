@@ -1,0 +1,10 @@
+<footer>
+    <div id="wifi_logistics">
+        <span class="label">Network:</span> <span class="value">{{site.data.class.network.ssid}}</span><br/>
+        <span class="label">Password:</span> <span class="value">{{site.data.class.network.password}}</span>
+    </div>
+    <div id="twitter">
+        <i class="fa fa-twitter"></i>
+        {% for tweettag in site.data.class.tweettags %} {{ tweettag }} {% endfor %}
+    </div>
+</footer>
