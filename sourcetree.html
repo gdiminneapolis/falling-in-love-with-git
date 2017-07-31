@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Tamara Temple)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="GCI Class Falling in Love With Git 2.0 - alternate slides using sourcetree">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<style media="screen">
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,700i");
+.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,.reveal h6 {
+text-transform: inherit; font-family: "Monserrat", sans-serif; font-weight: bold;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
+.reveal section. .reveal div, .reveal p, .reveal ul, .reveal ol, .reveal li, .reveal dl, .reveal dt, .reveal dd,
+.reveal blockquote, .reveal q, .reveal aside, .reveal figure, .reveal figcaption, .reveal article, .reveal header,
+.reveal footer, .reveal span, .reveal i, .reveal b, .reveal em, .reveal strong {
+font-family: "Lato", sans-serif;
+}
+.reveal .slide-number { color: white; }
+.reveal section img.title-image {
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+  border: none;
+  background: transparent;
+}
+.reveal strong, .reveal b { color: white; }
+.reveal em, .reveal i { color: lightgreen; }
+.reveal code, .reveal tt { color: gold; }
+.reveal pre { font-size: 0.7em; }
+</style>
+
+<section>
+<section id="slide-org9858c96">
+<h2 id="org9858c96">Useful Links</h2>
+<ul>
+<li>Slides:</li>
+
+<li><p>
+Printed Notes:
+</p>
+
+<p>
+Keep these open in your browser
+</p></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org8e5e4d7">
+<h2 id="org8e5e4d7">Configuring SourceTree</h2>
+</section>
+</section>
+<section>
+<section id="slide-org573a8f3">
+<h2 id="org573a8f3">Configuring your local Git</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgf98fa7d">
+<h2 id="orgf98fa7d">SSH keys</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgc437d19">
+<h2 id="orgc437d19">Creating a new project, locally</h2>
+<div class="outline-text-2" id="text-orgc437d19">
+</div></section>
+<section id="slide-org6923354">
+<h3 id="org6923354">Initialize the project directory</h3>
+</section>
+<section id="slide-org4d4e1a8">
+<h3 id="org4d4e1a8">Create some content</h3>
+</section>
+<section id="slide-org050e393">
+<h3 id="org050e393">Stage and commit the content</h3>
+</section>
+<section id="slide-orgf963b37">
+<h3 id="orgf963b37">Create the remote repository</h3>
+</section>
+<section id="slide-org638d56d">
+<h3 id="org638d56d">Push the content</h3>
+</section>
+</section>
+<section>
+<section id="slide-orgef75d82">
+<h2 id="orgef75d82">Creating a new project, remotely</h2>
+<div class="outline-text-2" id="text-orgef75d82">
+</div></section>
+<section id="slide-org7e9d022">
+<h3 id="org7e9d022">Create the remote repository</h3>
+</section>
+<section id="slide-org7a2e32c">
+<h3 id="org7a2e32c">Clone the remote</h3>
+</section>
+<section id="slide-org1ee78b6">
+<h3 id="org1ee78b6">Create some new content</h3>
+</section>
+<section id="slide-orge4e068a">
+<h3 id="orge4e068a">Stage and commit the content</h3>
+</section>
+<section id="slide-orga2aabfc">
+<h3 id="orga2aabfc">Push the content</h3>
+</section>
+</section>
+<section>
+<section id="slide-org52d1b50">
+<h2 id="org52d1b50">Tracking and Reverting Changes</h2>
+<div class="outline-text-2" id="text-org52d1b50">
+</div></section>
+<section id="slide-orgace6499">
+<h3 id="orgace6499">Before staging</h3>
+</section>
+<section id="slide-orgf61b665">
+<h3 id="orgf61b665">After staging, before committing</h3>
+</section>
+<section id="slide-orgfeea4d2">
+<h3 id="orgfeea4d2">After committing, before pushing</h3>
+</section>
+<section id="slide-orga5df4f2">
+<h3 id="orga5df4f2">After pushing</h3>
+</section>
+</section>
+<section>
+<section id="slide-orge9ead2b">
+<h2 id="orge9ead2b">Multiple Development Paths</h2>
+<div class="outline-text-2" id="text-orge9ead2b">
+</div></section>
+<section id="slide-org35dd538">
+<h3 id="org35dd538">Branching</h3>
+</section>
+<section id="slide-org7266672">
+<h3 id="org7266672">Merging</h3>
+</section>
+<section id="slide-orgd25a76d">
+<h3 id="orgd25a76d">Rebasing</h3>
+</section>
+</section>
+</div>
+</div>
+<div> Created by Tamara Temple &lt;tamara@tamouse.org&gt; </div>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }]
+});
+</script>
+</body>
+</html>
