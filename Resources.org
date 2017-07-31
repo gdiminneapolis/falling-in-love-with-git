@@ -1,0 +1,166 @@
+* Resources for working with Git
+  :PROPERTIES:
+  :CUSTOM_ID: resources-for-working-with-git
+  :END:
+
+** Websites
+   :PROPERTIES:
+   :CUSTOM_ID: websites
+   :END:
+
+-  [[https://git-scm.com/doc][official documentation]]
+-  [[https://help.github.com/articles/set-up-git/][Github help]]
+-  [[https://www.learnenough.com/git-tutorial][Learn Enough Git to be
+   Dangerous]]
+
+*** More on just command line
+    :PROPERTIES:
+    :CUSTOM_ID: more-on-just-command-line
+    :END:
+
+-  [[https://www.learnenough.com/command-line-tutorial][Learn Enough
+   Command Line to Be Dangerous]]
+-  [[https://explainshell.com][Explain Shell]]
+
+** Cheat Sheets
+   :PROPERTIES:
+   :CUSTOM_ID: cheat-sheets
+   :END:
+
+-  [[file:github-git-cheat-sheet.pdf][from Github]]
+-  [[file:gitlab-git-cheat-sheet.pdf][from Gitlab]]
+-  [[file:atlassian_get_cheatsheet.pdf][from Atlassian]]
+-  [[https://www.cheatography.com/samcollett/cheat-sheets/git/][Git
+   Cheat Sheet by SamCollett]]
+-  [[http://www.ndpsoftware.com/git-cheatsheet.html#loc=workspace;][Workspace
+   Git Cheatsheet]]
+
+*** Command line
+    :PROPERTIES:
+    :CUSTOM_ID: command-line
+    :END:
+
+-  [[https://www.git-tower.com/blog/command-line-cheat-sheet/][Command
+   Line Cheat Sheet from Git Tower]]
+-  [[https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/][Linux
+   Command Line Cheat Sheet by DaveChild]]
+
+** GUI Tools
+   :PROPERTIES:
+   :CUSTOM_ID: gui-tools
+   :END:
+
+/For when the command line becomes all too much./
+
+-  [[https://git-scm.com/downloads/guis][Official List of GUI tools]]
+-  [[https://www.sourcetreeapp.com/][SourceTree]]
+-  [[https://desktop.github.com/][Github Desktop]]
+-  [[https://www.git-tower.com/mac/][Tower]]
+-  [[https://git.wiki.kernel.org/index.php/InterfacesFrontendsAndTools][Unofficial
+   list of GUI tools]]
+
+** Editor Integrations
+   :PROPERTIES:
+   :CUSTOM_ID: editor-integrations
+   :END:
+
+*** Atom
+    :PROPERTIES:
+    :CUSTOM_ID: atom
+    :END:
+
+-  [[http://blog.atom.io/2014/03/13/git-integration.html][Git
+   Integration - Atom Blog]]
+
+*** Sublime Text 2 / 3
+    :PROPERTIES:
+    :CUSTOM_ID: sublime-text-2-3
+    :END:
+
+-  [[https://sublimegit.readthedocs.io/en/latest/][SublimeGit]]
+
+*** Emacs
+    :PROPERTIES:
+    :CUSTOM_ID: emacs
+    :END:
+
+-  [[https://magit.vc/][Magit]]
+
+*** VIM
+    :PROPERTIES:
+    :CUSTOM_ID: vim
+    :END:
+
+-  [[http://www.vim.org/scripts/script.php?script_id=2975][fugitive.vim]]
+-  [[http://www.vim.org/scripts/script.php?script%5Fid=90][vcscommand.vim]]
+
+*** JetBrains IDEs
+    :PROPERTIES:
+    :CUSTOM_ID: jetbrains-ides
+    :END:
+
+Nothing additional needed, all the fabulous JetBrains IDEs (WebStorm,
+PyCharm, RubyMine, PhpStorm, etc) come with exceptional support for git.
+
+** Online Courses
+   :PROPERTIES:
+   :CUSTOM_ID: online-courses
+   :END:
+
+-  [[http://learngitbranching.js.org/][Learn Git Branching]]
+
+A really nifty online learning experience that walks you through how to
+do branching and merging in git.
+
+-  [[https://www.shortcutfoo.com/app/dojos/git][Git commands and
+   shortcuts ShortcutFoo]]
+-  [[https://www.udemy.com/learning-git2/][Udemy.com: Learning Git]]
+-  [[https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html][Lynda.com:
+   Git Essential Training]]
+
+** Other Resources
+   :PROPERTIES:
+   :CUSTOM_ID: other-resources
+   :END:
+
+-  [[https://www.atlassian.com/git][Atlassian Git Tutorials]] (Atlassian
+   are makers of BitBucket, another Git remote hosting service like
+   GitHub and GitLab)
+
+-  [[https://about.gitlab.com/2016/12/08/git-tips-and-tricks/][Git Tips
+   & Tricks - GitLab]]
+
+-  [[https://github.com/gdiminneapolis/falling-in-love-with-git/wiki/The-%22Git-Dance%22][The
+   Git Dance]]
+
+-  [[http://nvie.com/posts/a-successful-git-branching-model/][Git Flow:
+   A successful Git branching model]]
+
+-  [[https://www.atlassian.com/git/tutorials/comparing-workflows][Git
+   Workflows and Tutorials]]
+
+-  [[https://docs.google.com/document/d/1liKkSCPcOXvc4QTSbvxqpOJjjfRhPlkMzOwwxMVfHpU/edit#heading=h.87j2thi29oi8][GitHub
+   30 Day Challenge Guide]]
+
+Written by Prime Digital Academy's Scott Bromander, this is a document
+to help you develop a practice of learning by using Git and Github to
+track your learning.
+
+-  [[https://github.com/tamouse/gdi-starting-up][gdi-starting-up: A
+   quick set of steps to use when beginning a new project from scratch]]
+
+A general set of guidelines to use when starting off a new project.
+
+-  [[https://hub.github.com/][hub: the command-line wrapper for git]]
+
+Using hub, starting up a new project becomes pretty simple:
+
+#+BEGIN_SRC sh
+    git init new_project
+    cd new_project
+    hub create
+    echo '# My New Awesome Project' > README.md
+    git add -A
+    git commit -m initial
+    git push -u origin HEAD
+#+END_SRC

@@ -1,0 +1,438 @@
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t reveal_title_slide:nil
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: toc:nil
+#+REVEAL_TRANS: none
+#+REVEAL_THEME: moon
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="GCI Class Falling in Love With Git 2.0 -- command line version">
+#+REVEAL_POSTAMBLE: <div> Created by Tamara Temple &lt;tamara@tamouse.org&gt; </div>
+#+REVEAL_PLUGINS: (markdown notes highlight)
+#+BEGIN_EXPORT html
+<style media="screen">
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,700i");
+.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,.reveal h6 {
+text-transform: inherit; font-family: "Monserrat", sans-serif; font-weight: bold;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
+.reveal section. .reveal div, .reveal p, .reveal ul, .reveal ol, .reveal li, .reveal dl, .reveal dt, .reveal dd,
+.reveal blockquote, .reveal q, .reveal aside, .reveal figure, .reveal figcaption, .reveal article, .reveal header,
+.reveal footer, .reveal span, .reveal i, .reveal b, .reveal em, .reveal strong {
+font-family: "Lato", sans-serif;
+}
+.reveal .slide-number { color: white; }
+.reveal section img.title-image {
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+  border: none;
+  background: transparent;
+}
+.reveal strong, .reveal b { color: white; }
+.reveal em, .reveal i { color: lightgreen; }
+.reveal code, .reveal tt { color: gold; }
+.reveal pre { font-size: 0.7em; }
+</style>
+#+END_EXPORT
+
+* Useful links
+
+  - Slides:
+
+  - Printed Notes:
+
+* Get started with Command Line
+
+| On a Mac                   | On Windows                 |
+|----------------------------+----------------------------|
+| Open Terminal.app          | Open Git-Bash              |
+| Type ~git~ and press Enter | Type ~git~ and press Enter |
+
+
+*Woo!! You've started!!*
+
+** Anatomy of the command line
+
+   #+BEGIN_EXPORT html
+   <img src="images/command-line-anatomy.png" class="" alt="command line anatomy" />
+   #+END_EXPORT
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   - the /command/ is the first part on the line, after the /prompt/
+   - /options/ appear after the command
+     - single dash, single character options
+     - double dash, multi-character options
+   - /operands/ appear last, the things the command will act upon
+
+** Commands
+
+   The action we want the computer to take
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   - 10s of 1000s of commands
+   - The first thing on the line after the promp
+   - Often it's a short abbreviation
+   - Sometimes there are sub-commands that follow the command
+     - e.g.: ~git log~: ~git~ is the command, ~log~ is the subcommand
+
+** Options
+
+   - Tells the command to do something extra with the operands
+
+   - two forms: /short/ and /long/
+
+*** Short options
+
+    #+ATTR_REVEAL: :frag (fade-in)
+    - single letter
+    - single dash
+    - letters can be squashed together
+
+    #+ATTR_REVEAL: :frag (fade-in)
+    ~ls -a -l -F~ is the same as ~ls -alF~
+
+*** Long Options
+    #+ATTR_REVEAL: :frag (fade-in)
+    - words or dash-words
+    - two dashes
+    - some command can have short options
+
+    #+ATTR_REVEAL: :frag t
+    ~git add --all --verbose~
+    or
+    ~git add --all -v~
+** Man Pages
+
+   Man (i.e. "manual") pages are the documentation for commands on
+   Unix-based operating systems.
+
+   To get help on the ~ls~ command, type:
+
+   #+BEGIN_SRC shell-script
+   man ls
+   #+END_SRC
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   /This might also be referred to as "man-splainin'"./
+** Listing files
+
+   The ~ls~ command is used to show the files in a directory
+
+
+   #+BEGIN_SRC shell-script
+     ls # -> lists the files in the current
+        # working directory
+     ls ~ # -> lists the files in your HOME
+          # directory
+     ls $HOME # -> does the same thing
+     ls Desktop # -> lists the files in the
+   	     # Desktop directory
+     ls /usr/local/bin
+   #+END_SRC
+
+** Moving about
+
+   The ~cd~ command changes your current working directory
+
+   #+BEGIN_SRC shell-script
+     cd # -> changes to your HOME directory
+     cd ~ # -> same
+     cd $HOME # -> same
+     cd Desktop # -> makes the current
+   	     # working directory your
+   	     # Desktop
+     cd Projects/GDI/classes/falling-in-love-with-git
+     # -> a project directory
+   #+END_SRC
+
+** Moving and renaming files or directories
+
+   The ~mv~ command moves and/or renames files and directories
+
+   The form is: ~mv SOURCE DESTINATION~
+
+   #+BEGIN_SRC shell-script
+     mv file.out file.txt # -> renames the file
+     mv styles.css ../sass/styles.scss
+     # -> moves AND renames the file
+     mv file1 file2 file3 file4 ~/Desktop
+     # moves several files to your Desktop
+     # directory. When moving multiple files,
+     # the destination must be a directory
+   #+END_SRC
+
+** Deleting or removing files and directories
+
+   The ~rm~ command is used to remove files and directories
+
+   #+BEGIN_SRC shell-script
+     rm file2.out # -> removes the file named
+   	       # "file2.out"
+     rm -rf tmp # -> recursively and
+   	     # forcefully remove the
+   	     # entire tmp/ directory tree
+   #+END_SRC
+
+   /Do be careful on the last one/
+
+** Make a new directory
+
+   The ~mkdir~ command creates directories
+
+   #+BEGIN_SRC shell-script
+     mkdir tmp #-> makes a directory named
+   	    #"tmp" in the current working
+   	    #directory
+     mkdir -p ~/Projects/Websites/examples/full-height-flex
+     # -> makes a directory under the user's
+     # -> HOME directory, including all the
+     # -> intervening paths if they don't yet
+     # -> exist
+   #+END_SRC
+
+* Configuring your local Git
+
+  There are some configuration items that Git requires of you.
+
+  - Your name and email for use in commit log messages
+
+  These are set in the "global" configuration and apply to all git
+  projects on your computer.
+
+** Set your name and email
+
+   Enter the commands:
+
+   #+BEGIN_SRC shell-script
+     git config --global user.name "Your Name"
+     git config --global user.email "your.mail@example.com"
+   #+END_SRC
+
+   Replace the strings with the actual values
+
+** Colorized output
+
+   Git commands can have colorized output, that helps in understanding
+   some of the results. To set it globally:
+
+   #+BEGIN_SRC shell-script
+     git config --global color.ui true
+   #+END_SRC
+
+** Global Ignore
+
+   Git will ignore any files and directories listed in a ~.gitignore~
+   file in a project directory.
+
+   You can also set up a global ignore file.
+
+   #+REVEAL: split
+
+   Enter the following into a file on if you're on a Mac:
+
+   #+NAME: $HOME/.gitignore_globally
+   #+BEGIN_SRC text
+     # OS/X cruft
+     .DS_Store
+     .localized
+     .CFUserTextEncoding
+   #+END_SRC
+
+   /(Windows users probably have other files to ignore globally.).
+
+   #+REVEAL: split
+
+   Enter the following to configure the global ignore:
+
+   #+BEGIN_SRC shell-script
+     git config --global core.excludesfile \
+         $HOME/.gitignore_globally
+   #+END_SRC
+
+   #+REVEAL: split
+
+   The following will show your current global configuration:
+
+   #+BEGIN_SRC shell-script
+     git config --global --list
+   #+END_SRC
+
+   Hopefully it looks something like this:
+
+   #+BEGIN_EXPORT html
+   <pre>user.name=Tamara Temple
+   user.email=tamouse@gmail.com
+   core.excludesfile=/Users/tamara/.gitignore_global
+   color.ui=true</pre>
+   #+END_EXPORT
+
+** Other
+
+   There are tons of things you can configure globally, but you
+   probably don't need that much.
+
+   Each project also has a configuration, which you can use to
+   override global configurations if you want.
+
+* SSH keys
+  - SSH (Secure SHell) keys are a way to secure the communication
+    between your computer and another computer, /without needing to
+    type a password every time./
+
+  - You'll need a pair of keys to interact with Github (or other
+    remote Git repository hosting service), a /public/ key and a
+    /private/ key.
+
+#+REVEAL: split
+  - You provide the /public/ key to the remote host.
+
+  - You keep the /private/ key /private/ -- don't share it around.
+
+  - You can have multiple key pairs on the same machine.
+
+  - You can use the same key pair on multiple machines.
+
+** Check to see if you already have an SSH key pair
+
+   SSH keys, configuration, and other information are stored in the
+   root of your user directory, aka ~$HOME~, in a directory called ~.ssh~
+
+   You may not find an existing key pair, and you may not even have a
+   ~.ssh~ directory yet.
+
+   #+REVEAL: split
+
+   To find out, enter the following command:
+
+   #+BEGIN_SRC shell-script
+   ls -alF ~/.ssh
+   #+END_SRC
+
+   If you don't have that directory yet, you'll see something like:
+
+   #+BEGIN_EXPORT html
+   <pre>ls: .ssh: No such file or directory</pre>
+   #+END_EXPORT
+
+   That's okay, we'll fix that in a minute.
+
+   #+REVEAL: split
+
+   Otherwise, look for a pair of files with the same base name, and
+   one with an extension of ~.pub~:
+
+   #+BEGIN_EXPORT html
+<pre>-rw-------   1 tamara  staff   1.6K Mar 18 18:28 id_rsa
+-rw-r--r--   1 tamara  staff   397B Mar 18 18:28 id_rsa.pub</pre>
+   #+END_EXPORT
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   They might be named differently than ~id_rsa~. That's only the
+   /default/ name.
+
+** Generating a new SSH key pair
+
+   If you don't already have a key pair, or if you'd like to generate
+   a new pair, enter the following:
+
+   #+BEGIN_SRC shell-script
+     ssh-keygen -t rsa -b 4096 -C "$USER@`hostname`"
+   #+END_SRC
+
+   - ~-t rsa~ the type of key to generate. RSA is currently unbreakable
+   - ~-b 4096~ create a key that's 4096 characters, *really* secure
+   - ~-C "$USER@`hostname`"~ add a comment with your user name and
+     machine name (The comment can be anything, just make it memorable)
+
+   #+REVEAL: split
+
+   The command will run, and ask a few questions:
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   - *It will ask you where to save the new key pair.*
+
+     - It will offer a default, but you can enter something else if
+       you'd like.
+
+     - You need to specify the directory as well, or it will save the
+       key pair in the current directory.
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   - *It will ask for a passphrase.*
+     - You can enter something, but you will need to enter this every
+       time you use the key pair, so it's like a password.
+
+     - It is fine to leave this blank.
+
+     - /Don't leave it blank if you're on a shared computer./
+
+   #+REVEAL: split
+
+   It will produce some output:
+
+   #+BEGIN_EXPORT html
+   <pre>
+Your identification has been saved in xyxyxyx.
+Your public key has been saved in xyxyxyx.pub.
+The key fingerprint is:
+SHA256:GWzSrg4cpnpxRsb2Jh7Dxszz+TKRMeDs3Mk96Pqs9vE tamara@pontiki3.local
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|    .  o         |
+|   + .. =        |
+|    B o+ o       |
+|   @o+ BS        |
+|  .+/.X.o        |
+|  .*oOoo .       |
+| .. o+*o         |
+|.. .o==+E        |
++----[SHA256]-----+
+   </pre>
+   #+END_EXPORT
+** Adding the new SSH Key Pair to Github
+   The reason we just did all that is so we can securely communicated
+   with GitHub. We now need to give Github our *public* key.
+
+   #+REVEAL: split
+
+   - copy the contents of the *public* key to your clipboard
+   - open up your browser to ~https://github.com~ and log in if
+     necessary
+   - click on the user menu in the upper right corner (where your
+     avatar is)
+   - click on the ~Settings~ menu item in the dropdown
+   - click on the "SSH and GPG keys" menu item on the left hand side
+
+   #+REVEAL: split
+
+   You'll now be in the place where you can add the new *public* SSH
+   key.
+
+   - scan the list of keys, if there are any, and see if you've
+     already added this one (that's what the comments are for!)
+   - click on the ~Add SSH Key~ in the upper right
+   - click on the "Key" box and paste in your key
+   - click on the "Add Key" button below that
+   - note that the title is filled with your comment!
+
+* Creating a new project, locally
+** Initialize the project directory
+** Create some content
+** Stage and commit the content
+** Create the remote repository
+** Push the content
+* Creating a new project, remotely
+** Create the remote repository
+** Clone the remote
+** Create some new content
+** Stage and commit the content
+** Push the content
+* Tracking and Reverting Changes
+** Before staging
+** After staging, before committing
+** After committing, before pushing
+** After pushing
+* Multiple Development Paths
+** Branching
+** Merging
+** Rebasing

@@ -1,0 +1,45 @@
+* Course slides for 'Falling in Love with Git' GDI Minneapolis Course
+
+-  Slides are at
+   [[https://gdiminneapolis.github.io/falling-in-love-with-git]]
+-  Git Documentation: [[https://git-scm.com/docs]]
+-  GitHub Help: [[https://help.github.com/]]
+
+** Resources
+
+-  [[file:Resources.org][Additional Resources]]
+
+** Contributing
+
+We are always looking for help in improving our training materials. We'd
+like your participation as well!
+
+First, read the [[file:CONTRIBUTOR_COVENANT.md][Contributor Covenant]].
+
+Next, you can contribute in the following ways:
+
+-  Submit an problem, suggestion, or question via [[https://github.com/gdiminneapolis/falling-in-love-with-git/issues][Issues]]
+-  Write or update a page explaining something on the project [[https://github.com/gdiminneapolis/falling-in-love-with-git/wiki][Wiki]]
+-  Fork and clone the repo, cut a branch, make your changes, and submit
+   a [[https://github.com/gdiminneapolis/falling-in-love-with-git/pulls][Pull Request]]
+
+*** Prerequisites
+
+- Emacs Org-mode, with org-reveal, and associated requirements
+
+*** Downloading Slides
+
+#+BEGIN_EXAMPLE
+    $ git clone git@github.com:gdiminneapolis/falling-in-love-with-git.git
+    $ cd falling-in-love-with-git
+#+END_EXAMPLE
+
+*** Publishing to Github Pages
+
+/t.b.a./
+
+** Contributors
+
+-  [[https://twitter.com/amlyhamm][Amy Gelbart]] (Original author/creator)
+-  [[https://github.com/tamouse][Tamara Tmeple]]
+-  Add your name here! (See above.)
