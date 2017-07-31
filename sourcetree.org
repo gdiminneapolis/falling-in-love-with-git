@@ -71,41 +71,268 @@ font-family: "Lato", sans-serif;
 
    Make sure your user information is correct:
 
-   #+BEGIN_HTML
+   #+BEGIN_EXPORT html
      <img src="images/sourcetree/set-user-info.png"
           class="" alt="Set your user info" />
-   #+END_HTML
+   #+END_EXPORT
 
    #+REVEAL: split
 
    Set up the global gitignore file.
 
-   #+BEGIN_HTML
+   #+BEGIN_EXPORT html
      <img src="images/sourcetree/set-global-gitignore.png"
           alt="Set the global gitignore file" />
-   #+END_HTML
+   #+END_EXPORT
 
    You can edit it from here as well.
 
+   #+REVEAL: split
+
+   Set push branches to "matching":
+
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/push-branches-matching.png"
+        alt="Set push branches to matching" />
+   #+END_EXPORT
 
 
 ** Connect to Github
 
+   Let's go ahead and connect up to your GitHub account.
 
-* Configuring your local Git
-* SSH keys
-* Creating a new project, locally
-** Initialize the project directory
-** Create some content
-** Stage and commit the content
-** Create the remote repository
-** Push the content
-* Creating a new project, remotely
-** Create the remote repository
-** Clone the remote
+   #+REVEAL: split
+
+   Under the Account tab, click on "Add"
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/01-add-github-account.png" />
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   Then select "GitHub", "OAuth", and click on "Connect"
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/02-connecting-to-github.png" />
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   Log in to GitHub with your account
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/03-log-in-to-github.png" />
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   After logging in, click on "Generate"
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/04-generate-the-key.png" />
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   Have SourceTree generate the key pair.
+
+   You can leave the Pass phrase fields empty.
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/05-create-the-key.png" />
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   Click on "OK" to enable the connection to GitHub
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/06-enable-account.png" />
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   You are now connected to your GitHub account
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/07-github-account-connected.png" />
+   #+END_EXPORT
+   #+REVEAL: split
+
+   Verify that the SourceTree key is on Github.
+
+   In the browser, go to your account, *Settings* -> *SSH and GPG
+   Keys*
+
+   Look for the SourceTree key
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/08-verify-key-on-github.com.png" />
+   #+END_EXPORT
+
+* Getting Familiar with SourceTree
+** Menubar
+
+   The menubar at the top has the major operations
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/menubar.png">
+   #+END_EXPORT
+
+** Sidebar
+   Hover over the major items in the side bar to show or hide them
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/view-local-branches.png" style="max-height: 60vh;">
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   Same for remotes
+
+  #+BEGIN_EXPORT html
+   <img src="images/sourcetree/vew-remote-branches.png" style="max-height: 60vh;" >
+   #+END_EXPORT
+
+
+* Creating a new project
+
+  WIth SourceTree, it's super easy to start a new project by creating
+  a remote repo on Github.
+
+** Create the Remote Repo
+
+  #+REVEAL: split
+
+  Start creating the remote repo
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/new-local-repo//01-click-new-repository.png" >
+  #+END_EXPORT
+
+  #+REVEAL: split
+
+  Select "Create Remote"
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/new-local-repo//02-select-create-remote.png">
+  #+END_EXPORT
+
+  #+REVEAL: split
+
+  Create the remote repo
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/new-local-repo//03-create-the-remote-repo.png">
+  #+END_EXPORT
+
+** Clone the remote to your local machine
+
+  Click on remote to show your remote repos
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/new-local-repo//04-click-on-remote.png" >
+  #+END_EXPORT
+
+  #+REVEAL: split
+
+  Use the search box to filter the repos
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/new-local-repo//05-search-for-repo.png" >
+  #+END_EXPORT
+
+  #+REVEAL: split
+
+  Clone the repo
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/new-local-repo//06-clone-repo.png" >
+  #+END_EXPORT
+
+  #+REVEAL: split
+
+  Set the location for the clone on your local machine
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/new-local-repo//07-set-location.png">
+  #+END_EXPORT
+
+  #+REVEAL: split
+
+  Click the "Clone" button
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/new-local-repo//08-click-clone.png" >
+  #+END_EXPORT
+
+  #+REVEAL: split
+
+  Look at your new repo!
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/new-local-repo//09-new-repo.png" style="max-height: 50vh; ">
+  #+END_EXPORT
+
+  #+ATTR_REVEAL: :frag (fade-in)
+  /but it's empty.../
+
+
 ** Create some new content
-** Stage and commit the content
-** Push the content
+
+   Open you new project in your editor
+
+   Add a README.md file
+
+   #+BEGIN_SRC markdown
+     # This is My Git Class Demo
+
+
+     Isn't it **great**?
+   #+END_SRC
+
+
+   Save the file and go back to SourceTree
+
+** Stage the changes
+
+   You can see the new content reflected in SourceTree
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-local-repo/11-stage-change.png" style="max-height: 60vh;">
+   #+END_EXPORT
+
+   Click in the box by the README file to stage it.
+
+** Commit and Push the content
+
+   Click in the commit text box to start the commit process.
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-local-repo/12-start-commit.png"  style="max-height: 60vh;">
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   Type in the commit message, leave the "Push" box checked, and click
+   on "Commit"
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-local-repo/13-commit-msg-push-and-commit.png"  style="max-height: 60vh;">
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   The command log will show the execution and results, including any
+   errors
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-local-repo/14-command-log.png" >
+   #+END_EXPORT
+
+
 * Tracking and Reverting Changes
 ** Before staging
 ** After staging, before committing

@@ -54,8 +54,8 @@ font-family: "Lato", sans-serif;
 </style>
 
 <section>
-<section id="slide-org8805b67">
-<h2 id="org8805b67">Useful Links</h2>
+<section id="slide-orgd0e6dde">
+<h2 id="orgd0e6dde">Useful Links</h2>
 <ul>
 <li>Slides:</li>
 
@@ -72,87 +72,394 @@ Keep these open in your browser
 </section>
 </section>
 <section>
-<section id="slide-orga9c0dbe">
-<h2 id="orga9c0dbe">Configuring SourceTree</h2>
-</section>
-</section>
-<section>
-<section id="slide-orgba15e41">
-<h2 id="orgba15e41">Configuring your local Git</h2>
-</section>
-</section>
-<section>
-<section id="slide-org32f47f3">
-<h2 id="org32f47f3">SSH keys</h2>
-</section>
-</section>
-<section>
-<section id="slide-org6e295f0">
-<h2 id="org6e295f0">Creating a new project, locally</h2>
-<div class="outline-text-2" id="text-org6e295f0">
+<section id="slide-orgc98e048">
+<h2 id="orgc98e048">Configuring SourceTree</h2>
+<div class="outline-text-2" id="text-orgc98e048">
 </div></section>
-<section id="slide-org41daf6e">
-<h3 id="org41daf6e">Initialize the project directory</h3>
+<section id="slide-org95d41b6">
+<h3 id="org95d41b6">Installation</h3>
+<ul>
+<li>Sign up with Atlassian</li>
+<li>Register your copy</li>
+<li>Skip step that connects to BitBucket or Github</li>
+
+</ul>
+
 </section>
-<section id="slide-org214cd9f">
-<h3 id="org214cd9f">Create some content</h3>
+<section id="slide-org64037d4">
+<h3 id="org64037d4">Install Command Line Tools</h3>
+<p>
+From the <b>SourceTree</b> menu:
+</p>
+
+<img src="images/sourcetree/install-command-line-tools.png" class=""
+     alt="Install Sourcetree Command Line Tools" />
+
 </section>
-<section id="slide-orgc27fead">
-<h3 id="orgc27fead">Stage and commit the content</h3>
+<section id="slide-org2581a8f">
+<h3 id="org2581a8f">Set Preferences</h3>
+<p>
+From the <b>SourceTree</b> menu:
+</p>
+
+<img src="images/sourcetree/preferences.png" class=""
+     alt="Open SourceTree Preferences" />
+
 </section>
-<section id="slide-orgfe7cc8a">
-<h3 id="orgfe7cc8a">Create the remote repository</h3>
+<section >
+
+<p>
+Make sure your user information is correct:
+</p>
+
+<img src="images/sourcetree/set-user-info.png"
+     class="" alt="Set your user info" />
+
 </section>
-<section id="slide-org33c0d5a">
-<h3 id="org33c0d5a">Push the content</h3>
+<section >
+
+<p>
+Set up the global gitignore file.
+</p>
+
+<img src="images/sourcetree/set-global-gitignore.png"
+     alt="Set the global gitignore file" />
+
+<p>
+You can edit it from here as well.
+</p>
+
+</section>
+<section >
+
+<p>
+Set push branches to "matching":
+</p>
+
+
+<img src="images/sourcetree/push-branches-matching.png"
+     alt="Set push branches to matching" />
+
+
+</section>
+<section id="slide-org445c689">
+<h3 id="org445c689">Connect to Github</h3>
+<p>
+Let's go ahead and connect up to your GitHub account.
+</p>
+
+</section>
+<section >
+
+<p>
+Under the Account tab, click on "Add"
+</p>
+
+<img src="images/sourcetree/github/01-add-github-account.png" />
+
+</section>
+<section >
+
+<p>
+Then select "GitHub", "OAuth", and click on "Connect"
+</p>
+
+<img src="images/sourcetree/github/02-connecting-to-github.png" />
+
+</section>
+<section >
+
+<p>
+Log in to GitHub with your account
+</p>
+
+<img src="images/sourcetree/github/03-log-in-to-github.png" />
+
+</section>
+<section >
+
+<p>
+After logging in, click on "Generate"
+</p>
+
+<img src="images/sourcetree/github/04-generate-the-key.png" />
+
+</section>
+<section >
+
+<p>
+Have SourceTree generate the key pair.
+</p>
+
+<p>
+You can leave the Pass phrase fields empty.
+</p>
+
+<img src="images/sourcetree/github/05-create-the-key.png" />
+
+</section>
+<section >
+
+<p>
+Click on "OK" to enable the connection to GitHub
+</p>
+
+<img src="images/sourcetree/github/06-enable-account.png" />
+
+</section>
+<section >
+
+<p>
+You are now connected to your GitHub account
+</p>
+
+<img src="images/sourcetree/github/07-github-account-connected.png" />
+</section>
+<section >
+
+<p>
+Verify that the SourceTree key is on Github.
+</p>
+
+<p>
+In the browser, go to your account, <b>Settings</b> -&gt; <b>SSH and GPG
+Keys</b>
+</p>
+
+<p>
+Look for the SourceTree key
+</p>
+
+<img src="images/sourcetree/github/08-verify-key-on-github.com.png" />
+
 </section>
 </section>
 <section>
-<section id="slide-org1e0752f">
-<h2 id="org1e0752f">Creating a new project, remotely</h2>
-<div class="outline-text-2" id="text-org1e0752f">
+<section id="slide-org6369ac7">
+<h2 id="org6369ac7">Getting Familiar with SourceTree</h2>
+<div class="outline-text-2" id="text-org6369ac7">
 </div></section>
-<section id="slide-orgb110fd1">
-<h3 id="orgb110fd1">Create the remote repository</h3>
+<section id="slide-orge8f4ffe">
+<h3 id="orge8f4ffe">Menubar</h3>
+<p>
+The menubar at the top has the major operations
+</p>
+
+<img src="images/sourcetree/menubar.png">
+
 </section>
-<section id="slide-org9725ea3">
-<h3 id="org9725ea3">Clone the remote</h3>
+<section id="slide-orgb679f18">
+<h3 id="orgb679f18">Sidebar</h3>
+<p>
+Hover over the major items in the side bar to show or hide them
+</p>
+
+<img src="images/sourcetree/view-local-branches.png" style="max-height: 60vh;">
+
 </section>
-<section id="slide-org771ee6f">
-<h3 id="org771ee6f">Create some new content</h3>
-</section>
-<section id="slide-org141263a">
-<h3 id="org141263a">Stage and commit the content</h3>
-</section>
-<section id="slide-org16f5c9e">
-<h3 id="org16f5c9e">Push the content</h3>
+<section >
+
+<p>
+Same for remotes
+</p>
+
+<img src="images/sourcetree/vew-remote-branches.png" style="max-height: 60vh;" >
+
+
 </section>
 </section>
 <section>
-<section id="slide-orgb4b2eab">
-<h2 id="orgb4b2eab">Tracking and Reverting Changes</h2>
-<div class="outline-text-2" id="text-orgb4b2eab">
-</div></section>
-<section id="slide-org6f45169">
-<h3 id="org6f45169">Before staging</h3>
+<section id="slide-orgf344e27">
+<h2 id="orgf344e27">Creating a new project</h2>
+<p>
+WIth SourceTree, it's super easy to start a new project by creating
+a remote repo on Github.
+</p>
+
 </section>
-<section id="slide-org0549e8f">
-<h3 id="org0549e8f">After staging, before committing</h3>
+<section id="slide-orgb476b7c">
+<h3 id="orgb476b7c">Create the Remote Repo</h3>
 </section>
-<section id="slide-org36cf1b7">
-<h3 id="org36cf1b7">After committing, before pushing</h3>
+<section >
+
+<p>
+Start creating the remote repo
+</p>
+
+<img src="images/sourcetree/new-local-repo//01-click-new-repository.png" >
+
 </section>
-<section id="slide-orge857f73">
-<h3 id="orge857f73">After pushing</h3>
+<section >
+
+<p>
+Select "Create Remote"
+</p>
+
+<img src="images/sourcetree/new-local-repo//02-select-create-remote.png">
+
+</section>
+<section >
+
+<p>
+Create the remote repo
+</p>
+
+<img src="images/sourcetree/new-local-repo//03-create-the-remote-repo.png">
+
+</section>
+<section id="slide-orgfe4a746">
+<h3 id="orgfe4a746">Clone the remote to your local machine</h3>
+<p>
+Click on remote to show your remote repos
+</p>
+
+<img src="images/sourcetree/new-local-repo//04-click-on-remote.png" >
+
+</section>
+<section >
+
+<p>
+Use the search box to filter the repos
+</p>
+
+<img src="images/sourcetree/new-local-repo//05-search-for-repo.png" >
+
+</section>
+<section >
+
+<p>
+Clone the repo
+</p>
+
+<img src="images/sourcetree/new-local-repo//06-clone-repo.png" >
+
+</section>
+<section >
+
+<p>
+Set the location for the clone on your local machine
+</p>
+
+<img src="images/sourcetree/new-local-repo//07-set-location.png">
+
+</section>
+<section >
+
+<p>
+Click the "Clone" button
+</p>
+
+<img src="images/sourcetree/new-local-repo//08-click-clone.png" >
+
+</section>
+<section >
+
+<p>
+Look at your new repo!
+</p>
+
+<img src="images/sourcetree/new-local-repo//09-new-repo.png" style="max-height: 50vh; ">
+
+<p class="fragment (fade-in)">
+<i>but it's empty&#x2026;</i>
+</p>
+
+
+</section>
+<section id="slide-org223fe1b">
+<h3 id="org223fe1b">Create some new content</h3>
+<p>
+Open you new project in your editor
+</p>
+
+<p>
+Add a README.md file
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="markdown" ># This is My Git Class Demo
+
+
+Isn't it **great**?
+</code></pre>
+</div>
+
+
+<p>
+Save the file and go back to SourceTree
+</p>
+
+</section>
+<section id="slide-orgde7106a">
+<h3 id="orgde7106a">Stage the changes</h3>
+<p>
+You can see the new content reflected in SourceTree
+</p>
+
+<img src="images/sourcetree/new-local-repo/11-stage-change.png" style="max-height: 60vh;">
+
+<p>
+Click in the box by the README file to stage it.
+</p>
+
+</section>
+<section id="slide-orge465bc3">
+<h3 id="orge465bc3">Commit and Push the content</h3>
+<p>
+Click in the commit text box to start the commit process.
+</p>
+
+<img src="images/sourcetree/new-local-repo/12-start-commit.png"  style="max-height: 60vh;">
+
+</section>
+<section >
+
+<p>
+Type in the commit message, leave the "Push" box checked, and click
+on "Commit"
+</p>
+
+<img src="images/sourcetree/new-local-repo/13-commit-msg-push-and-commit.png"  style="max-height: 60vh;">
+
+</section>
+<section >
+
+<p>
+The command log will show the execution and results, including any
+errors
+</p>
+
+<img src="images/sourcetree/new-local-repo/14-command-log.png" >
+
+
 </section>
 </section>
 <section>
-<section id="slide-org4f279f2">
-<h2 id="org4f279f2">Multiple Development Paths</h2>
-<div class="outline-text-2" id="text-org4f279f2">
+<section id="slide-orgcb309c1">
+<h2 id="orgcb309c1">Tracking and Reverting Changes</h2>
+<div class="outline-text-2" id="text-orgcb309c1">
 </div></section>
-<section id="slide-orgb11397b">
-<h3 id="orgb11397b">Branching</h3>
+<section id="slide-org37a31ee">
+<h3 id="org37a31ee">Before staging</h3>
+</section>
+<section id="slide-orge68d605">
+<h3 id="orge68d605">After staging, before committing</h3>
+</section>
+<section id="slide-org10392e4">
+<h3 id="org10392e4">After committing, before pushing</h3>
+</section>
+<section id="slide-orgeebc0ef">
+<h3 id="orgeebc0ef">After pushing</h3>
+</section>
+</section>
+<section>
+<section id="slide-org4744e63">
+<h2 id="org4744e63">Multiple Development Paths</h2>
+<div class="outline-text-2" id="text-org4744e63">
+</div></section>
+<section id="slide-org04f502d">
+<h3 id="org04f502d">Branching</h3>
 <p>
 To make a new branch from an existing branch, click the "Branch"
 button:
@@ -181,11 +488,11 @@ Press then "Create Branch" button.
 
 
 </section>
-<section id="slide-orgd0550f8">
-<h3 id="orgd0550f8">Merging</h3>
+<section id="slide-orgf40815a">
+<h3 id="orgf40815a">Merging</h3>
 </section>
-<section id="slide-org7b8bda8">
-<h3 id="org7b8bda8">Rebasing</h3>
+<section id="slide-orgbf5a43f">
+<h3 id="orgbf5a43f">Rebasing</h3>
 <p>
 Rebasing is a complicated topic, it takes some time to understand
 what's going on.
@@ -196,8 +503,8 @@ It's like merging, except not exactly
 </p>
 
 </section>
-<section id="slide-orgab8ae35">
-<h4 id="orgab8ae35">Interactive Rebase</h4>
+<section id="slide-org19258f4">
+<h4 id="org19258f4">Interactive Rebase</h4>
 <p>
 Sadly, this is where SourceTree falls down
 </p>
