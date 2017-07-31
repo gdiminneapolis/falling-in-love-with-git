@@ -43,6 +43,22 @@ font-family: "Lato", sans-serif;
     Keep these open in your browser
 
 * Configuring SourceTree
+** Installation
+
+   - Sign up with Atlassian
+   - Register your copy
+   - Skip step that connects to BitBucket or Github
+
+** Install Command Line Tools
+
+   From the *SourceTree* menus:
+
+
+
+
+** Connect to Github
+
+
 * Configuring your local Git
 * SSH keys
 * Creating a new project, locally
@@ -64,5 +80,41 @@ font-family: "Lato", sans-serif;
 ** After pushing
 * Multiple Development Paths
 ** Branching
+
+   To make a new branch from an existing branch, click the "Branch"
+   button:
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branch-button.png" class=""
+        alt="SourceTree branch button" />
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   In the dialog, enter the new branch name:
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-branch-name.png" class=""
+        alt="Entering the new branch name" />
+   #+END_EXPORT
+
+   Leave the "Working copy parent" and "Checkout new branch" options selected.
+
+   Press then "Create Branch" button.
+
+
 ** Merging
 ** Rebasing
+
+   Rebasing is a complicated topic, it takes some time to understand
+   what's going on.
+
+   It's like merging, except not exactly
+
+*** Interactive Rebase
+
+   Sadly, this is where SourceTree falls down
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   - it's incorrect
+   - it's interface is confusing
