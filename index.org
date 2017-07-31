@@ -217,7 +217,7 @@ font-family: "Lato", sans-serif;
    #+END_EXPORT
 
    #+BEGIN_EXPORT html
-   <a href="commandline.html" title="Command line class slides"
+   <a href="command_line.html" title="Command line class slides"
       target="_blank" rel="noopener noreferrer"
    >Class slides using command line</a>
    #+END_EXPORT
