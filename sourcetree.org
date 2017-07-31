@@ -51,8 +51,41 @@ font-family: "Lato", sans-serif;
 
 ** Install Command Line Tools
 
-   From the *SourceTree* menus:
+   From the *SourceTree* menu:
 
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/install-command-line-tools.png" class=""
+        alt="Install Sourcetree Command Line Tools" />
+   #+END_EXPORT
+
+** Set Preferences
+
+   From the *SourceTree* menu:
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/preferences.png" class=""
+        alt="Open SourceTree Preferences" />
+   #+END_EXPORT
+
+   #+REVEAL: split
+
+   Make sure your user information is correct:
+
+   #+BEGIN_HTML
+     <img src="images/sourcetree/set-user-info.png"
+          class="" alt="Set your user info" />
+   #+END_HTML
+
+   #+REVEAL: split
+
+   Set up the global gitignore file.
+
+   #+BEGIN_HTML
+     <img src="images/sourcetree/set-global-gitignore.png"
+          alt="Set the global gitignore file" />
+   #+END_HTML
+
+   You can edit it from here as well.
 
 
 
