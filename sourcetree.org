@@ -261,48 +261,6 @@
    <img src="images/sourcetree/new-repo-local-first/06-but-its-still-empty.png" class="" alt="" />
    #+END_EXPORT
 
-** So create some content!
-
-   #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/07-created-some-new-content.png" class="" alt="" />
-   #+END_EXPORT
-
-** Add, commit, and push
-
-   #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/08-add-commit-and-push.png" class="" alt="" />
-   #+END_EXPORT
-
-
-** Output from commit message
-
-   #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/09-output-from-initial-commit.png" class="" alt="" />
-   #+END_EXPORT
-
-** See local branches
-
-   At first, SourceTree hides the local branches, so tell it to show
-   them
-
-   #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/10-see-local-branches.png" class="" alt="" />
-   #+END_EXPORT
-
-** See the remote branches, too
-
-   #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/11-see-remote-branches.png" class="" alt="" />
-   #+END_EXPORT
-
-
-** Finally, look over at Github
-
-   #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/12-back-on-github-first-commt.png" class="" alt="" />
-   #+END_EXPORT
-
-
 * Creating a New Project, Remote First
 
   If you want to go the other way, you can start by creating the
@@ -385,57 +343,62 @@
    #+ATTR_REVEAL: :frag (fade-in)
    /but it's empty.../
 
-** Create some new content
 
-   Open you new project in your editor
+* Create some content
 
-   Add a README.md file
+  Fire up your editor and create a ~README.md~ file:
 
-   #+BEGIN_SRC markdown
-     # This is My Git Class Demo
+  #+BEGIN_SRC markdown
+    # Hello World!
 
+    This is the README file for this repository.
+    It doesn't matter for this class what you put here.
+    It's going to look different in the rest of the slides.
 
-     Isn't it **great**?
-   #+END_SRC
+  #+END_SRC
 
-
-   Save the file and go back to SourceTree
-
-** Stage the changes
-
-   You can see the new content reflected in SourceTree
+** Check on the status
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first/11-stage-change.png" style="max-height: 60vh;">
+   <img src="images/sourcetree/new-repo-local-first/07-created-some-new-content.png" class="" alt="" />
    #+END_EXPORT
 
-   Click in the box by the README file to stage it.
-
-** Commit and Push the content
-
-   Click in the commit text box to start the commit process.
+** Add, commit, and push
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first/12-start-commit.png"  style="max-height: 60vh;">
+   <img src="images/sourcetree/new-repo-local-first/08-add-commit-and-push.png" class="" alt="" />
    #+END_EXPORT
 
-   #+REVEAL: split
 
-   Type in the commit message, leave the "Push" box checked, and click
-   on "Commit"
+** Output from commit message
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first/13-commit-msg-push-and-commit.png"  style="max-height: 60vh;">
+   <img src="images/sourcetree/new-repo-local-first/09-output-from-initial-commit.png" class="" alt="" />
    #+END_EXPORT
 
-   #+REVEAL: split
+** See local branches
 
-   The command log will show the execution and results, including any
-   errors
+   At first, SourceTree hides the local branches, so tell it to show
+   them
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first/14-command-log.png" >
+   <img src="images/sourcetree/new-repo-local-first/10-see-local-branches.png" class="" alt="" />
    #+END_EXPORT
+
+** See the remote branches, too
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-local-first/11-see-remote-branches.png" class="" alt="" />
+   #+END_EXPORT
+
+
+** Finally, look over at Github
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-local-first/12-back-on-github-first-commt.png" class="" alt="" />
+   #+END_EXPORT
+
+
 
 
 * Tracking and Reverting Changes
