@@ -279,7 +279,6 @@ font-family: "Lato", sans-serif;
   #+ATTR_REVEAL: :frag (fade-in)
   /but it's empty.../
 
-
 ** Create some new content
 
    Open you new project in your editor
@@ -331,6 +330,93 @@ font-family: "Lato", sans-serif;
    #+BEGIN_EXPORT html
    <img src="images/sourcetree/new-local-repo/14-command-log.png" >
    #+END_EXPORT
+
+
+** Create the Local Repo First
+
+   You can also create the local repository first with SourceTree
+
+   (... and create the remote at the same time!)
+
+** Choose location
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/01-choose-location-for-bookmark.png" class="" alt="" />
+   #+END_EXPORT
+
+** Create the local repo
+
+   #+BEGIN_EXPORT html
+      <img src="images/sourcetree/new-repo-start-with-local/02-create-the-local-repo.png" class="" alt="" />
+   #+END_EXPORT
+
+** Tell it the location
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/03-tell-it-the-location.png" class="" alt="" />
+   #+END_EXPORT
+
+
+** Create the remote
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/04-create-the-remote-repo.png" class="" alt="" />
+   #+END_EXPORT
+
+
+** See the new repo on Github
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/05-new-repo-on-github.png" class="" alt="" />
+   #+END_EXPORT
+
+** But it's still empty
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/06-but-its-still-empty.png" class="" alt="" />
+   #+END_EXPORT
+
+** So create some content!
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/07-created-some-new-content.png" class="" alt="" />
+   #+END_EXPORT
+
+** Add, commit, and push
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/08-add-commit-and-push.png" class="" alt="" />
+   #+END_EXPORT
+
+
+** Output from commit message
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/09-output-from-initial-commit.png" class="" alt="" />
+   #+END_EXPORT
+
+** See local branches
+
+   At first, SourceTree hides the local branches, so tell it to show
+   them
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/10-see-local-branches.png" class="" alt="" />
+   #+END_EXPORT
+
+** See the remote branches, too
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/11-see-remote-branches.png" class="" alt="" />
+   #+END_EXPORT
+
+
+** Finally, look over at Github
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/new-repo-start-with-local/12-back-on-github-first-commt.png" class="" alt="" />
+   #+END_EXPORT
+
 
 
 * Tracking and Reverting Changes
