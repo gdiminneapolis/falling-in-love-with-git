@@ -1,44 +1,11 @@
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t reveal_title_slide:nil
-#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
-#+OPTIONS: toc:nil
-#+REVEAL_TRANS: none
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil toc:nil
 #+REVEAL_THEME: moon
-#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="GCI Class Falling in Love With Git 2.0 -- command line version">
+#+REVEAL_EXTRA_CSS: moon-extras.css
+#+REVEAL_TRANS: none
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="GDI Class Falling in Love With Git 2.0">
 #+REVEAL_POSTAMBLE: <div> Created by Tamara Temple &lt;tamara@tamouse.org&gt; </div>
 #+REVEAL_PLUGINS: (markdown notes highlight)
-#+BEGIN_EXPORT html
-<style media="screen">
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700,700i");
-.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,.reveal h6 {
-text-transform: inherit; font-family: "Monserrat", sans-serif; font-weight: bold;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
-.reveal section. .reveal div, .reveal p, .reveal ul, .reveal ol, .reveal li, .reveal dl, .reveal dt, .reveal dd,
-.reveal blockquote, .reveal q, .reveal aside, .reveal figure, .reveal figcaption, .reveal article, .reveal header,
-.reveal footer, .reveal span, .reveal i, .reveal b, .reveal em, .reveal strong {
-font-family: "Lato", sans-serif;
-}
-.reveal .slide-number { color: white; }
-.reveal section img.title-image {
-  display: block;
-  width: 25%;
-  margin: 0 auto;
-  border: none;
-  background: transparent;
-}
-.reveal strong, .reveal b { color: white; }
-.reveal em, .reveal i { color: lightgreen; }
-.reveal code, .reveal tt { color: gold; }
-.reveal pre { font-size: 0.7em; }
-</style>
-#+END_EXPORT
-
-* Useful links
-
-  - Slides:
-
-  - Printed Notes:
 
 * Get started with Command Line
 

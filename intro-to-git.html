@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Tamara Temple)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="moon-extras.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="GDI Class Falling in Love With Git 2.0">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+<section id="slide-orgada6362">
+<h2 id="orgada6362">Welcome!</h2>
+<p>
+Girl Develop It is here to provide affordable and accessible
+programs to women to learn software through mentorship and hands-on
+instruction.
+</p>
+
+<p>
+<i>Some Rules:</i>
+</p>
+
+<ul>
+<li>We are here for you!</li>
+<li>Every question is important</li>
+<li>Help each other</li>
+<li>Have fun</li>
+
+</ul>
+
+</section>
+<section id="slide-org3b5dea8">
+<h3 id="org3b5dea8">Introductions</h3>
+<ul>
+<li>Who are you?</li>
+<li>What do you do, or what do you want to do?</li>
+<li>What's your experience with GDI?</li>
+<li>What's your experience with Git and GitHub?</li>
+
+</ul>
+
+</section>
+<section id="slide-orga07a47e">
+<h3 id="orga07a47e">Goals for Today's Course</h3>
+<ul>
+<li class="fragment roll-in">Learn what version control is</li>
+<li class="fragment roll-in">Get you set up to use Git</li>
+<li class="fragment roll-in">Basics of Git</li>
+<li class="fragment roll-in">"Gitting" social with Github</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org47c5b55">
+<h2 id="org47c5b55">What is Version Control?</h2>
+<p>
+Version control allows you and your team to do <i>two</i> very powerful
+things:
+</p>
+
+<ul>
+<li class="fragment roll-in"><b>Collaborate</b></li>
+
+<li class="fragment roll-in"><b>Track and Revert Changes</b></li>
+
+</ul>
+
+</section>
+<section id="slide-orgacf858f">
+<h3 id="orgacf858f">Collaborate</h3>
+<p>
+You can create <i>anything</i> with other people and be able to easily
+merge changes with each other
+</p>
+
+<ul>
+<li class="fragment roll-in">software</li>
+<li class="fragment roll-in">documentation</li>
+<li class="fragment roll-in">academic papers</li>
+<li class="fragment roll-in">books, articles, blogs</li>
+<li class="fragment roll-in">websites</li>
+
+</ul>
+
+</section>
+<section id="slide-org623aa77">
+<h3 id="org623aa77">Track and Revert Changes</h3>
+<p>
+Git gives you the ability to "go back in time"
+</p>
+
+<ul>
+<li class="fragment roll-in">see who made changes, when</li>
+<li class="fragment roll-in">track down bugs</li>
+<li class="fragment roll-in">see the history of the project</li>
+
+</ul>
+</section>
+<section id="slide-org3fbecc6">
+<h3 id="org3fbecc6">Not Convinced Yet?</h3>
+<ul>
+<li class="fragment roll-in">Employers <b>want</b> this</li>
+<li class="fragment roll-in">It's a required skill</li>
+<li class="fragment roll-in">It's a standard expectation to work in groups
+<ul>
+<li>public, i.e. opensource</li>
+<li>private</li>
+
+</ul></li>
+<li class="fragment roll-in">It's personally useful</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org406ed86">
+<h2 id="org406ed86">Types of Version Control</h2>
+<p>
+<i>There are basically two types:</i>
+</p>
+
+<ul>
+<li><b>Centralized:</b>
+<ul>
+<li>e.g. CVS, Subversion, Perforce</li>
+
+</ul></li>
+
+<li><b>Decentralized:</b>
+<ul>
+<li>e.g. Git, Mercurial (Hg)</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-orgd612e46">
+<h3 id="orgd612e46">Centralized Version Control</h3>
+<ul>
+<li class="fragment roll-in">One central source</li>
+
+<li class="fragment roll-in">Collaborators check files out</li>
+
+<li class="fragment roll-in">Work is done locally</li>
+
+<li class="fragment roll-in">Others are prevented from working on checked out files</li>
+
+<li class="fragment roll-in">Collaborators check files back in when done</li>
+
+</ul>
+
+</section>
+<section id="slide-orga0761e3">
+<h3 id="orga0761e3">Decentralized Version Control</h3>
+<ul>
+<li class="fragment roll-in">Local source, shared remote</li>
+
+<li class="fragment roll-in">Collaborators clone remote (fork, mirror)</li>
+
+<li class="fragment roll-in">Work is done locally</li>
+
+<li class="fragment roll-in">Others can work on same files</li>
+
+<li class="fragment roll-in">Changes are pushed to remote</li>
+
+<li class="fragment roll-in">Tools for merging conflicts</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orge3feff7">
+<h2 id="orge3feff7">Intro to Git</h2>
+<ul>
+<li class="fragment roll-in"><b>Fast and easy setup:</b> You can get a whole team and / or project up
+and running quickly</li>
+
+<li class="fragment roll-in"><b>Distributed:</b> everyone has their own full repository of the
+project, changes are shared through a central Depot (remote,
+origin) repository</li>
+
+<li class="fragment roll-in"><b>Hashed commits:</b> commits have unique ID <code>string</code> to keep track of
+when changes are made and by whom</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org6ca3032">
+<h2 id="org6ca3032">Working with Git</h2>
+<div class="outline-text-2" id="text-org6ca3032">
+</div></section>
+<section id="slide-orgb6645d3">
+<h3 id="orgb6645d3">Creating repositories</h3>
+</section>
+<section id="slide-org7b33392">
+<h3 id="org7b33392">Staging changes</h3>
+</section>
+<section id="slide-orgaba3277">
+<h3 id="orgaba3277">Committing changes</h3>
+</section>
+<section id="slide-org0ee20f3">
+<h3 id="org0ee20f3">Pushing changes</h3>
+</section>
+<section id="slide-org7d59dc9">
+<h3 id="org7d59dc9">Branching and Merging</h3>
+</section>
+</section>
+<section>
+<section id="slide-org7966dc8">
+<h2 id="org7966dc8">Installation</h2>
+<p>
+Most systems come with some version of Git installed, but it's
+usually best to work with the most recent (or close to recent)
+version.
+</p>
+
+<p>
+Git itself is primarily a command line tool
+</p>
+
+<p>
+There are also two good GUI tools that you can do most of what
+you'll learn today.
+</p>
+
+<ul>
+<li>SourceTree</li>
+<li>Github Desktop</li>
+
+</ul>
+
+<p>
+We'll be looking at SourceTree today
+</p>
+
+</section>
+<section id="slide-orga21a39f">
+<h3 id="orga21a39f">Install Git</h3>
+<div>
+  <a href="http://git-scm.com/downloads"
+     alt="Download latest version of Git"
+     target="_blank" rel="noopener noreferrer">
+    <img src="images/install-git.png" alt="Download latest version of Git">
+  </a>
+</div>
+
+
+<div>
+  <a href="http://git-scm.com/downloads"
+     alt="Download latest version of Git"
+     target="_blank" rel="noopener noreferrer">
+    git-scm.com/downloads
+  </a>
+</div>
+
+<a href="command_line.html" title="Command line class slides"
+   target="_blank" rel="noopener noreferrer"
+>Class slides using command line</a>
+
+</section>
+<section id="slide-orgaf1c35f">
+<h3 id="orgaf1c35f">Install SourceTree</h3>
+<ul>
+<li>An alternative to <i>most</i> of the command line git tools</li>
+
+<li><p>
+Download from:
+</p>
+
+<a href="https://www.atlassian.com/software/sourcetree"
+   title="Atlassian SourceTree Software"
+   target="_blank" rel="noopener noreferrer"
+   >https://www.atlassian.com/software/sourcetree</a>
+
+<a href="sourcetree.html" title="Class slides with Sourcetree examples"
+   target="_blank" rel="noopener noreferrer">Class slides using SourceTree</a></li>
+
+</ul>
+
+</section>
+<section id="slide-org58f4072">
+<h3 id="org58f4072">GitHub Desktop - a GUI Git client</h3>
+<ul>
+<li>Another alternative to <i>most</i> of the command line git tools</li>
+
+<li><p>
+Download from:
+</p>
+
+<p>
+<a href="https://desktop.github.com/">https://desktop.github.com/</a>
+</p></li>
+
+</ul>
+
+
+<p>
+<i>(We won't be covering this tool in class.)</i>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf27ec14">
+<h2 id="orgf27ec14">Working in Teams</h2>
+<div class="outline-text-2" id="text-orgf27ec14">
+</div></section>
+<section id="slide-org09a8d50">
+<h3 id="org09a8d50">Making Pull Requests</h3>
+</section>
+<section id="slide-org635b7c4">
+<h3 id="org635b7c4">Reviewing Pull Requests</h3>
+</section>
+<section id="slide-orgcb68580">
+<h3 id="orgcb68580">Merging Pull Requsts</h3>
+</section>
+</section>
+<section>
+<section id="slide-org872e96b">
+<h2 id="org872e96b">Practical Git</h2>
+<div class="outline-text-2" id="text-org872e96b">
+</div></section>
+<section id="slide-org7e99746">
+<h3 id="org7e99746">The project</h3>
+</section>
+<section id="slide-org1337b75">
+<h3 id="org1337b75">Form up in to teams</h3>
+</section>
+<section id="slide-org4707e58">
+<h3 id="org4707e58">Choose Roles</h3>
+</section>
+<section id="slide-org8bdeb30">
+<h3 id="org8bdeb30">Work Flow</h3>
+</section>
+</section>
+</div>
+</div>
+<div> Created by Tamara Temple &lt;tamara@tamouse.org&gt; </div>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }]
+});
+</script>
+</body>
+</html>

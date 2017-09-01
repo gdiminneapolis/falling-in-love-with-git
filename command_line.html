@@ -11,6 +11,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
 
+<link rel="stylesheet" href="moon-extras.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -22,52 +23,15 @@
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
-<meta name="description" content="GCI Class Falling in Love With Git 2.0 -- command line version">
+<meta name="description" content="GDI Class Falling in Love With Git 2.0">
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
-<style media="screen">
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700,700i");
-.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,.reveal h6 {
-text-transform: inherit; font-family: "Monserrat", sans-serif; font-weight: bold;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
-.reveal section. .reveal div, .reveal p, .reveal ul, .reveal ol, .reveal li, .reveal dl, .reveal dt, .reveal dd,
-.reveal blockquote, .reveal q, .reveal aside, .reveal figure, .reveal figcaption, .reveal article, .reveal header,
-.reveal footer, .reveal span, .reveal i, .reveal b, .reveal em, .reveal strong {
-font-family: "Lato", sans-serif;
-}
-.reveal .slide-number { color: white; }
-.reveal section img.title-image {
-  display: block;
-  width: 25%;
-  margin: 0 auto;
-  border: none;
-  background: transparent;
-}
-.reveal strong, .reveal b { color: white; }
-.reveal em, .reveal i { color: lightgreen; }
-.reveal code, .reveal tt { color: gold; }
-.reveal pre { font-size: 0.7em; }
-</style>
 
 <section>
-<section id="slide-org034872b">
-<h2 id="org034872b">Useful links</h2>
-<ul>
-<li>Slides:</li>
-
-<li>Printed Notes:</li>
-
-</ul>
-
-</section>
-</section>
-<section>
-<section id="slide-org1cf1e0a">
-<h2 id="org1cf1e0a">Get started with Command Line</h2>
+<section id="slide-org227e534">
+<h2 id="org227e534">Get started with Command Line</h2>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -101,8 +65,8 @@ font-family: "Lato", sans-serif;
 </p>
 
 </section>
-<section id="slide-org38b15bd">
-<h3 id="org38b15bd">Anatomy of the command line</h3>
+<section id="slide-org738a4d6">
+<h3 id="org738a4d6">Anatomy of the command line</h3>
 <img src="images/command-line-anatomy.png" class="" alt="command line anatomy" />
 
 <ul>
@@ -118,8 +82,8 @@ font-family: "Lato", sans-serif;
 </ul>
 
 </section>
-<section id="slide-org7552354">
-<h3 id="org7552354">Commands</h3>
+<section id="slide-org1549bff">
+<h3 id="org1549bff">Commands</h3>
 <p>
 The action we want the computer to take
 </p>
@@ -137,8 +101,8 @@ The action we want the computer to take
 </ul>
 
 </section>
-<section id="slide-orgb4745c7">
-<h3 id="orgb4745c7">Options</h3>
+<section id="slide-orga02f0a9">
+<h3 id="orga02f0a9">Options</h3>
 <ul>
 <li>Tells the command to do something extra with the operands</li>
 
@@ -147,8 +111,8 @@ The action we want the computer to take
 </ul>
 
 </section>
-<section id="slide-org24baf4b">
-<h4 id="org24baf4b">Short options</h4>
+<section id="slide-org4ca917c">
+<h4 id="org4ca917c">Short options</h4>
 <ul>
 <li class="fragment fade-in">single letter</li>
 <li class="fragment fade-in">single dash</li>
@@ -161,8 +125,8 @@ The action we want the computer to take
 </p>
 
 </section>
-<section id="slide-org95d8180">
-<h4 id="org95d8180">Long Options</h4>
+<section id="slide-orgcb78f0b">
+<h4 id="orgcb78f0b">Long Options</h4>
 <ul>
 <li class="fragment fade-in">words or dash-words</li>
 <li class="fragment fade-in">two dashes</li>
@@ -176,8 +140,8 @@ or
 <code>git add --all -v</code>
 </p>
 </section>
-<section id="slide-org8e4698c">
-<h3 id="org8e4698c">Man Pages</h3>
+<section id="slide-orgf923808">
+<h3 id="orgf923808">Man Pages</h3>
 <p>
 Man (i.e. "manual") pages are the documentation for commands on
 Unix-based operating systems.
@@ -197,8 +161,8 @@ To get help on the <code>ls</code> command, type:
 <i>This might also be referred to as "man-splainin'".</i>
 </p>
 </section>
-<section id="slide-org5576031">
-<h3 id="org5576031">Listing files</h3>
+<section id="slide-orgf536fcc">
+<h3 id="orgf536fcc">Listing files</h3>
 <p>
 The <code>ls</code> command is used to show the files in a directory
 </p>
@@ -218,8 +182,8 @@ ls /usr/local/bin
 </div>
 
 </section>
-<section id="slide-org31f850e">
-<h3 id="org31f850e">Moving about</h3>
+<section id="slide-org5387990">
+<h3 id="org5387990">Moving about</h3>
 <p>
 The <code>cd</code> command changes your current working directory
 </p>
@@ -238,8 +202,8 @@ cd Projects/GDI/classes/falling-in-love-with-git
 </div>
 
 </section>
-<section id="slide-org74114d2">
-<h3 id="org74114d2">Moving and renaming files or directories</h3>
+<section id="slide-orgaf16866">
+<h3 id="orgaf16866">Moving and renaming files or directories</h3>
 <p>
 The <code>mv</code> command moves and/or renames files and directories
 </p>
@@ -261,8 +225,8 @@ mv file1 file2 file3 file4 ~/Desktop
 </div>
 
 </section>
-<section id="slide-orgcbf1f8c">
-<h3 id="orgcbf1f8c">Deleting or removing files and directories</h3>
+<section id="slide-org557bd6c">
+<h3 id="org557bd6c">Deleting or removing files and directories</h3>
 <p>
 The <code>rm</code> command is used to remove files and directories
 </p>
@@ -282,8 +246,8 @@ rm -rf tmp # -> recursively and
 </p>
 
 </section>
-<section id="slide-org5e6a3cb">
-<h3 id="org5e6a3cb">Make a new directory</h3>
+<section id="slide-org98c09b3">
+<h3 id="org98c09b3">Make a new directory</h3>
 <p>
 The <code>mkdir</code> command creates directories
 </p>
@@ -304,8 +268,8 @@ mkdir -p ~/Projects/Websites/examples/full-height-flex
 </section>
 </section>
 <section>
-<section id="slide-org99419e2">
-<h2 id="org99419e2">Configuring your local Git</h2>
+<section id="slide-org7dc76c2">
+<h2 id="org7dc76c2">Configuring your local Git</h2>
 <p>
 There are some configuration items that Git requires of you.
 </p>
@@ -321,8 +285,8 @@ projects on your computer.
 </p>
 
 </section>
-<section id="slide-org6e9f9f6">
-<h3 id="org6e9f9f6">Set your name and email</h3>
+<section id="slide-org92278ad">
+<h3 id="org92278ad">Set your name and email</h3>
 <p>
 Enter the commands:
 </p>
@@ -339,8 +303,8 @@ Replace the strings with the actual values
 </p>
 
 </section>
-<section id="slide-org3eea5c9">
-<h3 id="org3eea5c9">Colorized output</h3>
+<section id="slide-orgff4db03">
+<h3 id="orgff4db03">Colorized output</h3>
 <p>
 Git commands can have colorized output, that helps in understanding
 some of the results. To set it globally:
@@ -353,8 +317,8 @@ some of the results. To set it globally:
 </div>
 
 </section>
-<section id="slide-org34ba213">
-<h3 id="org34ba213">Global Ignore</h3>
+<section id="slide-org65b4bc4">
+<h3 id="org65b4bc4">Global Ignore</h3>
 <p>
 Git will ignore any files and directories listed in a <code>.gitignore</code>
 file in a project directory.
@@ -421,8 +385,8 @@ core.excludesfile=/Users/tamara/.gitignore_global
 color.ui=true</pre>
 
 </section>
-<section id="slide-org61148b8">
-<h3 id="org61148b8">Other</h3>
+<section id="slide-org156fdfa">
+<h3 id="org156fdfa">Other</h3>
 <p>
 There are tons of things you can configure globally, but you
 probably don't need that much.
@@ -436,8 +400,8 @@ override global configurations if you want.
 </section>
 </section>
 <section>
-<section id="slide-org8037a93">
-<h2 id="org8037a93">SSH keys</h2>
+<section id="slide-org538b143">
+<h2 id="org538b143">SSH keys</h2>
 <ul>
 <li>SSH (Secure SHell) keys are a way to secure the communication
 between your computer and another computer, <i>without needing to
@@ -463,8 +427,8 @@ remote Git repository hosting service), a <i>public</i> key and a
 </ul>
 
 </section>
-<section id="slide-org31a4009">
-<h3 id="org31a4009">Check to see if you already have an SSH key pair</h3>
+<section id="slide-org65f8b33">
+<h3 id="org65f8b33">Check to see if you already have an SSH key pair</h3>
 <p>
 SSH keys, configuration, and other information are stored in the
 root of your user directory, aka <code>$HOME</code>, in a directory called <code>.ssh</code>
@@ -515,8 +479,8 @@ They might be named differently than <code>id_rsa</code>. That's only the
 </p>
 
 </section>
-<section id="slide-orgec31542">
-<h3 id="orgec31542">Generating a new SSH key pair</h3>
+<section id="slide-org7e7a041">
+<h3 id="org7e7a041">Generating a new SSH key pair</h3>
 <p>
 If you don't already have a key pair, or if you'd like to generate
 a new pair, enter the following:
@@ -597,8 +561,8 @@ The key's randomart image is:
 +----[SHA256]-----+
    </pre>
 </section>
-<section id="slide-orgc1d9674">
-<h3 id="orgc1d9674">Adding the new SSH Key Pair to Github</h3>
+<section id="slide-org84a4ea5">
+<h3 id="org84a4ea5">Adding the new SSH Key Pair to Github</h3>
 <p>
 The reason we just did all that is so we can securely communicated
 with GitHub. We now need to give Github our <b>public</b> key.
@@ -639,78 +603,78 @@ already added this one (that's what the comments are for!)</li>
 </section>
 </section>
 <section>
-<section id="slide-org05812e3">
-<h2 id="org05812e3">Creating a new project, locally</h2>
-<div class="outline-text-2" id="text-org05812e3">
+<section id="slide-org7085974">
+<h2 id="org7085974">Creating a new project, locally</h2>
+<div class="outline-text-2" id="text-org7085974">
 </div></section>
-<section id="slide-org855bdd7">
-<h3 id="org855bdd7">Initialize the project directory</h3>
+<section id="slide-orga1d1f73">
+<h3 id="orga1d1f73">Initialize the project directory</h3>
 </section>
-<section id="slide-orgd0d571f">
-<h3 id="orgd0d571f">Create some content</h3>
+<section id="slide-orgf84d2f6">
+<h3 id="orgf84d2f6">Create some content</h3>
 </section>
-<section id="slide-orgea0829e">
-<h3 id="orgea0829e">Stage and commit the content</h3>
+<section id="slide-orgb36cfe7">
+<h3 id="orgb36cfe7">Stage and commit the content</h3>
 </section>
-<section id="slide-orgf88a08f">
-<h3 id="orgf88a08f">Create the remote repository</h3>
+<section id="slide-org7b44237">
+<h3 id="org7b44237">Create the remote repository</h3>
 </section>
-<section id="slide-org0e1ad95">
-<h3 id="org0e1ad95">Push the content</h3>
+<section id="slide-org2b7a140">
+<h3 id="org2b7a140">Push the content</h3>
 </section>
 </section>
 <section>
-<section id="slide-org519d8c6">
-<h2 id="org519d8c6">Creating a new project, remotely</h2>
-<div class="outline-text-2" id="text-org519d8c6">
+<section id="slide-orgbf8c4f6">
+<h2 id="orgbf8c4f6">Creating a new project, remotely</h2>
+<div class="outline-text-2" id="text-orgbf8c4f6">
 </div></section>
-<section id="slide-orgce26800">
-<h3 id="orgce26800">Create the remote repository</h3>
+<section id="slide-org92152c8">
+<h3 id="org92152c8">Create the remote repository</h3>
 </section>
-<section id="slide-org82473bb">
-<h3 id="org82473bb">Clone the remote</h3>
+<section id="slide-orgd1708c8">
+<h3 id="orgd1708c8">Clone the remote</h3>
 </section>
-<section id="slide-orgde9045b">
-<h3 id="orgde9045b">Create some new content</h3>
+<section id="slide-orga9e64ff">
+<h3 id="orga9e64ff">Create some new content</h3>
 </section>
-<section id="slide-org6091397">
-<h3 id="org6091397">Stage and commit the content</h3>
+<section id="slide-org5e8df18">
+<h3 id="org5e8df18">Stage and commit the content</h3>
 </section>
-<section id="slide-org809c1b2">
-<h3 id="org809c1b2">Push the content</h3>
+<section id="slide-org85a5fe4">
+<h3 id="org85a5fe4">Push the content</h3>
 </section>
 </section>
 <section>
-<section id="slide-orga2fbb50">
-<h2 id="orga2fbb50">Tracking and Reverting Changes</h2>
-<div class="outline-text-2" id="text-orga2fbb50">
+<section id="slide-org0383293">
+<h2 id="org0383293">Tracking and Reverting Changes</h2>
+<div class="outline-text-2" id="text-org0383293">
 </div></section>
-<section id="slide-org16af60f">
-<h3 id="org16af60f">Before staging</h3>
+<section id="slide-orgf46ab59">
+<h3 id="orgf46ab59">Before staging</h3>
 </section>
-<section id="slide-org5e04221">
-<h3 id="org5e04221">After staging, before committing</h3>
+<section id="slide-org1dd6a5e">
+<h3 id="org1dd6a5e">After staging, before committing</h3>
 </section>
-<section id="slide-orgf58b317">
-<h3 id="orgf58b317">After committing, before pushing</h3>
+<section id="slide-org982cd34">
+<h3 id="org982cd34">After committing, before pushing</h3>
 </section>
-<section id="slide-org1d34668">
-<h3 id="org1d34668">After pushing</h3>
+<section id="slide-org5592c9b">
+<h3 id="org5592c9b">After pushing</h3>
 </section>
 </section>
 <section>
-<section id="slide-org16a318a">
-<h2 id="org16a318a">Multiple Development Paths</h2>
-<div class="outline-text-2" id="text-org16a318a">
+<section id="slide-orgecb1dc0">
+<h2 id="orgecb1dc0">Multiple Development Paths</h2>
+<div class="outline-text-2" id="text-orgecb1dc0">
 </div></section>
-<section id="slide-orgb677376">
-<h3 id="orgb677376">Branching</h3>
+<section id="slide-orga9c8b1e">
+<h3 id="orga9c8b1e">Branching</h3>
 </section>
-<section id="slide-orga2849fb">
-<h3 id="orga2849fb">Merging</h3>
+<section id="slide-org14120b5">
+<h3 id="org14120b5">Merging</h3>
 </section>
-<section id="slide-org0cd81b8">
-<h3 id="org0cd81b8">Rebasing</h3>
+<section id="slide-orgee35f67">
+<h3 id="orgee35f67">Rebasing</h3>
 </section>
 </section>
 </div>

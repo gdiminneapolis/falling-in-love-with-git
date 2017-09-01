@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,700i");
+.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,.reveal h6 {
+text-transform: inherit; font-family: "Monserrat", sans-serif; font-weight: bold;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
+.reveal section. .reveal div, .reveal p, .reveal ul, .reveal ol, .reveal li, .reveal dl, .reveal dt, .reveal dd,
+.reveal blockquote, .reveal q, .reveal aside, .reveal figure, .reveal figcaption, .reveal article, .reveal header,
+.reveal footer, .reveal span, .reveal i, .reveal b, .reveal em, .reveal strong {
+font-family: "Lato", sans-serif;
+}
+.reveal .slide-number { color: white; }
+.reveal section img.title-image {
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+  border: none;
+  background: transparent;
+}
+.reveal strong, .reveal b { color: white; }
+.reveal em, .reveal i { color: lightgreen; }
+.reveal code, .reveal tt { color: gold; }
+.reveal pre { font-size: 0.7em; }

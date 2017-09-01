@@ -11,6 +11,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
 
+<link rel="stylesheet" href="moon-extras.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -22,40 +23,15 @@
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
-<meta name="description" content="GCI Class Falling in Love With Git 2.0">
+<meta name="description" content="GDI Class Falling in Love With Git 2.0">
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
-<style media="screen">
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700,700i");
-.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,.reveal h6 {
-text-transform: inherit; font-family: "Monserrat", sans-serif; font-weight: bold;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
-.reveal section. .reveal div, .reveal p, .reveal ul, .reveal ol, .reveal li, .reveal dl, .reveal dt, .reveal dd,
-.reveal blockquote, .reveal q, .reveal aside, .reveal figure, .reveal figcaption, .reveal article, .reveal header,
-.reveal footer, .reveal span, .reveal i, .reveal b, .reveal em, .reveal strong {
-font-family: "Lato", sans-serif;
-}
-.reveal .slide-number { color: white; }
-.reveal section img.title-image {
-  display: block;
-  width: 25%;
-  margin: 0 auto;
-  border: none;
-  background: transparent;
-}
-.reveal strong, .reveal b { color: white; }
-.reveal em, .reveal i { color: lightgreen; }
-.reveal code, .reveal tt { color: gold; }
-.reveal pre { font-size: 0.7em; }
-</style>
 
 <section>
-<section id="slide-org57547fb">
-<h2 id="org57547fb">Falling In Love With Git</h2>
+<section id="slide-org86fabbf">
+<h2 id="org86fabbf">Falling In Love With Git</h2>
 <p>
 Sat, Oct 7, 2017 | GDI Mpls | Tamara Temple
 </p>
@@ -68,351 +44,35 @@ Sat, Oct 7, 2017 | GDI Mpls | Tamara Temple
 </ul>
 
 </section>
-<section id="slide-orga843086">
-<h3 id="orga843086">Useful links for class</h3>
-<p>
-Keep this open in your browser so you can refer to them as we go
-through class.
-</p>
-
+</section>
+<section>
+<section id="slide-org6e037e2">
+<h2 id="org6e037e2">Links</h2>
 <ul>
-<li>Slides:</li>
-
-<li>Printed Notes:</li>
-
-<li><a href="https://gdimpls.slack.com/messages/C0BK2UA3X">#git-classes</a> slack channel</li>
-
+  <li>These slides: <a  target="_blank" rel="noopener noreferrer"  href="http://tinyurl.com/GDIGitClass">http://tinyurl.com/GDIGitClass</a></li>
+  <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/gdiminneapolis/falling-in-love-with-git">Class
+      Materials GitHub Repo</a></li>
+  <li><a target="_blank" rel="noopener noreferrer" href="Resources.html">Resources</a></li>
 </ul>
 
 </section>
 </section>
 <section>
-<section id="slide-org32e4f59">
-<h2 id="org32e4f59">Welcome!</h2>
-<p>
-Girl Develop It is here to provide affordable and accessible
-programs to women to learn software through mentorship and hands-on
-instruction.
-</p>
-
-<p>
-<i>Some Rules:</i>
-</p>
-
+<section id="slide-org777df4e">
+<h2 id="org777df4e">Class Sections</h2>
 <ul>
-<li>We are here for you!</li>
-<li>Every question is important</li>
-<li>Help each other</li>
-<li>Have fun</li>
-
-</ul>
-
-</section>
-<section id="slide-orgbb90c35">
-<h3 id="orgbb90c35">Introductions</h3>
-<ul>
-<li>Who are you?</li>
-<li>What do you do, or what do you want to do?</li>
-<li>What's your experience with GDI?</li>
-<li>What's your experience with Git and GitHub?</li>
-
-</ul>
-
-</section>
-<section id="slide-orgefbf7ef">
-<h3 id="orgefbf7ef">Goals for Today's Course</h3>
-<ul>
-<li class="fragment roll-in">Learn what version control is</li>
-<li class="fragment roll-in">Get you set up to use Git</li>
-<li class="fragment roll-in">Basics of Git</li>
-<li class="fragment roll-in">"Gitting" social with Github</li>
-
+  <li><a href="./intro-to-git.html" target="_blank">Intro to
+      Git</a></li>
+  <li><a href="./sourcetree.html" target="_blank">Using
+      SourceTree</a></li>
+  <li><a href="./command_line.html" target="_blank">Using the Command Line</a></li>
 </ul>
 
 </section>
 </section>
 <section>
-<section id="slide-org39dec5e">
-<h2 id="org39dec5e">What is Version Control?</h2>
-<p>
-Version control allows you and your team to do <i>two</i> very powerful
-things:
-</p>
-
-<ul>
-<li class="fragment roll-in"><b>Collaborate</b></li>
-
-<li class="fragment roll-in"><b>Track and Revert Changes</b></li>
-
-</ul>
-
-</section>
-<section id="slide-org35103d2">
-<h3 id="org35103d2">Collaborate</h3>
-<p>
-You can create <i>anything</i> with other people and be able to easily
-merge changes with each other
-</p>
-
-<ul>
-<li class="fragment roll-in">software</li>
-<li class="fragment roll-in">documentation</li>
-<li class="fragment roll-in">academic papers</li>
-<li class="fragment roll-in">books, articles, blogs</li>
-<li class="fragment roll-in">websites</li>
-
-</ul>
-
-</section>
-<section id="slide-org41b65d0">
-<h3 id="org41b65d0">Track and Revert Changes</h3>
-<p>
-Git gives you the ability to "go back in time"
-</p>
-
-<ul>
-<li class="fragment roll-in">see who made changes, when</li>
-<li class="fragment roll-in">track down bugs</li>
-<li class="fragment roll-in">see the history of the project</li>
-
-</ul>
-</section>
-<section id="slide-orgeccf720">
-<h3 id="orgeccf720">Not Convinced Yet?</h3>
-<ul>
-<li class="fragment roll-in">Employers <b>want</b> this</li>
-<li class="fragment roll-in">It's a required skill</li>
-<li class="fragment roll-in">It's a standard expectation to work in groups
-<ul>
-<li>public, i.e. opensource</li>
-<li>private</li>
-
-</ul></li>
-<li class="fragment roll-in">It's personally useful</li>
-
-</ul>
-
-</section>
-</section>
-<section>
-<section id="slide-org307e828">
-<h2 id="org307e828">Types of Version Control</h2>
-<p>
-<i>There are basically two types:</i>
-</p>
-
-<ul>
-<li><b>Centralized:</b>
-<ul>
-<li>e.g. CVS, Subversion, Perforce</li>
-
-</ul></li>
-
-<li><b>Decentralized:</b>
-<ul>
-<li>e.g. Git, Mercurial (Hg)</li>
-
-</ul></li>
-
-</ul>
-
-</section>
-<section id="slide-org7cd27f3">
-<h3 id="org7cd27f3">Centralized Version Control</h3>
-<ul>
-<li class="fragment roll-in">One central source</li>
-
-<li class="fragment roll-in">Collaborators check files out</li>
-
-<li class="fragment roll-in">Work is done locally</li>
-
-<li class="fragment roll-in">Others are prevented from working on checked out files</li>
-
-<li class="fragment roll-in">Collaborators check files back in when done</li>
-
-</ul>
-
-</section>
-<section id="slide-org5756214">
-<h3 id="org5756214">Decentralized Version Control</h3>
-<ul>
-<li class="fragment roll-in">Local source, shared remote</li>
-
-<li class="fragment roll-in">Collaborators clone remote (fork, mirror)</li>
-
-<li class="fragment roll-in">Work is done locally</li>
-
-<li class="fragment roll-in">Others can work on same files</li>
-
-<li class="fragment roll-in">Changes are pushed to remote</li>
-
-<li class="fragment roll-in">Tools for merging conflicts</li>
-
-</ul>
-</section>
-</section>
-<section>
-<section id="slide-org09350f7">
-<h2 id="org09350f7">Intro to Git</h2>
-<ul>
-<li class="fragment roll-in"><b>Fast and easy setup:</b> You can get a whole team and / or project up
-and running quickly</li>
-
-<li class="fragment roll-in"><b>Distributed:</b> everyone has their own full repository of the
-project, changes are shared through a central Depot (remote,
-origin) repository</li>
-
-<li class="fragment roll-in"><b>Hashed commits:</b> commits have unique ID <code>string</code> to keep track of
-when changes are made and by whom</li>
-
-</ul>
-</section>
-</section>
-<section>
-<section id="slide-orge538561">
-<h2 id="orge538561">Working with Git</h2>
-<div class="outline-text-2" id="text-orge538561">
-</div></section>
-<section id="slide-org2e91b4e">
-<h3 id="org2e91b4e">Creating repositories</h3>
-</section>
-<section id="slide-orge6e6321">
-<h3 id="orge6e6321">Staging changes</h3>
-</section>
-<section id="slide-org46ed685">
-<h3 id="org46ed685">Committing changes</h3>
-</section>
-<section id="slide-org24b5788">
-<h3 id="org24b5788">Pushing changes</h3>
-</section>
-</section>
-<section>
-<section id="slide-orga7aaa65">
-<h2 id="orga7aaa65">Installation</h2>
-<p>
-Most systems come with some version of Git installed, but it's
-usually best to work with the most recent (or close to recent)
-version.
-</p>
-
-<p>
-Git itself is primarily a command line tool, and that is what we'll
-be covering today.
-</p>
-
-<p>
-There are also two good GUI tools that you can do most of what
-you'll learn today.
-</p>
-
-<ul>
-<li>SourceTree</li>
-<li>Github Desktop</li>
-
-</ul>
-
-</section>
-<section id="slide-org50dec95">
-<h3 id="org50dec95">Command Line Git</h3>
-<div>
-  <a href="http://git-scm.com/downloads"
-     alt="Download latest version of Git"
-     target="_blank" rel="noopener noreferrer">
-    <img src="images/install-git.png" alt="Download latest version of Git">
-  </a>
-</div>
-
-
-<div>
-  <a href="http://git-scm.com/downloads"
-     alt="Download latest version of Git"
-     target="_blank" rel="noopener noreferrer">
-    git-scm.com/downloads
-  </a>
-</div>
-
-<a href="command_line.html" title="Command line class slides"
-   target="_blank" rel="noopener noreferrer"
->Class slides using command line</a>
-
-</section>
-<section id="slide-org96535c9">
-<h3 id="org96535c9">SourceTree - a GUI Git client</h3>
-<ul>
-<li>An alternative to <i>most</i> of the command line git tools</li>
-
-<li><p>
-Download from:
-</p>
-
-<a href="https://www.atlassian.com/software/sourcetree"
-   title="Atlassian SourceTree Software"
-   target="_blank" rel="noopener noreferrer"
-   >https://www.atlassian.com/software/sourcetree</a>
-
-<a href="sourcetree.html" title="Class slides with Sourcetree examples"
-   target="_blank" rel="noopener noreferrer">Class slides using SourceTree</a></li>
-
-</ul>
-
-</section>
-<section id="slide-orga79dad9">
-<h3 id="orga79dad9">GitHub Desktop - a GUI Git client</h3>
-<ul>
-<li>Another alternative to <i>most</i> of the command line git tools</li>
-
-<li><p>
-Download from:
-</p>
-
-<p>
-<a href="https://desktop.github.com/">https://desktop.github.com/</a>
-</p></li>
-
-</ul>
-
-
-<p>
-<i>(We won't be covering this tool in class.)</i>
-</p>
-</section>
-</section>
-<section>
-<section id="slide-orgc2f7e0b">
-<h2 id="orgc2f7e0b">Working in Teams</h2>
-<div class="outline-text-2" id="text-orgc2f7e0b">
-</div></section>
-<section id="slide-org3f81046">
-<h3 id="org3f81046">Making Pull Requests</h3>
-</section>
-<section id="slide-orgd17154e">
-<h3 id="orgd17154e">Reviewing Pull Requests</h3>
-</section>
-<section id="slide-org237db5d">
-<h3 id="org237db5d">Merging Pull Requsts</h3>
-</section>
-</section>
-<section>
-<section id="slide-org7ad6db1">
-<h2 id="org7ad6db1">Practical Git</h2>
-<div class="outline-text-2" id="text-org7ad6db1">
-</div></section>
-<section id="slide-org7ff23be">
-<h3 id="org7ff23be">The project</h3>
-</section>
-<section id="slide-org7464d1b">
-<h3 id="org7464d1b">Form up in to teams</h3>
-</section>
-<section id="slide-orgc22266e">
-<h3 id="orgc22266e">Choose Roles</h3>
-</section>
-<section id="slide-org6db7a3f">
-<h3 id="org6db7a3f">Work Flow</h3>
-</section>
-</section>
-<section>
-<section id="slide-org26db87b">
-<h2 id="org26db87b"><i>- fin -</i></h2>
+<section id="slide-org3ff6512">
+<h2 id="org3ff6512"><i>- fin -</i></h2>
 <img src="images/lliza-thank-you.gif" class="" alt="Thank you animated gif" />
 
 <p>
@@ -428,54 +88,6 @@ Please fill out the survey at
 <p>
 and use "Falling in Love with Git" for the class name
 </p>
-</section>
-</section>
-<section>
-<section id="slide-orgcadb27c">
-<h2 id="orgcadb27c">Resources</h2>
-<ul>
-<li><a href="https://git-scm.com">git-scm.com</a> - home for git software, documentation, books, etc.</li>
-<li><a href="https://github.com">github.com</a> - hosting service for git repositories</li>
-<li><a href="https://gitlab.com">gitlab.com</a> - another hosting service for git repositories</li>
-<li><a href="https://bitbucket.com">bitbucket.com</a> - yet another hosting service by Atlassian, people
-who make SourceTree</li>
-
-</ul>
-
-<p>
-All of these sites have extensive help and documentation.
-</p>
-
-</section>
-<section id="slide-orgf708e38">
-<h3 id="orgf708e38">Cheat Sheets</h3>
-<p>
-The GDIMpls cheat sheet repo:
-</p>
-
-<p>
-<a href="https://github.com/gdiminneapolis/cheat-sheet-collection">github.com/gdiminneapolis/cheat-sheet-collection</a>
-</p>
-
-</section>
-<section id="slide-orgfa5aa95">
-<h3 id="orgfa5aa95">Links, Info, Notes</h3>
-<p>
-The GDIMpls Links, Info, and Notes repo:
-</p>
-
-<p>
-<a href="https://github.com/gdiminneapolis/LinksInfoNotes">github.com/gdiminneapolis/LinksInfoNotes</a>
-</p>
-
-</section>
-<section id="slide-orgf307f71">
-<h3 id="orgf307f71">Slack</h3>
-<ul>
-<li><a href="https://gdimpls.slack.com/messages/C0BK2UA3X">#git-classes</a> channel</li>
-<li><a href="https://gdimpls.slack.com/messages/C10RXJUQY">#coding-questions</a> channel</li>
-
-</ul>
 </section>
 </section>
 </div>

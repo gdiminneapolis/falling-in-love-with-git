@@ -11,6 +11,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
 
+<link rel="stylesheet" href="moon-extras.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -22,40 +23,15 @@
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
-<meta name="description" content="GCI Class Falling in Love With Git 2.0 - alternate slides using sourcetree">
+<meta name="description" content="GDI Class Falling in Love With Git 2.0">
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
-<style media="screen">
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700,700i");
-.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,.reveal h6 {
-text-transform: inherit; font-family: "Monserrat", sans-serif; font-weight: bold;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
-.reveal section. .reveal div, .reveal p, .reveal ul, .reveal ol, .reveal li, .reveal dl, .reveal dt, .reveal dd,
-.reveal blockquote, .reveal q, .reveal aside, .reveal figure, .reveal figcaption, .reveal article, .reveal header,
-.reveal footer, .reveal span, .reveal i, .reveal b, .reveal em, .reveal strong {
-font-family: "Lato", sans-serif;
-}
-.reveal .slide-number { color: white; }
-.reveal section img.title-image {
-  display: block;
-  width: 25%;
-  margin: 0 auto;
-  border: none;
-  background: transparent;
-}
-.reveal strong, .reveal b { color: white; }
-.reveal em, .reveal i { color: lightgreen; }
-.reveal code, .reveal tt { color: gold; }
-.reveal pre { font-size: 0.7em; }
-</style>
 
 <section>
-<section id="slide-orgc8f1f5e">
-<h2 id="orgc8f1f5e">Useful Links</h2>
+<section id="slide-org80fcffa">
+<h2 id="org80fcffa">Useful Links</h2>
 <ul>
 <li>Slides:</li>
 
@@ -72,12 +48,12 @@ Keep these open in your browser
 </section>
 </section>
 <section>
-<section id="slide-orga87319b">
-<h2 id="orga87319b">Configuring SourceTree</h2>
-<div class="outline-text-2" id="text-orga87319b">
+<section id="slide-orga4f72c1">
+<h2 id="orga4f72c1">Configuring SourceTree</h2>
+<div class="outline-text-2" id="text-orga4f72c1">
 </div></section>
-<section id="slide-org05b63ef">
-<h3 id="org05b63ef">Installation</h3>
+<section id="slide-org74d15cf">
+<h3 id="org74d15cf">Installation</h3>
 <ul>
 <li>Sign up with Atlassian</li>
 <li>Register your copy</li>
@@ -86,8 +62,8 @@ Keep these open in your browser
 </ul>
 
 </section>
-<section id="slide-org3304ffc">
-<h3 id="org3304ffc">Install Command Line Tools</h3>
+<section id="slide-orga354161">
+<h3 id="orga354161">Install Command Line Tools</h3>
 <p>
 From the <b>SourceTree</b> menu:
 </p>
@@ -96,8 +72,8 @@ From the <b>SourceTree</b> menu:
      alt="Install Sourcetree Command Line Tools" />
 
 </section>
-<section id="slide-orgbc4883e">
-<h3 id="orgbc4883e">Set Preferences</h3>
+<section id="slide-org9a7aec2">
+<h3 id="org9a7aec2">Set Preferences</h3>
 <p>
 From the <b>SourceTree</b> menu:
 </p>
@@ -142,8 +118,8 @@ Set push branches to "matching":
 
 
 </section>
-<section id="slide-orgca1cdf0">
-<h3 id="orgca1cdf0">Connect to Github</h3>
+<section id="slide-org653277d">
+<h3 id="org653277d">Connect to Github</h3>
 <p>
 Let's go ahead and connect up to your GitHub account.
 </p>
@@ -235,12 +211,12 @@ Look for the SourceTree key
 </section>
 </section>
 <section>
-<section id="slide-org996af56">
-<h2 id="org996af56">Getting Familiar with SourceTree</h2>
-<div class="outline-text-2" id="text-org996af56">
+<section id="slide-orgbe3884b">
+<h2 id="orgbe3884b">Getting Familiar with SourceTree</h2>
+<div class="outline-text-2" id="text-orgbe3884b">
 </div></section>
-<section id="slide-org852b502">
-<h3 id="org852b502">Menubar</h3>
+<section id="slide-org4f645a1">
+<h3 id="org4f645a1">Menubar</h3>
 <p>
 The menubar at the top has the major operations
 </p>
@@ -248,8 +224,8 @@ The menubar at the top has the major operations
 <img src="images/sourcetree/menubar.png">
 
 </section>
-<section id="slide-org5951310">
-<h3 id="org5951310">Sidebar</h3>
+<section id="slide-org6ab6fe7">
+<h3 id="org6ab6fe7">Sidebar</h3>
 <p>
 Hover over the major items in the side bar to show or hide them
 </p>
@@ -269,16 +245,16 @@ Same for remotes
 </section>
 </section>
 <section>
-<section id="slide-org7ab322a">
-<h2 id="org7ab322a">Creating a new project</h2>
+<section id="slide-orgd4bed6d">
+<h2 id="orgd4bed6d">Creating a New Project, Remote First</h2>
 <p>
 WIth SourceTree, it's super easy to start a new project by creating
 a remote repo on Github.
 </p>
 
 </section>
-<section id="slide-org8838571">
-<h3 id="org8838571">Create the Remote Repo</h3>
+<section id="slide-org30b8d8e">
+<h3 id="org30b8d8e">Create the Remote Repo</h3>
 </section>
 <section >
 
@@ -286,7 +262,7 @@ a remote repo on Github.
 Start creating the remote repo
 </p>
 
-<img src="images/sourcetree/new-local-repo//01-click-new-repository.png" >
+<img src="images/sourcetree/new-repo-remote-first//01-click-new-repository.png" >
 
 </section>
 <section >
@@ -295,7 +271,7 @@ Start creating the remote repo
 Select "Create Remote"
 </p>
 
-<img src="images/sourcetree/new-local-repo//02-select-create-remote.png">
+<img src="images/sourcetree/new-repo-remote-first//02-select-create-remote.png">
 
 </section>
 <section >
@@ -304,16 +280,16 @@ Select "Create Remote"
 Create the remote repo
 </p>
 
-<img src="images/sourcetree/new-local-repo//03-create-the-remote-repo.png">
+<img src="images/sourcetree/new-repo-remote-first//03-create-the-remote-repo.png">
 
 </section>
-<section id="slide-orgc9af5e9">
-<h3 id="orgc9af5e9">Clone the remote to your local machine</h3>
+<section id="slide-org33f163e">
+<h3 id="org33f163e">Clone the remote to your local machine</h3>
 <p>
 Click on remote to show your remote repos
 </p>
 
-<img src="images/sourcetree/new-local-repo//04-click-on-remote.png" >
+<img src="images/sourcetree/new-repo-remote-first//04-click-on-remote.png" >
 
 </section>
 <section >
@@ -322,7 +298,7 @@ Click on remote to show your remote repos
 Use the search box to filter the repos
 </p>
 
-<img src="images/sourcetree/new-local-repo//05-search-for-repo.png" >
+<img src="images/sourcetree/new-repo-remote-first//05-search-for-repo.png" >
 
 </section>
 <section >
@@ -331,7 +307,7 @@ Use the search box to filter the repos
 Clone the repo
 </p>
 
-<img src="images/sourcetree/new-local-repo//06-clone-repo.png" >
+<img src="images/sourcetree/new-repo-remote-first//06-clone-repo.png" >
 
 </section>
 <section >
@@ -340,7 +316,7 @@ Clone the repo
 Set the location for the clone on your local machine
 </p>
 
-<img src="images/sourcetree/new-local-repo//07-set-location.png">
+<img src="images/sourcetree/new-repo-remote-first//07-set-location.png">
 
 </section>
 <section >
@@ -349,7 +325,7 @@ Set the location for the clone on your local machine
 Click the "Clone" button
 </p>
 
-<img src="images/sourcetree/new-local-repo//08-click-clone.png" >
+<img src="images/sourcetree/new-repo-remote-first//08-click-clone.png" >
 
 </section>
 <section >
@@ -358,15 +334,15 @@ Click the "Clone" button
 Look at your new repo!
 </p>
 
-<img src="images/sourcetree/new-local-repo//09-new-repo.png" style="max-height: 50vh; ">
+<img src="images/sourcetree/new-repo-remote-first//09-new-repo.png" style="max-height: 50vh; ">
 
 <p class="fragment (fade-in)">
 <i>but it's empty&#x2026;</i>
 </p>
 
 </section>
-<section id="slide-orgd65368a">
-<h3 id="orgd65368a">Create some new content</h3>
+<section id="slide-org16767cc">
+<h3 id="org16767cc">Create some new content</h3>
 <p>
 Open you new project in your editor
 </p>
@@ -390,26 +366,26 @@ Save the file and go back to SourceTree
 </p>
 
 </section>
-<section id="slide-org903f342">
-<h3 id="org903f342">Stage the changes</h3>
+<section id="slide-org96a7237">
+<h3 id="org96a7237">Stage the changes</h3>
 <p>
 You can see the new content reflected in SourceTree
 </p>
 
-<img src="images/sourcetree/new-local-repo/11-stage-change.png" style="max-height: 60vh;">
+<img src="images/sourcetree/new-repo-remote-first/11-stage-change.png" style="max-height: 60vh;">
 
 <p>
 Click in the box by the README file to stage it.
 </p>
 
 </section>
-<section id="slide-org0fb6e50">
-<h3 id="org0fb6e50">Commit and Push the content</h3>
+<section id="slide-org2808b83">
+<h3 id="org2808b83">Commit and Push the content</h3>
 <p>
 Click in the commit text box to start the commit process.
 </p>
 
-<img src="images/sourcetree/new-local-repo/12-start-commit.png"  style="max-height: 60vh;">
+<img src="images/sourcetree/new-repo-remote-first/12-start-commit.png"  style="max-height: 60vh;">
 
 </section>
 <section >
@@ -419,7 +395,7 @@ Type in the commit message, leave the "Push" box checked, and click
 on "Commit"
 </p>
 
-<img src="images/sourcetree/new-local-repo/13-commit-msg-push-and-commit.png"  style="max-height: 60vh;">
+<img src="images/sourcetree/new-repo-remote-first/13-commit-msg-push-and-commit.png"  style="max-height: 60vh;">
 
 </section>
 <section >
@@ -429,12 +405,14 @@ The command log will show the execution and results, including any
 errors
 </p>
 
-<img src="images/sourcetree/new-local-repo/14-command-log.png" >
+<img src="images/sourcetree/new-repo-remote-first/14-command-log.png" >
 
 
 </section>
-<section id="slide-orgcd3607d">
-<h3 id="orgcd3607d">Create the Local Repo First</h3>
+</section>
+<section>
+<section id="slide-orgdc113c0">
+<h2 id="orgdc113c0">Create a New Project, Local First</h2>
 <p>
 You can also create the local repository first with SourceTree
 </p>
@@ -444,103 +422,126 @@ You can also create the local repository first with SourceTree
 </p>
 
 </section>
-<section id="slide-orga5b7b8c">
-<h3 id="orga5b7b8c">Choose location</h3>
-<img src="images/sourcetree/new-repo-start-with-local/01-choose-location-for-bookmark.png" class="" alt="" />
+<section id="slide-org4a7e2fa">
+<h3 id="org4a7e2fa">Choose location</h3>
+<img src="images/sourcetree/new-repo-local-first/01-choose-location-for-bookmark.png" class="" alt="" />
 
 </section>
-<section id="slide-orge678e94">
-<h3 id="orge678e94">Create the local repo</h3>
-<img src="images/sourcetree/new-repo-start-with-local/02-create-the-local-repo.png" class="" alt="" />
+<section id="slide-orgfeddbdd">
+<h3 id="orgfeddbdd">Create the local repo</h3>
+<img src="images/sourcetree/new-repo-local-first/02-create-the-local-repo.png" class="" alt="" />
 
 </section>
-<section id="slide-org69a1d62">
-<h3 id="org69a1d62">Tell it the location</h3>
-<img src="images/sourcetree/new-repo-start-with-local/03-tell-it-the-location.png" class="" alt="" />
-
-
-</section>
-<section id="slide-org3b72983">
-<h3 id="org3b72983">Create the remote</h3>
-<img src="images/sourcetree/new-repo-start-with-local/04-create-the-remote-repo.png" class="" alt="" />
+<section id="slide-org879b935">
+<h3 id="org879b935">Tell it the location</h3>
+<img src="images/sourcetree/new-repo-local-first/03-tell-it-the-location.png" class="" alt="" />
 
 
 </section>
-<section id="slide-orgf1f77bc">
-<h3 id="orgf1f77bc">See the new repo on Github</h3>
-<img src="images/sourcetree/new-repo-start-with-local/05-new-repo-on-github.png" class="" alt="" />
-
-</section>
-<section id="slide-org5678422">
-<h3 id="org5678422">But it's still empty</h3>
-<img src="images/sourcetree/new-repo-start-with-local/06-but-its-still-empty.png" class="" alt="" />
-
-</section>
-<section id="slide-org9165b75">
-<h3 id="org9165b75">So create some content!</h3>
-<img src="images/sourcetree/new-repo-start-with-local/07-created-some-new-content.png" class="" alt="" />
-
-</section>
-<section id="slide-org8b639c3">
-<h3 id="org8b639c3">Add, commit, and push</h3>
-<img src="images/sourcetree/new-repo-start-with-local/08-add-commit-and-push.png" class="" alt="" />
+<section id="slide-orgd2c3035">
+<h3 id="orgd2c3035">Create the remote</h3>
+<img src="images/sourcetree/new-repo-local-first/04-create-the-remote-repo.png" class="" alt="" />
 
 
 </section>
-<section id="slide-orgce5e4f0">
-<h3 id="orgce5e4f0">Output from commit message</h3>
-<img src="images/sourcetree/new-repo-start-with-local/09-output-from-initial-commit.png" class="" alt="" />
+<section id="slide-orgc02b895">
+<h3 id="orgc02b895">See the new repo on Github</h3>
+<img src="images/sourcetree/new-repo-local-first/05-new-repo-on-github.png" class="" alt="" />
 
 </section>
-<section id="slide-org2e4a706">
-<h3 id="org2e4a706">See local branches</h3>
+<section id="slide-orga52ee62">
+<h3 id="orga52ee62">But it's still empty</h3>
+<img src="images/sourcetree/new-repo-local-first/06-but-its-still-empty.png" class="" alt="" />
+
+</section>
+<section id="slide-orgeeed0d6">
+<h3 id="orgeeed0d6">So create some content!</h3>
+<img src="images/sourcetree/new-repo-local-first/07-created-some-new-content.png" class="" alt="" />
+
+</section>
+<section id="slide-org6153d64">
+<h3 id="org6153d64">Add, commit, and push</h3>
+<img src="images/sourcetree/new-repo-local-first/08-add-commit-and-push.png" class="" alt="" />
+
+
+</section>
+<section id="slide-org2f70d75">
+<h3 id="org2f70d75">Output from commit message</h3>
+<img src="images/sourcetree/new-repo-local-first/09-output-from-initial-commit.png" class="" alt="" />
+
+</section>
+<section id="slide-org2c2e994">
+<h3 id="org2c2e994">See local branches</h3>
 <p>
 At first, SourceTree hides the local branches, so tell it to show
 them
 </p>
 
-<img src="images/sourcetree/new-repo-start-with-local/10-see-local-branches.png" class="" alt="" />
+<img src="images/sourcetree/new-repo-local-first/10-see-local-branches.png" class="" alt="" />
 
 </section>
-<section id="slide-org2499ab3">
-<h3 id="org2499ab3">See the remote branches, too</h3>
-<img src="images/sourcetree/new-repo-start-with-local/11-see-remote-branches.png" class="" alt="" />
+<section id="slide-orgeb7c7d7">
+<h3 id="orgeb7c7d7">See the remote branches, too</h3>
+<img src="images/sourcetree/new-repo-local-first/11-see-remote-branches.png" class="" alt="" />
 
 
 </section>
-<section id="slide-org8ad62cb">
-<h3 id="org8ad62cb">Finally, look over at Github</h3>
-<img src="images/sourcetree/new-repo-start-with-local/12-back-on-github-first-commt.png" class="" alt="" />
-
+<section id="slide-orgf583aa6">
+<h3 id="orgf583aa6">Finally, look over at Github</h3>
+<img src="images/sourcetree/new-repo-local-first/12-back-on-github-first-commt.png" class="" alt="" />
 
 
 </section>
 </section>
 <section>
-<section id="slide-org9444706">
-<h2 id="org9444706">Tracking and Reverting Changes</h2>
-<div class="outline-text-2" id="text-org9444706">
+<section id="slide-orgece2b09">
+<h2 id="orgece2b09">Tracking and Reverting Changes</h2>
+<div class="outline-text-2" id="text-orgece2b09">
 </div></section>
-<section id="slide-orgc28a4e3">
-<h3 id="orgc28a4e3">Before staging</h3>
+<section id="slide-org14c7bc9">
+<h3 id="org14c7bc9">Before staging</h3>
 </section>
-<section id="slide-orgc498b20">
-<h3 id="orgc498b20">After staging, before committing</h3>
+<section id="slide-org0ccfb18">
+<h3 id="org0ccfb18">After staging, before committing</h3>
 </section>
-<section id="slide-orged76dff">
-<h3 id="orged76dff">After committing, before pushing</h3>
+<section id="slide-orgcda7e31">
+<h3 id="orgcda7e31">After committing, before pushing</h3>
 </section>
-<section id="slide-org9f0e330">
-<h3 id="org9f0e330">After pushing</h3>
+<section id="slide-org3f8c928">
+<h3 id="org3f8c928">After pushing</h3>
 </section>
 </section>
 <section>
-<section id="slide-orgf7eba39">
-<h2 id="orgf7eba39">Multiple Development Paths</h2>
-<div class="outline-text-2" id="text-orgf7eba39">
-</div></section>
-<section id="slide-orgb89dbd4">
-<h3 id="orgb89dbd4">Branching</h3>
+<section id="slide-org2fe2049">
+<h2 id="org2fe2049">Multiple Development Paths</h2>
+<p>
+Work on multiple versions at the same time with:
+</p>
+
+<ul>
+<li class="fragment fade-in">Branching</li>
+<li class="fragment fade-in">Merging</li>
+
+</ul>
+
+
+</section>
+<section >
+
+<p>
+Creating a new branch to work on a feature or bug,
+</p>
+
+<img src="images/git-branch-and-merge.png" class="" alt="" style="background-color:white"/>
+
+<p>
+and then merge it back into the regular development branch
+</p>
+
+
+</section>
+<section id="slide-orgd9d0a2d">
+<h3 id="orgd9d0a2d">Branching</h3>
 <p>
 To make a new branch from an existing branch, click the "Branch"
 button:
@@ -550,8 +551,8 @@ button:
      alt="SourceTree branch button" />
 
 </section>
-<section >
-
+<section id="slide-org9bd76ea">
+<h4 id="org9bd76ea">Give the branch a name</h4>
 <p>
 In the dialog, enter the new branch name:
 </p>
@@ -563,36 +564,345 @@ In the dialog, enter the new branch name:
 Leave the "Working copy parent" and "Checkout new branch" options selected.
 </p>
 
+</section>
+<section id="slide-orgaadec07">
+<h4 id="orgaadec07">Create the new branch</h4>
 <p>
 Press then "Create Branch" button.
 </p>
 
+<img src="images/sourcetree/branching-and-merging/01-create-new-branch.png" class="" alt="" />
 
 </section>
-<section id="slide-orgca06173">
-<h3 id="orgca06173">Merging</h3>
-</section>
-<section id="slide-orgf25deb1">
-<h3 id="orgf25deb1">Rebasing</h3>
+<section id="slide-org3cb7a01">
+<h4 id="org3cb7a01">Your new branch</h4>
 <p>
-Rebasing is a complicated topic, it takes some time to understand
-what's going on.
+In SourceTree, the current working branch is highlighted.
 </p>
 
+<img src="images/sourcetree/branching-and-merging/02-new-branch-highlighted.png" class="" alt="" />
+
+</section>
+<section id="slide-orga777000">
+<h4 id="orga777000">Make some changes</h4>
 <p>
-It's like merging, except not exactly
+After you make some changes, SourcTree reports uncommitted changes
+</p>
+
+<img src="images/sourcetree/branching-and-merging/03-uncommited-changes.png" class="" alt="" />
+
+</section>
+<section id="slide-org263b36e">
+<h4 id="org263b36e">See the pending changes</h4>
+<img src="images/sourcetree/branching-and-merging/04-pending-changes.png" class="" alt="" />
+
+</section>
+<section id="slide-org33d9f90">
+<h4 id="org33d9f90">Stage the changes</h4>
+<p>
+Select the checkbox next to the changes you want to stage (or all)
+</p>
+
+<img src="images/sourcetree/branching-and-merging/05-stage-changes.png" class="" alt="" />
+
+</section>
+<section id="slide-orgd78828f">
+<h4 id="orgd78828f">Commit the changes</h4>
+<p>
+Click on "Commit" to start the commit proess
+</p>
+
+<img src="images/sourcetree/branching-and-merging/06-commit-changes.png" class="" alt="" />
+
+</section>
+<section id="slide-org6175d56">
+<h4 id="org6175d56">Review, comment, and commit</h4>
+<p>
+Review the changes, add a commit message, and commit.
+</p>
+
+<img src="images/sourcetree/branching-and-merging/07-commit-message.png" class="" alt="" />
+
+<p>
+Check the "Push" checkbox to also peform the push to the remote
 </p>
 
 </section>
-<section id="slide-org3c1da8e">
-<h4 id="org3c1da8e">Interactive Rebase</h4>
+<section id="slide-org2a72db3">
+<h4 id="org2a72db3">Output from push</h4>
+<img src="images/sourcetree/branching-and-merging/08-push-output.png" class="" alt="" />
+
+</section>
+<section id="slide-org1a929ab">
+<h4 id="org1a929ab">After the commit and push</h4>
+<img src="images/sourcetree/branching-and-merging/09-after-commit-and-push.png" class="" alt="" />
+
+</section>
+<section id="slide-org0bc51e4">
+<h3 id="org0bc51e4">Merging</h3>
+<ul>
+<li class="fragment fade-in">When you're finished working in the development branch, you'll
+want  to merge those changes with the master branch.</li>
+<li class="fragment fade-in">Since the master branch may have also been updated, you need to
+first pull changes to master and merge with your development
+branch.</li>
+<li class="fragment fade-in">Resolve any conflicts that may arise.</li>
+<li class="fragment fade-in">Finally, Merge your development branch with master.</li>
+
+</ul>
+
+</section>
+<section id="slide-orgba59cd0">
+<h4 id="orgba59cd0">Set up a conflict with master</h4>
 <p>
-Sadly, this is where SourceTree falls down
+Edit the <code>README.md</code> file
 </p>
+
+<img src="images/sourcetree/branching-and-merging/10-changing-the-readme-in-new-branch.png" class="" alt="" />
+
+</section>
+<section id="slide-org47f9304">
+<h4 id="org47f9304">Commit the update, but don't push</h4>
+<img src="images/sourcetree/branching-and-merging/11-commit-update-but-dont-push.png" class="" alt="" />
+
+</section>
+<section id="slide-org5882331">
+<h3 id="org5882331">Set up a conflict to resolve</h3>
+<div class="outline-text-3" id="text-org5882331">
+</div></section>
+<section id="slide-org67cbe46">
+<h4 id="org67cbe46">Checkout master</h4>
+<img src="images/sourcetree/branching-and-merging/12-checkout-master.png" class="" alt="" />
+
+<p>
+Edit the <code>README.md</code> file in master
+</p>
+
+</section>
+<section id="slide-org3f0aec2">
+<h4 id="org3f0aec2">See the uncommitted changes</h4>
+<img src="images/sourcetree/branching-and-merging/13-uncommited-changes-in-master-branch.png" class="" alt="" />
+
+</section>
+<section id="slide-org015d96b">
+<h4 id="org015d96b">Commit and push changes in master</h4>
+<img src="images/sourcetree/branching-and-merging/14-commit-and-push-changes-on-master.png" class="" alt="" />
+
+</section>
+<section id="slide-org5f8ee1c">
+<h4 id="org5f8ee1c">Check out the new branch again</h4>
+<img src="images/sourcetree/branching-and-merging/15-checkout-new-branch-again.png" class="" alt="" />
+
+</section>
+<section id="slide-orgd2fa79e">
+<h4 id="orgd2fa79e">CONFLICT SET UP!</h4>
+<p>
+The <code>README.md</code> file is changed in both the master and new
+branches
+</p>
+
+<ul>
+<li>these changes cannot be resolved automatically</li>
+
+</ul>
+
+</section>
+<section id="slide-org93c35b2">
+<h4 id="org93c35b2">Now back to the regularly scheduled program</h4>
+
+</section>
+<section id="slide-org7302687">
+<h3 id="org7302687">Updating new branch with changes from master</h3>
+<div class="outline-text-3" id="text-org7302687">
+</div></section>
+<section id="slide-org1aecc2e">
+<h4 id="org1aecc2e">Merge master into the new branch</h4>
+<img src="images/sourcetree/branching-and-merging/16-merge-master-into-new-branch.png" class="" alt="" />
+
+</section>
+<section id="slide-org551e3e3">
+<h4 id="org551e3e3">Confirm the merge</h4>
+<img src="images/sourcetree/branching-and-merging/17-confirm-merge.png" class="" alt="" />
+
+</section>
+<section id="slide-org26268b8">
+<h4 id="org26268b8">Merge result output</h4>
+<img src="images/sourcetree/branching-and-merging/18-merge-result-output.png" class="" alt="" />
+
+</section>
+<section id="slide-org17070d4">
+<h4 id="org17070d4">Merge conflict warning</h4>
+<img src="images/sourcetree/branching-and-merging/19-merge-conflict-warning.png" class="" alt="" />
+
+</section>
+<section id="slide-orgc6b8b19">
+<h4 id="orgc6b8b19">Merge conflicts visible in repo status</h4>
+<img src="images/sourcetree/branching-and-merging/20-merge-conflicts-in-repo.png" class="" alt="" />
+
+</section>
+<section id="slide-org084e664">
+<h3 id="org084e664">Resolving Merge Conflicts</h3>
+<div class="outline-text-3" id="text-org084e664">
+</div></section>
+<section id="slide-org83af397">
+<h4 id="org83af397">Prepare to resolve conflict</h4>
+<img src="images/sourcetree/branching-and-merging/21-prepare-to-resolve-conflicts.png" class="" alt="" />
+
+</section>
+<section id="slide-org6bbbad9">
+<h4 id="org6bbbad9">Launch merge tool</h4>
+<img src="images/sourcetree/branching-and-merging/22-launch-merge-tool.png" class="" alt="" />
+
+</section>
+<section id="slide-org9a6408d">
+<h4 id="org9a6408d">Merge choices</h4>
+<img src="images/sourcetree/branching-and-merging/23-merge-choices.png" class="" alt="" />
+
+</section>
+<section id="slide-org31dd4d7">
+<h4 id="org31dd4d7">Fix changes in editor</h4>
+<img src="images/sourcetree/branching-and-merging/24-see-changes-in-editor.png" class="" alt="" />
+
+</section>
+<section id="slide-org7f82d66">
+<h4 id="org7f82d66">Edit the file to resolve changes</h4>
+<img src="images/sourcetree/branching-and-merging/25-edit-the-file-to-resolve-conflicts.png" class="" alt="" />
+
+</section>
+<section id="slide-orgc24c00e">
+<h4 id="orgc24c00e">Mark the file resolved</h4>
+<img src="images/sourcetree/branching-and-merging/25-mark-resolved.png" class="" alt="" />
+
+</section>
+<section id="slide-orgd2a130f">
+<h4 id="orgd2a130f">Complete the merge</h4>
+<img src="images/sourcetree/branching-and-merging/26-complete-merge.png" class="" alt="" />
+
+</section>
+<section id="slide-org67b6f0f">
+<h4 id="org67b6f0f">Commit to complete the merge</h4>
+<img src="images/sourcetree/branching-and-merging/27-complete-merge-commit.png" class="" alt="" />
+
+</section>
+<section id="slide-org433fa84">
+<h4 id="org433fa84">Push all the commits</h4>
+<img src="images/sourcetree/branching-and-merging/28-push-all-commits.png" class="" alt="" />
+
+</section>
+<section id="slide-org388d7b0">
+<h4 id="org388d7b0">Push dialog</h4>
+<img src="images/sourcetree/branching-and-merging/29-push-dialog.png" class="" alt="" />
+
+</section>
+<section id="slide-orgc495582">
+<h3 id="orgc495582">Merge the new branch into master</h3>
+<div class="outline-text-3" id="text-orgc495582">
+</div></section>
+<section id="slide-orgd340a83">
+<h4 id="orgd340a83">Over on GitHub&#x2026;</h4>
+<img src="images/sourcetree/branching-and-merging/30-how-things-look-on-github.png" class="" alt="" />
+
+</section>
+<section id="slide-org98c89c8">
+<h4 id="org98c89c8">Create a Pull Request</h4>
+<img src="images/sourcetree/branching-and-merging/31-create-a-pr-on-github.png" class="" alt="" />
+
+</section>
+<section id="slide-org25af458">
+<h4 id="org25af458">PR Dialog</h4>
+<img src="images/sourcetree/branching-and-merging/32-pull-request-dialog.png" class="" alt="" />
+
+</section>
+<section id="slide-org24977ec">
+<h4 id="org24977ec">PR View</h4>
+<img src="images/sourcetree/branching-and-merging/33-pull-request.png" class="" alt="" />
+
+</section>
+<section id="slide-orge93166b">
+<h4 id="orge93166b">PR Files Diff</h4>
+<img src="images/sourcetree/branching-and-merging/34-pull-request-files-diff.png" class="" alt="" />
+
+</section>
+<section id="slide-org3a57c3a">
+<h4 id="org3a57c3a">Merge PR Button</h4>
+<img src="images/sourcetree/branching-and-merging/35-click-button-to-merge.png" class="" alt="" />
+
+</section>
+<section id="slide-org2072d3c">
+<h4 id="org2072d3c">Complete the merge</h4>
+<img src="images/sourcetree/branching-and-merging/36-complete-merge-of-pull-request.png" class="" alt="" />
+
+</section>
+<section id="slide-org050af62">
+<h4 id="org050af62">Success!</h4>
+<img src="images/sourcetree/branching-and-merging/37-successful-merge.png" class="" alt="" />
+
+</section>
+<section id="slide-org2eee8ca">
+<h3 id="org2eee8ca">Updating the Local Master</h3>
+<div class="outline-text-3" id="text-org2eee8ca">
+</div></section>
+<section id="slide-org8545ba3">
+<h4 id="org8545ba3">Checkout local master</h4>
+<img src="images/sourcetree/branching-and-merging/38-checkout-local-master.png" class="" alt="" />
+
+</section>
+<section id="slide-org0589919">
+<h4 id="org0589919">Pull changes from remote</h4>
+<img src="images/sourcetree/branching-and-merging/39-pull-remote-changes.png" class="" alt="" />
+
+</section>
+<section id="slide-org36ad277">
+<h4 id="org36ad277">Pull dialog</h4>
+<img src="images/sourcetree/branching-and-merging/40-pull-dialog.png" class="" alt="" />
+
+</section>
+<section id="slide-orgb6c4df2">
+<h4 id="orgb6c4df2">Pull output</h4>
+<img src="images/sourcetree/branching-and-merging/41-pull-output.png" class="" alt="" />
+
+</section>
+<section id="slide-org61e997c">
+<h3 id="org61e997c">Cleaning up</h3>
+<div class="outline-text-3" id="text-org61e997c">
+</div></section>
+<section id="slide-org8be2f1a">
+<h4 id="org8be2f1a">Delete the old "new" branch</h4>
+<p>
+The "new" branch is now fully merged, so it can be deleted
+</p>
+<img src="images/sourcetree/branching-and-merging/42-delete-branch.png" class="" alt="" />
+
+</section>
+<section id="slide-org5ac0e7d">
+<h4 id="org5ac0e7d">Delete branch dialog</h4>
+<img src="images/sourcetree/branching-and-merging/43-delete-branch-dialog.png" class="" alt="" />
+
+</section>
+<section id="slide-org75e8c88">
+<h4 id="org75e8c88">Delete branch output</h4>
+<img src="images/sourcetree/branching-and-merging/44-delete-branch-output.png" class="" alt="" />
+
+</section>
+<section id="slide-org35629b1">
+<h4 id="org35629b1">Status after delete</h4>
+<img src="images/sourcetree/branching-and-merging/45-after-delete-branch.png" class="" alt="" />
+
+</section>
+<section id="slide-org4db70e6">
+<h3 id="org4db70e6">Rebasing</h3>
+<ul>
+<li class="fragment fade-in">Rebasing is a complicated topic, it takes some time to understand
+what's going on.</li>
+<li class="fragment fade-in">It's like merging, except not exactly.</li>
+<li class="fragment fade-in">Sadly, this is where SourceTree falls down.
 
 <ul>
 <li class="fragment fade-in">it's incorrect</li>
 <li class="fragment fade-in">it's interface is confusing</li>
+<li class="fragment fade-in">So we're not covering it today</li>
+
+</ul></li>
 
 </ul>
 </section>
