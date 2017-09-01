@@ -7,15 +7,7 @@
 #+REVEAL_POSTAMBLE: <div> Created by Tamara Temple &lt;tamara@tamouse.org&gt; </div>
 #+REVEAL_PLUGINS: (markdown notes highlight)
 
-* Useful Links
-
-  - Slides:
-
-  - Printed Notes:
-
-    Keep these open in your browser
-
-* Configuring SourceTree
+* Installing and Configuring SourceTree
 ** Installation
 
    - Sign up with Atlassian
