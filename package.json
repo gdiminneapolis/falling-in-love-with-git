@@ -1,0 +1,36 @@
+{
+  "name": "fall_in_love_with_git",
+  "version": "3.0.0",
+  "description": "class materials for GDI Mpls \"Falling in Love with Git\" class",
+  "main": "index.html",
+  "scripts": {
+    "add": "all-contributors add",
+    "generate": "all-contributors generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdiminneapolis/falling-in-love-with-git.git"
+  },
+  "keywords": [
+    "GDI",
+    "Girl",
+    "Develop",
+    "It",
+    "Git",
+    "GitHub",
+    "class",
+    "curriculum",
+    "slides",
+    "gdiminneapolis"
+  ],
+  "author": "gdiminneapolis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdiminneapolis/falling-in-love-with-git/issues"
+  },
+  "homepage": "https://github.com/gdiminneapolis/falling-in-love-with-git#readme",
+  "devDependencies": {
+    "all-contributors-cli": "^4.4.0"
+  }
+}

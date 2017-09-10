@@ -1,12 +1,15 @@
 #+OPTIONS: reveal_center:nil reveal_progress:t reveal_history:nil reveal_control:t reveal_title_slide:nil
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
 #+OPTIONS: toc:nil
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/
 #+REVEAL_TRANS: none
 #+REVEAL_THEME: moon
 #+REVEAL_EXTRA_CSS: moon-extras.css
 #+REVEAL_HEAD_PREAMBLE: <meta name="description" content="GDI Falling in Love with Git - Working in Teams">
 #+REVEAL_POSTAMBLE: <div> Created by Tamara Temple &lt;tamara@tamouse.org&gt; </div>
-#+REVEAL_PLUGINS: (markdown notes)
+#+REVEAL_PLUGINS: (markdown notes highlight)
+#+HTML_DOCTYPE: <!DOCTYPE html>
+#+HTML_HEAD: <link rel="stylesheet" href="non-reveal.css">
 
 * Working in Teams
 ** Making Pull Requests

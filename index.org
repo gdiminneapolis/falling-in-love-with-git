@@ -1,5 +1,6 @@
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t reveal_title_slide:nil
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil toc:nil
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/
 #+REVEAL_THEME: moon
 #+REVEAL_EXTRA_CSS: moon-extras.css
 #+REVEAL_TRANS: none
@@ -12,7 +13,7 @@
 * Falling In Love With Git
   Sat, Oct 7, 2017 | GDI Mpls | Tamara Temple
   #+BEGIN_EXPORT html
-  <img src="images/gdi_logo_badge.png" alt="GDI Logo" class="title-image">
+  <img src="images/gdi/gdi_logo_badge.png" alt="GDI Logo" class="title-image">
   #+END_EXPORT
 
   - Network:
@@ -22,10 +23,25 @@
 
   #+BEGIN_EXPORT html
   <ul>
-    <li>These slides: <a  target="_blank" rel="noopener noreferrer"  href="http://tinyurl.com/GDIGitClass">http://tinyurl.com/GDIGitClass</a></li>
-    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/gdiminneapolis/falling-in-love-with-git">Class
-        Materials GitHub Repo</a></li>
-    <li><a target="_blank" rel="noopener noreferrer" href="Resources.html">Resources</a></li>
+    <li>
+      These slides:
+      <a href="http://tinyurl.com/GDIGitClass"
+         target="_blank" rel="noopener noreferrer">
+        http://tinyurl.com/GDIGitClass
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/gdiminneapolis/falling-in-love-with-git"
+         target="_blank" rel="noopener noreferrer">
+        Class Materials GitHub Repo
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/gdiminneapolis/falling-in-love-with-git/blob/master/Resources.org"
+         target="_blank" rel="noopener noreferrer">
+        Resources
+      </a>
+    </li>
   </ul>
   #+END_EXPORT
 
@@ -33,11 +49,24 @@
 
    #+BEGIN_EXPORT html
    <ul>
-     <li><a href="./intro-to-git.html" target="_blank">Intro to
-         Git</a></li>
-     <li><a href="./sourcetree.html" target="_blank">Using
-         SourceTree</a></li>
-     <li><a href="./command_line.html" target="_blank">Using the Command Line</a></li>
+     <li>
+       <a href="./intro-to-git.html"
+          target="_blank" rel="noopener noreferrer">
+         Intro to Git
+       </a>
+     </li>
+     <li>
+       <a href="./sourcetree.html"
+          target="_blank" rel="noopener noreferrer">
+         Using SourceTree
+       </a>
+     </li>
+     <li>
+       <a href="./working-in-teams.html"
+          target="_blank" rel="noopener noreferrer">
+         Working In Teams
+       </a>
+     </li>
    </ul>
 
    #+END_EXPORT

@@ -1,5 +1,6 @@
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t reveal_title_slide:nil
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil toc:nil
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/
 #+REVEAL_THEME: moon
 #+REVEAL_EXTRA_CSS: moon-extras.css
 #+REVEAL_TRANS: none
@@ -22,7 +23,9 @@
 ** Anatomy of the command line
 
    #+BEGIN_EXPORT html
-   <img src="images/command-line-anatomy.png" class="" alt="command line anatomy" />
+   <img src="images/command_line/command-line-anatomy.png"
+        class="img-responsive"
+        alt="command line anatomy" />
    #+END_EXPORT
 
    #+ATTR_REVEAL: :frag (fade-in)
@@ -403,7 +406,7 @@ The key's randomart image is:
 
   #+REVEAL: split
   #+BEGIN_EXPORT html
-  <img src="images/git-status-output.jpg" class="img-responsive"
+  <img src="images/command_line/git-status-output.jpg" class="img-responsive"
        alt="screen shot showing output from a git status command" />
   #+END_EXPORT
 

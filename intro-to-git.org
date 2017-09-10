@@ -1,5 +1,6 @@
 #+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t reveal_title_slide:nil
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil toc:nil
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/
 #+REVEAL_THEME: moon
 #+REVEAL_EXTRA_CSS: moon-extras.css
 #+REVEAL_TRANS: none

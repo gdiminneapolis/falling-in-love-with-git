@@ -1,3 +1,6 @@
+#+HTML_DOCTYPE: <!DOCTYPE html>
+#+HTML_HEAD: <link rel="stylesheet" href="non-reveal.css">
+
 * Meetup Description
 ** INTRODUCTION
 
@@ -16,10 +19,7 @@ other developers.
 *** The first part of the class will cover:
 
 -  the basic concepts of version control
--  fundamental git commands to track changes to a small project: dancing
-   with git
--  the basics of collaborating on code with other developers in a
-   professional environment: banching and merging
+-  using SourceTree to keep track of your projects
 -  how to use GitHub: pushing and pull requests
 
 *** The second part of the class: Practice, practice, practice
@@ -28,12 +28,10 @@ The second section will be a lab where you put that new knowledge to
 work by creating and working with your own GitHub project (git term:
 remote repo).
 
--  making git a habit
--  boshing the command line: making git easier
--  git problems and how to solve them
--  integrating git with your editor (Sublime Text, Atom, WebStorm,
-   Emacs)
--  GUI/Desktop tools
+- working with teams
+- parallel development
+- branching, merging, pull requests
+- making git a habit
 
 ** DATES & TIMES
 
@@ -63,13 +61,15 @@ daughters, a watercolourist, photographer, and sometime musician.
 
 ** PREREQUISITE KNOWLEDGE
 
+You should be comfortable using a text editor such as Visual Code,
+Atom, Sublime Text, Vim, or Emacs.
+
 This class will not use actual code when committing to a GitHub
 repository, so no need to worry about knowing a particular programming
-language. A willingness to use the command line is necessary; we will be
-changing directories, listing directory contents, and using git from the
-command line throughout the class. You should bring your own computer to
-class and have administrative privileges for installing software. Also,
-don't forget to bring a power supply.
+language.
+
+A willingness to use the command line is helpful; we will be
+changing directories, listing directory contents.
 
 ** WHAT TO COMPLETE BEFORE CLASS
 
@@ -77,12 +77,18 @@ Please do the following in preparation for the workshop:
 
 1. [[https://github.com/join][Sign up]] for a free Github account.
 2. [[https://git-scm.com/downloads][Download Git]] for your operating system.
-3. Optionally, download [[https://www.atlassian.com/software/sourcetree][SourceTree]], a GUI desktop git tool.
+3. Download [[https://www.atlassian.com/software/sourcetree][SourceTree]], a GUI desktop git tool.
+4. A code editor, such as [[https://code.visualstudio.com/Download][Visual Code]], [[https://atom.io/][Atom]], [[https://www.sublimetext.com/3][Sublime Text]], [[https://vim.sourceforge.io/][Vim]], [[https://www.gnu.org/software/emacs/][Emacs]],
+   [[https://notepad-plus-plus.org/][Notepad++]] (Do not use Notepad.exe or TextEdit.app! These are *not*
+   good code editors.)
 
 ** WHAT TO BRING TO CLASS
 
--  Laptop *that you can install software on*
--  Charger (there will be Wi-Fi and power strips available)
+-  A Laptop with the software described above installed on it ready to go.
+-  A charger for the laptop (there will be Wi-Fi and power strips
+  available)
+
+(Note: if you do not have a laptop, contact us to arrange a loaner.)
 
 ** WHERE TO PARK
 
