@@ -18,6 +18,18 @@
         "tutorial",
         "talk"
       ]
+    },
+    {
+      "login": "tamouse",
+      "name": "Tamara Temple",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/363583?v=4",
+      "profile": "http://swaac.tamouse.org",
+      "contributions": [
+        "doc",
+        "code",
+        "tutorial",
+        "talk"
+      ]
     }
   ]
 }
