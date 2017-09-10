@@ -10,13 +10,16 @@
 #+HTML_DOCTYPE: <!DOCTYPE html>
 #+HTML_HEAD: <link rel="stylesheet" href="non-reveal.css">
 
-* Installing and Configuring SourceTree
-** Download
+* SourceTree
+  In this section, we'll be working with SourceTree, a GUI desktop
+  application that handles version control.
+
+* Download
 
    Go to https://www.sourcetreeapp.com/ and download the version for
    your OS (Mac or Win)
 
-** Installation
+* Installation
 
    Run the installer
 
@@ -27,8 +30,8 @@
     - Skip step that connects to BitBucket or Github
     - After installation, start up SourceTree
 
-** Configure
-*** Install Command Line Tools
+* Configure
+** Install Command Line Tools
 
     From the *SourceTree* menu:
 
@@ -37,7 +40,7 @@
          alt="Install Sourcetree Command Line Tools" />
     #+END_EXPORT
 
-*** Set Preferences
+** Set Preferences
 
     From the *SourceTree* menu:
 
@@ -46,7 +49,7 @@
          alt="Open SourceTree Preferences" />
     #+END_EXPORT
 
-    #+REVEAL: split
+*** set user info
 
     Make sure your user information is correct:
 
@@ -55,7 +58,7 @@
            class="" alt="Set your user info" />
     #+END_EXPORT
 
-    #+REVEAL: split
+*** set global ignore file
 
     Set up the global gitignore file.
 
@@ -66,10 +69,9 @@
 
     You can edit it from here as well.
 
-    #+REVEAL: split
+*** set branch push policy to matching
 
     Set push branches to "matching":
-
 
     #+BEGIN_EXPORT html
     <img src="images/sourcetree/push-branches-matching.png"
@@ -77,7 +79,7 @@
     #+END_EXPORT
 
 
-*** Connect to Github
+** Connect to Github
 
     Let's go ahead and connect up to your GitHub account.
 
@@ -400,12 +402,88 @@
    #+END_EXPORT
 
 
-
 * Tracking and Reverting Changes
+
+  A great feature of Git is that it lets you erase any changes you've
+  made in a step to get back to the original.
+
+  #+REVEAL: split
+
+  You can recover from changes made:
+
+  #+ATTR_REVEAL: :frag (appear)
+  - before you add the changes to staging
+  - after adding but before committing the changes to the local repo
+  - after committing to the local repo but before pushing to the
+    remote
+  - after pushing to the remote
+
 ** Before staging
+
+   If you've made some changes to try something out but you decide to
+   abandon them, SourceTree makes this easy
+
+*** discard hunks
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/tracking-changes/discard-before-staging.jpg"
+        class="img-responsive"
+        alt="screenshot of sourcetree showing change status of README.md file" />
+   #+END_EXPORT
+
 ** After staging, before committing
+
+   After you've staged your changes, but before you commit them,
+   SourceTree can also recover these.
+
+   #+REVEAL: split
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/tracking-changes/revert-to-commt.jpg"
+        class="img-responsive"
+        alt="revert to commit" />
+   #+END_EXPORT
 ** After committing, before pushing
+
+   Make some changes, and let's commit them.
+
+*** commit the changes
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/tracking-changes/commit-a-change.jpg"
+        class="img-responsive" alt="committing a change" />
+   #+END_EXPORT
+
+*** select the commit to revert
+
+   #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/revert-commit-select-commit.jpg" class="img-responsive" />
+
+*** select "Reverse commit" from drop-down
+
+   #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/revert-commit-select-revert-change.jpg" class="img-responsive" />
+
+*** after the revert, a new commit
+
+   #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/revert-commit-after-revert.jpg" class="img-responsive" />
+
+
 ** After pushing
+
+   Even if you've pushed to the remote, you can fix things.
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   However, since your teammates may have pulled your changes, you'll
+   need to make a new commit and push those changes. (sorry)
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   This is to prevent discrepancies between the indexes in the various
+   repositories.
+
+*** A better way
+
+    Since you can't very easily erase changes in a remote (pushed)
+    repository, the better way to develop projects is with branching
+    and merging.
 
 * Multiple Development Paths
 
@@ -766,3 +844,8 @@
      - it's incorrect
      - it's interface is confusing
      - So we're not covering it today
+* Next section:
+
+  *Working in Teams and Practical Git*
+
+  [[./working-in-teams.html][Jump to the next section]]

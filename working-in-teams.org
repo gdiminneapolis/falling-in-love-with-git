@@ -20,3 +20,19 @@
 ** Form up in to teams
 ** Choose Roles
 ** Work Flow
+* /- fin -/
+  #+BEGIN_EXPORT html
+  <img src="images/lliza-thank-you.gif" class="" alt="Thank you animated gif" />
+  #+END_EXPORT
+
+  Please fill out the survey at
+
+  #+BEGIN_EXPORT html
+  <a href="https://tinyurl.com/gdiMpls"
+     target="_blank" rel="noopener noreferrer"
+     >
+    tinyurl.com/gdiMpls
+  </a>
+  #+END_EXPORT
+
+  and use "Falling in Love with Git" for the class name
