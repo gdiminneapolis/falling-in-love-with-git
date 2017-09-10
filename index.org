@@ -6,6 +6,8 @@
 #+REVEAL_HEAD_PREAMBLE: <meta name="description" content="GDI Class Falling in Love With Git 2.0">
 #+REVEAL_POSTAMBLE: <div> Created by Tamara Temple &lt;tamara@tamouse.org&gt; </div>
 #+REVEAL_PLUGINS: (markdown notes highlight)
+#+HTML_DOCTYPE: <!DOCTYPE html>
+#+HTML_HEAD: <link rel="stylesheet" href="non-reveal.css">
 
 * Falling In Love With Git
   Sat, Oct 7, 2017 | GDI Mpls | Tamara Temple

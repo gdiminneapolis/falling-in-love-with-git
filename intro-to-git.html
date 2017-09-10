@@ -24,35 +24,45 @@
     }
 </script>
 <meta name="description" content="GDI Class Falling in Love With Git 2.0">
+<link rel="stylesheet" href="non-reveal.css">
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
-
 <section>
-<section id="slide-org047fb52">
-<h2 id="org047fb52">Welcome!</h2>
+<section id="slide-orga5a54c8">
+<h2 id="orga5a54c8">Welcome!</h2>
 <p>
-Girl Develop It is here to provide affordable and accessible
-programs to women to learn software through mentorship and hands-on
-instruction.
+<b>Girl Develop It</b> is here to provide <i>affordable</i> and <i>accessible</i>
+programs to women to learn software through <i>mentorship</i> and <i>hands-on
+instruction</i>.
 </p>
 
-<p>
-<i>Some Rules:</i>
+<p class="fragment (fade-in)">
+<b>Some Rules:</b>
 </p>
-
 <ul>
-<li>We are here for you!</li>
-<li>Every question is important</li>
-<li>Help each other</li>
-<li>Have fun</li>
+<li class="fragment roll-in">We are here for you!</li>
+<li class="fragment roll-in">Every question is important</li>
+<li class="fragment roll-in">Help each other</li>
+<li class="fragment roll-in">Have fun</li>
 
 </ul>
 
 </section>
-<section id="slide-org2f19992">
-<h3 id="org2f19992">Introductions</h3>
+<section id="slide-org8f25ce1">
+<h3 id="org8f25ce1">Goals for Today's Course</h3>
+<ul>
+<li class="fragment roll-in"><i>Learn</i> what version control is</li>
+<li class="fragment roll-in">Get you <i>set up</i> to use Git</li>
+<li class="fragment roll-in"><i>Understand</i> the basics of Git</li>
+<li class="fragment roll-in">"Git" <i>social</i> with Github</li>
+
+</ul>
+
+</section>
+<section id="slide-org5cba138">
+<h3 id="org5cba138">Introductions</h3>
 <ul>
 <li>Who are you?</li>
 <li>What do you do, or what do you want to do?</li>
@@ -62,21 +72,10 @@ instruction.
 </ul>
 
 </section>
-<section id="slide-orgc4d6e99">
-<h3 id="orgc4d6e99">Goals for Today's Course</h3>
-<ul>
-<li class="fragment roll-in">Learn what version control is</li>
-<li class="fragment roll-in">Get you set up to use Git</li>
-<li class="fragment roll-in">Basics of Git</li>
-<li class="fragment roll-in">"Gitting" social with Github</li>
-
-</ul>
-
-</section>
 </section>
 <section>
-<section id="slide-orgf4a1dc2">
-<h2 id="orgf4a1dc2">What is Version Control?</h2>
+<section id="slide-org5aa8f72">
+<h2 id="org5aa8f72">What is Version Control?</h2>
 <p>
 Version control allows you and your team to do <i>two</i> very powerful
 things:
@@ -90,10 +89,10 @@ things:
 </ul>
 
 </section>
-<section id="slide-org565e453">
-<h3 id="org565e453">Collaborate</h3>
+<section id="slide-org4822cf3">
+<h3 id="org4822cf3">Collaborate</h3>
 <p>
-You can create <i>anything</i> with other people and be able to easily
+You can create <i>anything*</i> with other people and be able to easily
 merge changes with each other
 </p>
 
@@ -107,8 +106,29 @@ merge changes with each other
 </ul>
 
 </section>
-<section id="slide-orgae7c0fd">
-<h3 id="orgae7c0fd">Track and Revert Changes</h3>
+<section >
+
+<p>
+<i>*</i> Okay, <i>almost</i> anything. Git works well for projects that are
+primarily:
+</p>
+
+<ul>
+<li class="fragment fade-in">text based</li>
+<li class="fragment fade-in">contained in a single directory</li>
+<li class="fragment fade-in">don't contain a lot of large media files
+<ul>
+<li class="fragment fade-in">movies</li>
+<li class="fragment fade-in">audio</li>
+<li class="fragment fade-in">very large images</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-orgb47e1cf">
+<h3 id="orgb47e1cf">Track and Revert Changes</h3>
 <p>
 Git gives you the ability to "go back in time"
 </p>
@@ -120,38 +140,37 @@ Git gives you the ability to "go back in time"
 
 </ul>
 </section>
-<section id="slide-org3cc03a7">
-<h3 id="org3cc03a7">Not Convinced Yet?</h3>
+<section id="slide-orgbd5a437">
+<h3 id="orgbd5a437">Not Convinced Yet?</h3>
 <ul>
 <li class="fragment roll-in">Employers <b>want</b> this</li>
-<li class="fragment roll-in">It's a required skill</li>
-<li class="fragment roll-in">It's a standard expectation to work in groups
+<li class="fragment roll-in">It's a <b>required</b> skill</li>
+<li class="fragment roll-in">It's a <b>standard expectation</b> to work in groups
 <ul>
 <li>public, i.e. opensource</li>
 <li>private</li>
 
 </ul></li>
-<li class="fragment roll-in">It's personally useful</li>
+<li class="fragment roll-in">It's personally <b>useful</b></li>
 
 </ul>
 
 </section>
 </section>
 <section>
-<section id="slide-orga3e3680">
-<h2 id="orga3e3680">Types of Version Control</h2>
+<section id="slide-org8070d3a">
+<h2 id="org8070d3a">Types of Version Control</h2>
 <p>
 <i>There are basically two types:</i>
 </p>
 
 <ul>
-<li><b>Centralized:</b>
+<li class="fragment roll-in"><b>Centralized:</b>
 <ul>
 <li>e.g. CVS, Subversion, Perforce</li>
 
 </ul></li>
-
-<li><b>Decentralized:</b>
+<li class="fragment roll-in"><b>Decentralized:</b>
 <ul>
 <li>e.g. Git, Mercurial (Hg)</li>
 
@@ -160,8 +179,8 @@ Git gives you the ability to "go back in time"
 </ul>
 
 </section>
-<section id="slide-orgf1b28db">
-<h3 id="orgf1b28db">Centralized Version Control</h3>
+<section id="slide-orgeac67e3">
+<h3 id="orgeac67e3">Centralized Version Control</h3>
 <ul>
 <li class="fragment roll-in">One central source</li>
 
@@ -176,8 +195,8 @@ Git gives you the ability to "go back in time"
 </ul>
 
 </section>
-<section id="slide-org27a229a">
-<h3 id="org27a229a">Decentralized Version Control</h3>
+<section id="slide-org502a208">
+<h3 id="org502a208">Decentralized Version Control</h3>
 <ul>
 <li class="fragment roll-in">Local source, shared remote</li>
 
@@ -195,8 +214,8 @@ Git gives you the ability to "go back in time"
 </section>
 </section>
 <section>
-<section id="slide-orge2f4c81">
-<h2 id="orge2f4c81">Intro to Git</h2>
+<section id="slide-org2ada899">
+<h2 id="org2ada899">Features of Git</h2>
 <ul>
 <li class="fragment roll-in"><b>Fast and easy setup:</b> You can get a whole team and / or project up
 and running quickly</li>
@@ -212,67 +231,213 @@ when changes are made and by whom</li>
 </section>
 </section>
 <section>
-<section id="slide-orge9e23ec">
-<h2 id="orge9e23ec">Working with Git</h2>
-<div class="outline-text-2" id="text-orge9e23ec">
+<section id="slide-org3ca3477">
+<h2 id="org3ca3477">Working with Git</h2>
+<div class="outline-text-2" id="text-org3ca3477">
 </div></section>
-<section id="slide-orgebd911d">
-<h3 id="orgebd911d">Creating repositories</h3>
+<section id="slide-orgf32e611">
+<h3 id="orgf32e611">Meet the Git Cats:</h3>
+<div class="outline-text-3" id="text-orgf32e611">
+</div></section>
+<section id="slide-orga81f0df">
+<h4 id="orga81f0df">Git Cats</h4>
+<img src="images/gitcats/thecats.jpg" class="img-responsive" alt="three cats" />
+
 </section>
-<section id="slide-org737a4e8">
-<h3 id="org737a4e8">Staging changes</h3>
+<section id="slide-orga88a846">
+<h4 id="orga88a846">Naming the Cats</h4>
+<img src="images/gitcats/naming-the-cats.jpg" class="img-responsive" alt="naming the cats, from left to right: 'Working Cat', 'Index Cat', 'Remote Cat'" />
+
 </section>
-<section id="slide-orgb055c30">
-<h3 id="orgb055c30">Committing changes</h3>
+<section id="slide-org70293d8">
+<h4 id="org70293d8">The Stage</h4>
+<img src="images/gitcats/the-stage.jpg" class="img-responsive" alt="Staging: getting the cats ready" />
+
 </section>
-<section id="slide-orgc5c0e3c">
-<h3 id="orgc5c0e3c">Pushing changes</h3>
+<section id="slide-org4d046f3">
+<h4 id="org4d046f3">Dance Step 1: Adding</h4>
+<img src="images/gitcats/dance-1.jpg" class="img-responsive" alt="Dance Step 1: adding the cats to the stage" />
+
 </section>
-<section id="slide-orge31ed73">
-<h3 id="orge31ed73">Branching and Merging</h3>
+<section id="slide-orgad9f168">
+<h4 id="orgad9f168">Dance Step 2: Committing</h4>
+<img src="images/gitcats/dance-2.jpg" class="img-responsive" alt="Dance Step 2: commiting the cats to the index" />
+
+</section>
+<section id="slide-org818b5b9">
+<h4 id="org818b5b9">Dance Step 3: Pushing</h4>
+<img src="images/gitcats/dance-3.jpg" class="img-responsive" alt="Dance Step 3: pushing the cats to the remote" />
+
+</section>
+<section id="slide-org8a2e45c">
+<h3 id="org8a2e45c">Creating repositories</h3>
+<p>
+Creating a <i>local</i> repository starts with having a <i>local</i> working
+directory.
+</p>
+
+<img src="images/gitcats/working-dir-cat.small.jpg" class="centered-image" alt="" />
+
+<ul>
+<li class="fragment roll-in">it can be empty</li>
+<li class="fragment roll-in">it can already have files</li>
+
+</ul>
+
+</section>
+<section id="slide-org31ccdb4">
+<h3 id="org31ccdb4">Initialize the index</h3>
+<img src="images/gitcats/index-cat.jpg" class="img-responsive"
+     alt="a cat representing the git index" />
+
+</section>
+<section id="slide-orgfa16167">
+<h3 id="orgfa16167">The Stage</h3>
+<img src="images/gitcats/the-stage.jpg" class="centered-image" alt="" />
+
+</section>
+<section id="slide-org5e1aa1d">
+<h3 id="org5e1aa1d">Stage changes</h3>
+<img src="images/gitcats/add-to-stage.jpg" class="centered-image" alt="" />
+
+</section>
+<section id="slide-org8ddd8d2">
+<h3 id="org8ddd8d2">Committing changes</h3>
+<img src="images/gitcats/commit-to-local-repo.small.jpg" class="centered-image" alt="" />
+
+</section>
+<section id="slide-org268bab9">
+<h3 id="org268bab9">Creating the remote</h3>
+<p>
+Before you can push changes, you need to create the remote repository
+</p>
+<img src="images/gitcats/remote-cat.jpg" class="img-responsive"
+     alt="cat representing the remote repository" />
+
+<p>
+You usually create the remote on the GitHub website (or whereever
+you store your remote repositories.)
+</p>
+
+</section>
+<section id="slide-org28771ee">
+<h4 id="org28771ee">The remote name</h4>
+<p>
+By convention, and this almost never changes, the remote
+repository is known to the local repository as <i>"origin"</i>.
+</p>
+
+<p>
+It doesn't have to be, but it's the default most tools and other
+users assume.
+</p>
+
+</section>
+<section id="slide-org45ae2f7">
+<h3 id="org45ae2f7">Pushing changes</h3>
+<img src="images/gitcats/push-to-remote.small.jpg"
+     class="img-responsive"
+     alt="image showing flow of changes from local repo to the remote repo " />
+
+
+</section>
+<section id="slide-orgbdbeaa0">
+<h3 id="orgbdbeaa0">Branching and Merging</h3>
+<p>
+&#x2026; allows us to work on different parts of the project at
+the same time without interfering with other work.
+</p>
+
+<p class="fragment (fade-in)">
+&#x2026; is also useful for trying experiments without breaking
+existing code
+</p>
+
+
+</section>
+<section id="slide-orgdcabbce">
+<h4 id="orgdcabbce"><code>master</code> is the <i>default</i> branch</h4>
+<img src="images/gitcats/cat-master-branch.small.jpg"
+     class="img-responsive"
+     alt="image of cats depicting commits on the master branch" />
+
+</section>
+<section id="slide-orgd66ebd6">
+<h4 id="orgd66ebd6">make a branch for a new feature</h4>
+<img src="images/gitcats/cat-feature-branch.small.jpg"
+     class="img-responsive"
+     alt="two lines of cats showing commits on the master and feature branch" />
+
+</section>
+<section id="slide-orgddd592f">
+<h4 id="orgddd592f">try an experiment on the feature</h4>
+<img src="images/gitcats/cat-exp-feature-branch.small.jpg"
+     class="img-responsive"
+     alt="image of cats on the master branch, feature branch, and an
+     experimental feature sub-branch" />
+
+</section>
+<section id="slide-orgc23a918">
+<h4 id="orgc23a918">oops, need to hot-fix master</h4>
+<img src="images/gitcats/cat-hot-fix.jpg" class="img-responsive"
+     alt="image of cats on master with a hotfix" />
+
+</section>
+<section id="slide-orgf570bce">
+<h4 id="orgf570bce">have to merge back to feature</h4>
+<img src="images/gitcats/cat-hot-fix-pre-merge.jpg"
+     class="img-responsive"
+     alt="cats showing extra pre-merge from master to feature because
+     of hot fix" />
+
+</section>
+<section id="slide-orgb3e702e">
+<h4 id="orgb3e702e">the repository merge index</h4>
+<img src="images/gitcats/branching-cats.jpg" class="img-responsive"
+     alt="image of cats depicting commits on master, feature,
+     experimental and hot-fix branches" />
+
+
 </section>
 </section>
 <section>
-<section id="slide-orgc29534b">
-<h2 id="orgc29534b">Installation</h2>
+<section id="slide-org563f021">
+<h2 id="org563f021">Getting Git Software</h2>
 <p>
 Most systems come with some version of Git installed, but it's
 usually best to work with the most recent (or close to recent)
 version.
 </p>
 
-<p>
-Git itself is primarily a command line tool
+<p class="fragment (fade-in)">
+Git itself is primarily a <i>command line tool</i>
 </p>
 
-<p>
+<p class="fragment (fade-in)">
 There are also two good GUI tools that you can do most of what
 you'll learn today.
 </p>
 
 <ul>
-<li>SourceTree</li>
-<li>Github Desktop</li>
+<li class="fragment roll-in"><i>SourceTree</i></li>
+<li class="fragment roll-in"><i>Github Desktop</i></li>
 
 </ul>
 
-<p>
-We'll be looking at SourceTree today
+<p class="fragment (fade-in)">
+We'll be working with <b>SourceTree</b> today
 </p>
 
 </section>
-<section id="slide-orgaf94fbc">
-<h3 id="orgaf94fbc">Install Git</h3>
+<section id="slide-org48929b5">
+<h3 id="org48929b5">Install Git</h3>
 <div>
   <a href="http://git-scm.com/downloads"
      alt="Download latest version of Git"
      target="_blank" rel="noopener noreferrer">
-    <img src="images/install-git.png" alt="Download latest version of Git">
+    <img src="images/install-git.jpg" alt="Download latest version of Git">
   </a>
-</div>
-
-
-<div>
+  <br>
   <a href="http://git-scm.com/downloads"
      alt="Download latest version of Git"
      target="_blank" rel="noopener noreferrer">
@@ -280,46 +445,40 @@ We'll be looking at SourceTree today
   </a>
 </div>
 
-<a href="command_line.html" title="Command line class slides"
-   target="_blank" rel="noopener noreferrer"
->Class slides using command line</a>
-
 </section>
-<section id="slide-orgdb96815">
-<h3 id="orgdb96815">Install SourceTree</h3>
-<ul>
-<li>An alternative to <i>most</i> of the command line git tools</li>
-
-<li><p>
-Download from:
-</p>
-
-<a href="https://www.atlassian.com/software/sourcetree"
-   title="Atlassian SourceTree Software"
-   target="_blank" rel="noopener noreferrer"
-   >https://www.atlassian.com/software/sourcetree</a>
-
-<a href="sourcetree.html" title="Class slides with Sourcetree examples"
-   target="_blank" rel="noopener noreferrer">Class slides using SourceTree</a></li>
-
-</ul>
-
-</section>
-<section id="slide-orgc16c536">
-<h3 id="orgc16c536">GitHub Desktop - a GUI Git client</h3>
-<ul>
-<li>Another alternative to <i>most</i> of the command line git tools</li>
-
-<li><p>
-Download from:
+<section id="slide-org4b5916a">
+<h3 id="org4b5916a">Install SourceTree</h3>
+<p>
+An alternative to <i>most</i> of the command line git tools
 </p>
 
 <p>
+Download from:
+</p>
+
+
+
+
+<p>
+<a href="https://www.sourcetreeapp.com/">SourceTree Download</a>
+</p>
+
+</section>
+<section id="slide-orge1d3f9b">
+<h3 id="orge1d3f9b">GitHub Desktop - a GUI Git client</h3>
+<p>
+Another alternative to <i>most</i> of the command line git tools
+</p>
+
+<p>
+Download from:
+</p>
+
+
+
+<p>
 <a href="https://desktop.github.com/">https://desktop.github.com/</a>
-</p></li>
-
-</ul>
-
+</p>
 
 <p>
 <i>(We won't be covering this tool in class.)</i>
@@ -328,36 +487,15 @@ Download from:
 </section>
 </section>
 <section>
-<section id="slide-org41699c1">
-<h2 id="org41699c1">Working in Teams</h2>
-<div class="outline-text-2" id="text-org41699c1">
-</div></section>
-<section id="slide-org3f5d649">
-<h3 id="org3f5d649">Making Pull Requests</h3>
-</section>
-<section id="slide-org6fe152f">
-<h3 id="org6fe152f">Reviewing Pull Requests</h3>
-</section>
-<section id="slide-org53e5351">
-<h3 id="org53e5351">Merging Pull Requsts</h3>
-</section>
-</section>
-<section>
-<section id="slide-org6df0de1">
-<h2 id="org6df0de1">Practical Git</h2>
-<div class="outline-text-2" id="text-org6df0de1">
-</div></section>
-<section id="slide-org66a657f">
-<h3 id="org66a657f">The project</h3>
-</section>
-<section id="slide-org7ef177b">
-<h3 id="org7ef177b">Form up in to teams</h3>
-</section>
-<section id="slide-org5fa9388">
-<h3 id="org5fa9388">Choose Roles</h3>
-</section>
-<section id="slide-orgf092360">
-<h3 id="orgf092360">Work Flow</h3>
+<section id="slide-org584a812">
+<h2 id="org584a812">Working with SourceTree</h2>
+<p>
+Click on the following link for the next set of slides:
+</p>
+
+<p>
+<a href="./sourcetree.html">SourceTree Slides</a>
+</p>
 </section>
 </section>
 </div>

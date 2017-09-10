@@ -6,19 +6,29 @@
 #+REVEAL_HEAD_PREAMBLE: <meta name="description" content="GDI Class Falling in Love With Git 2.0">
 #+REVEAL_POSTAMBLE: <div> Created by Tamara Temple &lt;tamara@tamouse.org&gt; </div>
 #+REVEAL_PLUGINS: (markdown notes highlight)
-
+#+HTML_DOCTYPE: <!DOCTYPE html>
+#+HTML_HEAD: <link rel="stylesheet" href="non-reveal.css">
 * Welcome!
 
-  Girl Develop It is here to provide affordable and accessible
-  programs to women to learn software through mentorship and hands-on
-  instruction.
+  *Girl Develop It* is here to provide /affordable/ and /accessible/
+  programs to women to learn software through /mentorship/ and /hands-on
+  instruction/.
 
-  /Some Rules:/
-
+  #+ATTR_REVEAL: :frag (fade-in)
+  *Some Rules:*
+  #+ATTR_REVEAL: :frag (roll-in)
   - We are here for you!
   - Every question is important
   - Help each other
   - Have fun
+
+** Goals for Today's Course
+
+   #+ATTR_REVEAL: :frag (roll-in)
+   - /Learn/ what version control is
+   - Get you /set up/ to use Git
+   - /Understand/ the basics of Git
+   - "Git" /social/ with Github
 
 ** Introductions
 
@@ -26,14 +36,6 @@
    - What do you do, or what do you want to do?
    - What's your experience with GDI?
    - What's your experience with Git and GitHub?
-
-** Goals for Today's Course
-
-   #+ATTR_REVEAL: :frag (roll-in)
-   - Learn what version control is
-   - Get you set up to use Git
-   - Basics of Git
-   - "Gitting" social with Github
 
 * What is Version Control?
 
@@ -47,7 +49,7 @@
 
 ** Collaborate
 
-   You can create /anything/ with other people and be able to easily
+   You can create /anything*/ with other people and be able to easily
    merge changes with each other
 
    #+ATTR_REVEAL: :frag (roll-in)
@@ -56,6 +58,20 @@
    - academic papers
    - books, articles, blogs
    - websites
+
+   #+REVEAL: split
+
+   /*/ Okay, /almost/ anything. Git works well for projects that are
+   primarily:
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   - text based
+   - contained in a single directory
+   - don't contain a lot of large media files
+     #+ATTR_REVEAL: :frag (fade-in)
+     - movies
+     - audio
+     - very large images
 
 ** Track and Revert Changes
 
@@ -69,21 +85,19 @@
 
    #+ATTR_REVEAL: :frag (roll-in)
    - Employers *want* this
-   - It's a required skill
-   - It's a standard expectation to work in groups
+   - It's a *required* skill
+   - It's a *standard expectation* to work in groups
      - public, i.e. opensource
      - private
-   - It's personally useful
+   - It's personally *useful*
 
 * Types of Version Control
 
   /There are basically two types:/
 
   #+ATTR_REVEAL: :frag (roll-in)
-
   - *Centralized:*
     - e.g. CVS, Subversion, Perforce
-
   - *Decentralized:*
     - e.g. Git, Mercurial (Hg)
 
@@ -114,7 +128,7 @@
    - Changes are pushed to remote
 
    - Tools for merging conflicts
-* Intro to Git
+* Features of Git
 
   #+ATTR_REVEAL: :frag (roll-in)
  - *Fast and easy setup:* You can get a whole team and / or project up
@@ -127,26 +141,172 @@
  - *Hashed commits:* commits have unique ID ~string~ to keep track of
    when changes are made and by whom
 * Working with Git
+** Meet the Git Cats:
+*** Git Cats
+   #+BEGIN_EXPORT html
+   <img src="images/gitcats/thecats.jpg" class="img-responsive" alt="three cats" />
+   #+END_EXPORT
+
+*** Naming the Cats
+
+    #+BEGIN_EXPORT html
+    <img src="images/gitcats/naming-the-cats.jpg" class="img-responsive" alt="naming the cats, from left to right: 'Working Cat', 'Index Cat', 'Remote Cat'" />
+    #+END_EXPORT
+
+*** The Stage
+
+    #+BEGIN_EXPORT html
+    <img src="images/gitcats/the-stage.jpg" class="img-responsive" alt="Staging: getting the cats ready" />
+    #+END_EXPORT
+
+*** Dance Step 1: Adding
+    #+BEGIN_EXPORT html
+    <img src="images/gitcats/dance-1.jpg" class="img-responsive" alt="Dance Step 1: adding the cats to the stage" />
+    #+END_EXPORT
+
+*** Dance Step 2: Committing
+    #+BEGIN_EXPORT html
+    <img src="images/gitcats/dance-2.jpg" class="img-responsive" alt="Dance Step 2: commiting the cats to the index" />
+    #+END_EXPORT
+
+*** Dance Step 3: Pushing
+    #+BEGIN_EXPORT html
+    <img src="images/gitcats/dance-3.jpg" class="img-responsive" alt="Dance Step 3: pushing the cats to the remote" />
+    #+END_EXPORT
+
 ** Creating repositories
-** Staging changes
+
+   Creating a /local/ repository starts with having a /local/ working
+   directory.
+
+   #+BEGIN_EXPORT html
+   <img src="images/gitcats/working-dir-cat.small.jpg" class="centered-image" alt="" />
+   #+END_EXPORT
+
+   #+ATTR_REVEAL: :frag (roll-in)
+   - it can be empty
+   - it can already have files
+
+** Initialize the index
+
+#+BEGIN_EXPORT html
+<img src="images/gitcats/index-cat.jpg" class="img-responsive"
+     alt="a cat representing the git index" />
+#+END_EXPORT
+
+** The Stage
+
+#+REVEAL_HTML: <img src="images/gitcats/the-stage.jpg" class="centered-image" alt="" />
+
+** Stage changes
+
+#+REVEAL_HTML: <img src="images/gitcats/add-to-stage.jpg" class="centered-image" alt="" />
+
 ** Committing changes
+
+#+REVEAL_HTML: <img src="images/gitcats/commit-to-local-repo.small.jpg" class="centered-image" alt="" />
+
+** Creating the remote
+
+   Before you can push changes, you need to create the remote repository
+   #+BEGIN_EXPORT html
+   <img src="images/gitcats/remote-cat.jpg" class="img-responsive"
+        alt="cat representing the remote repository" />
+   #+END_EXPORT
+
+   You usually create the remote on the GitHub website (or whereever
+   you store your remote repositories.)
+
+*** The remote name
+
+    By convention, and this almost never changes, the remote
+    repository is known to the local repository as /"origin"/.
+
+    It doesn't have to be, but it's the default most tools and other
+    users assume.
+
 ** Pushing changes
+
+   #+BEGIN_EXPORT html
+   <img src="images/gitcats/push-to-remote.small.jpg"
+        class="img-responsive"
+        alt="image showing flow of changes from local repo to the remote repo " />
+   #+END_EXPORT
+
+
 ** Branching and Merging
-* Installation
+   ... allows us to work on different parts of the project at
+   the same time without interfering with other work.
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   ... is also useful for trying experiments without breaking
+   existing code
+
+
+*** ~master~ is the /default/ branch
+   #+BEGIN_EXPORT html
+   <img src="images/gitcats/cat-master-branch.small.jpg"
+        class="img-responsive"
+        alt="image of cats depicting commits on the master branch" />
+   #+END_EXPORT
+
+*** make a branch for a new feature
+    #+BEGIN_EXPORT html
+    <img src="images/gitcats/cat-feature-branch.small.jpg"
+         class="img-responsive"
+         alt="two lines of cats showing commits on the master and feature branch" />
+    #+END_EXPORT
+
+*** try an experiment on the feature
+    #+BEGIN_EXPORT html
+    <img src="images/gitcats/cat-exp-feature-branch.small.jpg"
+         class="img-responsive"
+         alt="image of cats on the master branch, feature branch, and an
+         experimental feature sub-branch" />
+    #+END_EXPORT
+
+*** oops, need to hot-fix master
+#+BEGIN_EXPORT html
+<img src="images/gitcats/cat-hot-fix.jpg" class="img-responsive"
+     alt="image of cats on master with a hotfix" />
+#+END_EXPORT
+
+*** have to merge back to feature
+#+BEGIN_EXPORT html
+<img src="images/gitcats/cat-hot-fix-pre-merge.jpg"
+     class="img-responsive"
+     alt="cats showing extra pre-merge from master to feature because
+     of hot fix" />
+#+END_EXPORT
+
+*** the repository merge index
+
+#+BEGIN_EXPORT html
+<img src="images/gitcats/branching-cats.jpg" class="img-responsive"
+     alt="image of cats depicting commits on master, feature,
+     experimental and hot-fix branches" />
+#+END_EXPORT
+
+
+* Getting Git Software
 
   Most systems come with some version of Git installed, but it's
   usually best to work with the most recent (or close to recent)
   version.
 
-  Git itself is primarily a command line tool
+  #+ATTR_REVEAL: :frag (fade-in)
+  Git itself is primarily a /command line tool/
 
+  #+ATTR_REVEAL: :frag (fade-in)
   There are also two good GUI tools that you can do most of what
   you'll learn today.
 
-  - SourceTree
-  - Github Desktop
+  #+ATTR_REVEAL: :frag (roll-in)
+  - /SourceTree/
+  - /Github Desktop/
 
-  We'll be looking at SourceTree today
+  #+ATTR_REVEAL: :frag (fade-in)
+  We'll be working with *SourceTree* today
 
 ** Install Git
 
@@ -155,14 +315,9 @@
      <a href="http://git-scm.com/downloads"
         alt="Download latest version of Git"
         target="_blank" rel="noopener noreferrer">
-       <img src="images/install-git.png" alt="Download latest version of Git">
+       <img src="images/install-git.jpg" alt="Download latest version of Git">
      </a>
-   </div>
-   #+END_EXPORT
-
-
-   #+BEGIN_EXPORT html
-   <div>
+     <br>
      <a href="http://git-scm.com/downloads"
         alt="Download latest version of Git"
         target="_blank" rel="noopener noreferrer">
@@ -171,47 +326,31 @@
    </div>
    #+END_EXPORT
 
-   #+BEGIN_EXPORT html
-   <a href="command_line.html" title="Command line class slides"
-      target="_blank" rel="noopener noreferrer"
-   >Class slides using command line</a>
-   #+END_EXPORT
-
 ** Install SourceTree
 
-   - An alternative to /most/ of the command line git tools
+   An alternative to /most/ of the command line git tools
 
-   - Download from:
+   Download from:
 
-     #+BEGIN_EXPORT html
-     <a href="https://www.atlassian.com/software/sourcetree"
-        title="Atlassian SourceTree Software"
-        target="_blank" rel="noopener noreferrer"
-        >https://www.atlassian.com/software/sourcetree</a>
-     #+END_EXPORT
 
-     #+BEGIN_EXPORT html
-     <a href="sourcetree.html" title="Class slides with Sourcetree examples"
-        target="_blank" rel="noopener noreferrer">Class slides using SourceTree</a>
-     #+END_EXPORT
+
+
+   [[https://www.sourcetreeapp.com/][SourceTree Download]]
 
 ** GitHub Desktop - a GUI Git client
 
-   - Another alternative to /most/ of the command line git tools
+   Another alternative to /most/ of the command line git tools
 
-   - Download from:
+   Download from:
 
-     https://desktop.github.com/
 
+
+   https://desktop.github.com/
 
    /(We won't be covering this tool in class.)/
 
-* Working in Teams
-** Making Pull Requests
-** Reviewing Pull Requests
-** Merging Pull Requsts
-* Practical Git
-** The project
-** Form up in to teams
-** Choose Roles
-** Work Flow
+* Working with SourceTree
+
+  Click on the following link for the next set of slides:
+
+  [[./sourcetree.html][SourceTree Slides]]

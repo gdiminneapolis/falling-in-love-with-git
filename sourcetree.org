@@ -6,6 +6,8 @@
 #+REVEAL_HEAD_PREAMBLE: <meta name="description" content="GDI Class Falling in Love With Git 2.0">
 #+REVEAL_POSTAMBLE: <div> Created by Tamara Temple &lt;tamara@tamouse.org&gt; </div>
 #+REVEAL_PLUGINS: (markdown notes highlight)
+#+HTML_DOCTYPE: <!DOCTYPE html>
+#+HTML_HEAD: <link rel="stylesheet" href="non-reveal.css">
 
 * Installing and Configuring SourceTree
 ** Download
@@ -216,7 +218,6 @@
     <img src="images/sourcetree/status-area.png" class="" alt="" />
     #+END_EXPORT
 
-
 * Create a New Project, Local First
 
   You can create a new local project repo
@@ -343,7 +344,6 @@
    #+ATTR_REVEAL: :frag (fade-in)
    /but it's empty.../
 
-
 * Create some content
 
   Fire up your editor and create a ~README.md~ file:
@@ -400,7 +400,6 @@
 
 
 
-
 * Tracking and Reverting Changes
 ** Before staging
 ** After staging, before committing
@@ -421,7 +420,9 @@
   Creating a new branch to work on a feature or bug,
 
   #+BEGIN_EXPORT html
-  <img src="images/git-branch-and-merge.png" class="" alt="" style="background-color:white"/>
+  <img src="images/gitcats/cat-feature-branch.small.jpg"
+       class="img-responsive"
+       alt=""/>
   #+END_EXPORT
 
   and then merge it back into the regular development branch

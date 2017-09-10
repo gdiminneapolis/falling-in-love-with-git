@@ -1,0 +1,29 @@
+/* NON-reveal settings */
+#content {
+  margin: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+#content code {
+  background-color: #eee;
+  color: red;
+  font-family: monospace;
+  padding: 0 2px;
+}
+
+#content .img-responsive {
+  max-width: 50vh;
+}
+
+#content .centered-image {
+  display:block;
+  max-width:50vh;
+  /* margin: auto; */
+}
+
+#content .NOTES {
+  background-color: #ccc;
+  margin: 10px;
+  padding: 5px;
+}

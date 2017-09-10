@@ -24,21 +24,22 @@
     }
 </script>
 <meta name="description" content="GDI Class Falling in Love With Git 2.0">
+<link rel="stylesheet" href="non-reveal.css">
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 
 <section>
-<section id="slide-org681aad0">
-<h2 id="org681aad0">Get started with Command Line</h2>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<section id="slide-org53f70be">
+<h2 id="org53f70be">Get started with Command Line</h2>
+<table>
 
 
 <colgroup>
-<col  class="org-left" />
+<col  class="org-left">
 
-<col  class="org-left" />
+<col  class="org-left">
 </colgroup>
 <thead>
 <tr>
@@ -65,8 +66,8 @@
 </p>
 
 </section>
-<section id="slide-org65c11c0">
-<h3 id="org65c11c0">Anatomy of the command line</h3>
+<section id="slide-orgcff6503">
+<h3 id="orgcff6503">Anatomy of the command line</h3>
 <img src="images/command-line-anatomy.png" class="" alt="command line anatomy" />
 
 <ul>
@@ -82,8 +83,8 @@
 </ul>
 
 </section>
-<section id="slide-org433c90f">
-<h3 id="org433c90f">Commands</h3>
+<section id="slide-org2cf8762">
+<h3 id="org2cf8762">Commands</h3>
 <p>
 The action we want the computer to take
 </p>
@@ -101,8 +102,8 @@ The action we want the computer to take
 </ul>
 
 </section>
-<section id="slide-org029fc2e">
-<h3 id="org029fc2e">Options</h3>
+<section id="slide-org067286f">
+<h3 id="org067286f">Options</h3>
 <ul>
 <li>Tells the command to do something extra with the operands</li>
 
@@ -111,8 +112,8 @@ The action we want the computer to take
 </ul>
 
 </section>
-<section id="slide-org1b349c2">
-<h4 id="org1b349c2">Short options</h4>
+<section id="slide-orge189779">
+<h4 id="orge189779">Short options</h4>
 <ul>
 <li class="fragment fade-in">single letter</li>
 <li class="fragment fade-in">single dash</li>
@@ -125,8 +126,8 @@ The action we want the computer to take
 </p>
 
 </section>
-<section id="slide-org1b49c09">
-<h4 id="org1b49c09">Long Options</h4>
+<section id="slide-org1cc5dc4">
+<h4 id="org1cc5dc4">Long Options</h4>
 <ul>
 <li class="fragment fade-in">words or dash-words</li>
 <li class="fragment fade-in">two dashes</li>
@@ -140,8 +141,8 @@ or
 <code>git add --all -v</code>
 </p>
 </section>
-<section id="slide-org61333b4">
-<h3 id="org61333b4">Man Pages</h3>
+<section id="slide-orgba676ee">
+<h3 id="orgba676ee">Man Pages</h3>
 <p>
 Man (i.e. "manual") pages are the documentation for commands on
 Unix-based operating systems.
@@ -161,8 +162,8 @@ To get help on the <code>ls</code> command, type:
 <i>This might also be referred to as "man-splainin'".</i>
 </p>
 </section>
-<section id="slide-org05643e0">
-<h3 id="org05643e0">Listing files</h3>
+<section id="slide-orge628d9c">
+<h3 id="orge628d9c">Listing files</h3>
 <p>
 The <code>ls</code> command is used to show the files in a directory
 </p>
@@ -182,8 +183,8 @@ ls /usr/local/bin
 </div>
 
 </section>
-<section id="slide-orgf979a8f">
-<h3 id="orgf979a8f">Moving about</h3>
+<section id="slide-org1f7ec81">
+<h3 id="org1f7ec81">Moving about</h3>
 <p>
 The <code>cd</code> command changes your current working directory
 </p>
@@ -202,8 +203,8 @@ cd Projects/GDI/classes/falling-in-love-with-git
 </div>
 
 </section>
-<section id="slide-org8dd7c61">
-<h3 id="org8dd7c61">Moving and renaming files or directories</h3>
+<section id="slide-orga614ee9">
+<h3 id="orga614ee9">Moving and renaming files or directories</h3>
 <p>
 The <code>mv</code> command moves and/or renames files and directories
 </p>
@@ -225,8 +226,8 @@ mv file1 file2 file3 file4 ~/Desktop
 </div>
 
 </section>
-<section id="slide-org79a51e5">
-<h3 id="org79a51e5">Deleting or removing files and directories</h3>
+<section id="slide-org3ceccb4">
+<h3 id="org3ceccb4">Deleting or removing files and directories</h3>
 <p>
 The <code>rm</code> command is used to remove files and directories
 </p>
@@ -246,8 +247,8 @@ rm -rf tmp # -> recursively and
 </p>
 
 </section>
-<section id="slide-orgaa6aa41">
-<h3 id="orgaa6aa41">Make a new directory</h3>
+<section id="slide-org9f969c1">
+<h3 id="org9f969c1">Make a new directory</h3>
 <p>
 The <code>mkdir</code> command creates directories
 </p>
@@ -268,8 +269,8 @@ mkdir -p ~/Projects/Websites/examples/full-height-flex
 </section>
 </section>
 <section>
-<section id="slide-orgd001910">
-<h2 id="orgd001910">Configuring your local Git</h2>
+<section id="slide-orgea44664">
+<h2 id="orgea44664">Configuring your local Git</h2>
 <p>
 There are some configuration items that Git requires of you.
 </p>
@@ -285,8 +286,8 @@ projects on your computer.
 </p>
 
 </section>
-<section id="slide-org3daa032">
-<h3 id="org3daa032">Set your name and email</h3>
+<section id="slide-orga45daea">
+<h3 id="orga45daea">Set your name and email</h3>
 <p>
 Enter the commands:
 </p>
@@ -303,8 +304,8 @@ Replace the strings with the actual values
 </p>
 
 </section>
-<section id="slide-org739117d">
-<h3 id="org739117d">Colorized output</h3>
+<section id="slide-orgf3d27b0">
+<h3 id="orgf3d27b0">Colorized output</h3>
 <p>
 Git commands can have colorized output, that helps in understanding
 some of the results. To set it globally:
@@ -317,8 +318,8 @@ some of the results. To set it globally:
 </div>
 
 </section>
-<section id="slide-org32b719b">
-<h3 id="org32b719b">Global Ignore</h3>
+<section id="slide-org3d8095e">
+<h3 id="org3d8095e">Global Ignore</h3>
 <p>
 Git will ignore any files and directories listed in a <code>.gitignore</code>
 file in a project directory.
@@ -385,8 +386,8 @@ core.excludesfile=/Users/tamara/.gitignore_global
 color.ui=true</pre>
 
 </section>
-<section id="slide-org31f299f">
-<h3 id="org31f299f">Other</h3>
+<section id="slide-orga9bc063">
+<h3 id="orga9bc063">Other</h3>
 <p>
 There are tons of things you can configure globally, but you
 probably don't need that much.
@@ -400,8 +401,8 @@ override global configurations if you want.
 </section>
 </section>
 <section>
-<section id="slide-org35be98a">
-<h2 id="org35be98a">SSH keys</h2>
+<section id="slide-orgce05332">
+<h2 id="orgce05332">SSH keys</h2>
 <ul>
 <li>SSH (Secure SHell) keys are a way to secure the communication
 between your computer and another computer, <i>without needing to
@@ -427,8 +428,8 @@ remote Git repository hosting service), a <i>public</i> key and a
 </ul>
 
 </section>
-<section id="slide-org48736ce">
-<h3 id="org48736ce">Check to see if you already have an SSH key pair</h3>
+<section id="slide-org141dd05">
+<h3 id="org141dd05">Check to see if you already have an SSH key pair</h3>
 <p>
 SSH keys, configuration, and other information are stored in the
 root of your user directory, aka <code>$HOME</code>, in a directory called <code>.ssh</code>
@@ -479,8 +480,8 @@ They might be named differently than <code>id_rsa</code>. That's only the
 </p>
 
 </section>
-<section id="slide-org735d0d5">
-<h3 id="org735d0d5">Generating a new SSH key pair</h3>
+<section id="slide-org332f283">
+<h3 id="org332f283">Generating a new SSH key pair</h3>
 <p>
 If you don't already have a key pair, or if you'd like to generate
 a new pair, enter the following:
@@ -561,8 +562,8 @@ The key's randomart image is:
 +----[SHA256]-----+
    </pre>
 </section>
-<section id="slide-orgbce0bf3">
-<h3 id="orgbce0bf3">Adding the new SSH Key Pair to Github</h3>
+<section id="slide-org1a560b3">
+<h3 id="org1a560b3">Adding the new SSH Key Pair to Github</h3>
 <p>
 The reason we just did all that is so we can securely communicated
 with GitHub. We now need to give Github our <b>public</b> key.
@@ -603,78 +604,375 @@ already added this one (that's what the comments are for!)</li>
 </section>
 </section>
 <section>
-<section id="slide-orgc49ff8b">
-<h2 id="orgc49ff8b">Creating a new project, locally</h2>
-<div class="outline-text-2" id="text-orgc49ff8b">
-</div></section>
-<section id="slide-orgc6c87d5">
-<h3 id="orgc6c87d5">Initialize the project directory</h3>
+<section id="slide-org089df8f">
+<h2 id="org089df8f">The most important command</h2>
+<p>
+Probably the most important command is:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git status
+</code></pre>
+</div>
+
+<p>
+This tells you the current state of your files and repository.
+</p>
+
+<ul>
+<li class="fragment fade-in">untracked</li>
+<li class="fragment fade-in">tracked with un-staged changes</li>
+<li class="fragment fade-in">tracked with staged changes</li>
+<li class="fragment fade-in">commited</li>
+<li class="fragment fade-in">commit difference from remote</li>
+
+</ul>
+
 </section>
-<section id="slide-org0389cc9">
-<h3 id="org0389cc9">Create some content</h3>
-</section>
-<section id="slide-org14e5527">
-<h3 id="org14e5527">Stage and commit the content</h3>
-</section>
-<section id="slide-orgb4d619b">
-<h3 id="orgb4d619b">Create the remote repository</h3>
-</section>
-<section id="slide-org6138b9e">
-<h3 id="org6138b9e">Push the content</h3>
-</section>
-</section>
-<section>
-<section id="slide-org7c58f80">
-<h2 id="org7c58f80">Creating a new project, remotely</h2>
-<div class="outline-text-2" id="text-org7c58f80">
-</div></section>
-<section id="slide-orga04400f">
-<h3 id="orga04400f">Create the remote repository</h3>
-</section>
-<section id="slide-org049e682">
-<h3 id="org049e682">Clone the remote</h3>
-</section>
-<section id="slide-org760b0bb">
-<h3 id="org760b0bb">Create some new content</h3>
-</section>
-<section id="slide-org0ea28f0">
-<h3 id="org0ea28f0">Stage and commit the content</h3>
-</section>
-<section id="slide-org4cad2f0">
-<h3 id="org4cad2f0">Push the content</h3>
+<section >
+<img src="images/git-status-output.jpg" class="img-responsive"
+     alt="screen shot showing output from a git status command" />
+
+
 </section>
 </section>
 <section>
-<section id="slide-org4d9d465">
-<h2 id="org4d9d465">Tracking and Reverting Changes</h2>
-<div class="outline-text-2" id="text-org4d9d465">
+<section id="slide-orge087eeb">
+<h2 id="orge087eeb">Creating a new project, locally</h2>
+<div class="outline-text-2" id="text-orge087eeb">
 </div></section>
-<section id="slide-orgffbc6f7">
-<h3 id="orgffbc6f7">Before staging</h3>
+<section id="slide-org28dd6a1">
+<h3 id="org28dd6a1">Initialize the project directory</h3>
+<p>
+The first step is called "initialization":
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git init DIR
+</code></pre>
+</div>
+
+<p class="fragment (fade-in)">
+This creates a special "hidden" directory called <code>.git</code> in the
+directory given in the command.
+</p>
+
+<p class="fragment (fade-in)">
+<b>This is the "Index", also known as "local repository"</b>
+</p>
+
 </section>
-<section id="slide-org78dc3d3">
-<h3 id="org78dc3d3">After staging, before committing</h3>
+<section id="slide-org0cb4973">
+<h3 id="org0cb4973">Create some content</h3>
 </section>
-<section id="slide-org90f2531">
-<h3 id="org90f2531">After committing, before pushing</h3>
+<section id="slide-org6270cf3">
+<h3 id="org6270cf3">Stage and commit the content</h3>
+<div class="outline-text-3" id="text-org6270cf3">
+</div></section>
+<section id="slide-org1cb737b">
+<h4 id="org1cb737b">Add changes to the stage</h4>
+<p>
+You stage changes by using the <code>git add</code> command:
+</p>
+
 </section>
-<section id="slide-orgcc88b41">
-<h3 id="orgcc88b41">After pushing</h3>
+<section >
+
+<p>
+<b>The Git Add Command</b>
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git add file1 file2 dir1/file10
+git add .
+git add --all --verbose
+git add -Av
+</code></pre>
+</div>
+
+
+<aside class="notes">
+<p>
+The four commands shown above are different ways of adding to the
+local stage:
+</p>
+
+<p>
+<code>git add file file file</code> will add each indifividual file to the
+stage
+</p>
+
+<p>
+<code>git add .</code> adds new and changed files to the stage. It does
+<i>not</i> record deleted files.
+</p>
+
+<p>
+<code>git add --all --verbose</code> and <code>git add -Av</code> do <i>exactly</i> the same
+thing, and add all new, changed, and deleted files to the stage.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org897298e">
+<h4 id="org897298e">Commit local changes to the local repository</h4>
+<p>
+You <i>commit</i> your local changes to the index, aka local repository
+using the <code>git commit</code> command:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git commit --message "Some useful message saying what the commit is about"
+git commit -m "Some useful message saying what the commit is about"
+git commit
+git commit --add --message 'commit message'
+git commit -am 'commit message'
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+The first 2 commands do exactly the same thing. It is often easier
+to write a commit message on the command line.
+</p>
+
+<p>
+However, sometimes you want to write a longer commit message, and
+the 3rd command launches a local editor (depends on a local
+setting) that will let you craft a message as large and complex as
+you'd like.
+</p>
+
+<p>
+On Unix or Linux based systems / environments, the local
+environment variables <code>GIT_EDITOR</code>,  <code>VISUAL</code> or <code>EDITOR</code> in that
+order determine which editor to use. It's also possible to set the
+editor in the git configuration using:
+</p>
+
+<p>
+<code>git config --global core.editor "/path/to/your/fav/editor"</code>
+</p>
+
+<p>
+Give the full path to the editor.
+</p>
+
+<p>
+The last two forms can be used to skip the <code>add</code> operation. Tracked
+files with changes will be added to the stage and then
+commited. <b>Note</b> that this does not add untracked files, nor files
+that have been deleted, so you can't get away from the <code>add</code>
+command entirely.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org0a52d4e">
+<h3 id="org0a52d4e">Create the remote repository</h3>
+<div class="outline-text-3" id="text-org0a52d4e">
+</div></section>
+<section id="slide-org3e1bb80">
+<h4 id="org3e1bb80">From the Github Website</h4>
+</section>
+<section id="slide-org30d4151">
+<h4 id="org30d4151">Using the <code>hub</code> tool</h4>
+</section>
+<section id="slide-org17cde49">
+<h3 id="org17cde49">Push the content</h3>
+<div class="outline-text-3" id="text-org17cde49">
+</div></section>
+<section id="slide-orga652d08">
+<h4 id="orga652d08">Push local repository updates to the remote repository</h4>
+<p>
+Use the <i>push</i> command to move the commits in the local repository
+to the remote repository.
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git push origin master
+git push --set-upstream origin master
+git push -u origin master
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+The first command simply pushes up to the <i>existing</i> master branch
+on the remote repository, called "origin".
+</p>
+
+<p>
+You can set the upstream connection for a branch by using the
+<code>--set-upstream</code> option as in the second command (or <code>-u</code> as in
+the third command) to tell Git these branches are linked from the
+local and remote. This let's you perform subsequent pushes using
+just the command <code>git push</code>.
+</p>
+
+</aside>
+
 </section>
 </section>
 <section>
-<section id="slide-org7648a84">
-<h2 id="org7648a84">Multiple Development Paths</h2>
-<div class="outline-text-2" id="text-org7648a84">
+<section id="slide-org56c1056">
+<h2 id="org56c1056">Creating a new project, remotely</h2>
+<div class="outline-text-2" id="text-org56c1056">
 </div></section>
-<section id="slide-org4f6af36">
-<h3 id="org4f6af36">Branching</h3>
+<section id="slide-org0862798">
+<h3 id="org0862798">Create the remote repository</h3>
 </section>
-<section id="slide-orgd334f55">
-<h3 id="orgd334f55">Merging</h3>
+<section id="slide-org62ab69e">
+<h3 id="org62ab69e">Clone the remote</h3>
 </section>
-<section id="slide-orge972e9a">
-<h3 id="orge972e9a">Rebasing</h3>
+<section id="slide-org590214b">
+<h3 id="org590214b">Create some new content</h3>
+</section>
+<section id="slide-org4e246fd">
+<h3 id="org4e246fd">Stage and commit the content</h3>
+</section>
+<section id="slide-org01dd1de">
+<h3 id="org01dd1de">Push the content</h3>
+</section>
+</section>
+<section>
+<section id="slide-org1f4c358">
+<h2 id="org1f4c358">Tracking and Reverting Changes</h2>
+<div class="outline-text-2" id="text-org1f4c358">
+</div></section>
+<section id="slide-orgd34721c">
+<h3 id="orgd34721c">Before staging</h3>
+</section>
+<section id="slide-org34be394">
+<h3 id="org34be394">After staging, before committing</h3>
+</section>
+<section id="slide-orgf9e7d44">
+<h3 id="orgf9e7d44">After committing, before pushing</h3>
+</section>
+<section id="slide-org928acfa">
+<h3 id="org928acfa">After pushing</h3>
+</section>
+</section>
+<section>
+<section id="slide-org66ce778">
+<h2 id="org66ce778">Multiple Development Paths</h2>
+<div class="outline-text-2" id="text-org66ce778">
+</div></section>
+<section id="slide-orgf43a500">
+<h3 id="orgf43a500">Branching</h3>
+<div class="outline-text-3" id="text-orgf43a500">
+</div></section>
+<section id="slide-org7ca2d54">
+<h4 id="org7ca2d54">Creating a new branch</h4>
+<p>
+There are two ways to create a new branch:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git branch NEW-BRANCH [START-POINT] && \
+    git checkout NEW-BRANCH
+git checkout -b NEW-BRANCH [START-POINT]
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org9db13b7">
+<h4 id="org9db13b7">Switching to a different branch</h4>
+<p>
+The <code>checkout</code> operation is used to switch local working branches
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git checkout BRANCH-NAME
+</code></pre>
+</div>
+
+</section>
+<section id="slide-orgb70caf1">
+<h4 id="orgb70caf1">Looking at local branches</h4>
+<p>
+To see the branches you have locally, use the <code>branch</code> operation
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git branch
+git branch --verbose
+git branch -v
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+The first list just the branch names. The current branch is
+indicated with an <i>*</i>.
+</p>
+
+<p>
+The second and third are identical, and give more information
+about the branches.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org164292b">
+<h4 id="org164292b">Looking at remote branches</h4>
+<p>
+Use the <code>--remotes</code> option
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git branch --remotes
+git branch -r
+git branch --remotes --verbose
+git branch -rv
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+The first two commands list just the names of the remote branches with the
+remote name.
+</p>
+
+<p>
+The second two command list the remotes with more information.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org236a45e">
+<h3 id="org236a45e">Merging</h3>
+</section>
+<section id="slide-org54d03a4">
+<h3 id="org54d03a4">Rebasing</h3>
+</section>
+<section id="slide-org1b5f71b">
+<h3 id="org1b5f71b">Pulling Updates</h3>
+<p>
+As you might expect, the inverse of the <code>push</code> operation to move
+commits from the local to the remote, there is the <code>pull</code> operation
+to pull back changes that have been made on the remote to the local
+repo.
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="shell-script" >git pull origin master
+</code></pre>
+</div>
 </section>
 </section>
 </div>

@@ -1,3 +1,6 @@
+#+HTML_DOCTYPE: <!DOCTYPE html>
+#+HTML_HEAD: <link rel="stylesheet" href="non-reveal.css">
+
 * Resources for working with Git
   :PROPERTIES:
   :CUSTOM_ID: resources-for-working-with-git
