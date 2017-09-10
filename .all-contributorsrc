@@ -1,0 +1,23 @@
+{
+  "projectName": "falling-in-love-with-git",
+  "projectOwner": "gdiminneapolis",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "agebhardt",
+      "name": "agebhardt",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/12141607?v=4",
+      "profile": "https://github.com/agebhardt",
+      "contributions": [
+        "doc",
+        "code",
+        "tutorial",
+        "talk"
+      ]
+    }
+  ]
+}
