@@ -31,43 +31,212 @@
 <div class="slides">
 
 <section>
-<section id="slide-org90f4f56">
-<h2 id="org90f4f56">Working in Teams</h2>
-<div class="outline-text-2" id="text-org90f4f56">
-</div></section>
-<section id="slide-org32949e4">
-<h3 id="org32949e4">Making Pull Requests</h3>
-</section>
-<section id="slide-org0e8879f">
-<h3 id="org0e8879f">Reviewing Pull Requests</h3>
-</section>
-<section id="slide-org285e29e">
-<h3 id="org285e29e">Merging Pull Requsts</h3>
-</section>
-</section>
-<section>
-<section id="slide-org99e8f02">
-<h2 id="org99e8f02">Practical Git</h2>
-<div class="outline-text-2" id="text-org99e8f02">
-</div></section>
-<section id="slide-orgde26c3c">
-<h3 id="orgde26c3c">The project</h3>
-</section>
-<section id="slide-orgba39407">
-<h3 id="orgba39407">Form up in to teams</h3>
-</section>
-<section id="slide-org3570610">
-<h3 id="org3570610">Choose Roles</h3>
-</section>
-<section id="slide-org515b68f">
-<h3 id="org515b68f">Work Flow</h3>
-</section>
-</section>
-<section>
-<section id="slide-orgafbab22">
-<h2 id="orgafbab22"><i>- fin -</i></h2>
-<img src="images/lliza-thank-you.gif" class="" alt="Thank you animated gif" />
+<section id="slide-org37f76eb">
+<h2 id="org37f76eb">Practical Git</h2>
+<p>
+A session on using Git on a multi-person project.
+</p>
 
+</section>
+</section>
+<section>
+<section id="slide-org517d2b2">
+<h2 id="org517d2b2">The Project</h2>
+<ul>
+<li>An organization, creating a web site</li>
+<li>3 sets of artifacts:
+<ul>
+<li>home page, <code>index.html</code></li>
+<li>stylesheet, <code>css/styles.css</code></li>
+<li>logo, <code>images/logo.png</code></li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-orge00698a">
+<h3 id="orge00698a">Form up into teams</h3>
+<ul>
+<li>3-4 people on a team</li>
+<li>Pick a team name</li>
+
+</ul>
+
+</section>
+<section id="slide-orgd442afe">
+<h3 id="orgd442afe">Choose Roles</h3>
+<ul>
+<li>Organizer - project "owner"</li>
+<li>Designer - lays out the web site visually</li>
+<li>Architect - determines the structure of the code</li>
+<li>Developers - everyone</li>
+
+</ul>
+
+<p>
+<i>You don't actually have to know anything about these roles for the
+workshop.</i>
+</p>
+
+</section>
+<section id="slide-org4c36be0">
+<h3 id="org4c36be0">Create an Organization</h3>
+<p>
+The <b>Organizer</b>
+</p>
+
+<ul>
+<li>creates an organization using your team name</li>
+<li>invites the other team members using their Github accounts</li>
+<li>creates an initial empty project <code>teamname.github.io</code></li>
+
+</ul>
+
+</section>
+<section id="slide-org5ecff8f">
+<h3 id="org5ecff8f">Join the Organization</h3>
+<p>
+The other team members:
+</p>
+
+<ul>
+<li>check email for the invitation</li>
+<li>follow invitation to team in email</li>
+<li>accept invitation to join team</li>
+
+</ul>
+
+</section>
+<section id="slide-org459c434">
+<h3 id="org459c434">Create the Project Repository</h3>
+<p>
+The <b>Architect</b>
+</p>
+
+<ul>
+<li>creates a new repository for the team project</li>
+<li>add the README, .gitignore, and choose a license during the creation</li>
+
+</ul>
+
+</section>
+<section id="slide-org682daa8">
+<h3 id="org682daa8">Team members clone remote</h3>
+<p>
+<b>Everyone</b>
+</p>
+
+<ul>
+<li>copy the "Clone with SSH" URL</li>
+<li>use SourceTree to clone the repo locally</li>
+
+</ul>
+
+</section>
+<section >
+
+<img src="images/gitcats/team-projects.jpg" class="img-responsive" alt="team projects using github" />
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgb8966e4">
+<h2 id="orgb8966e4">Work Flow</h2>
+<p>
+The work flow for each step is basically the same:
+</p>
+
+<small>
+<ul>
+<li>checkout master</li>
+<li>pull remote changes to local</li>
+<li>create a branch</li>
+<li>do work, commit changes</li>
+<li>push the branch to Github (making you the branch owner for this branch)</li>
+<li>create Pull Request (PR) on Github</li>
+<li>the team reviews and approves (or requests changes)</li>
+<li>branch owner merges PR to master</li>
+<li>branch owner delete branch</li>
+
+</ul>
+</small>
+
+</section>
+<section id="slide-org96f89b5">
+<h3 id="org96f89b5">Step One: The Design</h3>
+<p>
+The designer will create a wire frame or sketch of the web site.
+</p>
+
+<ul>
+<li>keep it simple for this exercise</li>
+<li>hand drawn is great, take pic with phone camera</li>
+<li>add the picture to the repo, link to it in the README file</li>
+<li>follow the work flow</li>
+
+</ul>
+
+</section>
+<section id="slide-orgfc2f49a">
+<h3 id="orgfc2f49a">Step Two: The Architecture</h3>
+<p>
+The Architect creates the project structure
+</p>
+
+<ul>
+<li>skeleton html files, directories, skeleton css files</li>
+<li>keep it simple (index, css/styles, images/logo)</li>
+<li>follow the work flow</li>
+
+</ul>
+
+</section>
+<section id="slide-org6af12ad">
+<h3 id="org6af12ad">Step Three: Fill out Site</h3>
+<ul>
+<li>The Organizer assigns work</li>
+<li>Team members implement assignments</li>
+<li>follow the work flow</li>
+
+</ul>
+
+<small>
+<p>
+Examples:
+</p>
+
+<ul>
+<li>someone needs to find / make a logo and add it to the repo</li>
+<li>someone needs to fill out the html <code>&lt;head&gt;</code> section</li>
+<li>soneone needs to create some content</li>
+<li>someone needs to create some CSS styles</li>
+<li>someone needs to bring it all together</li>
+<li>someone needs to review PRs and approve changes</li>
+<li>someone needs to test the overall site</li>
+
+</ul>
+</small>
+
+</section>
+</section>
+<section>
+<section id="slide-org2259cf3">
+<h2 id="org2259cf3">Review your work</h2>
+<ul>
+<li>What worked?</li>
+<li>What didn't work?</li>
+<li>What would you improve on?</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgb0eb9e4">
+<h2 id="orgb0eb9e4">Thank You</h2>
 <p>
 Please fill out the survey at
 </p>
@@ -81,6 +250,8 @@ Please fill out the survey at
 <p>
 and use "Falling in Love with Git" for the class name
 </p>
+
+<img src="images/lliza-thank-you.gif" class="" alt="Thank you animated gif" />
 </section>
 </section>
 </div>
@@ -96,8 +267,8 @@ Reveal.initialize({
 
 controls: true,
 progress: true,
-history: false,
-center: false,
+history: true,
+center: true,
 slideNumber: 'c',
 rollingLinks: true,
 keyboard: true,

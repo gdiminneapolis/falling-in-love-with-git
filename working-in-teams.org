@@ -1,4 +1,4 @@
-#+OPTIONS: reveal_center:nil reveal_progress:t reveal_history:nil reveal_control:t reveal_title_slide:nil
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t reveal_title_slide:nil
 #+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
 #+OPTIONS: toc:nil
 #+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/
@@ -11,20 +11,127 @@
 #+HTML_DOCTYPE: <!DOCTYPE html>
 #+HTML_HEAD: <link rel="stylesheet" href="non-reveal.css">
 
-* Working in Teams
-** Making Pull Requests
-** Reviewing Pull Requests
-** Merging Pull Requsts
 * Practical Git
-** The project
-** Form up in to teams
-** Choose Roles
-** Work Flow
-* /- fin -/
-  #+BEGIN_EXPORT html
-  <img src="images/lliza-thank-you.gif" class="" alt="Thank you animated gif" />
-  #+END_EXPORT
 
+  A session on using Git on a multi-person project.
+
+* The Project
+
+   - An organization, creating a web site
+   - 3 sets of artifacts:
+     - home page, ~index.html~
+     - stylesheet, ~css/styles.css~
+     - logo, ~images/logo.png~
+
+** Form up into teams
+
+   - 3-4 people on a team
+   - Pick a team name
+
+** Choose Roles
+
+   - Organizer - project "owner"
+   - Designer - lays out the web site visually
+   - Architect - determines the structure of the code
+   - Developers - everyone
+
+   /You don't actually have to know anything about these roles for the
+   workshop./
+
+** Create an Organization
+
+   The *Organizer*
+
+   - creates an organization using your team name
+   - invites the other team members using their Github accounts
+   - creates an initial empty project ~teamname.github.io~
+
+** Join the Organization
+
+   The other team members:
+
+   - check email for the invitation
+   - follow invitation to team in email
+   - accept invitation to join team
+
+** Create the Project Repository
+
+   The *Architect*
+
+   - creates a new repository for the team project
+   - add the README, .gitignore, and choose a license during the creation
+
+** Team members clone remote
+
+   *Everyone*
+
+   - copy the "Clone with SSH" URL
+   - use SourceTree to clone the repo locally
+
+   #+REVEAL: split
+
+   #+REVEAL_HTML: <img src="images/gitcats/team-projects.jpg" class="img-responsive" alt="team projects using github" />
+
+
+* Work Flow
+
+  The work flow for each step is basically the same:
+
+  #+REVEAL_HTML: <small>
+  - checkout master
+  - pull remote changes to local
+  - create a branch
+  - do work, commit changes
+  - push the branch to Github (making you the branch owner for this branch)
+  - create Pull Request (PR) on Github
+  - the team reviews and approves (or requests changes)
+  - branch owner merges PR to master
+  - branch owner delete branch
+  #+REVEAL_HTML: </small>
+
+** Step One: The Design
+
+   The designer will create a wire frame or sketch of the web site.
+
+   - keep it simple for this exercise
+   - hand drawn is great, take pic with phone camera
+   - add the picture to the repo, link to it in the README file
+   - follow the work flow
+
+** Step Two: The Architecture
+
+   The Architect creates the project structure
+
+   - skeleton html files, directories, skeleton css files
+   - keep it simple (index, css/styles, images/logo)
+   - follow the work flow
+
+** Step Three: Fill out Site
+
+   - The Organizer assigns work
+   - Team members implement assignments
+   - follow the work flow
+
+   #+REVEAL_HTML: <small>
+   Examples:
+
+   - someone needs to find / make a logo and add it to the repo
+   - someone needs to fill out the html ~<head>~ section
+   - soneone needs to create some content
+   - someone needs to create some CSS styles
+   - someone needs to bring it all together
+   - someone needs to review PRs and approve changes
+   - someone needs to test the overall site
+   #+REVEAL_HTML: </small>
+
+* Review your work
+
+  - What worked?
+  - What didn't work?
+  - What would you improve on?
+
+
+* Thank You
   Please fill out the survey at
 
   #+BEGIN_EXPORT html
@@ -36,3 +143,7 @@
   #+END_EXPORT
 
   and use "Falling in Love with Git" for the class name
+
+  #+BEGIN_EXPORT html
+  <img src="images/lliza-thank-you.gif" class="" alt="Thank you animated gif" />
+  #+END_EXPORT
