@@ -206,7 +206,6 @@
         alt="image showing flow of changes from local repo to the remote repo " />
    #+END_EXPORT
 
-
 ** Branching and Merging
    ... allows us to work on different parts of the project at
    the same time without interfering with other work.
@@ -260,6 +259,18 @@
      experimental and hot-fix branches" />
 #+END_EXPORT
 
+** Rebasing
+
+   #+ATTR_REVEAL: :frag (fade-in)
+   - Rebasing is a complicated topic, it takes some time to understand
+     what's going on.
+   - It's like merging, except not exactly.
+   - Sadly, this is where SourceTree falls down.
+
+     #+ATTR_REVEAL: :frag (fade-in)
+     - it's incorrect
+     - it's interface is confusing
+     - So we're not covering it today
 
 * Getting Git Software
 
@@ -322,7 +333,7 @@
 
    /(We won't be covering this tool in class.)/
 
-* Working with SourceTree
+* Using SourceTree
 
   Click on the following link for the next set of slides:
 

@@ -16,12 +16,12 @@
 
 * Download
 
-   Go to https://www.sourcetreeapp.com/ and download the version for
-   your OS (Mac or Win)
+  Go to https://www.sourcetreeapp.com/ and download the version for
+  your OS (Mac or Win)
 
 * Installation
 
-   Run the installer
+  Run the installer
 
 *** Install steps
 
@@ -33,21 +33,21 @@
 * Configure
 ** Install Command Line Tools
 
-    From the *SourceTree* menu:
+   From the *SourceTree* menu:
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/install-command-line-tools.png" class=""
-         alt="Install Sourcetree Command Line Tools" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/install-command-line-tools.png" class="img-responsive"
+        alt="Install Sourcetree Command Line Tools" />
+   #+END_EXPORT
 
 ** Set Preferences
 
-    From the *SourceTree* menu:
+   From the *SourceTree* menu:
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/preferences.png" class=""
-         alt="Open SourceTree Preferences" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/preferences.png" class="img-responsive"
+        alt="Open SourceTree Preferences" />
+   #+END_EXPORT
 
 *** set user info
 
@@ -55,7 +55,7 @@
 
     #+BEGIN_EXPORT html
       <img src="images/sourcetree/set-user-info.png"
-           class="" alt="Set your user info" />
+           class="img-responsive" alt="Set your user info" />
     #+END_EXPORT
 
 *** set global ignore file
@@ -81,77 +81,77 @@
 
 ** Connect to Github
 
-    Let's go ahead and connect up to your GitHub account.
+   Let's go ahead and connect up to your GitHub account.
 
-    #+REVEAL: split
+   #+REVEAL: split
 
-    Under the Account tab, click on "Add"
+   Under the Account tab, click on "Add"
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/github/01-add-github-account.png" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/01-add-github-account.png"  class="img-responsive" />
+   #+END_EXPORT
 
-    #+REVEAL: split
+   #+REVEAL: split
 
-    Then select "GitHub", "OAuth", and click on "Connect"
+   Then select "GitHub", "OAuth", and click on "Connect"
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/github/02-connecting-to-github.png" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/02-connecting-to-github.png"  class="img-responsive"/>
+   #+END_EXPORT
 
-    #+REVEAL: split
+   #+REVEAL: split
 
-    Log in to GitHub with your account
+   Log in to GitHub with your account
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/github/03-log-in-to-github.png" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/03-log-in-to-github.png"  class="img-responsive"/>
+   #+END_EXPORT
 
-    #+REVEAL: split
+   #+REVEAL: split
 
-    After logging in, click on "Generate"
+   After logging in, click on "Generate"
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/github/04-generate-the-key.png" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/04-generate-the-key.png"  class="img-responsive"/>
+   #+END_EXPORT
 
-    #+REVEAL: split
+   #+REVEAL: split
 
-    Have SourceTree generate the key pair.
+   Have SourceTree generate the key pair.
 
-    You can leave the Pass phrase fields empty.
+   You can leave the Pass phrase fields empty.
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/github/05-create-the-key.png" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/05-create-the-key.png"  class="img-responsive"/>
+   #+END_EXPORT
 
-    #+REVEAL: split
+   #+REVEAL: split
 
-    Click on "OK" to enable the connection to GitHub
+   Click on "OK" to enable the connection to GitHub
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/github/06-enable-account.png" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/06-enable-account.png"  class="img-responsive"/>
+   #+END_EXPORT
 
-    #+REVEAL: split
+   #+REVEAL: split
 
-    You are now connected to your GitHub account
+   You are now connected to your GitHub account
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/github/07-github-account-connected.png" />
-    #+END_EXPORT
-    #+REVEAL: split
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/07-github-account-connected.png"  class="img-responsive"/>
+   #+END_EXPORT
+   #+REVEAL: split
 
-    Verify that the SourceTree key is on Github.
+   Verify that the SourceTree key is on Github.
 
-    In the browser, go to your account, *Settings* -> *SSH and GPG
-    Keys*
+   In the browser, go to your account, *Settings* -> *SSH and GPG
+   Keys*
 
-    Look for the SourceTree key
+   Look for the SourceTree key
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/github/08-verify-key-on-github.com.png" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/github/08-verify-key-on-github.com.png"  class="img-responsive"/>
+   #+END_EXPORT
 
 * Getting Familiar with SourceTree
 ** Repository Bookmarks
@@ -159,18 +159,23 @@
    The bookmarks window gives you quick access to all your
    repositories that are managed in SourceTree
 
+   #+REVEAL: split
+
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/bookmarks-window.png" class="" alt="" />
+   <img src="images/sourcetree/bookmarks-window.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 *** Creating new items
 
+    #+ATTR_REVEAL: :frag (fade-in)
     - You can create new bookmarks and bookmark groups.
     - You can create new local and remote repos.
     - You can add existing local or remote repos.
 
+    #+REVEAL: split
+
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/bookmarks-new-button.png" class="" alt="" />
+    <img src="images/sourcetree/bookmarks-new-button.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 
@@ -184,7 +189,7 @@
    #+REVEAL: split
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/repo-window.png" class="" alt="" />
+   <img src="images/sourcetree/repo-window.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 
@@ -209,7 +214,7 @@
     commits to the repo.
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/log-area.png" class="" alt="" />
+    <img src="images/sourcetree/log-area.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Status
@@ -218,7 +223,7 @@
     selected log entry.
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/status-area.png" class="" alt="" />
+    <img src="images/sourcetree/status-area.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 * Create a New Project, Local First
@@ -230,40 +235,61 @@
 ** Choose location
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/01-choose-location-for-bookmark.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/01-choose-location-for-bookmark.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 ** Create the local repo
 
    #+BEGIN_EXPORT html
-      <img src="images/sourcetree/new-repo-local-first/02-create-the-local-repo.png" class="" alt="" />
+      <img src="images/sourcetree/new-repo-local-first/02-create-the-local-repo.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 ** Tell it the location
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/03-tell-it-the-location.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/03-tell-it-the-location.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 
 ** Create the remote
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/04-create-the-remote-repo.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/04-create-the-remote-repo.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 
 ** See the new repo on Github
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/05-new-repo-on-github.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/05-new-repo-on-github.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 ** But it's still empty
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/06-but-its-still-empty.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/06-but-its-still-empty.png" class="img-responsive" alt="" />
    #+END_EXPORT
+
+* Let's Develop It!
+
+  Objective: Create a new local project with SourceTree
+
+  #+REVEAL_HTML: <small>
+
+  1. From the bookmarks window: New -> Create Local Repository
+  2. Provide it a path, i.e., the folder where your project will be
+     created.
+     - Use the "..." button to navigate to the place you want your project
+     - Create a new folder that will be the name of your project
+  3. The project name is automatically filled in.
+  4. Make sure you're creating a Git repository.
+  5. Make sure to check the "Also create remote repository" checkbox
+  6. Click on create
+  7. Create the remote
+     - Fill in the description if you wish
+     - Make sure the "private repository" checkbox is *not* checked
+
+  #+REVEAL_HTML: </small>
 
 * Creating a New Project, Remote First
 
@@ -277,7 +303,7 @@
    Start creating the remote repo
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first//01-click-new-repository.png" >
+   <img src="images/sourcetree/new-repo-remote-first/01-click-new-repository.png" >
    #+END_EXPORT
 
    #+REVEAL: split
@@ -285,7 +311,7 @@
    Select "Create Remote"
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first//02-select-create-remote.png">
+   <img src="images/sourcetree/new-repo-remote-first/02-select-create-remote.png">
    #+END_EXPORT
 
    #+REVEAL: split
@@ -293,7 +319,7 @@
    Create the remote repo
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first//03-create-the-remote-repo.png">
+   <img src="images/sourcetree/new-repo-remote-first/03-create-the-remote-repo.png">
    #+END_EXPORT
 
 ** Clone the remote to your local machine
@@ -301,7 +327,7 @@
    Click on remote to show your remote repos
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first//04-click-on-remote.png" >
+   <img src="images/sourcetree/new-repo-remote-first/04-click-on-remote.png" class="img-responseive" />
    #+END_EXPORT
 
    #+REVEAL: split
@@ -309,7 +335,7 @@
    Use the search box to filter the repos
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first//05-search-for-repo.png" >
+   <img src="images/sourcetree/new-repo-remote-first/05-search-for-repo.png" class="img-responsive" />
    #+END_EXPORT
 
    #+REVEAL: split
@@ -317,7 +343,7 @@
    Clone the repo
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first//06-clone-repo.png" >
+   <img src="images/sourcetree/new-repo-remote-first/06-clone-repo.png" class="img-responsive" />
    #+END_EXPORT
 
    #+REVEAL: split
@@ -325,7 +351,7 @@
    Set the location for the clone on your local machine
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first//07-set-location.png">
+   <img src="images/sourcetree/new-repo-remote-first/07-set-location.png" class="img-responsive" />
    #+END_EXPORT
 
    #+REVEAL: split
@@ -333,7 +359,7 @@
    Click the "Clone" button
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first//08-click-clone.png" >
+   <img src="images/sourcetree/new-repo-remote-first/08-click-clone.png" class="img-responsive" />
    #+END_EXPORT
 
    #+REVEAL: split
@@ -341,11 +367,29 @@
    Look at your new repo!
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-remote-first//09-new-repo.png" style="max-height: 50vh; ">
+   <img src="images/sourcetree/new-repo-remote-first/09-new-repo.png" class="img-responsive">
    #+END_EXPORT
 
-   #+ATTR_REVEAL: :frag (fade-in)
-   /but it's empty.../
+** but it's still empty...
+
+* Let's Develop It!
+
+  Objective: create a new project from the remote side
+
+  #+REVEAL_HTML: <small>
+
+  1. From the bookmarks window: New -> Create Remote Repository
+  2. Git the repo a name and description.
+  3. Make sure "private repository" is *not* checked.
+  4. Create the remote.
+  5. Click on "Remote".
+  6. Search for your repo.
+  7. Click on "Clone".
+  8. Give the path to the new repo. (The last folder and the project
+     name should match.)
+  9. Click "Create"
+
+  #+REVEAL_HTML: </small>
 
 * Create some content
 
@@ -363,20 +407,20 @@
 ** Check on the status
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/07-created-some-new-content.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/07-created-some-new-content.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 ** Add, commit, and push
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/08-add-commit-and-push.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/08-add-commit-and-push.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 
 ** Output from commit message
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/09-output-from-initial-commit.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/09-output-from-initial-commit.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 ** See local branches
@@ -385,22 +429,35 @@
    them
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/10-see-local-branches.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/10-see-local-branches.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 ** See the remote branches, too
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/11-see-remote-branches.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/11-see-remote-branches.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
 
 ** Finally, look over at Github
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/new-repo-local-first/12-back-on-github-first-commt.png" class="" alt="" />
+   <img src="images/sourcetree/new-repo-local-first/12-back-on-github-first-commt.png" class="img-responsive" alt="" />
    #+END_EXPORT
 
+* Let's Develop It!
+
+  Objective: Put some content in our project and put it under version
+  control
+
+  #+REVEAL_HTML: <small>
+  1. Open the project file in your editor.
+  2. Create a README.md file, and put something in it.
+  3. Save the file.
+  4. Switch back to SourceTree.
+  5. Stage the file.
+  6. Commit and push the changes.
+  #+REVEAL_HTML: </small>
 
 * Tracking and Reverting Changes
 
@@ -425,11 +482,11 @@
 
 *** discard hunks
 
-   #+BEGIN_EXPORT html
-   <img src="images/sourcetree/tracking-changes/discard-before-staging.jpg"
-        class="img-responsive"
-        alt="screenshot of sourcetree showing change status of README.md file" />
-   #+END_EXPORT
+    #+BEGIN_EXPORT html
+    <img src="images/sourcetree/tracking-changes/discard-before-staging.jpg"
+         class="img-responsive"
+         alt="screenshot of sourcetree showing change status of README.md file" />
+    #+END_EXPORT
 
 ** After staging, before committing
 
@@ -449,22 +506,22 @@
 
 *** commit the changes
 
-   #+BEGIN_EXPORT html
-   <img src="images/sourcetree/tracking-changes/commit-a-change.jpg"
-        class="img-responsive" alt="committing a change" />
-   #+END_EXPORT
+    #+BEGIN_EXPORT html
+    <img src="images/sourcetree/tracking-changes/commit-a-change.jpg"
+         class="img-responsive" alt="committing a change" />
+    #+END_EXPORT
 
 *** select the commit to revert
 
-   #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/revert-commit-select-commit.jpg" class="img-responsive" />
+    #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/revert-commit-select-commit.jpg" class="img-responsive" />
 
 *** select "Reverse commit" from drop-down
 
-   #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/revert-commit-select-revert-change.jpg" class="img-responsive" />
+    #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/revert-commit-select-revert-change.jpg" class="img-responsive" />
 
 *** after the revert, a new commit
 
-   #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/revert-commit-after-revert.jpg" class="img-responsive" />
+    #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/revert-commit-after-revert.jpg" class="img-responsive" />
 
 
 ** After pushing
@@ -484,6 +541,12 @@
     Since you can't very easily erase changes in a remote (pushed)
     repository, the better way to develop projects is with branching
     and merging.
+
+* Let's Develop It!
+
+  Objective: Try out making and reverting changes.
+
+  No directives here, just try out the various options shown prior.
 
 * Multiple Development Paths
 
@@ -507,126 +570,160 @@
   and then merge it back into the regular development branch
 
 
-** Branching
+* Branching
 
-   To make a new branch from an existing branch, click the "Branch"
-   button:
+  To make a new branch from an existing branch, click the "Branch"
+  button:
+
+  #+BEGIN_EXPORT html
+  <img src="images/sourcetree/branch-button.png" class="img-responsive"
+       alt="SourceTree branch button" />
+  #+END_EXPORT
+
+** Give the branch a name
+
+   In the dialog, enter the new branch name:
 
    #+BEGIN_EXPORT html
-   <img src="images/sourcetree/branch-button.png" class=""
-        alt="SourceTree branch button" />
+   <img src="images/sourcetree/new-branch-name.png" class="img-responsive"
+        alt="Entering the new branch name" />
    #+END_EXPORT
 
-*** Give the branch a name
+   Leave the "Working copy parent" and "Checkout new branch" options selected.
 
-    In the dialog, enter the new branch name:
+** Create the new branch
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/new-branch-name.png" class=""
-         alt="Entering the new branch name" />
-    #+END_EXPORT
+   Press then "Create Branch" button.
 
-    Leave the "Working copy parent" and "Checkout new branch" options selected.
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/01-create-new-branch.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
-*** Create the new branch
+** Your new branch
 
-    Press then "Create Branch" button.
+   In SourceTree, the current working branch is highlighted.
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/01-create-new-branch.png" class="" alt="" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/02-new-branch-highlighted.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
-*** Your new branch
+** Make some changes
 
-    In SourceTree, the current working branch is highlighted.
+   After you make some changes, SourcTree reports uncommitted changes
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/02-new-branch-highlighted.png" class="" alt="" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/03-uncommited-changes.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
-*** Make some changes
+** See the pending changes
 
-    After you make some changes, SourcTree reports uncommitted changes
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/04-pending-changes.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/03-uncommited-changes.png" class="" alt="" />
-    #+END_EXPORT
+** Stage the changes
 
-*** See the pending changes
+   Select the checkbox next to the changes you want to stage (or all)
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/04-pending-changes.png" class="" alt="" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/05-stage-changes.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
-*** Stage the changes
+** Commit the changes
 
-    Select the checkbox next to the changes you want to stage (or all)
+   Click on "Commit" to start the commit proess
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/05-stage-changes.png" class="" alt="" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/06-commit-changes.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
-*** Commit the changes
+** Review, comment, and commit
 
-    Click on "Commit" to start the commit proess
+   Review the changes, add a commit message, and commit.
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/06-commit-changes.png" class="" alt="" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/07-commit-message.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
-*** Review, comment, and commit
+   Check the "Push" checkbox to also peform the push to the remote
 
-    Review the changes, add a commit message, and commit.
+** Output from push
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/07-commit-message.png" class="" alt="" />
-    #+END_EXPORT
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/08-push-output.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
-    Check the "Push" checkbox to also peform the push to the remote
+** After the commit and push
 
-*** Output from push
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/09-after-commit-and-push.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/08-push-output.png" class="" alt="" />
-    #+END_EXPORT
 
-*** After the commit and push
+* Let's Develop It
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/09-after-commit-and-push.png" class="" alt="" />
-    #+END_EXPORT
+  Objective: Create a branch and push changes to it
 
-** Merging
+  #+REVEAL_HTML: <small>
+  1. Create a new branch.
+  2. Create a new file in the branch with some content.
+  3. Check the status in SourceTree.
+  4. Stage, commit, and push the changes in the branch.
+  #+REVEAL_HTML: </small>
 
-   #+ATTR_REVEAL: :frag (fade-in)
-   - When you're finished working in the development branch, you'll
-     want  to merge those changes with the master branch.
-   - Since the master branch may have also been updated, you need to
-     first pull changes to master and merge with your development
-     branch.
-   - Resolve any conflicts that may arise.
-   - Finally, Merge your development branch with master.
+* Merging
+  #+REVEAL_HTML: <img src="images/gitcats/merging-cats.jpg" class="img-responsive" alt="" />
 
-*** Set up a conflict with master
+  #+REVEAL: split
+  - When you're finished working in the development branch, you'll
+    want  to merge those changes with the master branch.
 
-    Edit the ~README.md~ file
+  #+ATTR_REVEAL: :frag (fade-in)
+  - Since the master branch may have also been updated, you need to
+    first pull changes to master and merge with your development
+    branch.
+  - Resolve any conflicts that may arise.
+  - Finally, Merge your development branch with master.
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/10-changing-the-readme-in-new-branch.png" class="" alt="" />
-    #+END_EXPORT
+** Merging with no conflicts
 
-*** Commit the update, but don't push
+*** A new branch with a file
 
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/11-commit-update-but-dont-push.png" class="" alt="" />
-    #+END_EXPORT
+    #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/new-file-in-new-branch.jpg" class="img-responsive" alt="new file in new branch" />
+
+*** Checkout master
+
+    #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/checked-out-master.jpg" class="img-responsive" alt="checked out master" />
+
+*** Merge
+
+    #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/click-merge-button-on-toolbar.jpg" class="img-responsive" alt="Press the merge button on the toolbar" />
+
+*** Merge Dialog
+
+    #+REVEAL_HTML: <img src="images/sourcetree/tracking-changes/merge-select-branch-to-merge.jpg" class="img-responsive" alt="select the branch to merge" />
+
+* Let's create a conflict
+** Set up a conflict with master
+
+   Edit the ~README.md~ file
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/10-changing-the-readme-in-new-branch.png" class="img-responsive" alt="" />
+   #+END_EXPORT
+
+** Commit the update, but don't push
+
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/11-commit-update-but-dont-push.png" class="img-responsive" alt="" />
+   #+END_EXPORT
 
 ** Set up a conflict to resolve
 
 *** Checkout master
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/12-checkout-master.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/12-checkout-master.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
     Edit the ~README.md~ file in master
@@ -634,19 +731,19 @@
 *** See the uncommitted changes
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/13-uncommited-changes-in-master-branch.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/13-uncommited-changes-in-master-branch.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Commit and push changes in master
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/14-commit-and-push-changes-on-master.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/14-commit-and-push-changes-on-master.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Check out the new branch again
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/15-checkout-new-branch-again.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/15-checkout-new-branch-again.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** CONFLICT SET UP!
@@ -663,84 +760,85 @@
 *** Merge master into the new branch
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/16-merge-master-into-new-branch.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/16-merge-master-into-new-branch.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Confirm the merge
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/17-confirm-merge.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/17-confirm-merge.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Merge result output
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/18-merge-result-output.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/18-merge-result-output.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Merge conflict warning
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/19-merge-conflict-warning.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/19-merge-conflict-warning.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Merge conflicts visible in repo status
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/20-merge-conflicts-in-repo.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/20-merge-conflicts-in-repo.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
+* Merging when there are conflicts
 ** Resolving Merge Conflicts
 
 *** Prepare to resolve conflict
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/21-prepare-to-resolve-conflicts.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/21-prepare-to-resolve-conflicts.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Launch merge tool
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/22-launch-merge-tool.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/22-launch-merge-tool.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Merge choices
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/23-merge-choices.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/23-merge-choices.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Fix changes in editor
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/24-see-changes-in-editor.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/24-see-changes-in-editor.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Edit the file to resolve changes
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/25-edit-the-file-to-resolve-conflicts.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/25-edit-the-file-to-resolve-conflicts.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Mark the file resolved
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/25-mark-resolved.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/25-mark-resolved.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Complete the merge
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/26-complete-merge.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/26-complete-merge.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Commit to complete the merge
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/27-complete-merge-commit.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/27-complete-merge-commit.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Push all the commits
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/28-push-all-commits.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/28-push-all-commits.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Push dialog
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/29-push-dialog.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/29-push-dialog.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 ** Merge the new branch into master
@@ -748,102 +846,148 @@
 *** Over on GitHub...
 
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/30-how-things-look-on-github.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/30-how-things-look-on-github.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Create a Pull Request
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/31-create-a-pr-on-github.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/31-create-a-pr-on-github.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** PR Dialog
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/32-pull-request-dialog.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/32-pull-request-dialog.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** PR View
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/33-pull-request.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/33-pull-request.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** PR Files Diff
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/34-pull-request-files-diff.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/34-pull-request-files-diff.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Merge PR Button
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/35-click-button-to-merge.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/35-click-button-to-merge.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Complete the merge
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/36-complete-merge-of-pull-request.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/36-complete-merge-of-pull-request.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Success!
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/37-successful-merge.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/37-successful-merge.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 ** Updating the Local Master
 
 *** Checkout local master
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/38-checkout-local-master.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/38-checkout-local-master.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Pull changes from remote
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/39-pull-remote-changes.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/39-pull-remote-changes.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Pull dialog
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/40-pull-dialog.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/40-pull-dialog.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
 *** Pull output
     #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/41-pull-output.png" class="" alt="" />
+    <img src="images/sourcetree/branching-and-merging/41-pull-output.png" class="img-responsive" alt="" />
     #+END_EXPORT
 
-** Cleaning up
 
-*** Delete the old "new" branch
+* Let's Develop It!
 
-    The "new" branch is now fully merged, so it can be deleted
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/42-delete-branch.png" class="" alt="" />
-    #+END_EXPORT
+  Objective: Set up a conflict between the master and new branch
 
-*** Delete branch dialog
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/43-delete-branch-dialog.png" class="" alt="" />
-    #+END_EXPORT
+  #+REVEAL_HTML: <small>
+  1. In the same branch, edit the README file in an obvious way.
+  2. Save the file, stage and commit, but *do not push* the changes.
+  3. Checkout the master branch.
+  4. Edit the README file in another obvious way.
+  5. Save the file, stage, commit, *and push* the changes to the
+     remote.
+  #+REVEAL_HTML: </small>
 
-*** Delete branch output
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/44-delete-branch-output.png" class="" alt="" />
-    #+END_EXPORT
+* Let's Develop It!
 
-*** Status after delete
-    #+BEGIN_EXPORT html
-    <img src="images/sourcetree/branching-and-merging/45-after-delete-branch.png" class="" alt="" />
-    #+END_EXPORT
+  Objective: Merge master into the new branch and resolve conflicts
 
-** Rebasing
+  #+REVEAL_HTML: <small>
+  1. Checkout the new branch.
+  2. Merge master into the new branch to catch up changes.
+  3. Resolve the conflict in README.
+  4. Complete the merge.
+  5. Push the changes to the remote.
+  #+REVEAL_HTML: </small>
 
-   #+ATTR_REVEAL: :frag (fade-in)
-   - Rebasing is a complicated topic, it takes some time to understand
-     what's going on.
-   - It's like merging, except not exactly.
-   - Sadly, this is where SourceTree falls down.
+* Let's Develop It!
 
-     #+ATTR_REVEAL: :frag (fade-in)
-     - it's incorrect
-     - it's interface is confusing
-     - So we're not covering it today
+  Objective: Use Github to prepare a Pull Request and complete it
+
+  #+REVEAL_HTML: <small>
+  1. On Github, create a Pull Request for your new branch to merge
+     with master.
+  2. Merge the Pull Request.
+  #+REVEAL_HTML: </small>
+
+* Let's Develop It!
+
+  Objective: update the local master with changes from the remote
+
+  #+REVEAL_HTML: <small>
+  1. In SourceTree, check out your master branch.
+  2. Pull the latest updates from the remote.
+  #+REVEAL_HTML: </small>
+
+* Cleaning up
+
+** Delete the old "new" branch
+
+   The "new" branch is now fully merged, so it can be deleted
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/42-delete-branch.png" class="img-responsive" alt="" />
+   #+END_EXPORT
+
+** Delete branch dialog
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/43-delete-branch-dialog.png" class="img-responsive" alt="" />
+   #+END_EXPORT
+
+** Delete branch output
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/44-delete-branch-output.png" class="img-responsive" alt="" />
+   #+END_EXPORT
+
+** Status after delete
+   #+BEGIN_EXPORT html
+   <img src="images/sourcetree/branching-and-merging/45-after-delete-branch.png" class="img-responsive" alt="" />
+   #+END_EXPORT
+
+
+* Let's Develop It!
+
+  Objective: Clean up from closing the branch
+
+  #+REVEAL_HTML: <small>
+  1. In SourceTree, view the local branches
+  2. Select the new branch that was just merged
+  3. Right-click, and select Delete...
+  4. Check the "Delete remote" checkbox
+  5. Click "OK" to start the operation
+  #+REVEAL_HTML: </small>
+
 * Next section:
 
   *Working in Teams and Practical Git*
