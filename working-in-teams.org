@@ -70,7 +70,7 @@
 
    #+REVEAL: split
 
-   #+REVEAL_HTML: <img src="images/gitcats/team-projects.jpg" class="img-responsive" alt="team projects using github" />
+   #+REVEAL_HTML: <img src="images/gitcats/team-projects.800.jpg" class="img-responsive" alt="team projects using github" />
 
 
 * Work Flow
