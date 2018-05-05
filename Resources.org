@@ -145,24 +145,24 @@ do branching and merging in git.
 -  [[https://docs.google.com/document/d/1liKkSCPcOXvc4QTSbvxqpOJjjfRhPlkMzOwwxMVfHpU/edit#heading=h.87j2thi29oi8][GitHub
    30 Day Challenge Guide]]
 
-Written by Prime Digital Academy's Scott Bromander, this is a document
-to help you develop a practice of learning by using Git and Github to
-track your learning.
+   Written by Prime Digital Academy's Scott Bromander, this is a document
+   to help you develop a practice of learning by using Git and Github to
+   track your learning.
 
 -  [[https://github.com/tamouse/gdi-starting-up][gdi-starting-up: A quick set of steps to use when beginning a new project from scratch]]
 
-A general set of guidelines to use when starting off a new project.
+   A general set of guidelines to use when starting off a new project.
 
 -  [[https://hub.github.com/][hub: the command-line wrapper for git]]
 
-Using hub, starting up a new project becomes pretty simple:
+   Using hub, starting up a new project becomes pretty simple:
 
-#+BEGIN_SRC sh
-    git init new_project
-    cd new_project
-    hub create
-    echo '# My New Awesome Project' > README.md
-    git add -A
-    git commit -m initial
-    git push -u origin HEAD
-#+END_SRC
+   #+BEGIN_SRC sh
+     git init new_project               # create and initialize a new directory with git
+     cd new_project                     # move into the new directory
+     hub create                         # creates a new remote repo on GitHub and sets origin
+     echo '# My New Awesome Project' > README.md
+     git add -A
+     git commit -m initial
+     git push -u origin master
+   #+END_SRC
