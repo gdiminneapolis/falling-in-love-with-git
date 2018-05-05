@@ -11,7 +11,7 @@
 
 ## Resources
 
--   [Additional Resources](Resources.md)
+-   [Additional Resources](Resources.org)
 
 
 ## Contributing
@@ -19,7 +19,7 @@
 We are always looking for help in improving our training materials. We'd
 like your participation as well!
 
-First, read the [Contributor Covenant](CONTRIBUTOR_COVENANT.md) and
+First, read the [Contributor Covenant](CONTRIBUTOR_COVENANT.org) and
 [Girl Develop It Code of Conduct](https://www.girldevelopit.com/code-of-conduct).
 
 Next, you can contribute in the following ways:
