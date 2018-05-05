@@ -31,8 +31,8 @@
 <div class="slides">
 
 <section>
-<section id="slide-org75ec664">
-<h2 id="org75ec664">Practical Git</h2>
+<section id="slide-org1f1ffaf">
+<h2 id="org1f1ffaf">Practical Git</h2>
 <p>
 A session on using Git on a multi-person project.
 </p>
@@ -40,8 +40,8 @@ A session on using Git on a multi-person project.
 </section>
 </section>
 <section>
-<section id="slide-orgd9e4b27">
-<h2 id="orgd9e4b27">The Project</h2>
+<section id="slide-org8d899fb">
+<h2 id="org8d899fb">The Project</h2>
 <ul>
 <li>An organization, creating a web site</li>
 <li>3 sets of artifacts:
@@ -55,8 +55,8 @@ A session on using Git on a multi-person project.
 </ul>
 
 </section>
-<section id="slide-org63301b0">
-<h3 id="org63301b0">Form up into teams</h3>
+<section id="slide-orgac380b2">
+<h3 id="orgac380b2">Form up into teams</h3>
 <ul>
 <li>3-4 people on a team</li>
 <li>Pick a team name</li>
@@ -64,8 +64,8 @@ A session on using Git on a multi-person project.
 </ul>
 
 </section>
-<section id="slide-orgf13fe5f">
-<h3 id="orgf13fe5f">Choose Roles</h3>
+<section id="slide-orga6a4c99">
+<h3 id="orga6a4c99">Choose Roles</h3>
 <ul>
 <li>Organizer - project "owner"</li>
 <li>Designer - lays out the web site visually</li>
@@ -80,8 +80,8 @@ workshop.</i>
 </p>
 
 </section>
-<section id="slide-org04bda95">
-<h3 id="org04bda95">Create an Organization</h3>
+<section id="slide-org5192772">
+<h3 id="org5192772">Create an Organization</h3>
 <p>
 The <b>Organizer</b>
 </p>
@@ -94,8 +94,8 @@ The <b>Organizer</b>
 </ul>
 
 </section>
-<section id="slide-org8933aec">
-<h3 id="org8933aec">Join the Organization</h3>
+<section id="slide-orge70b197">
+<h3 id="orge70b197">Join the Organization</h3>
 <p>
 The other team members:
 </p>
@@ -108,8 +108,8 @@ The other team members:
 </ul>
 
 </section>
-<section id="slide-org3620e88">
-<h3 id="org3620e88">Create the Project Repository</h3>
+<section id="slide-org5c46976">
+<h3 id="org5c46976">Create the Project Repository</h3>
 <p>
 The <b>Architect</b>
 </p>
@@ -121,8 +121,8 @@ The <b>Architect</b>
 </ul>
 
 </section>
-<section id="slide-org664a52d">
-<h3 id="org664a52d">Team members clone remote</h3>
+<section id="slide-orgb972c2f">
+<h3 id="orgb972c2f">Team members clone remote</h3>
 <p>
 <b>Everyone</b>
 </p>
@@ -142,30 +142,45 @@ The <b>Architect</b>
 </section>
 </section>
 <section>
-<section id="slide-org31cfc70">
-<h2 id="org31cfc70">Work Flow</h2>
+<section id="slide-org2092c81">
+<h2 id="org2092c81">Work Flow</h2>
 <p>
 The work flow for each step is basically the same:
 </p>
 
-<small>
 <ul>
 <li>checkout master</li>
 <li>pull remote changes to local</li>
 <li>create a branch</li>
 <li>do work, commit changes</li>
 <li>push the branch to Github (making you the branch owner for this branch)</li>
+
+</ul>
+
+</section>
+<section >
+
+<p>
+(continued)
+</p>
+
+<ul>
 <li>create Pull Request (PR) on Github</li>
 <li>the team reviews and approves (or requests changes)</li>
 <li>branch owner merges PR to master</li>
 <li>branch owner delete branch</li>
 
 </ul>
-</small>
 
 </section>
-<section id="slide-org8b1f017">
-<h3 id="org8b1f017">Step One: The Design</h3>
+<section >
+
+<img src="images/gitcats/git-work-flow.jpg" class="img-responsive" alt="illustrating how work flows using Git and GitHub" />
+
+
+</section>
+<section id="slide-orgdd348d1">
+<h3 id="orgdd348d1">Step One: The Design</h3>
 <p>
 The designer will create a wire frame or sketch of the web site.
 </p>
@@ -179,8 +194,8 @@ The designer will create a wire frame or sketch of the web site.
 </ul>
 
 </section>
-<section id="slide-orga9d0a85">
-<h3 id="orga9d0a85">Step Two: The Architecture</h3>
+<section id="slide-orge4d5383">
+<h3 id="orge4d5383">Step Two: The Architecture</h3>
 <p>
 The Architect creates the project structure
 </p>
@@ -193,8 +208,8 @@ The Architect creates the project structure
 </ul>
 
 </section>
-<section id="slide-org73ac204">
-<h3 id="org73ac204">Step Three: Fill out Site</h3>
+<section id="slide-org241adf9">
+<h3 id="org241adf9">Step Three: Fill out Site</h3>
 <ul>
 <li>The Organizer assigns work</li>
 <li>Team members implement assignments</li>
@@ -202,28 +217,30 @@ The Architect creates the project structure
 
 </ul>
 
-<small>
+
+</section>
+<section id="slide-org1224754">
+<h3 id="org1224754">Examples:</h3>
 <p>
-Examples:
+Someone needs to:
 </p>
 
 <ul>
-<li>someone needs to find / make a logo and add it to the repo</li>
-<li>someone needs to fill out the html <code>&lt;head&gt;</code> section</li>
-<li>soneone needs to create some content</li>
-<li>someone needs to create some CSS styles</li>
-<li>someone needs to bring it all together</li>
-<li>someone needs to review PRs and approve changes</li>
-<li>someone needs to test the overall site</li>
+<li>find / make a logo</li>
+<li>fill out the html <code>&lt;head&gt;</code> section</li>
+<li>create some content</li>
+<li>create some CSS styles</li>
+<li>bring it all together</li>
+<li>review PRs and approve changes</li>
+<li>test the overall site</li>
 
 </ul>
-</small>
 
 </section>
 </section>
 <section>
-<section id="slide-org101c534">
-<h2 id="org101c534">Review your work</h2>
+<section id="slide-org1be2373">
+<h2 id="org1be2373">Review your work</h2>
 <ul>
 <li>What worked?</li>
 <li>What didn't work?</li>
@@ -235,8 +252,8 @@ Examples:
 </section>
 </section>
 <section>
-<section id="slide-org3665134">
-<h2 id="org3665134">Thank You</h2>
+<section id="slide-org297660a">
+<h2 id="org297660a">Thank You</h2>
 <p>
 Please fill out the survey at
 </p>

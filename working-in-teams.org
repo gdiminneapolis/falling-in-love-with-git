@@ -77,17 +77,25 @@
 
   The work flow for each step is basically the same:
 
-  #+REVEAL_HTML: <small>
   - checkout master
   - pull remote changes to local
   - create a branch
   - do work, commit changes
   - push the branch to Github (making you the branch owner for this branch)
+
+  #+REVEAL: split
+
+  (continued)
+
   - create Pull Request (PR) on Github
   - the team reviews and approves (or requests changes)
   - branch owner merges PR to master
   - branch owner delete branch
-  #+REVEAL_HTML: </small>
+
+  #+REVEAL: split
+
+  #+REVEAL_HTML: <img src="images/gitcats/git-work-flow.jpg" class="img-responsive" alt="illustrating how work flows using Git and GitHub" />
+
 
 ** Step One: The Design
 
@@ -112,17 +120,18 @@
    - Team members implement assignments
    - follow the work flow
 
-   #+REVEAL_HTML: <small>
-   Examples:
 
-   - someone needs to find / make a logo and add it to the repo
-   - someone needs to fill out the html ~<head>~ section
-   - soneone needs to create some content
-   - someone needs to create some CSS styles
-   - someone needs to bring it all together
-   - someone needs to review PRs and approve changes
-   - someone needs to test the overall site
-   #+REVEAL_HTML: </small>
+** Examples:
+
+   Someone needs to:
+
+   - find / make a logo
+   - fill out the html ~<head>~ section
+   - create some content
+   - create some CSS styles
+   - bring it all together
+   - review PRs and approve changes
+   - test the overall site
 
 * Review your work
 
