@@ -31,15 +31,6 @@
     - After installation, start up SourceTree
 
 * Configure
-** Install Command Line Tools
-
-   From the *SourceTree* menu:
-
-   #+BEGIN_EXPORT html
-   <img src="images/sourcetree/install-command-line-tools.png" class="img-responsive"
-        alt="Install Sourcetree Command Line Tools" />
-   #+END_EXPORT
-
 ** Set Preferences
 
    From the *SourceTree* menu:
@@ -77,7 +68,6 @@
     <img src="images/sourcetree/push-branches-matching.png"
          alt="Set push branches to matching" />
     #+END_EXPORT
-
 
 ** Connect to Github
 

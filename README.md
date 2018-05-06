@@ -38,6 +38,7 @@ Next, you can contribute in the following ways:
 - [Org-mode](http://orgmode.org/), with
 - [org-reveal](https://github.com/yjwen/org-reveal/), and associated
   requirements
+- [htmlize](https://github.com/hniksic/emacs-htmlize)
 
 ### Working on the repo
 
