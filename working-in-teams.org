@@ -144,15 +144,13 @@
   Please fill out the survey at
 
   #+BEGIN_EXPORT html
-  <a href="https://tinyurl.com/gdiMpls"
+  <a href="https://goo.gl/forms/CQ7FeZBpTlhVnW1z2"
      target="_blank" rel="noopener noreferrer"
      >
     tinyurl.com/gdiMpls
   </a>
   #+END_EXPORT
 
-  and use "Falling in Love with Git" for the class name
-
-  #+BEGIN_EXPORT html
-  <img src="images/lliza-thank-you.gif" class="" alt="Thank you animated gif" />
-  #+END_EXPORT
+  There's lots more info kept at this repository:
+  [[https://github.com/gdiminneapolis/falling-in-love-with-git][https://github.com/gdiminneapolis/falling-in-love-with-git]],
+  including these slides.
