@@ -11,10 +11,13 @@
 #+HTML_HEAD: <link rel="stylesheet" href="non-reveal.css">
 
 * Falling In Love With Git
-  Sat, Oct 7, 2017 | GDI Mpls | Tamara Temple
   #+BEGIN_EXPORT html
   <img src="images/gdi/gdi_logo_badge.png" alt="GDI Logo" class="title-image">
   #+END_EXPORT
+
+  Sun, May 6, 2018 | GDI Mpls | Tamara Temple
+
+  Zeus-Jones
 
   - Network:
   - Password:
