@@ -19,8 +19,8 @@
 
   Zeus-Jones
 
-  - Network:
-  - Password:
+  - Network: *ZeusJonesGuest*
+  - Password: *eatstreet2429*
 
 * Welcome!
 
