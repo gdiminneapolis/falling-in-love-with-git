@@ -1,0 +1,101 @@
+---
+---
+<section>
+    <h3 class="blue">ignoring files and folders</h3>
+    <section>
+        <div class="spacer"></div>
+        <div class="meta small_meta white">Sometimes you will create files you don't want in your repository.</div>
+        <div class="spacer"></div>
+        <div class="fragment meta small_meta pink">editor cruft</div>
+        <div class="spacer small_spacer"></div>
+        <div class="fragment meta small_meta blue">zip/tar files</div>
+        <div class="spacer small_spacer"></div>
+        <div class="fragment meta small_meta pink">log files</div>
+        <div class="spacer small_spacer"></div>
+        <div class="fragment meta small_meta blue">compiled files</div>
+
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">
+            Introducing the <i class="gold">.gitignore</i> file.
+        </div>
+        <div class="spacer"></div>
+        <div class="meta small_meta white">The <i class="gold">.gitignore</i> file goes into your project's root directory.</div>
+        <div class="spacer"></div>
+        <div class="fragment meta small_meta white">
+            It contains <i class="gold">patterns</i> to match file and folder names to ignore.
+        </div>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">
+            In the last couple of sections, I created an extra file,
+            which was the <i class="pink">backup</i> file for the
+            <i class="gold">sed</i> command used to change
+            the "hello_world.txt" file.
+        </div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch version2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        <span class="red">hello_world.txt~</span>
+
+nothing added to commit but untracked files present (use "git add" to track)</span></pre>
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+        <div class="meta big_meta white">This is editor cruft, and we don't want such things cluttering up our repository.</div>
+        <div class="spacer"></div>
+        <div class="fragment meta small_meta white">You can simply delete it, but often you may not remember to do so.</div>
+        <div class="spacer small_spacer"></div>
+        <div class="fragment meta small_meta white">If you add a pattern to the <i class="gold">.gitignore</i> file, you can be sure the file will not end up in your repository.</div>
+    </section>
+
+    <section>
+        <div class="meta small_meta white">Add <i class="pink">*~</i> on a line by itself in <i class="gold">.gitignore</i></div>
+        <div class="meta extra_small_meta gold">This means "ignore all files ending in ~"</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>echo '*~' >> .gitignore
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git status
+<span class="terminal_output">On branch version2
+Untracked files:
+(use "git add &lt;file&gt;..." to include in what will be committed)
+
+      <span class="red">.gitignore</span>
+
+nothing added to commit but untracked files present (use "git add" to track)</span></pre>
+
+    </section>
+
+    <section>
+        <div class="meta extra_small_meta gold">
+            The <span class="red">hello_world.txt~</span> is gone, and the new <span class="red">.gitignore</span> file shows up.
+            <br><br>
+            Stage and commit the file.
+        </div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add .gitignore
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m 'Add .gitignore'
+<span class="terminal_output">[version2 c35f894] Add .gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore</span></pre>
+    </section>
+
+    <section>
+        <div class="meta big_meta white">
+            You can ignore entire directories as well
+        </div>
+        <div class="fragment">
+            <pre><span class="terminal_output">log/</span></pre>
+            <div class="meta extra_small_meta white">Will ignore the content of any directory named "log" anywhere in the repository.</div>
+        </div>
+        <div class="fragment">
+            <div class="spacer"></div>
+            <pre><span class="terminal_output">/log/</span></pre>
+            <div class=" meta extra_small_meta white">Will ignore a "log" directory only at the project root.</div>
+        </div>
+    </section>
+</section>

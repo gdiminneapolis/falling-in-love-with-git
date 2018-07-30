@@ -1,0 +1,222 @@
+---
+---
+<section>
+
+    <div class="spacer"></div>
+    <h3 class="blue">Merging</h3><br />
+
+    <section>
+        <div class="meta big_meta white">Use <i>merge</i> to get changes
+          from <br> one branch to another</div>
+	<div class="vspace"></div>
+        <div class="small_meta gold fragment">
+            Collaboration at its best!
+        </div>
+    </section>
+
+    <section>
+
+        <div class="spacer"></div>
+
+        <div class="meta big_meta white">Switch to master:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout master</pre>
+
+        <div class="fragment">
+
+            <div class="meta big_meta white">Merge with version2:</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git merge version2
+<span class="terminal_output">Updating d4c7213..6a69379
+Fast-forward
+ hello_world.txt | 1 +
+ 1 file changed, 1 insertion(+)</span></pre>
+
+            <div class="meta extra_small_meta gold">
+                "rebase" is another option, but for the sake of time, it won't be covered in this workshop.
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="meta big_meta white">There will be conflicts.</div>
+        <div class="meta big_meta gold">Git is pretty smart, but sometimes it won't know exactly how to merge your branches.</div>
+
+    </section>
+
+    <section>
+        <div class="spacer"></div><br />
+
+        <div class="meta big_meta white">For example...</div>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="col with_border">
+            <div class="meta extra_small_meta gold">(version-2-branch) history.txt:</div>
+            <div class="spacer small_spacer"></div>
+
+            <div class="meta extra_small_meta white monaco_font">
+                1. GDI was founded in <span class="pink">2010</span>.<br />
+                2. GDI is in 45 US cities.
+            </div>
+            <div class="spacer small_spacer"></div>
+
+        </div>
+
+        <div class="col with_border">
+            <div class="meta extra_small_meta gold">(version-3-branch) history.txt:</div>
+            <div class="spacer small_spacer"></div>
+
+            <div class="meta extra_small_meta white monaco_font">
+                1. GDI was founded in <span class="pink">2008</span>.<br />
+                2. GDI is in 45 US cities.
+            </div>
+            <div class="spacer small_spacer"></div>
+
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <div class="spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Git will make you <i class="blue">resolve</i> this conflict before the merge can happen.</div>
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="spacer big_spacer"></div>
+
+        <div class="meta big_meta white">Make sure you're in master:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout master
+<span class="terminal_output">Already on 'master'</span></pre>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Change the first line of hello_world.txt.</div>
+            <div class="meta extra_small_meta gold">We're going to create a conflict with this line.</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>sed -i~ <span class="string">'s/World/Folks/'</span> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, Folks!
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+        </div>
+    </section>
+    <section>
+        <div class="meta big_meta white">Stage and commit this change:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m <span class="string">'Modified hello_world.txt
+
+* Changed "World" to "Folks"'</span>
+<span class="terminal_output">[master 323461d] Modified hello_world.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)</span></pre>
+
+    </section>
+
+    <section>
+
+        <div class="spacer big_spacer"></div>
+
+
+        <div class="meta big_meta white">Switch to version2:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git checkout version2
+<span class="terminal_output">Switched to branch 'version2'</span></pre>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">Change the first line of hello_world.txt.</div>
+            <div class="meta extra_small_meta gold">Make it something different than in the previous step.</div>
+            <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>sed -i~ <span class="string">'s/World/you lot/'</span> hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>cat hello_world.txt
+<span class="terminal_output">Hello, you lot!
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="meta big_meta white">Stage and commit this change:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m <span class="string">'Modify hello_world.txt
+
+* Changing the first line of hello_world.txt in version2.'</span>
+<span class="terminal_output">[version2 98b3b40] Modify hello_world.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+</span>
+
+        </pre>
+
+    </section>
+
+
+
+    <section>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="meta big_meta white">Merge from master into version2:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git merge master</pre>
+
+        <div class="spacer small_spacer"></div>
+
+        <div class="fragment">
+            <div class="meta big_meta white">You should see something like:</div>
+            <pre><span class="terminal_output">Auto-merging hello_world.txt
+CONFLICT (content): Merge conflict in hello_world.txt
+Automatic merge failed; fix conflicts and then commit the result.</span></pre>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="spacer"></div>
+
+        <div class="meta big_meta gold">Resolving conflicts:</div>
+        <div class="spacer small_spacer"></div>
+
+        <div class="">
+            <div class="meta small_meta blue">Where are the conflicts?</div>
+            <div class="meta extra_small_meta white">
+                When you open hello_world.txt, you'll see both changes. <br>Git adds <i class="pink">conflict markers</i> to the areas it couldn't resolve.
+            </div>
+            <pre><span class="terminal_output"><i class="pink"><<<<<<< HEAD</i>
+Hello, you lot!
+<i class="pink">=======</i>
+Hello, Folks!
+<i class="pink">>>>>>>> master</i>
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="spacer"></div>
+        <div class="meta small_meta blue">How do you fix them?</div>
+        <div class="meta extra_small_meta white">
+            Delete Git's <i class="pink">conflict markers</i> and make the appropriate change.
+            <br>
+            You decided which line is correct, or you can even add a whole new line.
+            <br>
+            Make this file look exactly like you want it.
+        </div>
+        <pre><span class="terminal_output">Well, hello there!
+Sat Sep 24 15:11:22 PDT 2016
+new line for v2</span></pre>
+    </section>
+
+    <section>
+        <div class="meta small_meta blue">Be on your way:</div>
+        <pre><span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git add hello_world.txt
+<span class="terminal_prompt">pontiki2:my_first_repo student$ </span>git commit -m "Fixing hello_world.txt"
+<span class="terminal_ouput">[version2 5547b70] Fixing hello_world.txt</span></pre>
+
+    </section>
+
+
+</section>

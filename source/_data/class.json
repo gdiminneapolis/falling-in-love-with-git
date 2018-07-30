@@ -1,0 +1,38 @@
+{
+  "title": "Falling In Love With Git",
+  "date": "Sat, Oct 7, 2017",
+  "full_date": "Saturday, October 7th, 2017",
+  "time": "10:00 AM to 4:30 PM",
+  "venue": {
+    "name": "PowerObjects",
+    "address": {
+      "street1": "718 Washington Avenue North",
+      "street2": "Suite 101",
+      "city": "Minneapolis",
+      "state": "MN",
+      "postal_code": "55401",
+      "latitude": 44.988396,
+      "longitude": 93.277229,
+      "google_maps_url": "https://maps.google.com/maps?f=q&hl=en&q=718+Washington+Avenue+North%2C+Suite+101%2C+Minneapolis%2C+MN%2C+us"
+    },
+  },
+  "instructor": {
+    "name": "Tamara Temple",
+    "twitter": "tamouse",
+    "github": "tamouse",
+    "email": "tamouse@gmail.com",
+    "link": "http://www.tamouse.org"
+  },
+  "network": {
+    "ssid": "TBD",
+    "password": "TBD"
+  },
+  "upcoming_classes": [
+  ],
+  "tweettags": [
+    "@GDIMpls",
+    "#learnGit",
+    "#gdi",
+    "@tamouse"
+  ]
+}

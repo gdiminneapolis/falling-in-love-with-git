@@ -1,36 +1,24 @@
 {
   "name": "fall_in_love_with_git",
-  "version": "3.0.0",
-  "description": "class materials for GDI Mpls \"Falling in Love with Git\" class",
-  "main": "index.html",
+  "version": "1.1.0",
+  "description": "GDI Class slides and materials for the \"Fall In Love With Git\" class",
+  "main": "source/index.html",
+  "repository": "git@github.com:gdiminneapolis/falling-in-love-with-git.git",
+  "author": "Tamara Temple <tamouse@gmail.com>",
+  "license": "CC-BY-NC-SA-4.0",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "concurrently": "^3.5.0",
+    "watch": "^1.0.2"
+  },
   "scripts": {
-    "add": "all-contributors add",
-    "generate": "all-contributors generate",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gdiminneapolis/falling-in-love-with-git.git"
-  },
-  "keywords": [
-    "GDI",
-    "Girl",
-    "Develop",
-    "It",
-    "Git",
-    "GitHub",
-    "class",
-    "curriculum",
-    "slides",
-    "gdiminneapolis"
-  ],
-  "author": "gdiminneapolis",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gdiminneapolis/falling-in-love-with-git/issues"
-  },
-  "homepage": "https://github.com/gdiminneapolis/falling-in-love-with-git#readme",
-  "devDependencies": {
-    "all-contributors-cli": "^4.4.0"
+    "start": "concurrently --kill-others \"npm run sync\" \"npm run jekyll:watch\" ",
+    "sync": "browser-sync start --config .bs-config.js",
+    "jekyll:watch": "watch \"npm run jekyll:build\" source --wait=1",
+    "jekyll:serve": "bundle exec jekyll serve",
+    "jekyll:build": "bundle exec jekyll build --config=_config.yml",
+    "jekyll:build:github": "bundle exec jekyll build --config=_config.yml,_publish.yml",
+    "checkin": "npm run jekyll:build:github && git add --all && git commit -m 'published' && git push origin HEAD",
+    "slides": "open https://gdiminneapolis.github.io/falling-in-love-with-git/"
   }
 }

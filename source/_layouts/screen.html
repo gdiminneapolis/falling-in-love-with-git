@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ site.data.class.title }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="{{ '/css/reveal.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/css/font-awesome.min.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+
+        <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+    </head>
+    <body>
+        <div class="reveal" id="gdi">
+            <div class="slides">
+                {{ content }}
+            </div>
+
+            {% include footer.html  %}
+        </div> <!-- .reveal #gdi -->
+
+        <script type="text/javascript" src="{{ '/js/jquery-1.11.2.min.js' | relative_url }}"></script>
+        <script type="text/javascript" src="{{ '/js/reveal.js' | relative_url }}"></script>
+        <script type="text/javascript" src="{{ '/js/revealConfig.js' | relative_url }}"></script>
+    </body>
+</html>
