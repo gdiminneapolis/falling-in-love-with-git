@@ -1,3 +1,8 @@
+# THIS BRANCH IS ARCHIVED
+
+This branch contains the IP for the version [@tamouse](https://github.com/tamouse) taught last, based on the SourceTree tool. As a result of so many problems getting the tools installed, users acclamated, etc., we decided to step back to the older command-line oriented version.
+
+
 # Course slides for 'Falling in Love with Git' GDI Minneapolis Course
 [![GDI Minneapolis](https://img.shields.io/badge/GDI-Minneapolis-ff69b4.svg)](https://gdiminneapolis.com)
 [![Code of Conduct](https://img.shields.io/badge/code_of-conduct-ff69b4.svg)](https://www.girldevelopit.com/code-of-conduct)
