@@ -24,6 +24,15 @@ Next, you can contribute in the following ways:
 ### Prerequisites
 
 * Install [Jekyll](https://jekyllrb.com) (which requires [Ruby](http://ruby-lang.org))
+* Install [node], latest v8 LTS stable is fine
+* Install [yarn], latest stable
+
+[node]: https://nodejs.org/en/
+[yarn]: https://yarnpkg.com/lang/en/docs/install/
+
+* Understand how [reveal] presentations work
+
+[reveal]: https://github.com/hakimel/reveal.js "An HTML presentation framework"
 
 ### Download
 
@@ -36,13 +45,24 @@ Next, you can contribute in the following ways:
     $ yarn install
 
 
+### Editing
+
+The main place you'll want to make changes will be to the `source/_slides/` files. Each file contains a portion of the presentation. Following the conventions for `reveal` slide decks, each file is a `<section>`, which go from left to right. If you embed sub `<section>`s inside, those slides will go down.
+
+You can use either HTML or MarkDown, which ever suits your needs the best.
+
+### Styles
+
+[@agebhardt](https://github.com/agebhardt) created several custom styles created for this presentation. Pay attention to how they are used, study the file `source/css/styles.css` to learn their secrets and awesomesauce.
+
+Additionally, since this is a [reveal]-based presentation, you should study those styles as well.
+
+
 ### Viewing slides while editing
 
     $ yarn start
 
-This will run Jekyll in server mode, hosting output on `http://localhost:4000` -- the URL will also be displayed in Jekyll's output.
-
-Launch your browser at that URL and you can refresh the view every time you make a change.
+Will launch your default browser in a live-update mode looking at the generated jekyll directory, and watch the jekyll source directory for changes. *Note* the first time you run this, there might not be a `_site` folder, so you may need to refresh the browser after the first build completes.
 
 ### Publishing to Github Pages
 
@@ -64,3 +84,18 @@ The file `_publish.yml` in the root directory can be set to provide overrides an
 ### Updating Contributors List
 
 This repo uses the [all-contributors] specification. There is a tool to make it easy to add people to the list.
+
+#### adding a new contributor:
+
+This will require the contributor's GitHub account name, e.g. `tamouse`.
+
+    $ yarn contributors:add
+
+### generating a new version after manually editing `.all_contributors` file:
+
+    $ yarn contributors:generate
+
+Make sure to read the [all-contributors] specification before you update it manually.
+
+
+[all-contributors]: https://github.com/kentcdodds/all-contributors "all-contributors specification by Kent C. Dodds"

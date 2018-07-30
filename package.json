@@ -7,6 +7,7 @@
   "author": "Tamara Temple <tamouse@gmail.com>",
   "license": "CC-BY-NC-SA-4.0",
   "dependencies": {
+    "all-contributors-cli": "^5.3.0",
     "browser-sync": "^2.18.13",
     "concurrently": "^3.5.0",
     "watch": "^1.0.2"
@@ -19,6 +20,8 @@
     "jekyll:build": "bundle exec jekyll build --config=_config.yml",
     "jekyll:build:github": "bundle exec jekyll build --config=_config.yml,_publish.yml",
     "checkin": "npm run jekyll:build:github && git add --all && git commit -m 'published' && git push origin HEAD",
-    "slides": "open https://gdiminneapolis.github.io/falling-in-love-with-git/"
+    "slides": "open https://gdiminneapolis.github.io/falling-in-love-with-git/",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   }
 }
