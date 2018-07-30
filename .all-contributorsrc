@@ -23,6 +23,30 @@
         "ideas",
         "talk"
       ]
+    },
+    {
+      "login": "tamouse",
+      "name": "Tamara Temple",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/363583?v=4",
+      "profile": "https://tamouse.github.io/swaac",
+      "contributions": [
+        "question",
+        "blog",
+        "bug",
+        "code",
+        "design",
+        "doc",
+        "eventOrganizing",
+        "example",
+        "ideas",
+        "infra",
+        "platform",
+        "plugin",
+        "review",
+        "talk",
+        "test",
+        "tool"
+      ]
     }
   ]
 }
