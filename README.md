@@ -1,4 +1,5 @@
 # Course slides for 'Falling in Love with Git' GDI Minneapolis Course
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 * Slides are at [https://gdiminneapolis.github.io/falling-in-love-with-git](https://gdiminneapolis.github.io/falling-in-love-with-git)
 * Git Documentation: [https://git-scm.com/docs](https://git-scm.com/docs)
@@ -54,6 +55,12 @@ The file `_publish.yml` in the root directory can be set to provide overrides an
 
 ## Contributors
 
-* [Amy Gelbart](https://twitter.com/amlyhamm) (Original author/creator)
-* [Tamara Tmeple](https://github.com/tamouse)
-* Add your name here! (See above.)
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars0.githubusercontent.com/u/12141607?v=4" width="100px;"/><br /><sub><b>agebhardt</b></sub>](https://github.com/agebhardt)<br />[💬](#question-agebhardt "Answering Questions") [💻](https://github.com/gdiminneapolis/falling-in-love-with-git/commits?author=agebhardt "Code") [🎨](#design-agebhardt "Design") [📋](#eventOrganizing-agebhardt "Event Organizing") [💡](#example-agebhardt "Examples") [🤔](#ideas-agebhardt "Ideas, Planning, & Feedback") [📢](#talk-agebhardt "Talks") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+### Updating Contributors List
+
+This repo uses the [all-contributors] specification. There is a tool to make it easy to add people to the list.

@@ -1,6 +1,8 @@
 {
   "projectName": "falling-in-love-with-git",
   "projectOwner": "gdiminneapolis",
+  "repoType": "github",
+  "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
@@ -13,21 +15,12 @@
       "avatar_url": "https://avatars0.githubusercontent.com/u/12141607?v=4",
       "profile": "https://github.com/agebhardt",
       "contributions": [
-        "doc",
+        "question",
         "code",
-        "tutorial",
-        "talk"
-      ]
-    },
-    {
-      "login": "tamouse",
-      "name": "Tamara Temple",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/363583?v=4",
-      "profile": "http://swaac.tamouse.org",
-      "contributions": [
-        "doc",
-        "code",
-        "tutorial",
+        "design",
+        "eventOrganizing",
+        "example",
+        "ideas",
         "talk"
       ]
     }
